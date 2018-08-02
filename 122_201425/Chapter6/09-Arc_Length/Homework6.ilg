@@ -1,0 +1,145 @@
+This is C:\Program Files\MiKTeX 2.9\miktex\bin\x64\makeindex.EXE, version 2.15 [MiKTeX 2.9 64-bit] (kpathsea + Thai support).
+Scanning input file Homework6.4...
+!! Input index error (file = Homework6.4, line = 1):
+   -- Unknown index keyword \documentclass[12pt].
+!! Input index error (file = Homework6.4, line = 4):
+   -- Unknown index keyword \usepackage.
+!! Input index error (file = Homework6.4, line = 5):
+   -- Unknown index keyword \usepackage.
+!! Input index error (file = Homework6.4, line = 6):
+   -- Unknown index keyword \usepackage.
+!! Input index error (file = Homework6.4, line = 7):
+   -- Unknown index keyword \usepackage.
+!! Input index error (file = Homework6.4, line = 8):
+   -- Unknown index keyword \usepackage.
+!! Input index error (file = Homework6.4, line = 9):
+   -- Unknown index keyword \everymath.
+!! Input index error (file = Homework6.4, line = 11):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Homework6.4, line = 13):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Homework6.4, line = 15):
+   -- Unknown index keyword \begin.
+!! Input index error (file = Homework6.4, line = 17):
+   -- Unknown index keyword \begin.
+!! Input index error (file = Homework6.4, line = 18):
+   -- Unknown index keyword \underline.
+!! Input index error (file = Homework6.4, line = 19):
+   -- Unknown index keyword \end.
+!! Input index error (file = Homework6.4, line = 21):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Homework6.4, line = 23):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Homework6.4, line = 25):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Homework6.4, line = 27):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Homework6.4, line = 29):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Homework6.4, line = 31):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Homework6.4, line = 33):
+   -- Unknown index keyword \begin.
+!! Input index error (file = Homework6.4, line = 35):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Homework6.4, line = 37):
+   -- Unknown index keyword \end.
+!! Input index error (file = Homework6.4, line = 39):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Homework6.4, line = 41):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Homework6.4, line = 43):
+   -- Unknown index keyword \noindent.
+!! Input index error (file = Homework6.4, line = 45):
+   -- Unknown index keyword \begin.
+!! Input index error (file = Homework6.4, line = 47):
+   -- Unknown index keyword \item$y=4x^.
+!! Input index error (file = Homework6.4, line = 49):
+   -- Unknown index keyword \ifans.
+!! Input index error (file = Homework6.4, line = 51):
+   -- Unknown index keyword \item$y=\frac.
+!! Input index error (file = Homework6.4, line = 53):
+   -- Unknown index keyword \ifans.
+!! Input index error (file = Homework6.4, line = 55):
+   -- Unknown index keyword \item$y=\frac.
+!! Input index error (file = Homework6.4, line = 57):
+   -- Unknown index keyword \ifans.
+!! Input index error (file = Homework6.4, line = 59):
+   -- Unknown index keyword \itemConsiderthecurvedefinedby$y=\sqrt.
+!! Input index error (file = Homework6.4, line = 61):
+   -- Unknown index keyword \begin.
+!! Input index error (file = Homework6.4, line = 63):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Homework6.4, line = 65):
+   -- Unknown index keyword \ifans.
+!! Input index error (file = Homework6.4, line = 67):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Homework6.4, line = 69):
+   -- Unknown index keyword \ifans.
+!! Input index error (file = Homework6.4, line = 71):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Homework6.4, line = 73):
+   -- Unknown index keyword \ifans.
+!! Input index error (file = Homework6.4, line = 75):
+   -- Unknown index keyword \end.
+!! Input index error (file = Homework6.4, line = 77):
+   -- Unknown index keyword \itemConsider$F(x)=\int_1^x\sqrt.
+!! Input index error (file = Homework6.4, line = 79):
+   -- Unknown index keyword \ifans.
+!! Input index error (file = Homework6.4, line = 81):
+   -- Unknown index keyword \itemConsiderthecurvedefinedby$f(x)=\ln.
+!! Input index error (file = Homework6.4, line = 83):
+   -- Unknown index keyword \begin.
+!! Input index error (file = Homework6.4, line = 85):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Homework6.4, line = 87):
+   -- Unknown index keyword \ifans.
+!! Input index error (file = Homework6.4, line = 89):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Homework6.4, line = 91):
+   -- Unknown index keyword \ifans.
+!! Input index error (file = Homework6.4, line = 93):
+   -- Unknown index keyword \end.
+!! Input index error (file = Homework6.4, line = 95):
+   -- Unknown index keyword \itemConsiderthecurvedefinedby$f(x)=\tan.
+!! Input index error (file = Homework6.4, line = 97):
+   -- Unknown index keyword \begin.
+!! Input index error (file = Homework6.4, line = 99):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Homework6.4, line = 101):
+   -- Unknown index keyword \ifans.
+!! Input index error (file = Homework6.4, line = 103):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Homework6.4, line = 105):
+   -- Unknown index keyword \ifans.
+!! Input index error (file = Homework6.4, line = 107):
+   -- Unknown index keyword \end.
+!! Input index error (file = Homework6.4, line = 109):
+   -- Unknown index keyword \itemConsiderthecurvedefinedby$y=\sin.
+!! Input index error (file = Homework6.4, line = 111):
+   -- Unknown index keyword \begin.
+!! Input index error (file = Homework6.4, line = 113):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Homework6.4, line = 115):
+   -- Unknown index keyword \ifans.
+!! Input index error (file = Homework6.4, line = 117):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Homework6.4, line = 119):
+   -- Unknown index keyword \ifans.
+!! Input index error (file = Homework6.4, line = 120):
+   -- Unknown index keyword \begin.
+!! Input index error (file = Homework6.4, line = 121):
+   -- Unknown index keyword \includegraphics[scale=0.5].
+!! Input index error (file = Homework6.4, line = 122):
+   -- Unknown index keyword \end.
+!! Input index error (file = Homework6.4, line = 123):
+   -- Unknown index keyword Usingtheserectangles,$\int_0^\pi\sqrt.
+!! Input index error (file = Homework6.4, line = 125):
+   -- Unknown index keyword \end.
+!! Input index error (file = Homework6.4, line = 127):
+   -- Unknown index keyword \end.
+!! Input index error (file = Homework6.4, line = 129):
+   -- Unknown index keyword \end.
+done (0 entries accepted, 70 rejected).
+Nothing written in Homework6.ind.
+Transcript written in Homework6.ilg.

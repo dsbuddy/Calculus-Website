@@ -1,0 +1,174 @@
+\documentclass[12pt]{article}
+
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{fullpage}
+\usepackage{epsfig}
+\usepackage{epstopdf}
+\everymath{\displaystyle}
+\usepackage{enumerate}
+
+\newif\ifans
+
+\ansfalse
+
+\begin{document}
+
+\begin{center}
+\underline{\LARGE{Tangent Planes \& Normal Lines}}
+\end{center}
+
+\noindent SUGGESTED REFERENCE MATERIAL:
+
+\bigskip
+
+\noindent As you work through the problems listed below, you should reference Chapter 13.7 of the recommended textbook (or the equivalent chapter in your alternative textbook/online resource) and your lecture notes.
+
+\bigskip
+
+
+\noindent EXPECTED SKILLS:
+
+\begin{itemize}
+
+\item Be able to compute an equation of the tangent plane at a point on the surface $z=f(x,y)$. 
+
+\item Given an implicitly defined level surface $F(x,y,z)=k$, be able to compute an equation of the tangent plane at a point on the surface. 
+
+\item Know how to compute the parametric equations (or vector equation) for the normal line to a surface at a specified point. 
+
+\item Be able to use gradients to find tangent lines to the intersection curve of two surfaces. And, be able to find (acute) angles between tangent planes and other planes.
+
+\end{itemize}
+
+\noindent PRACTICE PROBLEMS:
+
+\medskip
+
+\noindent {\bf For problems 1-4, find two unit vectors which are normal to the given surface $S$ at the specified point $P$.}
+
+\begin{enumerate}
+
+\item $S: 2x-y+z=-7$; $P(-1,2,-3)$
+
+\ifans{\fbox{$\overrightarrow{n_{1,2}}=\pm \left\langle \frac{2}{\sqrt{6}},-\frac{1}{\sqrt{6}},\frac{1}{\sqrt{6}} \right\rangle$}} \fi
+
+\item $S: x^2-3y+z^2=11$; $P(-1,-2,2)$
+
+\ifans{\fbox{$\overrightarrow{n_{1,2}}=\pm \left\langle -\frac{2}{\sqrt{29}},-\frac{3}{\sqrt{29}},\frac{4}{\sqrt{29}} \right\rangle$}} \fi
+
+\item $S: z=y^4$; $P(3,-1,1)$
+
+\ifans{\fbox{$\overrightarrow{n_{1,2}}=\pm \left\langle 0,-\frac{4}{\sqrt{17}},-\frac{1}{\sqrt{17}} \right\rangle$}} \fi
+
+\item $S: z=2-x^2\cos{(xy)}$; $P\left(-1,\frac{\pi}{2},2\right)$
+
+\ifans{\fbox{$\overrightarrow{n_{1,2}}=\pm \frac{2}{\sqrt{\pi^2+8}}\left\langle -\frac{\pi}{2},1,-1 \right\rangle$}} \fi
+
+\end{enumerate}
+
+\noindent {\bf For problems 5-9, compute equations of the tangent plane and the normal line to the given surface at the indicated point.}
+
+\begin{enumerate}
+\setcounter{enumi}{4}
+
+\item $S: \ln{(x+y+z)}=2$; $P(-1,e^2,1)$
+
+\ifans{\fbox{$x+y+z=e^2$; $\overrightarrow{\ell}(t)=\langle -1,e^2,1\rangle +t\langle 1,1,1\rangle$}} \fi
+
+\item $S: x^2+y^2+z^2=1$; $P\left(\frac{\sqrt{3}}{3}, \frac{\sqrt{3}}{3}, \frac{\sqrt{3}}{3} \right)$
+
+\ifans{\fbox{$x+y+z=\sqrt{3}$; $\overrightarrow{\ell}(t)=\left \langle \frac{\sqrt{3}}{3}, \frac{\sqrt{3}}{3}, \frac{\sqrt{3}}{3}\right \rangle +t\langle 1,1,1 \rangle$}} \fi
+
+\item $S: z=\arcsin{\left(\frac{x}{y}\right)}$; $P\left(-1, -\sqrt{2}, \frac{\pi}{4}\right)$
+
+\ifans{\fbox{$-x+\frac{\sqrt{2}}{2}y-z=-\frac{\pi}{4}$; $\overrightarrow{\ell}(t)=\left\langle-1,-\sqrt{2},\frac{\pi}{4}\right\rangle+t\left\langle-1,\frac{\sqrt{2}}{2},-1\right\rangle$}} \fi
+
+\item $S: x^2-xy+z^2=9$; $P(2,2,3)$
+
+\ifans{\fbox{$x-y+3z=9$; $\overrightarrow{\ell}(t)=\langle 2,2,3\rangle+t\langle1,-1,3\rangle$}} \fi
+
+\item $S: z=x\cos{(x+y)}$; $P\left(\frac{\pi}{2}, \frac{\pi}{3}, -\frac{\sqrt{3}\pi}{4}\right)$
+
+\ifans{\fbox{\parbox{0.7\linewidth}{$(\pi+2\sqrt{3})\left(x-\frac{\pi}{2}\right)+\pi\left(y-\frac{\pi}{3}\right)+4\left(z+\frac{\sqrt{3}\pi}{4}\right)=0$\\
+$\overrightarrow{\ell}(t)=\left\langle \frac{\pi}{2},\frac{\pi}{3},-\frac{\pi\sqrt{3}}{4}\right\rangle+t\left\langle \pi+2\sqrt{3},\pi,4\right\rangle$
+}}} \fi
+
+\item Consider the surfaces $S_1: x^2+y^2=25$ and $S_2: z=2-x$
+
+\begin{enumerate}
+
+\item Find an equation of the tangent line to the curve of intersection of $S_1$ and $S_2$ at the point $(3,4,-1)$.
+
+\ifans{\fbox{$\overrightarrow{\ell}(t)=\langle 3,4,-1\rangle+t\langle -4,3,4 \rangle$}} \fi
+
+\item Find the acute angle between the planes which are tangent to the surfaces $S_1$ and $S_2$ at the point $(3,4,-1)$.
+
+\ifans{\fbox{$\pi-\cos^{-1}\left(\frac{-3}{5\sqrt{2}}\right)$}} \fi
+
+\end{enumerate}
+
+\item Consider the surfaces $S_1: z=x^2-y^2$ and $S_2: y^2+z^2=10$
+
+\begin{enumerate}
+
+\item Find an equation of the tangent line to the curve of intersection of $S_1$ and $S_2$ at the point $(2,1,3)$.
+
+\ifans{\fbox{$\overrightarrow{\ell}(t)=\langle 2,1,3\rangle+t\langle 5,12,-4 \rangle$}} \fi
+
+\item Find the acute angle between the planes which are tangent to the surfaces $S_1$ and $S_2$ at the point $(2,1,3)$.
+
+\ifans{\fbox{$\pi-\cos^{-1}\left(\frac{-10}{\sqrt{21}\sqrt{40}}\right)$}} \fi
+
+\end{enumerate}
+
+\item Find all points on the ellipsoid $x^2+2y^2+3z^2=72$ where the tangent plane is parallel to the plane $4x+4y+12z=3$.
+
+\ifans{\fbox{$(6,3,6)$ and $(-6,-3,-6)$}} \fi
+
+\item Find all points on the hyperboloid of 1 sheet $x^2+y^2-z^2=9$ where the normal line is parallel to the line which contains points $A(1,2,3)$ and $B(7,6,5)$.
+
+\ifans{\fbox{$\left(\frac{3\sqrt{3}}{2},\sqrt{3},-\frac{\sqrt{3}}{2}\right)$ and $\left(-\frac{3\sqrt{3}}{2},-\sqrt{3},\frac{\sqrt{3}}{2}\right)$}} \fi
+
+\item Two surfaces are called {\bf orthogonal} at a point of intersection if their normal lines are perpendicular at that point.  Show that the sphere $x^2+y^2+z^2=1$ and the cone $z^2=x^2+y^2$ are orthogonal at all points of intersection.  (HINT: Assume that the surfaces intersect at the arbitary point $(x_0,y_0,z_0)$.)
+
+\ifans{\fbox{\parbox{1\linewidth}{Suppose that $S_1: x^2+y^2+z^2=1$ and $S_2: z^2=x^2+y^2$ intersect at $(x_0,y_0,z_0)$. We will find a normal vector to each surface at the point $P_0$.  To do this, let $F(x,y,z)=x^2+y^2+z^2$ and $G(x,y,z)=x^2+y^2-z^2$.  Notice that $S_1$ is the level surface $F(x,y,z)=1$ and $S_2$ is the level surface $G(x,y,z)=0$.  So, $\nabla F(x_0,y_0,z_0)=\langle 2x_0,2y_0,2z_0\rangle$ and $\nabla G(x_0,y_0,z_0)=\langle 2x_0,2y_0,-2z_0\rangle$ are normal to $S_1$ and $S_2$, respectively, at the point $P_0$.  And, as a result, these vectors are parallel to the normal lines to $S_1$ and $S_2$ at $P_0$.\\
+\\
+Showing that the surfaces are orthogonal is equivalent to showing that $\nabla F(x_0,y_0,z_0) \perp \nabla G(x_0,y_0,z_0)$; i.e, $\nabla F(x_0,y_0,z_0) \cdot \nabla G(x_0,y_0,z_0)=0$.
+\medskip
+\begin{center}
+(Continued on next page)
+\end{center}
+}}} \fi
+\ifans{\fbox{\parbox{1\linewidth}{
+\begin{align*}
+\nabla F(x_0,y_0,z_0) \cdot \nabla G(x_0,y_0,z_0)&=\langle 2x_0,2y_0,2z_0\rangle\cdot\langle 2x_0,2y_0,-2z_0\rangle\\
+&=4x_0^2+4y_0^2-4z_0^2\\
+&=4(x_0^2+y_0^2-z_0^2)
+\end{align*}
+Since $(x_0,y_0,z_0)$ is a point of intersection of $S_1$ and $S_2$, it must satisfy both equations.  In particular, since it satisfies the equation for $S_2$, we have $x_0^2+y_0^2=z_0^2$.  Using this fact, we see that 
+\begin{align*}
+\nabla F(x_0,y_0,z_0) \cdot \nabla G(x_0,y_0,z_0)&=4(x_0^2+y_0^2-z_0^2)\\
+&=4(z_0^2-z_0^2)\\
+&=0
+\end{align*}
+As a result the surfaces are orthogonal to one another at the point of intersection, $(x_0,y_0,z_0)$.
+}}} \fi
+
+\item Show that every plane which is tangent to the cone $z^2=x^2+y^2$ must pass through the origin. (HINT: Compute the equation of the plane which is tangent to the surface at the point $P_0(x_0,y_0,z_0)$ and see what happens.)
+
+\ifans{\fbox{\parbox{1\linewidth}{Let $F(x,y,z)=x^2+y^2-z^2$.  The given surface is the level surface $F(x,y,z)=0$; so, $\nabla F(x_0,y_0,z_0)=\langle 2x_0,2y_0,-2z_0\rangle$ is normal to the given surface at the  point $(x_0,y_0,z_0)$.  Thus, an equation of the plane which is tangent to the given surface at the point $(x_0,y_0,z_0)$ is $2x_0(x-x_0)+2y_0(y-y_0)-2z_0(z-z_0)=0$; i.e., $x_0x+y_0y+z_0z-x_0^2-y_0^2+z_0^2=0$.\\
+\\
+Now, since $(x_0,y_0,z_0)$ is the point of tangency, it must also be a point on the surface.  Thus, $x_0^2+y_0^2=z_0^2 \Rightarrow -x_0^2-y_0^2=-z_0^2$.  Using this fact, the equation of the tangent plane can be written as:
+\begin{align*}
+x_0x+y_0y+z_0z-x_0^2-y_0^2+z_0^2&=0\\
+x_0x+y_0y+z_0z-z_0^2+z_0^2&=0\\
+x_0x+y_0y+z_0z&=0
+\end{align*}
+And, $(0,0,0)$ satisfies this equation.  Thus, since $(x_0,y_0,z_0)$ was an arbitrary point on the surface and its tangent plane passes through the origin, we have that all tangent planes to the surface must pass through the origin. 
+}}} \fi
+
+\end{enumerate}
+
+\end{document}

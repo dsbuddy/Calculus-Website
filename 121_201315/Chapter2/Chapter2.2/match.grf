@@ -1,0 +1,132 @@
+;This file was created by Graph (http://www.padowan.dk)
+;Do not change this file from other programs.
+[Graph]
+Version = 4.4.0.532
+MinVersion = 2.5
+OS = Windows NT 6.1 Service Pack 1
+
+[Axes]
+xMin = -10
+xMax = 10
+xTickUnit = 1
+xGridUnit = 1
+xShowGrid = 1
+yMin = -5.25790349417637
+yMax = 5.25790349417637
+yTickUnit = 1
+yGridUnit = 1
+yShowGrid = 1
+AxesColor = clBlue
+GridColor = 0x00FF9999
+ShowLegend = 0
+Radian = 1
+
+[Func1]
+FuncType = 0
+y = sqrt(16-x^2)
+Visible = 0
+From = -4
+To = 4
+Color = clGreen
+Size = 4
+
+[Func2]
+FuncType = 0
+y = -x/sqrt(16-x^2)
+Visible = 0
+Color = clGreen
+Size = 4
+
+[Func3]
+FuncType = 0
+y = x+3
+Visible = 0
+From = -4
+To = -2
+Color = clGreen
+Size = 4
+
+[Func4]
+FuncType = 0
+y = -0.5x
+Visible = 0
+From = -2
+To = 2
+Color = clGreen
+Size = 4
+
+[Func5]
+FuncType = 0
+y = x-3
+Visible = 0
+From = 2
+To = 4
+Color = clGreen
+Size = 4
+
+[Func6]
+FuncType = 0
+y = 1
+Visible = 0
+From = -4
+To = -2
+Color = clGreen
+Size = 4
+EndPoint = 1
+
+[Func7]
+FuncType = 0
+y = 1
+Visible = 0
+From = 2
+To = 4
+Color = clGreen
+Size = 4
+StartPoint = 1
+
+[Func8]
+FuncType = 0
+y = -.5
+Visible = 0
+From = -2
+To = 2
+Color = clGreen
+Size = 4
+StartPoint = 1
+EndPoint = 1
+
+[Func9]
+FuncType = 0
+y = 4*e^((-x^2)/2)
+Visible = 0
+Color = clGreen
+Size = 4
+
+[Func10]
+FuncType = 0
+y = -4x*e^((-x^2)/2)
+Visible = 0
+Color = clGreen
+Size = 4
+
+[Func11]
+FuncType = 0
+y = 0.2*(x+2)(x-3)(x^2)
+Visible = 0
+Color = clGreen
+Size = 4
+
+[Func12]
+FuncType = 0
+y = 0.2*(4x^3-3x^2-12x)
+Color = clGreen
+Size = 4
+
+[Data]
+TextLabelCount = 0
+FuncCount = 12
+PointSeriesCount = 0
+ShadeCount = 0
+RelationCount = 0
+OleObjectCount = 0
+

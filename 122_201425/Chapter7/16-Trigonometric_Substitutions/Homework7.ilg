@@ -1,0 +1,125 @@
+This is C:\Program Files\MiKTeX 2.9\miktex\bin\x64\makeindex.EXE, version 2.15 [MiKTeX 2.9 64-bit] (kpathsea + Thai support).
+Scanning input file Homework7.4...
+!! Input index error (file = Homework7.4, line = 1):
+   -- Unknown index keyword \documentclass[12pt].
+!! Input index error (file = Homework7.4, line = 4):
+   -- Unknown index keyword \usepackage.
+!! Input index error (file = Homework7.4, line = 5):
+   -- Unknown index keyword \usepackage.
+!! Input index error (file = Homework7.4, line = 6):
+   -- Unknown index keyword \usepackage.
+!! Input index error (file = Homework7.4, line = 7):
+   -- Unknown index keyword \usepackage.
+!! Input index error (file = Homework7.4, line = 8):
+   -- Unknown index keyword \usepackage.
+!! Input index error (file = Homework7.4, line = 9):
+   -- Unknown index keyword \everymath.
+!! Input index error (file = Homework7.4, line = 11):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Homework7.4, line = 13):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Homework7.4, line = 15):
+   -- Unknown index keyword \begin.
+!! Input index error (file = Homework7.4, line = 17):
+   -- Unknown index keyword \begin.
+!! Input index error (file = Homework7.4, line = 18):
+   -- Unknown index keyword \underline.
+!! Input index error (file = Homework7.4, line = 19):
+   -- Unknown index keyword \end.
+!! Input index error (file = Homework7.4, line = 21):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Homework7.4, line = 23):
+   -- Unknown index keyword \begin.
+!! Input index error (file = Homework7.4, line = 25):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Homework7.4, line = 27):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Homework7.4, line = 29):
+   -- Unknown index keyword \end.
+!! Input index error (file = Homework7.4, line = 31):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Homework7.4, line = 33):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Homework7.4, line = 35):
+   -- Unknown index keyword \noindent.
+!! Input index error (file = Homework7.4, line = 37):
+   -- Unknown index keyword \begin.
+!! Input index error (file = Homework7.4, line = 39):
+   -- Unknown index keyword \item$\int\sqrt.
+!! Input index error (file = Homework7.4, line = 41):
+   -- Unknown index keyword \ifans.
+!! Input index error (file = Homework7.4, line = 43):
+   -- Unknown index keyword \item$\int\frac.
+!! Input index error (file = Homework7.4, line = 45):
+   -- Unknown index keyword \ifans.
+!! Input index error (file = Homework7.4, line = 47):
+   -- Unknown index keyword \item$\int\frac.
+!! Input index error (file = Homework7.4, line = 49):
+   -- Unknown index keyword \ifans.
+!! Input index error (file = Homework7.4, line = 51):
+   -- Unknown index keyword \item$\int\frac.
+!! Input index error (file = Homework7.4, line = 53):
+   -- Unknown index keyword \ifans.
+!! Input index error (file = Homework7.4, line = 55):
+   -- Unknown index keyword \item$\int\frac.
+!! Input index error (file = Homework7.4, line = 57):
+   -- Unknown index keyword \ifans.
+!! Input index error (file = Homework7.4, line = 59):
+   -- Unknown index keyword \item$\int^.
+!! Input index error (file = Homework7.4, line = 61):
+   -- Unknown index keyword \ifans.
+!! Input index error (file = Homework7.4, line = 63):
+   -- Unknown index keyword \item$\int^2_.
+!! Input index error (file = Homework7.4, line = 65):
+   -- Unknown index keyword \ifans.
+!! Input index error (file = Homework7.4, line = 67):
+   -- Unknown index keyword \item$\int\frac.
+!! Input index error (file = Homework7.4, line = 69):
+   -- Unknown index keyword \ifans.
+!! Input index error (file = Homework7.4, line = 71):
+   -- Unknown index keyword \item$\int_1^2\frac.
+!! Input index error (file = Homework7.4, line = 73):
+   -- Unknown index keyword \ifans.
+!! Input index error (file = Homework7.4, line = 75):
+   -- Unknown index keyword \item$\int_.
+!! Input index error (file = Homework7.4, line = 77):
+   -- Unknown index keyword \ifans.
+!! Input index error (file = Homework7.4, line = 79):
+   -- Unknown index keyword \item$\int\frac.
+!! Input index error (file = Homework7.4, line = 81):
+   -- Unknown index keyword \ifans.
+!! Input index error (file = Homework7.4, line = 83):
+   -- Unknown index keyword \item$\int\frac.
+!! Input index error (file = Homework7.4, line = 85):
+   -- Unknown index keyword \ifans.
+!! Input index error (file = Homework7.4, line = 87):
+   -- Unknown index keyword \itemComputetheareaenclosedwithintheellipse$\frac.
+!! Input index error (file = Homework7.4, line = 89):
+   -- Unknown index keyword \ifans.
+!! Input index error (file = Homework7.4, line = 91):
+   -- Unknown index keyword \itemLet$R$betheregioninthe$xy$-planewhichisenclosedby$y=\frac.
+!! Input index error (file = Homework7.4, line = 93):
+   -- Unknown index keyword \ifans.
+!! Input index error (file = Homework7.4, line = 95):
+   -- Unknown index keyword \itemComputethelengthofthecurve$y=x^2$ontheinterval$\left[-\frac.
+!! Input index error (file = Homework7.4, line = 97):
+   -- Unknown index keyword \ifans.
+!! Input index error (file = Homework7.4, line = 99):
+   -- Unknown index keyword \item\begin.
+!! Input index error (file = Homework7.4, line = 101):
+   -- Unknown index keyword \itemEvaluate$\int\frac.
+!! Input index error (file = Homework7.4, line = 103):
+   -- Unknown index keyword \ifans.
+!! Input index error (file = Homework7.4, line = 105):
+   -- Unknown index keyword \itemComputethelengthofthecurve$y=\ln.
+!! Input index error (file = Homework7.4, line = 107):
+   -- Unknown index keyword \ifans.
+!! Input index error (file = Homework7.4, line = 109):
+   -- Unknown index keyword \end.
+!! Input index error (file = Homework7.4, line = 111):
+   -- Unknown index keyword \end.
+!! Input index error (file = Homework7.4, line = 113):
+   -- Unknown index keyword \end.
+done (0 entries accepted, 60 rejected).
+Nothing written in Homework7.ind.
+Transcript written in Homework7.ilg.

@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<p>SUGGESTED REFERENCE MATERIAL:</p>
+<p>As you work through the problems listed below, you should reference Chapter 5.4 of the recommended textbook (or the equivalent chapter in your alternative textbook/online resource) and your lecture notes.</p>
+<p>EXPECTED SKILLS:</p>
+<ul>
+<li><p>Understand and know how to evaluate the summation (sigma) notation.</p></li>
+<li><p>Be able to use the summation operation’s basic properties and formulas. (You do not need to memorize the “Useful Formulas&quot; listed below; if they are needed, they will be provided to you).</p></li>
+<li><p>Know how to denote the approximate area under a curve and over an interval as a sum, and be able to find the exact area using a limit of the approximation.</p></li>
+<li><p>Be able to find the net signed area between the graph of a function and the <span class="math inline">\(x\)</span>-axis on an interval using a limit.</p></li>
+</ul>
+<p>USEFUL FORMULAS<br />
+</p>
+<table>
+<tbody>
+<tr class="odd">
+<td align="left"><span class="math inline">\(\sum_{k=1}^n{k}=\frac{n(n+1)}{2}\)</span></td>
+<td align="left"><span class="math inline">\(\sum_{k=1}^n{k^2}=\frac{n(n+1)(2n+1)}{6}\)</span></td>
+<td align="left"><span class="math inline">\(\sum_{k=1}^n{k^3}=\left(\frac{n(n+1)}{2}\right)^2\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><br />
+</p>
+<p>PRACTICE PROBLEMS:</p>
+<p><span><strong>For problems 1-5, evaluate.</strong></span></p>
+<ol>
+<li><p><span class="math inline">\(\sum\limits_{k=1}^{4}k^3\)</span></p></li>
+<li><p><span class="math inline">\(\sum\limits_{j=2}^{6} (j^3-1)\)</span></p></li>
+<li><p><span class="math inline">\(\sum_{i=-1}^3{2i}\)</span></p></li>
+<li><p><span class="math inline">\(\sum_{k=0}^5{(-1)^k}\)</span></p></li>
+<li><p><span class="math inline">\(\sum_{k=1}^5{\sin{\left(\frac{\pi}{2}k\right)}}\)</span></p></li>
+</ol>
+<p><span><strong>For problems 6-8, use the summation formulas at the top of page 1 to evaluate the given sum.</strong></span></p>
+<ol start="6">
+<li><p><span class="math inline">\(\sum_{k=1}^{100}{(3k-5)}\)</span></p></li>
+<li><p><span class="math inline">\(\sum\limits_{k=1}^{25}[ k(k-1)(k+1)]\)</span></p></li>
+<li><p><span class="math inline">\(\sum_{k=3}^{120}{(k+7)}\)</span><br />
+(CAUTION: In problem 8, the lower index is not 1; so, the summation formulas at the top of page 1 do not immediately apply!)</p></li>
+</ol>
+<p><span><strong>For problems 9-12, write the given expression in sigma notation. Do not evaluate the sum. (For each, there are many different ways to write the expression in sigma notation; the answer key illustrates one such way for each.))</strong></span></p>
+<ol start="9">
+<li><p><span class="math inline">\(4(1)+4(2)+4(3)+4(4)+\dots +4(20)\)</span></p></li>
+<li><p><span class="math inline">\(3-6+9-12+ \dots -36\)</span></p></li>
+<li><p><span class="math inline">\(1+3+5+7+ \dots + 21\)</span></p></li>
+<li><p><span class="math inline">\(2+4+8+16+ \dots + 256\)</span></p></li>
+</ol>
+<p><span><strong>For problems 13-15, express the given summation in closed form.</strong></span></p>
+<ol start="13">
+<li><p><span class="math inline">\(\sum\limits_{j=1}^{n}\frac{j}{n}\)</span></p></li>
+<li><p><span class="math inline">\(\sum\limits_{k=1}^{n-1} \frac{3k^3}{n}\)</span></p></li>
+<li><p><span class="math inline">\(\sum\limits_{k=0}^{n} \left(\frac{1}{n}-\frac{k^2}{n}\right)\)</span><br />
+(CAUTION: In problem 15, the lower limit is not 1; so the summation formulas at the top of page 1 do not immediately apply!)</p></li>
+<li><p>Consider <span class="math inline">\(f(x)=x^2+1\)</span>.</p>
+<ol>
+<li><p>Estimate the area under the graph of <span class="math inline">\(f(x)\)</span> on the interval <span class="math inline">\([0,6]\)</span> using 3 rectangles of equal width and right endpoints, as in the diagram below. Is your estimate an overestimate or an underestimate?</p>
+<p><embed src="x2+1right.pdf" /></p></li>
+<li><p>Estimate the area under the graph of <span class="math inline">\(f(x)\)</span> on the interval <span class="math inline">\([0,6]\)</span> using 3 rectangles of equal width and left endpoints, as in the diagram below. Is your estimate an overestimate or an underestimate?</p>
+<p><embed src="x2+1left.pdf" /></p></li>
+<li><p>Estimate the area under the graph of <span class="math inline">\(f(x)\)</span> on the interval <span class="math inline">\([0,6]\)</span> using 3 rectangles of equal width and midpoints, as in the diagram below. Is your estimate an overestimate or an underestimate?</p>
+<p><embed src="x2+1mid.pdf" /></p></li>
+</ol></li>
+<li><p>Let <span class="math inline">\(f(x)=\ln{x}\)</span>.</p>
+<ol>
+<li><p>Sketch the graph of <span class="math inline">\(f(x)\)</span>. Label all asymptotes and intercepts with the coordinate axes.</p></li>
+<li><p>Sketch the graph of <span class="math inline">\(f(x)\)</span> on the interval <span class="math inline">\([e,5e]\)</span>. Divide the interval into 4 subintervals of equal width. On each subinterval, sketch a rectangle using the function value at the <span><strong>right endpoint</strong></span> as the height of the rectangle on that subinterval. Estimate the area between the graph of <span class="math inline">\(f(x)\)</span> and the <span class="math inline">\(x\)</span>-axis on the interval <span class="math inline">\([e,5e]\)</span> using the 4 rectangles that you sketched. Is your estimate an overestimate or an underestimate?</p></li>
+<li><p>Sketch the graph of <span class="math inline">\(f(x)\)</span> on the interval <span class="math inline">\([e,5e]\)</span>. Divide the interval into 4 subintervals of equal width. On each subinterval, sketch a rectangle using the function value at the <span><strong>left endpoint</strong></span> as the height of the rectangle on that subinterval. Estimate the area between the graph of <span class="math inline">\(f(x)\)</span> and the <span class="math inline">\(x\)</span>-axis on the interval <span class="math inline">\([e,5e]\)</span> using the 4 rectangles that you sketched. Is your estimate an overestimate or an underestimate?</p></li>
+</ol></li>
+<li><p>Let <span class="math inline">\(f(x)=x^2+1\)</span>. By the end of this problem, you will have computed the exact area under the graph of <span class="math inline">\(f(x)\)</span> on the interval <span class="math inline">\([1,6]\)</span>.</p>
+<ol>
+<li><p>Find the <span class="math inline">\(\Delta x\)</span> which is necessary to divide <span class="math inline">\([1,6]\)</span> into <span class="math inline">\(n\)</span> subintervals of equal width.</p></li>
+<li><p>In each of the <span class="math inline">\(n\)</span> subintervals of equal width, pick <span class="math inline">\(x_k^*\)</span> to be the right endpoint. Fill in the following table:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Subinterval Number</th>
+<th align="center">Right Endpoint Number</th>
+<th align="center">Right Endpoint of Subinterval</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><span class="math inline">\(k=1\)</span></td>
+<td align="center"><span class="math inline">\(x_1^*\)</span></td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(k=2\)</span></td>
+<td align="center"><span class="math inline">\(x_2^*\)</span></td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(k=3\)</span></td>
+<td align="center"><span class="math inline">\(x_3^*\)</span></td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center">.</td>
+<td align="center">.</td>
+<td align="center">.</td>
+</tr>
+<tr class="odd">
+<td align="center">.</td>
+<td align="center">.</td>
+<td align="center">.</td>
+</tr>
+<tr class="even">
+<td align="center">.</td>
+<td align="center">.</td>
+<td align="center">.</td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(k=n-1\)</span></td>
+<td align="center"><span class="math inline">\(x_{n-1}^*\)</span></td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(k=n\)</span></td>
+<td align="center"><span class="math inline">\(x_{n}^*\)</span></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table></li>
+<li><p><span><strong>Fill in the blank:</strong></span> A closed formula for the right endpoints found in the table above is <span class="math inline">\(x_k^*=\underline{\hspace{2 cm} \ifans{\fbox{\)</span>1+(k)<span class="math inline">\(}} \fi \hspace{2cm}}\)</span>, for <span class="math inline">\(k=1,2,...,n-1,n\)</span>.</p></li>
+<li><p>Determine <span class="math inline">\(f(x_k^*)\)</span>, the height of the <span class="math inline">\(k^{th}\)</span> rectangle.</p></li>
+<li><p>The right endpoint approximation of the area under the graph of <span class="math inline">\(f(x)\)</span> on the interval <span class="math inline">\([1,6]\)</span> using <span class="math inline">\(n\)</span> rectangles of equal width is:<br />
+</p>
+<p><span class="math inline">\(A \approx f(x_1^*)\Delta x+f(x_2^*)\Delta x+...+f(x_{n-1}^*)\Delta x+f(x_n^*)\Delta x=\sum_{k=1}^n{f(x_k^*)\Delta x}\)</span></p>
+<p>Using the appropriate formulas from the top of page 1, express the right endpoint approximation in closed form.</p></li>
+<li><p>Repeating over finer and finer partitions is equivalent to the number of subintervals, <span class="math inline">\(n\)</span>, approaching infinity. Using this information, compute the exact area under the graph of <span class="math inline">\(f(x)=x^2+1\)</span> on the interval <span class="math inline">\([1,6]\)</span>.</p></li>
+</ol></li>
+<li><p>For each of the following, use sigma notation and the appropriate summation formulas to evaluate the net signed area between the graph of <span class="math inline">\(f(x)\)</span> and the <span class="math inline">\(x\)</span>-axis on the given interval. Let <span class="math inline">\(x_k^*\)</span> be the <span><strong>right endpoint</strong></span> of the <span class="math inline">\(k^{th}\)</span> subinterval (where all subintervals have equal width).</p>
+<ol>
+<li><p><span class="math inline">\(f(x)=x-3\)</span> on <span class="math inline">\([1,5]\)</span></p></li>
+<li><p><span class="math inline">\(f(x)=\frac{x^2}{3}\)</span> on <span class="math inline">\([2,5]\)</span></p></li>
+<li><p><span class="math inline">\(f(x)=x^3-1\)</span> on <span class="math inline">\([0,2]\)</span></p></li>
+</ol></li>
+<li><p>For each of the following, use sigma notation and the appropriate summation formulas to evaluate the net signed area between the graph of <span class="math inline">\(f(x)\)</span> and the <span class="math inline">\(x\)</span>-axis on the given interval. Let <span class="math inline">\(x_k^*\)</span> be the <span><strong>left endpoint</strong></span> of the <span class="math inline">\(k^{th}\)</span> subinterval (where all subintervals have equal width).</p>
+<ol>
+<li><p><span class="math inline">\(f(x)=x-3\)</span> on <span class="math inline">\([1,5]\)</span></p></li>
+<li><p><span class="math inline">\(f(x)=\frac{x^2}{3}\)</span> on <span class="math inline">\([2,5]\)</span></p></li>
+<li><p><span class="math inline">\(f(x)=x^3-1\)</span> on <span class="math inline">\([0,2]\)</span></p></li>
+</ol></li>
+<li><p>For each of the following, use sigma notation and the appropriate summation formulas to evaluate the net signed area between the graph of <span class="math inline">\(f(x)\)</span> and the <span class="math inline">\(x\)</span>-axis on the given interval. Let <span class="math inline">\(x_k^*\)</span> be the <span><strong>midpoint</strong></span> of the <span class="math inline">\(k^{th}\)</span> subinterval (where all subintervals have equal width).</p>
+<ol>
+<li><p><span class="math inline">\(f(x)=x-3\)</span> on <span class="math inline">\([1,5]\)</span></p></li>
+<li><p><span class="math inline">\(f(x)=\frac{x^2}{3}\)</span> on <span class="math inline">\([2,5]\)</span></p></li>
+</ol></li>
+<li><p>Use sigma notation and the appropriate summation formulas to formulate an expression which represents the net signed area between the graph of <span class="math inline">\(f(x)=\cos{x}\)</span> and the <span class="math inline">\(x\)</span>-axis on the interval <span class="math inline">\([-\pi,\pi]\)</span>. Let <span class="math inline">\(x_k^*\)</span> be the <span><strong>right endpoint</strong></span> of the <span class="math inline">\(k^{th}\)</span> subinterval (where all subintervals have equal width). DO NOT EVALUATE YOUR EXPRESSION.</p></li>
+<li><p>A is a polygon that is equiangular (all angles are equal in measure) and equilateral (all sides have the same length). The diagram below shows several regular polygons inscribed within a circle of radius <span class="math inline">\(r\)</span>.</p>
+<p><embed src="Inscribed.pdf" /></p>
+<ol>
+<li><p>Let <span class="math inline">\(A_n\)</span> be the area of a regular <span class="math inline">\(n\)</span>-sided polygon inscribed within a circle of radius <span class="math inline">\(r\)</span>. Divide the polygon into <span class="math inline">\(n\)</span> congruent triangles each with a central angle of <span class="math inline">\(\frac{2\pi}{n}\)</span> radians, as shown in the diagram above for several different values of <span class="math inline">\(n\)</span>. Show that <span class="math inline">\(A_n=\frac{1}{2}r^2 \sin{\left(\frac{2\pi}{n}\right)} n\)</span>.</p></li>
+<li><p>What can you conclude about the area of the <span class="math inline">\(n\)</span>-sided polygon as the number of sides of the polygon, <span class="math inline">\(n\)</span>, approaches infinity? In other words, compute <span class="math inline">\(\lim_{n \rightarrow \infty}{A_n}\)</span>.</p></li>
+</ol></li>
+</ol>
+</body>
+</html>

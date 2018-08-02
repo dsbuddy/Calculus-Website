@@ -1,0 +1,143 @@
+;This file was created by Graph (http://www.padowan.dk)
+;Do not change this file from other programs.
+[Graph]
+Version = 4.4.1.540
+MinVersion = 2.5
+OS = Windows NT 6.1 Service Pack 1
+
+[Axes]
+xMin = -8
+xMax = 8
+xTickUnit = 1
+xGridUnit = 1
+xShowTicks = 0
+xShowNumbers = 0
+yMin = -8
+yMax = 8
+yTickUnit = 2
+yGridUnit = 2
+yShowTicks = 0
+yShowNumbers = 0
+AxesColor = clBlue
+GridColor = 0x00FF9999
+ShowLegend = 0
+Radian = 1
+
+[Func1]
+FuncType = 0
+y = 0.1*((1/4)*x^4+(1/3)*x^3-6*x^2)
+Color = clNavy
+Size = 4
+
+[PointSeries1]
+FillColor = clRed
+LineColor = clNavy
+Size = 5
+Style = 0
+LineSize = 5
+LabelPosition = 1
+PointCount = 7
+Points = -5.610799,0;0,0;4.277265,0;-4,-5.333333;3,-2.475;-2.3609,-3.006258;1.69425,-1.354187;
+LegendText = Series 1
+
+[Label1]
+Placement = 0
+Pos = -4.0865224625624;1.08860759493671
+Text = {\\rtf1\\ansi\\ansicpg1252\\deff0\\deflang1033{\\fonttbl{\\f0\\fnil\\fcharset0 Times New Roman;}{\\f1\\fnil Times New Roman;}}\n{\\colortbl ;\\red0\\green0\\blue0;}\n\\viewkind4\\uc1\\pard\\cf1\\f0\\fs60 b\\f1\\par\n}\n
+BackgroundColor = clNone
+ShowInLegend = 0
+
+[Label2]
+Placement = 0
+Pos = -2.42262895174709;1.11392405063291
+Text = {\\rtf1\\ansi\\ansicpg1252\\deff0\\deflang1033{\\fonttbl{\\f0\\fnil\\fcharset0 Times New Roman;}{\\f1\\fnil Times New Roman;}}\n{\\colortbl ;\\red0\\green0\\blue0;}\n\\viewkind4\\uc1\\pard\\cf1\\f0\\fs60 c\\f1\\par\n}\n
+BackgroundColor = clNone
+ShowInLegend = 0
+
+[Label3]
+Placement = 0
+Pos = 0.0133111480865225;1.06329113924051
+Text = {\\rtf1\\ansi\\ansicpg1252\\deff0\\deflang1033{\\fonttbl{\\f0\\fnil\\fcharset0 Times New Roman;}{\\f1\\fnil Times New Roman;}}\n{\\colortbl ;\\red0\\green0\\blue0;}\n\\viewkind4\\uc1\\pard\\cf1\\f0\\fs60 d\\f1\\par\n}\n
+BackgroundColor = clNone
+ShowInLegend = 0
+
+[Label4]
+Placement = 0
+Pos = 1.61064891846922;1.13924050632911
+Text = {\\rtf1\\ansi\\ansicpg1252\\deff0\\deflang1033{\\fonttbl{\\f0\\fnil\\fcharset0 Times New Roman;}{\\f1\\fnil Times New Roman;}}\n{\\colortbl ;\\red0\\green0\\blue0;}\n\\viewkind4\\uc1\\pard\\cf1\\f0\\fs60 e\\f1\\par\n}\n
+BackgroundColor = clNone
+ShowInLegend = 0
+
+[Label5]
+Placement = 0
+Pos = 2.92845257903494;1.08860759493671
+Text = {\\rtf1\\ansi\\ansicpg1252\\deff0\\deflang1033{\\fonttbl{\\f0\\fnil\\fcharset0 Times New Roman;}{\\f1\\fnil Times New Roman;}}\n{\\colortbl ;\\red0\\green0\\blue0;}\n\\viewkind4\\uc1\\pard\\cf1\\f0\\fs60 f\\f1\\par\n}\n
+BackgroundColor = clNone
+ShowInLegend = 0
+
+[Label6]
+Placement = 0
+Pos = 4.47254575707155;1.18987341772152
+Text = {\\rtf1\\ansi\\ansicpg1252\\deff0\\deflang1033{\\fonttbl{\\f0\\fnil\\fcharset0 Times New Roman;}{\\f1\\fnil Times New Roman;}}\n{\\colortbl ;\\red0\\green0\\blue0;}\n\\viewkind4\\uc1\\pard\\cf1\\f0\\fs60 g\\f1\\par\n}\n
+BackgroundColor = clNone
+ShowInLegend = 0
+
+[Label7]
+Placement = 0
+Pos = -5.55740432612313;1.20253164556962
+Text = {\\rtf1\\ansi\\ansicpg1252\\deff0\\deflang1033{\\fonttbl{\\f0\\fnil\\fcharset0 Times New Roman;}{\\f1\\fnil Times New Roman;}}\n{\\colortbl ;\\red0\\green0\\blue0;}\n\\viewkind4\\uc1\\pard\\cf1\\f0\\fs60 a\\f1\\par\n}\n
+BackgroundColor = clNone
+ShowInLegend = 0
+
+[Func2]
+FuncType = 1
+x = -4
+y = t
+From = -5.333
+To = 0
+Steps = 1000
+Style = 2
+Color = clNavy
+Size = 4
+
+[Func3]
+FuncType = 1
+x = 3
+y = t
+From = -2.475
+To = 0
+Steps = 1000
+Style = 2
+Color = clNavy
+Size = 4
+
+[Func4]
+FuncType = 1
+x = -2.3609
+y = t
+From = -3.006258
+To = 0
+Steps = 1000
+Style = 2
+Color = clNavy
+Size = 4
+
+[Func5]
+FuncType = 1
+x = 1.69425
+y = t
+From = -1.354187
+To = 0
+Steps = 1000
+Style = 2
+Color = clNavy
+Size = 4
+
+[Data]
+TextLabelCount = 7
+FuncCount = 5
+PointSeriesCount = 1
+ShadeCount = 0
+RelationCount = 0
+OleObjectCount = 0
+

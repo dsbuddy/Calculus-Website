@@ -1,0 +1,100 @@
+;This file was created by Graph (http://www.padowan.dk)
+;Do not change this file from other programs.
+[Graph]
+Version = 4.4.1.540
+MinVersion = 2.5
+OS = Windows NT 6.1 Service Pack 1
+
+[Axes]
+xMin = -10
+xMax = 10
+xTickUnit = 1
+xGridUnit = 1
+xShowTicks = 0
+xShowNumbers = 0
+yMin = -10
+yMax = 10
+yTickUnit = 2
+yGridUnit = 2
+yShowTicks = 0
+yShowNumbers = 0
+AxesColor = clBlue
+GridColor = 0x00FF9999
+ShowLegend = 0
+Radian = 1
+
+[Func1]
+FuncType = 0
+y = x*(x-3)*(x+5)*0.15
+Color = clRed
+Size = 4
+
+[Shade1]
+LegendText = Shading 1
+ShadeStyle = 2
+BrushStyle = 5
+Color = clGreen
+FuncNo = 1
+sMin = -6
+sMax = 4
+sMin2 = -6
+sMax2 = 4
+
+[Func2]
+FuncType = 1
+x = -6
+y = t
+From = -8.1
+To = 0
+Steps = 1000
+Style = 1
+Color = clBlue
+Size = 4
+
+[Func3]
+FuncType = 1
+x = 4
+y = t
+From = 0
+To = 5.4
+Steps = 1000
+Style = 1
+Color = clBlue
+Size = 4
+
+[Label1]
+Placement = 0
+Pos = -5.00831946755408;0.126582278481013
+Text = {\\rtf1\\ansi\\ansicpg1252\\deff0\\deflang1033{\\fonttbl{\\f0\\fnil\\fcharset0 Times New Roman;}{\\f1\\fnil Times New Roman;}}\n{\\colortbl ;\\red0\\green0\\blue0;}\n\\viewkind4\\uc1\\pard\\cf1\\f0\\fs60 b\\f1\\par\n}\n
+BackgroundColor = clNone
+ShowInLegend = 0
+
+[Label2]
+Placement = 0
+Pos = -0.299500831946756;0.189873417721519
+Text = {\\rtf1\\ansi\\ansicpg1252\\deff0\\deflang1033{\\fonttbl{\\f0\\fnil\\fcharset0 Times New Roman;}{\\f1\\fnil Times New Roman;}}\n{\\colortbl ;\\red0\\green0\\blue0;}\n\\viewkind4\\uc1\\pard\\cf1\\f0\\fs60 c\\f1\\par\n}\n
+BackgroundColor = clNone
+ShowInLegend = 0
+
+[Label3]
+Placement = 0
+Pos = 3.77703826955075;4.49293380277993E-16
+Text = {\\rtf1\\ansi\\ansicpg1252\\deff0\\deflang1033{\\fonttbl{\\f0\\fnil\\fcharset0 Times New Roman;}{\\f1\\fnil Times New Roman;}}\n{\\colortbl ;\\red0\\green0\\blue0;}\n\\viewkind4\\uc1\\pard\\cf1\\f0\\fs60 d\\f1\\par\n}\n
+BackgroundColor = clNone
+ShowInLegend = 0
+
+[Label4]
+Placement = 0
+Pos = -6.37271214642263;0.221518987341773
+Text = {\\rtf1\\ansi\\ansicpg1252\\deff0\\deflang1033{\\fonttbl{\\f0\\fnil\\fcharset0 Times New Roman;}{\\f1\\fnil Times New Roman;}}\n{\\colortbl ;\\red0\\green0\\blue0;}\n\\viewkind4\\uc1\\pard\\cf1\\f0\\fs60 a\\f1\\par\n}\n
+BackgroundColor = clNone
+ShowInLegend = 0
+
+[Data]
+TextLabelCount = 4
+FuncCount = 3
+PointSeriesCount = 0
+ShadeCount = 1
+RelationCount = 0
+OleObjectCount = 0
+

@@ -1,0 +1,144 @@
+\documentclass[12pt]{article}
+
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{fullpage}
+\usepackage{epsfig}
+\usepackage{epstopdf}
+\everymath{\displaystyle}
+\usepackage{enumerate}
+
+\newif\ifans
+
+\ansfalse
+
+\begin{document}
+
+\begin{center}
+\underline{\LARGE{Chapter 4.3: Hyperbolic Functions}}
+\end{center}
+
+\subsection*{Expected Skills:}
+
+\begin{itemize}
+
+\item Be able to define $\sinh{x}$ and $\cosh{x}$ in terms of exponential functions.
+
+\item Be able to determine the domain, range, and graph of $\sinh{x}$ and $\cosh{x}$.
+
+\item Be able to justify properties and solve equations involving the hyperbolic functions.
+
+\item Be able to compute limits and derivatives involving the hyperbolic functions.
+
+\end{itemize}
+
+\subsection*{Practice Problems: }
+
+\begin{enumerate}
+
+\item Consider $f(x)=\sinh{x}$.
+
+\begin{enumerate}
+
+\item Compute $\lim_{x \rightarrow \infty}f(x)$ and $\lim_{x \rightarrow -\infty}f(x)$
+
+\ifans{\fbox{$\lim_{x \rightarrow \infty}f(x)=+\infty$; $\lim_{x \rightarrow -\infty}f(x)=-\infty$}} \fi
+
+\item Determine whether the graph of $f(x)$ has any curvilinear asymptotes.
+
+\ifans\fbox{$y=\frac{1}{2}e^x$ and $y=-\frac{1}{2}e^{-x}$} \fi
+
+\item Compute the $x$ and $y$ intercepts of $f(x)$.
+
+\ifans{\fbox{The $x$ and $y$ intercept of $y=\sinh{x}$ is $(0,0)$.}} \fi
+
+\item Solve $\sinh{x}=1$ for $x$.
+
+\ifans{\fbox{$x=\ln{\left(1+\sqrt{2}\right)}$}} \fi
+
+\item Show that $\frac{d}{dx}(\sinh{x})=\cosh{x}$
+
+\ifans{\fbox{\parbox{1\linewidth}{
+\begin{align*}
+\frac{d}{dx}(\sinh{x}) &= \frac{d}{dx}\left(\frac{e^x-e^{-x}}{2}\right)\\
+&=\frac{d}{dx}\left(\frac{1}{2}e^x-\frac{1}{2}e^{-x}\right)\\
+&=\frac{1}{2}e^x+\frac{1}{2}e^{-x}\\
+&=\frac{e^x+e^{-x}}{2}\\
+&=\cosh{x}
+\end{align*}
+}}} \fi
+
+\item Find all intervals on which $f(x)$ is increasing and those on which $f(x)$ is decreasing.
+
+\ifans\fbox{Increasing on $(-\infty,\infty)$; never decreasing.} \fi
+
+\item Find all intervals on which $f(x)$ is concave up and those on which $f(x)$ is concave down.
+
+\ifans\fbox{Concave up on $(0,\infty)$; concave down on $(-\infty,0)$.} \fi
+
+\item Determine the coordinates of all local extrema (max/min) and all inflection points.
+
+\ifans\fbox{No max/min; Inflection point at $(0,0)$.} \fi
+
+\item Sketch the graph of $f(x)$
+
+\ifans\fbox{\includegraphics[scale=0.5]{sinh.pdf}} \fi
+
+\end{enumerate}
+
+\item In order to verify the identity $\sinh{2x}=2\sinh{x}\cosh{x}$ compute the following by appealing to the appropriate definitions.
+
+\begin{enumerate}
+
+\item $\sinh{2x}$
+
+\ifans\fbox{$\sinh{2x}=\frac{e^{2x}-e^{-2x}}{2}$} \fi
+
+\item $2\sinh{x}\cosh{x}$
+
+\ifans\fbox{$2\sinh{x}\cosh{x}=2\left(\frac{e^x+e^{-x}}{2}\right)\left(\frac{e^x-e^{-x}}{2}\right)=\frac{e^{2x}-e^{-2x}}{2}$} \fi
+
+\end{enumerate}
+
+\item We define the {\bf Hyperbolic Tangent} function to be $f(x)=\tanh{x}=\frac{\sinh{x}}{\cosh{x}}$.
+
+\begin{enumerate}
+
+\item Express $f(x)$ in terms of exponential functions.
+
+\ifans\fbox{$\tanh{x}=\frac{e^x-e^{-x}}{e^x+e^{-x}}$} \fi
+
+\item What is the domain of $f(x)$?
+
+\ifans\fbox{$(-\infty,\infty)$} \fi
+
+\item Compute $\lim_{x\to\infty}f(x)$ and $\lim_{x\to-\infty}f(x)$.
+
+\ifans\fbox{$\lim_{x\to\infty}f(x)=1$ and $\lim_{x\to-\infty}f(x)=-1$} \fi
+
+\item Determine whether the graph of $f(x)$ has any curvilinear asymptotes.
+
+\ifans\fbox{The graph has horizontal asymptotes $y=1$ and $y=-1$.} \fi
+
+\item Find the coordinates of all $x$ and $y$ intercepts of $f(x)$.
+
+\ifans{\fbox{$(0,0)$}} \fi
+
+\item Find all $x$ for which $f(x)=\frac{1}{2}$.
+
+\ifans\fbox{$\frac{1}{2}\ln{3}$} \fi
+
+\end{enumerate}
+
+\item Compute an equation of the line which is tangent to $f(x)=\cosh{x}$ at the point where $x=\ln{2}$.
+
+\ifans\fbox{$y-\frac{5}{4}=\frac{3}{4}(x-\ln{2})$} \fi
+
+\item Suppose $y=x\cosh{x}$.  Compute $\frac{d^2y}{dx^2}$.
+
+\ifans\fbox{$\frac{d^2y}{dx^2}=2\sinh(x)+x\cosh(x)$} \fi
+
+\end{enumerate}
+
+\end{document}

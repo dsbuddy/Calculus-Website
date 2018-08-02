@@ -1,0 +1,76 @@
+;This file was created by Graph (http://www.padowan.dk)
+;Do not change this file from other programs.
+[Graph]
+Version = 4.4.1.540
+MinVersion = 2.5
+OS = Windows NT 6.1 Service Pack 1
+
+[Axes]
+xMin = -2.93070363932741
+xMax = 11.4091563146348
+xTickUnit = 1
+xGridUnit = 1
+xShowGrid = 1
+xAutoTick = 0
+xAutoGrid = 0
+yMin = -1.11277330682392
+yMax = 6.426986662981
+yTickUnit = 1
+yGridUnit = 1
+yShowGrid = 1
+yAutoTick = 0
+yAutoGrid = 0
+AxesColor = clBlue
+GridColor = 0x00FF9999
+NumberFont = Times New Roman,20,clBlack
+LabelFont = Times New Roman,24,clBlack,B
+ShowLegend = 0
+Radian = 1
+
+[Func1]
+FuncType = 0
+y = 3x
+From = 0
+To = 2
+Color = clBlack
+Size = 4
+
+[Func2]
+FuncType = 0
+y = 6
+From = 2
+To = 7
+Color = clBlack
+Size = 4
+
+[Func3]
+FuncType = 0
+y = -3*(x-9)
+From = 7
+To = 9
+Color = clBlack
+Size = 4
+
+[Label1]
+Placement = 0
+Pos = 3.46649046285454;-0.54953627261956
+Text = {\\rtf1\\ansi\\ansicpg1252\\deff0\\deflang1033{\\fonttbl{\\f0\\fnil\\fcharset0 Times New Roman;}{\\f1\\fnil Times New Roman;}}\n{\\colortbl ;\\red0\\green0\\blue0;}\n\\viewkind4\\uc1\\pard\\cf1\\f0\\fs50 Position \\i x\\i0  (ft)\\f1\\par\n}\n
+BackgroundColor = clNone
+ShowInLegend = 0
+
+[Label2]
+Placement = 0
+Pos = -0.986113645570472;4.47046667081643
+Rotation = 90
+Text = {\\rtf1\\ansi\\ansicpg1252\\deff0\\deflang1033{\\fonttbl{\\f0\\fnil\\fcharset0 Times New Roman;}}\n{\\colortbl ;\\red0\\green0\\blue0;}\n\\viewkind4\\uc1\\pard\\cf1\\f0\\fs50 Force \\i F\\i0  (lb)\\par\n}\n
+BackgroundColor = clNone
+ShowInLegend = 0
+
+[Data]
+TextLabelCount = 2
+FuncCount = 3
+PointSeriesCount = 0
+ShadeCount = 0
+RelationCount = 0
+OleObjectCount = 0
+

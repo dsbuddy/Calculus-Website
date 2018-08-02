@@ -1,0 +1,220 @@
+\documentclass[12pt]{article}
+
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{fullpage}
+\usepackage{epsfig}
+\usepackage{epstopdf}
+\everymath{\displaystyle}
+
+\newif\ifans
+\newif\ifparf
+
+\parffalse
+\ansfalse
+
+\begin{document}
+
+\begin{center}
+\underline{\LARGE{Partial Fraction Decomposition}}
+\end{center}
+
+\noindent SUGGESTED REFERENCE MATERIAL:
+
+\bigskip
+
+\noindent As you work through the problems listed below, you should reference Chapter 7.5 of the recommended textbook (or the equivalent chapter in your alternative textbook/online resource) and your lecture notes.
+
+\bigskip
+
+\noindent EXPECTED SKILLS:
+
+\begin{itemize}
+
+\item Be able to recognize an improper rational function, and perform the necessary long division to turn it into a proper rational function. 
+
+\item Know how to write down the partial fraction decomposition for a proper rational function, compute the unknown
+coefficients in the partial fractions, and integrate each partial fraction.
+
+\end{itemize}
+
+\noindent PRACTICE PROBLEMS:
+
+\medskip
+
+\noindent{\bf For problems 1-3, write out the partial fraction decomposition.  (Do not solve for the numerical values of the coefficients.)}
+
+\begin{enumerate}
+
+\item $\frac{2x+3}{(x-2)(x-5)}$
+
+\ifans{\fbox{$\frac{A}{x-2}+\frac{B}{x-5}$}} \fi
+
+\item $\frac{6}{x^2(x^2-9)}$
+
+\ifans{\fbox{$\frac{A}{x}+\frac{B}{x^2}+\frac{C}{x-3}+\frac{D}{x+3}$}} \fi
+
+\item $\frac{5x^4-1}{x(x-2)(x^2+x+1)^2}$
+
+\ifans{\fbox{$\frac{A}{x}+\frac{B}{x-2}+\frac{Cx+D}{x^2+x+1}+\frac{Ex+F}{(x^2+x+1)^2}$}} \fi
+
+\end{enumerate}
+
+\noindent {\bf For problems 4 \& 5, use the given partial fraction decomposition to evaluate the integral.}
+
+\begin{enumerate}
+\setcounter{enumi}{3}
+
+\item $\int \frac{11x^2-28x+20}{(2x+1)(x-3)^2} \,dx$\\
+
+Hint: $\frac{11x^2-28x+20}{(2x+1)(x-3)^2} = \frac{3}{2x+1}+\frac{4}{x-3}+\frac{5}{(x-3)^2}$
+
+\ifans{\fbox{$\frac{3}{2}\ln{|2x+1|}+4\ln{|x-3|}-\frac{5}{2(x-3)}+C$}} \fi
+
+\item $\int \frac{11x^2+7x-15}{(3x-4)(x^2+1)} \,dx$
+
+Hint: $\frac{11x^2+7x-15}{(3x-4)(x^2+1)} = \frac{5}{3x-4}+\frac{2x+5}{x^2+1}$
+
+\ifans{\fbox{$\frac{5}{3}\ln{|3x-4|}+\ln(x^2+1)+5\tan^{-1}{x}+C$}} \fi
+
+\end{enumerate}
+
+\newpage
+
+\noindent{\bf For problems 6-17, evaluate the given integral.}
+
+\begin{enumerate}
+\setcounter{enumi}{5}
+
+\item $\int \frac{4}{x^2 - 1} \, dx$ 
+
+\ifparf{\fbox{Partial Fraction Decomposition: $\frac{2}{x-1}-\frac{2}{x+1}$}} \fi
+
+\ifans{\fbox{$2\ln{|x-1|}-2\ln{|x+1|}+C$}} \fi
+
+\item $\int \frac{4x-1}{x^2-5x+6}\,dx$ 
+
+\ifparf{\fbox{Partial Fraction Decomposition: $\frac{11}{x-3}-\frac{7}{x-2}$}} \fi
+
+\ifans{\fbox{$11\ln{|x-3|}-7\ln{|x-2|}+C$}} \fi
+
+\item $\int \frac{x^2}{x^2+1} \,dx$
+
+\ifparf{\fbox{Partial Fraction Decomposition: $1-\frac{1}{x^2+1}$}} \fi
+
+\ifans{\fbox{$x-\tan^{-1}{x}+C$}} \fi
+
+\item $\int \frac{3x^2-4}{x+1}\,dx$ 
+
+\ifparf{\fbox{Partial Fraction Decomposition: $3x-3-\frac{1}{x+1}$}} \fi
+
+\ifans{\fbox{$\frac{3}{2}x^2-3x-\ln{|x-1|}+C$}} \fi
+
+\item $\int \frac{4x-1}{2x^2-18x+36} \,dx$ 
+
+\ifparf{\fbox{Partial Fraction Decomposition: $\frac{23}{6}\left(\frac{1}{x-6}\right)-\frac{11}{6}\left(\frac{1}{x-3}\right)$}} \fi
+
+\ifans{\fbox{$\frac{23}{6}\ln{|x-6|}-\frac{11}{6}\ln{|x-3|}+C$}} \fi
+
+\item $\int \frac{1}{x^2(x-1)^2} \,dx$ 
+
+\ifparf{\fbox{Partial Fraction Decomposition: $\frac{2}{x}+\frac{1}{x^2}-\frac{2}{x-1}+\frac{1}{(x-1)^2}$}} \fi
+
+\ifans{\fbox{$2\ln{|x|}-\frac{1}{x}-2\ln{|x-1|}-\frac{1}{(x-1)}+C$}} \fi
+
+\item $\int \frac{2x+3}{(x-3)(x+1)^2} \,dx$ 
+
+\ifparf{\fbox{Partial Fraction Decomposition: $\frac{9}{16}\left(\frac{1}{x-3}\right)-\frac{9}{16}\left(\frac{1}{x+1}\right)-\frac{1}{4}\left(\frac{1}{(x+1)^2}\right)$}} \fi
+
+\ifans{\fbox{$\frac{9}{16}\ln{|x-3|}-\frac{9}{16}\ln{|x+1|}+\frac{1}{4(x+1)}+C$}} \fi
+
+\item $\int \frac{x^4-4x^2+5}{x^3-4x} \,dx$ 
+
+\ifparf{\fbox{Partial Fraction Decomposition: $x-\frac{5}{4}\left(\frac{1}{x}\right)+\frac{5}{8}\left(\frac{1}{x+2}\right)+\frac{5}{8}\left(\frac{1}{x-2}\right)$}} \fi
+
+\ifans{\fbox{$\frac{x^2}{2}-\frac{5}{4}\ln{|x|}+\frac{5}{8}\ln{|x+2|}+\frac{5}{8}\ln{|x-2|}+C$}} \fi
+
+\item $\int \frac{x^5-3x^3+6}{x^3+x}dx$ 
+
+\ifparf{\fbox{Partial Fraction Decomposition: $x^2-4+\frac{6}{x}-\frac{6x-4}{x^2+1}$}} \fi
+
+\ifans{\fbox{$\frac{1}{3}x^3-4x+6\ln{|x|}-3\ln{|x^2+1|}+4\arctan{(x)}+C$}} \fi
+
+\item $\int \frac{x^3-6x^2+3x-17}{x^2+3}\,dx$ 
+
+\ifparf{\fbox{Partial Fraction Decomposition: $x-6+\frac{1}{x^2+3}$}} \fi
+
+\ifans{\fbox{$\frac{1}{2}x^2-6x+\frac{1}{\sqrt{3}}\tan^{-1}\left(\frac{x}{\sqrt{3}}\right)+C$}} \fi
+
+\item $\int \frac{2x^2}{(x-1)^3}dx$ 
+
+\ifparf{\fbox{Partial Fraction Decomposition: $\frac{2}{x-1}+\frac{4}{(x-1)^2}+\frac{2}{(x-1)^3}$}} \fi
+
+\ifans{\fbox{$2\ln{|x-1|}-\frac{4}{x-1}-\frac{1}{(x-1)^2}+C$}} \fi
+
+\item $\int \frac{4x^2-4x+2}{x^2-x}dx$ 
+
+\ifparf{\fbox{Partial Fraction Decomposition: $4-\frac{2}{x}+\frac{2}{x-1}$}} \fi
+
+\ifans{\fbox{$4x-2\ln{|x|}+2\ln{|x-1|}+C$}} \fi
+
+\end{enumerate}
+
+\noindent{\bf For problems 18-19, evaluate the given integral by making substitution that transforms the problem into integrating a rational function.} 
+
+\begin{enumerate}
+\setcounter{enumi}{17}
+
+\item $\int \frac{\sin{x}}{\cos^2{x}+6\cos{x}+5} \,dx$
+
+\ifans{\fbox{$\ln{|\cos{x}+3|}-\ln{|\cos{x}+2|}+C$}} \fi
+
+\item $\int \frac{e^{5x}}{e^{4x}-1} \,dx$
+
+\ifans{\fbox{$e^{x}+\frac{1}{4}\ln|e^x-1|-\frac{1}{4}\ln(e^x+1)-\frac{1}{2}\tan^{-1}(e^x)+C$}} \fi
+
+\newpage
+
+\item By the end of this problem, you will know the antiderivatives of $\sec{x}$.  Observe the following:
+\begin{center}
+\begin{align*}
+\int \sec{x} \,dx &= \int \frac{1}{\cos{x}} \,dx\\
+&= \int \frac{\cos{x}}{\cos^2{x}} \,dx\\
+&= \int \frac{\cos{x}}{1-\sin^2{x}} \,dx
+\end{align*}
+\end{center}
+\begin{enumerate}
+
+\item Use the substitution $u=\sin{x}$ to convert the given integral to an integral of a rational function.  
+
+\ifans{\fbox{$\int \frac{1}{1-u^2} \,du$}} \fi
+
+\item Use partial fractions to evaluate your integral from part (a).  Show that the antiderivatives have the form $\frac{1}{2}\ln{\left|\frac{u+1}{u-1}\right|}+C$
+
+\ifans{\fbox{\parbox{1\linewidth}{
+\begin{align*}
+\int \frac{1}{u^2-1}\,du &= \int \frac{1}{2}\left(\frac{1}{u-1}\right)-\frac{1}{2}\left(\frac{1}{u+1}\right) \,du\\
+&=\frac{1}{2}\ln{|u+1|}-\frac{1}{2}\ln{|u-1|}+C\\
+&=\frac{1}{2}\ln{\left|\frac{u+1}{u-1}\right|}+C
+\end{align*}
+}}} \fi
+
+\end{enumerate}
+
+Notice that substituting back in for $u$ yields:
+
+\begin{center}
+\begin{align*}
+\int \sec{x} \,dx &= \frac{1}{2}\ln{\left|\frac{\sin{x}+1}{\sin{x}-1}\right|}+C\\
+&=\frac{1}{2}\ln{\left|\frac{(\sin{x}+1)(\sin{x}+1)}{(\sin{x}-1)(\sin{x}+1)}\right|}+C\\
+&=\frac{1}{2}\ln{\left|\frac{(\sin{x}+1)^2}{\sin^2{x}-1}\right|}+C\\
+&=\frac{1}{2}\ln{\left|\frac{(\sin{x}+1)^2}{\cos^2{x}}\right|}+C\\
+&=\ln{\left|\frac{\sin{x}+1}{\cos{x}}\right|}+C\\
+&=\ln{\left|\tan{x}+\sec{x}\right|}+C
+\end{align*}
+\end{center}
+
+\end{enumerate}
+
+\end{document}

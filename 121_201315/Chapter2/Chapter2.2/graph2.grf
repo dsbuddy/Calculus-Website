@@ -1,0 +1,45 @@
+;This file was created by Graph (http://www.padowan.dk)
+;Do not change this file from other programs.
+[Graph]
+Version = 4.4.0.532
+MinVersion = 2.5
+OS = Windows NT 6.1 Service Pack 1
+
+[Axes]
+xMin = -5
+xMax = 5
+xTickUnit = 0.5
+xGridUnit = 0.5
+xShowGrid = 1
+yMin = -1.81447587
+yMax = 3.44342762
+yTickUnit = 0.5
+yGridUnit = 0.5
+yShowGrid = 1
+AxesColor = clBlue
+GridColor = 0x00FF9999
+ShowLegend = 0
+Radian = 1
+
+[Func1]
+FuncType = 0
+y = 3
+To = 0
+Color = clGreen
+Size = 4
+
+[Func2]
+FuncType = 0
+y = 3-x
+From = 0
+Color = clGreen
+Size = 4
+
+[Data]
+TextLabelCount = 0
+FuncCount = 2
+PointSeriesCount = 0
+ShadeCount = 0
+RelationCount = 0
+OleObjectCount = 0
+

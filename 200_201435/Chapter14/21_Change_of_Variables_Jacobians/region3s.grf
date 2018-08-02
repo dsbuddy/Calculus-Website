@@ -1,0 +1,94 @@
+;This file was created by Graph (http://www.padowan.dk)
+;Do not change this file from other programs.
+[Graph]
+Version = 4.4.1.540
+MinVersion = 2.5
+OS = Windows NT 6.1 Service Pack 1
+
+[Axes]
+xMin = -5.07487521
+xMax = 4.92512479
+xTickUnit = 1
+xGridUnit = 1
+xShowGrid = 1
+xAutoTick = 0
+xAutoGrid = 0
+xLabel = u
+yMin = -0.77371048
+yMax = 4.48419301
+yTickUnit = 1
+yGridUnit = 1
+yShowGrid = 1
+yAutoTick = 0
+yAutoGrid = 0
+yLabel = v
+AxesColor = clBlue
+GridColor = 0x00FF9999
+NumberFont = Times New Roman,20,clBlack
+LabelFont = Times New Roman,24,clBlack,B
+ShowLegend = 0
+Radian = 1
+
+[Func1]
+FuncType = 0
+y = 4
+From = 0
+To = 1
+Color = clBlack
+Size = 4
+
+[Shade1]
+LegendText = Shading 1
+ShadeStyle = 4
+BrushStyle = 5
+Color = clGreen
+FuncNo = 1
+Func2No = 2
+sMin = 0
+sMax = 1
+sMin2 = 0
+sMax2 = 1
+
+[Func2]
+FuncType = 0
+y = 2
+From = 0
+To = 1
+Color = clBlack
+Size = 4
+
+[Func3]
+FuncType = 1
+x = 0
+y = t
+From = 2
+To = 4
+Steps = 1000
+Color = clBlack
+Size = 4
+
+[Func4]
+FuncType = 1
+x = 1
+y = t
+From = 2
+To = 4
+Steps = 1000
+Color = clBlack
+Size = 4
+
+[Label1]
+Placement = 0
+Pos = 0.266222959717138;3.41098169637658
+Text = {\\rtf1\\ansi\\ansicpg1252\\deff0\\deflang1033{\\fonttbl{\\f0\\fnil\\fcharset0 Times New Roman;}}\n{\\colortbl ;\\red0\\green0\\blue0;}\n\\viewkind4\\uc1\\pard\\cf1\\f0\\fs144 S\\fs24\\par\n}\n
+BackgroundColor = clNone
+ShowInLegend = 0
+
+[Data]
+TextLabelCount = 1
+FuncCount = 4
+PointSeriesCount = 0
+ShadeCount = 1
+RelationCount = 0
+OleObjectCount = 0
+

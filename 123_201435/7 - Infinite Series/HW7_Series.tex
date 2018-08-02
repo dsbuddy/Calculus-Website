@@ -1,0 +1,238 @@
+\documentclass[12pt]{article}
+
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{fullpage}
+%\usepackage{epsfig}
+%\usepackage{epstopdf}
+\everymath{\displaystyle}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+
+\newif\ifans
+
+\ansfalse
+
+\begin{document}
+
+\begin{center}
+\underline{\LARGE{Infinite Series}}
+\end{center}
+
+\noindent SUGGESTED REFERENCE MATERIAL:
+
+\medskip
+
+\noindent As you work through the problems listed below, you should reference your lecture notes and the relevant chapters in a textbook/online resource.
+
+\bigskip
+
+\noindent EXPECTED SKILLS:
+
+\medskip
+
+\begin{itemize}[topsep=0pt]
+
+\item Calculate the partial sums of a series.
+
+\item Recognize geometric and telescoping series, determine whether they converge, and if so, determine the sum of the series (i.e. what they converge to).
+
+\item Compute the sum of a finite number of terms from a geometric series.
+
+\end{itemize}
+
+\bigskip
+
+\noindent PRACTICE PROBLEMS:
+
+\medskip
+
+\noindent {\bf For problems 1 -- 8, calculate the first four partial sums for each series.}
+
+\begin{enumerate}
+
+\item $\sum_{k=1}^{\infty}\frac{1}{2}$
+
+\ifans{\fbox{$s_1=\frac{1}{2}, s_2=\frac{1}{2}+\frac{1}{2}=1, 
+s_3=\frac{1}{2}+\frac{1}{2}+\frac{1}{2}=\frac{3}{2}, s_4=\frac{1}{2}+\frac{1}{2}+\frac{1}{2}+\frac{1}{2}=2$    }} \fi
+
+\item $\sum_{k=1}^{\infty}k$
+
+\ifans{\fbox{$s_1=1, s_2=1+2=3, s_3=1+2+3=6, s_4=1+2+3+4=10$    }} \fi
+
+\item $\sum_{k=1}^{\infty}(-1)^{k}$
+
+\ifans{\fbox{$s_1=-1, s_2=-1+1=0, s_3=-1+1-1=-1, s_4=-1+1-1+1=0$    }} \fi
+
+\item $\sum_{j=0}^{\infty} \left(\frac{1}{2}\right)^{j}$
+
+\ifans{\fbox{$s_0=1, s_1=1+\frac{1}{2}=\frac{3}{2}, s_2=1+\frac{1}{2}+\frac{1}{4}=\frac{7}{4}, s_3=1+\frac{1}{2}+\frac{1}{4}+\frac{1}{8}=\frac{15}{8}$    }} \fi
+
+\item $\sum_{j=1}^{\infty} \left(\frac{1}{j}-\frac{1}{j+1}\right)$
+
+\ifans{\fbox{\parbox{1\linewidth}{$s_1=1-\frac{1}{2}=\frac{1}{2}
+\\s_2=\left(1-\frac{1}{2}\right)+\left(\frac{1}{2}-\frac{1}{3}\right)=1-\frac{1}{3}=\frac{2}{3}
+\\s_3=\left(1-\frac{1}{2}\right)+\left(\frac{1}{2}-\frac{1}{3}\right)+\left(\frac{1}{3}-\frac{1}{4}\right)=1-\frac{1}{4}=\frac{3}{4}
+\\s_4=\left(1-\frac{1}{2}\right)+\left(\frac{1}{2}-\frac{1}{3}\right)+\left(\frac{1}{3}-\frac{1}{4}\right)+\left(\frac{1}{4}-\frac{1}{5}\right)=1-\frac{1}{5}=\frac{4}{5}$    }}} \fi
+
+\item $\sum_{j=0}^{\infty}(7^{j}-7^{j+1})$
+
+\ifans{\fbox{\parbox{1\linewidth}{$s_0=1-7
+\\s_1=(1-7)+(7-7^2)=1-7^2
+\\s_2=(1-7)+(7-7^2)+(7^2-7^3)=1-7^3
+\\s_3=(1-7)+(7-7^2)+(7^2-7^3)+(7^3-7^4)=1-7^4$    }}} \fi
+
+\item $\sum_{\ell=3}^{\infty}\frac{3^{\ell+1}}{4^{\ell}}$
+
+\ifans{\fbox{\parbox{1\linewidth}{$s_3=\frac{3^4}{4^3}
+\\s_4=\frac{3^4}{4^3}+\frac{3^4}{4^3}\left(\frac{3}{4}\right)
+\\s_5=\frac{3^4}{4^3}+\frac{3^4}{4^3}\left(\frac{3}{4}\right)+\frac{3^4}{4^3}\left(\frac{3}{4}\right)^2
+\\s_6=\frac{3^4}{4^3}+\frac{3^4}{4^3}\left(\frac{3}{4}\right)+\frac{3^4}{4^3}\left(\frac{3}{4}\right)^2+\frac{3^4}{4^3}\left(\frac{3}{4}\right)^3$   }}} \fi
+
+\item $\sum_{\ell=1}^{\infty}\frac{5^{\ell}}{3^{\ell}}.$
+
+\ifans{\fbox{\parbox{1\linewidth}{$s_1=\frac{5}{3}
+\\s_2=\frac{5}{3}+\left(\frac{5}{3}\right)^2
+\\s_3=\frac{5}{3}+\left(\frac{5}{3}\right)^2+\left(\frac{5}{3}\right)^3
+\\s_4=\frac{5}{3}+\left(\frac{5}{3}\right)^2+\left(\frac{5}{3}\right)^3+\left(\frac{5}{3}\right)^4$   }}} \fi
+
+\item For numbers 1, 5, and 6 above, find a general formula for the $n^{\mathit{th}}$ partial sum, $s_{n},$ for each series.  Use this to determine
+whether these series converge, and if so, determine the sum of the series. 
+
+\ifans{\fbox{\parbox{1\linewidth}{
+Problem $1$: $s_n=\frac{1}{2}n$, and so $\lim_{n \rightarrow +\infty}s_n = +\infty$.  Thus, the series diverges.
+\\Problem $5$: $s_n=1 - \frac{1}{n+1}$, and so $\lim_{n \rightarrow +\infty}s_n = 1$.  Thus, the sum of the series is $1$.
+\\ \\ Problem $6$: $s_n=1 - 7^{(n+1)}$, and so $\lim_{n \rightarrow +\infty}s_n = -\infty$.  Thus, the series diverges.
+ }}} \fi
+
+\item For numbers 3, 4, 7, and 8 above, determine whether these series converge, and if so, determine the sum of the series.
+
+\ifans{\fbox{\parbox{1\linewidth}{
+Problem $3$: Geometric series with $a=-1$ and $r=-1$.  \\ Since $|r|=1$ the series diverges.  \\ Alternatively, the sequence of partial sums oscillates bewteen $-1$ and $0$ and thus diverges; hence, the series diverges. 
+\\ Problem $4$: Geometric series with $a=1$ and $r=\frac{1}{2}$.  \\ Since $|r|<1$ the series converges to $\frac{1}{1-\frac{1}{2}}=2$.
+\\ \\ Problem $7$: Geometric series with $a=\frac{3^4}{4^3}$ and $r=\frac{3}{4}$. \\ \\ Since $|r|<1$ the series converges to $\frac{\frac{3^4}{4^3}}{1-\frac{3}{4}}=\frac{81}{16}$.
+\\ \\ Problem $8$: Geometric series with $a=\frac{5}{3}$ and $r=\frac{5}{3}$.  \\ \\ Since $|r|>1$ the series diverges.
+ }}} \fi
+
+\end{enumerate}
+
+\noindent{\bf For problems 11 -- 14, determine whether each series converges, and if so, determine the sum of the series.}
+
+\begin{enumerate}
+\setcounter{enumi}{10}
+
+\item $\frac{1}{2}-\frac{1}{4}+\frac{1}{8}-\frac{1}{16}+\ldots$
+
+\ifans{\fbox{The series converges to $\frac{1}{3}$. }} \fi
+
+\item $2+\frac{4}{7}+\frac{8}{49}+\frac{16}{343}+\ldots$
+
+\ifans{\fbox{The series converges to $\frac{14}{5}$. }} \fi
+
+\item $2+\frac{22}{10}+\frac{242}{100}+\frac{2662}{1000}+\ldots$
+
+\ifans{\fbox{The series diverges. }} \fi
+
+\item $-3-1-\frac{1}{3}-\frac{1}{9}-\ldots$
+
+\ifans{\fbox{The series converges to $-\frac{9}{2}$.; Detailed Solution: \textcolor{blue}{\href{http://www.math.drexel.edu/classes/Calculus/resources/Math123HW/Solutions/123_07_Series_14.pdf}{Here}}}} \fi 
+
+% \ifans{\fbox{\parbox{1\linewidth}{This is a geometric series with $a=-3$ and $r=\frac{1}{3}$.  Since $|r|<1$, the series converges to $\frac{-3}{1-\frac{1}{3}}= -\frac{9}{2}$. }}} \fi
+
+\end{enumerate}
+
+\noindent{\bf For problems 15 \& 16, use a geometric series to write the repeating decimal as a fraction of integers.}
+
+\begin{enumerate}
+\setcounter{enumi}{14}
+
+\item $0.99999...$
+
+\ifans{\fbox{$0.99999...=0.9+0.09+0.009+\ldots=\sum_{k=0}^{\infty}0.9\left(\frac{1}{10}\right)^k=\frac{\frac{9}{10}}{1-\frac{1}{10}}=1$}} \fi
+
+\item $8.126262626...$
+
+\ifans{\fbox{\parbox{1\linewidth}
+{\begin{flalign*}8.126262626...&=8.1+0.026+0.00026+0.0000026+\ldots & \\
+&=8.1+\sum_{k=0}^{\infty}0.026\left(\frac{1}{100}\right)^k & \\
+&=8.1+\frac{\frac{26}{1000}}{1-\frac{1}{100}}=\frac{81}{10}+\frac{26}{990}=\frac{8045}{990}=\frac{1609}{198}
+\end{flalign*}}}} \fi
+
+\item Calculate $\sum_{k=0}^{300}(-2)^{k}.$
+
+\ifans{\fbox{$\frac{1-(-2)^{301}}{3}=\frac{1+2^{301}}{3}$ }} \fi
+
+\item Calculate $\sum_{j=1}^{13}7^{j}.$
+
+\ifans{\fbox{$-\frac{7}{6}\left(1-7^{13}\right)$; Detailed Solution: \textcolor{blue}{\href{http://www.math.drexel.edu/classes/Calculus/resources/Math123HW/Solutions/123_07_Series_18.pdf}{Here}}}} \fi
+
+\item Calculate $\sum_{\ell=2}^{73}\frac{1}{2^{\ell}}.$
+
+\ifans{\fbox{$\frac{1}{2}\left(1-\frac{1}{2^{72}}\right)$ }} \fi
+
+\item An \underline{ordinary annuity} is a sequence of equal payments made at the end of equal time periods, where the frequency of the payments is the same as the frequency of compounding.  
+\begin{enumerate}
+
+\item Suppose that $500$ dollars is deposited at the end of each month into an account paying $3\%$ interest compounded monthly.
+
+\begin{enumerate}
+
+\item How much is in the account at the end of $1$ month?
+
+\ifans{\fbox{$500$ dollars.}}\fi
+
+\item How much is in the account at the end of $2$ months?
+
+\ifans{\fbox{$500 + 500(1.03)$ dollars.}}\fi
+
+\item How much is in the account at the end of $3$ months?
+
+\ifans{\fbox{$500 + 500(1.03) + 500(1.03)^2$ dollars.}}\fi
+
+\item How much is in the account at the end of $n$ months?  Express your final answer in \underline{closed form}, i.e. without sigma notation or ``$\ldots$''.
+
+\ifans{\fbox{$\sum_{k=0}^{n-1}500(1.03)^{k}=\frac{500\left(1-(1.03)^n\right)}{1-1.03}$ dollars.}}\fi
+
+\end{enumerate}
+
+\item Suppose that $R$ dollars is deposited at the end of some fixed time period into an account paying an interest of $i$ per period.   How much is in the account at the end of $n$ periods? 
+
+\ifans{\fbox{\parbox{1\linewidth}{$\frac{R\left(1-(1+i)^n\right)}{1-(1+i)}=\frac{R\left(1-(1+i)^n\right)}{-i}=R\left[\frac{(1+i)^n-1}{i}\right]$.  \\ \\ This sum is know as the \underline{future value of an ordinary annuity}.}}}\fi
+
+\end{enumerate}
+
+\end{enumerate}
+
+\noindent{\bf For problems 21 \& 22, use partial fractions to determine the sum of the series.}
+
+\begin{enumerate}
+\setcounter{enumi}{20}
+
+\item $\sum_{k=0}^{\infty}\frac{10}{k^2+9k+20}$
+
+\ifans{\fbox{$\frac{5}{2}$}} \fi
+ 
+\item $\sum_{k=0}^{\infty}\frac{4}{k^2+4k+3}$
+
+\ifans{\fbox{$3$; Detailed Solution: \textcolor{blue}{\href{http://www.math.drexel.edu/classes/Calculus/resources/Math123HW/Solutions/123_07_Series_22.pdf}{Here}}}} \fi
+
+\item Consider the following formula: $$\sum_{k=1}^{\infty} (x^{k}-x^{k+1})=x.$$ For which values of $x$ does 
+the series on the left-hand side of the formula converge?  For which values of $x$ is the formula correct?
+
+\ifans{\fbox{\parbox{1\linewidth}{This is a telescoping series with an $n^{\mathit{th}}$ partial sum of $s_n=x-x^{n+1}$.  
+\\ Now  $\textstyle \lim\limits_{n \rightarrow +\infty}\left(x-x^{n+1}\right)$ equals $x$ if
+$-1<x<1$ and equals $0$ if $x=1$.  So the series converges if $-1<x\leq1$, but the formula is only correct if $-1<x<1$. }}} \fi
+
+\item Consider the following formula:: $$\sum_{k=1}^{\infty}x^{k}=\frac{x}{1-x}.$$  For which values of $x$ does
+the series on the left-hand side of the formula converge?  For which values of $x$ is the formula correct?
+
+\ifans{\fbox{\parbox{1\linewidth}{This is a geometric series with $a=x$ and $r=x$.  Thus the series converges only if \\  $|x|<1$, i.e. $-1<x<1$.  If this is true, then the sum of the series is
+$\textstyle \frac{a}{1-r}=\frac{x}{1-x}$.  So the formula is true if $-1<x<1$.  }}} \fi
+
+\end{enumerate}
+
+
+\end{document}

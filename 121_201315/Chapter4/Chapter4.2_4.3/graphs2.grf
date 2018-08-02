@@ -1,0 +1,220 @@
+;This file was created by Graph (http://www.padowan.dk)
+;Do not change this file from other programs.
+[Graph]
+Version = 4.4.1.540
+MinVersion = 2.5
+OS = Windows NT 6.1 Service Pack 1
+
+[Axes]
+xMin = -3
+xMax = 3
+xTickUnit = 0.5
+xGridUnit = 0.5
+xShowGrid = 1
+xAutoTick = 0
+xAutoGrid = 0
+yMin = -0.327371048252912
+yMax = 2.82737104825291
+yTickUnit = 0.5
+yGridUnit = 0.5
+yShowGrid = 1
+yAutoTick = 0
+yAutoGrid = 0
+AxesColor = clBlue
+GridColor = 0x00FF9999
+NumberFont = Times New Roman,20,clBlack
+LabelFont = Times New Roman,20,clBlack,B
+ShowLegend = 0
+Radian = 1
+
+[Func1]
+FuncType = 0
+y = x^4-4x^2
+Visible = 0
+Color = clNavy
+Size = 4
+
+[Func2]
+FuncType = 0
+y = (x^2+x)/(x^2-1)
+Visible = 0
+Color = clNavy
+Size = 4
+
+[PointSeries1]
+FillColor = clWhite
+LineColor = clNavy
+Size = 5
+Style = 0
+LineSize = 7
+LabelPosition = 1
+PointCount = 1
+Points = -1,1/2;
+Visible = 0
+LegendText = Series 1
+
+[Func3]
+FuncType = 0
+y = 1
+Visible = 0
+Style = 1
+Color = clNavy
+Size = 4
+
+[Func4]
+FuncType = 1
+x = 1
+y = t
+Visible = 0
+From = -10
+To = 10
+Steps = 1000
+Style = 1
+Color = clNavy
+Size = 4
+
+[Func5]
+FuncType = 0
+y = x/(x^2+2)
+Visible = 0
+Color = clNavy
+Size = 4
+
+[Func6]
+FuncType = 0
+y = 0
+Visible = 0
+Style = 1
+Color = clNavy
+Size = 4
+
+[Func7]
+FuncType = 0
+y = x/(x^2-4)
+Visible = 0
+Color = clNavy
+Size = 4
+
+[Func8]
+FuncType = 1
+x = 2
+y = t
+Visible = 0
+From = -10
+To = 10
+Steps = 1000
+Style = 1
+Color = clNavy
+Size = 4
+
+[Func9]
+FuncType = 1
+x = -2
+y = t
+Visible = 0
+From = -10
+To = 10
+Steps = 1000
+Style = 1
+Color = clNavy
+Size = 4
+
+[Func10]
+FuncType = 0
+y = 0
+Visible = 0
+Style = 1
+Color = clNavy
+Size = 4
+
+[Func11]
+FuncType = 0
+y = x*e^(2x)
+Visible = 0
+Color = clNavy
+Size = 4
+
+[Func12]
+FuncType = 0
+y = 0
+Visible = 0
+Style = 1
+Color = clNavy
+Size = 4
+
+[Func13]
+FuncType = 0
+y = (1/sqrt(2pi))*exp((-x^2)/2)
+Visible = 0
+Color = clNavy
+Size = 4
+
+[Func14]
+FuncType = 0
+y = 0
+Visible = 0
+Style = 1
+Color = clNavy
+Size = 4
+
+[Func15]
+FuncType = 0
+y = ln(x)/x
+Visible = 0
+Color = clNavy
+Size = 4
+
+[Func16]
+FuncType = 0
+y = 0
+Visible = 0
+Style = 1
+Color = clNavy
+Size = 4
+
+[Func17]
+FuncType = 0
+y = (x+15)*x^(2/3)
+Visible = 0
+Color = clNavy
+Size = 4
+
+[Func18]
+FuncType = 0
+y = 4x-tan(x)
+Visible = 0
+From = -pi/2
+To = pi/2
+Color = clNavy
+Size = 4
+
+[Func19]
+FuncType = 0
+y = (sin(x))^2
+Visible = 0
+From = 0
+To = 2pi
+Color = clNavy
+Size = 4
+
+[Func20]
+FuncType = 0
+y = x^(1/3)
+Visible = 0
+Color = clNavy
+Size = 4
+
+[Func21]
+FuncType = 0
+y = x^(2/3)
+Color = clNavy
+Size = 4
+
+[Data]
+TextLabelCount = 0
+FuncCount = 21
+PointSeriesCount = 1
+ShadeCount = 0
+RelationCount = 0
+OleObjectCount = 0
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<p>SUGGESTED REFERENCE MATERIAL:</p>
+<p>As you work through the problems listed below, you should reference your lecture notes and the relevant chapters in a textbook/online resource.</p>
+<p>EXPECTED SKILLS:</p>
+<ul>
+<li><p>Set up (and possibly solve) an initial-value problem based on a description of some phenomenon.</p></li>
+<li><p>Know (i.e. memorize) the initial-value problems and solutions for both the exponential growth and exponential decay models, and be able to answer questions based on these models.</p></li>
+<li><p>You do not need to memorize equations for other models (e.g. Logistic Model, Newton’s Law of Cooling), but be able to answer questions based on these models if you are given the equations.</p></li>
+</ul>
+<p>PRACTICE PROBLEMS:</p>
+<ol>
+<li><p>Suppose that <span class="math inline">\(y=y(t)\)</span> is a function which outputs the amount of a quantity at time <span class="math inline">\(t\)</span>. For each of the following, set up an initial value problem whose solution is <span class="math inline">\(y(t)\)</span>.</p>
+<ol>
+<li><p>The quantity <span class="math inline">\(y=y(t)\)</span> increases at a rate that is proportional to the cube of the amount present. And, at <span class="math inline">\(t=0\)</span>, the amount present is <span class="math inline">\(y_0\)</span>.</p></li>
+<li><p>The quantity <span class="math inline">\(y=y(t)\)</span> decreases at a rate that is one-half of the square root of the amount present. And, at <span class="math inline">\(t=0\)</span>, the amount present is <span class="math inline">\(y_0\)</span>.</p></li>
+</ol></li>
+<li><p>Suppose that a quantity <span class="math inline">\(y=y(t)\)</span> changes in such a way that <span class="math inline">\(y^{\prime}=k\sqrt[5]{y}\)</span>, where <span class="math inline">\(k&gt;0\)</span>. Describe in words how <span class="math inline">\(y\)</span> changes.</p></li>
+<li><p>Suppose that a ball is moving along a straight line through a resistive medium in such a way that its velocity <span class="math inline">\(v=v(t)\)</span> decreases at a rate that is twice the square root of the velocity. Suppose that at time <span class="math inline">\(t=3\)</span> seconds, the velocity of the ball is 16 meters/second.</p>
+<ol>
+<li><p>Set up and solve an initial value problem whose solution is <span class="math inline">\(v=v(t)\)</span>. Express your solution as an explicit function of <span class="math inline">\(t\)</span>.</p></li>
+<li><p>At what time does the ball come to a complete stop?</p></li>
+</ol></li>
+<li><p>In a certain nutrient culture, a cell of the bacterium E. coli divides into two every 10 minutes. Let <span class="math inline">\(y=y(t)\)</span> be the number of cells that are present <span class="math inline">\(t\)</span> minutes after 6 cells are placed in the culture. Assume that the growth of the bacteria obeys the exponential growth model.</p>
+<ol>
+<li><p>Find a formula for <span class="math inline">\(y(t)\)</span></p></li>
+<li><p>How long will it take for the bacterial population to reach 600 cells?</p></li>
+</ol></li>
+<li><p>The population of the United States was 3.9 million in 1790 and 178 million in 1960.</p>
+<ol>
+<li><p>Assuming exponential growth, find a formula for <span class="math inline">\(P(t)\)</span>, the population of the United States <span class="math inline">\(t\)</span> years after 1790.</p></li>
+<li><p>Using the model from part (a), estimate the population in the year 2000.</p></li>
+</ol></li>
+<li><p>Carbon 14, an isotope of Carbon, is radioactive and decays at a rate proportional to the amount present. Its half life is 5730 years. If there were 20 grams of Carbon 14 present originally, how much would be left after 2000 years?</p></li>
+<li><p>A scientist wants to determine the half life of a certain radioactice substance. She determines that in exactly 5 days an 80 milligram sample decays to 10 milligrams. Based on this data, what is the half life?</p></li>
+<li><p>An unknown amount of a radioactive substance is being studied. After two days, the mass is 15 grams. After eight days, the mass is 9 grams. Assume exponential decay.</p>
+<ol>
+<li><p>How much of the substance was there initially?</p></li>
+<li><p>What is the half-life of the substance?</p></li>
+</ol></li>
+<li><p>The differential equation <span class="math inline">\(\frac{dy}{dt}=k\left(1-\frac{y}{L}\right)y\)</span> for <span class="math inline">\(k&gt;0\)</span> models the change in the size <span class="math inline">\(y=y(t)\)</span> of a population inhabiting an ecological system with a carrying capacity of <span class="math inline">\(L\)</span> individuals.</p>
+<ol>
+<li><p>What are the constant solutions to this differential equation? Explain the meaning of these constant solutions in terms of the model.</p></li>
+<li><p>For what size of the population will the population be growing the fastest?</p></li>
+</ol></li>
+<li><p>Newton’s Law of Cooling states that the rate at which an object cools (or warms) is proportional to the difference in temperature between the object and the surrounding environment. Suppose an object with initial temperature <span class="math inline">\(T_0\)</span> is placed in a room with a constant temperature of <span class="math inline">\(T_e\)</span>. If <span class="math inline">\(T(t)\)</span> represents the temperature of the object at time <span class="math inline">\(t\)</span>, then Newton’s Law of Cooling can be expressed with the following initial value problem:</p>
+<p><span class="math display">\[\left\{\begin{array}{l}
+\frac{dT}{dt}=k(T_e-T), k&gt;0\\
+\\
+T(0)=T_0
+\end{array}\right.\]</span></p>
+<ol>
+<li><p>Use separation of variables to show that <span class="math inline">\(T(t)=T_e + (T_0 - T_e)e^{-kt}\)</span> is the particular solution to this initial value problem.</p></li>
+<li><p>An object taken from an oven has a temperature of <span class="math inline">\(350^{\circ}\)</span> and is left to cool in a room that is <span class="math inline">\(65^{\circ}\)</span>. After 1 hour, the temperature drops to <span class="math inline">\(200^{\circ}\)</span>. Give a formula for the function <span class="math inline">\(T(t)\)</span>, the temperature at time <span class="math inline">\(t\)</span>.</p></li>
+<li><p>For the object described in part (b), evaluate <span class="math inline">\(\lim_{t \rightarrow \infty}{T(t)}\)</span> and interpret your answer.</p></li>
+</ol></li>
+</ol>
+</body>
+</html>

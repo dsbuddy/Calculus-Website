@@ -1,0 +1,185 @@
+\documentclass[12pt]{article}
+
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{fullpage}
+\usepackage{epsfig}
+\usepackage{epstopdf}
+\everymath{\displaystyle}
+
+\newif\ifans
+
+\ansfalse
+
+\begin{document}
+
+\begin{center}
+\underline{\LARGE{Chapter 3.2 Practice Problems}}
+\end{center}
+
+\noindent EXPECTED SKILLS:
+
+\begin{itemize}
+
+\item Be able to compute the derivatives of logarithmic functions.
+
+\item Know how to use logarithmic differentiation to help find the derivatives of functions involving products and quotients.
+
+\end{itemize}
+
+\noindent PRACTICE PROBLEMS:
+
+\bigskip
+
+\noindent {\bf For problems 1-16, calculate $\frac{dy}{dx}$.}
+
+\begin{enumerate}
+
+\item $y = \ln{(x^2)}$ 
+
+\ifans{\fbox{$\frac{2}{x}$}} \fi
+
+\item $y = \frac{1}{\ln{(3x)}}$ 
+
+\ifans{\fbox{$-\frac{1}{x[\ln{(3x)}]^2}$}} \fi
+
+\item $y = x^2\ln{x}$ 
+
+\ifans{\fbox{$x+2x\ln{x}$}} \fi
+
+\item $y = \ln{\left(\frac{1}{x}\right)}$ 
+
+\ifans{\fbox{$-\frac{1}{x}$}} \fi
+
+\item $y = \ln|x^3|$ 
+
+\ifans{\fbox{$\frac{3}{x}$}} \fi
+
+\item $y = \ln{(x^2+1)^2}$ 
+
+\ifans{\fbox{$\frac{4x}{x^2+1}$}} \fi
+
+\item $y = \left[\ln{(x^2+1)}\right]^2$ 
+
+\ifans{\fbox{$\frac{4x\ln{(x^2+1)}}{x^2+1}$}} \fi
+
+\item $y = \sqrt{\ln{2x}}$ 
+
+\ifans{\fbox{$\frac{1}{2x\sqrt{\ln{(2x)}}}$}} \fi
+
+\item $y = \log_{2}{(3x-1)}$ 
+
+\ifans{\fbox{$\frac{3}{(3x-1)\ln2}$}} \fi
+
+\item $y = \tan{(\ln{x})}$ 
+
+\ifans{\fbox{$\frac{1}{x}\sec^{2}(\ln{x})$}} \fi
+
+\item $y = \ln{(\ln x)}$ 
+
+\ifans{\fbox{$\frac{1}{x\ln{x}}$}} \fi
+
+\item $y=\frac{\log{x}}{2-\log{x}}$
+
+\ifans{\fbox{$\frac{2}{x\ln{(10)}(2-\log{x})^2}$}} \fi
+
+\item $y=\ln{|\sec{x}|}$
+
+\ifans{\fbox{$\tan{x}$}} \fi
+
+\item $y=\ln{|\sec{x}+\tan{x}|}$
+
+\ifans{\fbox{$\sec{x}$}} \fi
+
+\item $y=\ln{\left(x^x\right)}$
+
+\ifans{\fbox{$1+\ln(x)$}} \fi
+
+\item $y=\ln{\left(\frac{2x+1}{\sqrt{x}(3x-4)^{10}}\right)}$
+
+\ifans{\fbox{$\frac{2}{2x+1}-\frac{1}{2x}-\frac{30}{3x-4}$}} \fi
+
+\item Use logarithmic differentiation to calculate $\frac{dy}{dx}$ if $y=\frac{2x+1}{\sqrt{x}(3x-4)^{10}}$
+
+\ifans{\fbox{$\frac{2x+1}{\sqrt{x}(3x-4)^{10}}\left(\frac{2}{2x+1}-\frac{1}{2x}-\frac{30}{3x-4}\right)$}} \fi
+
+\item Recall the change of base formula: $\log_{b}{x}=\frac{\ln{x}}{\ln{b}}$
+
+\begin{enumerate}
+
+\item Remind yourself of why this is true.
+
+\ifans{\fbox{\parbox{1\linewidth}{Proof:  Suppose $y=\log_b{x}$.  This is equivalent to the exponential equation $b^y=x$.  Now, we take the natural log of both sides, which gives us $\ln{(b^y)}=\ln{x}$.\\
+Using a property of logarithms, we see that this is equivalent to $y\ln{b}=\ln{x}$.  Finally, we solve for $y$ by dividing both sides of the equation by $\ln{b}$, a non-zero constant since $b>0$ and $b\neq 1$.\\
+Thus, $y=\frac{\ln{x}}{\ln{b}}$.}}} \fi
+
+\item Compute $y^{\prime}$ if  $y=\log_{x^2}{(e)}$
+
+\ifans{\fbox{$-\frac{1}{2x(\ln{x})^2}$}} \fi
+
+\item Compute $\frac{dy}{dx}$ if $y = \log_{3x}{(x)}$ 
+
+\ifans{\fbox{$\frac{\ln{3}}{x(\ln{3x})^2}$}} \fi
+
+\end{enumerate}
+
+\item Compute an equation of the line which is tangent to the graph of $f(x)=\ln{(x^2-3)}$ at the point where $x=2$.
+
+\ifans{\fbox{$y=4x-8$}} \fi
+
+\item Find the value(s) of $x$ at which the tangent line to the graph of $y=\ln{(x^2+11)}$  is perpendicular to $y=-6x+5$.
+
+\ifans{\fbox{$x=1$ and $x=11$}} \fi
+
+\item Find the value(s) of $x$ at which the tangent line to the graph of $y=-\ln{x}$ passes through the origin.
+
+\ifans{\fbox{$x=e$}} \fi
+
+\item Calculate $\frac{d^2y}{dx^2}$ if $y=\ln{(3x^2+2)}$.
+
+\ifans{\fbox{$\frac{12-18x^2}{(3x^2+2)^2}$}} \fi
+
+\item {\bf Multiple Choice:} Let $y=\ln{(\cos{x})}$.  Which of the following is $\frac{dy}{dx}$?
+
+\begin{enumerate}
+
+\item $(\ln{x})(-\sin{x})+(\cos{x})(\ln{x})$
+
+\item $-\tan{x}$
+
+\item $\cot{x}$
+
+\item $\sec{x}$
+
+\item $\frac{1}{\ln{(\cos{x})}}$
+
+\end{enumerate}
+
+\ifans{\fbox{B}} \fi
+
+\item {\bf Multiple Choice:} Let $h(x)=\ln[(f(x))^2+1]$.  Suppose that $f(1)=-1$ and $f^{\prime}(1)=1$.  Find $h^{\prime}(1)$.
+
+\begin{enumerate}
+
+\item $-2$
+
+\item $-1$
+
+\item $0$
+
+\item $1$
+
+\item $2$
+
+\end{enumerate}
+
+\ifans{\fbox{B}} \fi
+
+\item Consider the triangle formed by the tangent line to the graph of $y=-\ln{x}$ at the point $P(t,-\ln{t})$, the horizontal line which passes through $P$, and the $y$-axis. Find a function $A(t)$ which gives the area of this triangle.  
+
+\ifans{\fbox{$A(t)=\frac{1}{2}t$}} \fi
+
+\end{enumerate}
+
+\end{document}

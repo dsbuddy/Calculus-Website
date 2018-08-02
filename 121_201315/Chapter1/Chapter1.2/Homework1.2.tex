@@ -1,0 +1,177 @@
+\documentclass[12pt]{article}
+
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{fullpage}
+\usepackage{epsfig}
+\usepackage{epstopdf}
+\everymath{\displaystyle}
+
+\newif\ifans
+
+\ansfalse
+
+\begin{document}
+
+\begin{center}
+\underline{\LARGE{Chapter 1.2 Practice Problems}}
+\end{center}
+
+\noindent EXPECTED SKILLS:
+
+\begin{itemize}
+
+\item Know the basic properties of limits; i.e., be familiar with how limits "interact" with sums, differences, products, and other operations.  See Theorem 1.2.2.
+
+\item Given the formula of a function $y=f(x)$, be able to determine the limit of $f(x)$ as $x$ approaches some finite value (as both a one-sided and two sided limit).
+
+\item Be able to determine when such a limit does not exist, and if appropiate, indicate if the behavior of the function is increasing or decreasing without bound.
+
+\item Be familiar with the indeterminate forms of $\displaystyle \frac{0}{0}$ and $\displaystyle \frac{\pm \infty}{\pm \infty}$.  And, know how to use algebraic techniques such as factoring and rationalizing to help compute these types of limits.
+
+\end{itemize}
+
+\noindent PRACTICE PROBLEMS:
+
+\noindent {\bf In each problem, compute the limit. If the limit doesn't exist write $+\infty$, $-\infty$, or DNE (whichever is most appropriate).}
+
+\begin{enumerate}
+
+\item Given that $\displaystyle \lim_{x\rightarrow 1}{f(x)} = 4$ and  $\displaystyle \lim_{x\rightarrow 1}{g(x)}=2 $, determine each of the following limits:
+
+\begin{enumerate}
+
+\item $\displaystyle \lim_{x\rightarrow 1}{\left(f(x)+g(x)\right)}$
+
+\ifans{\fbox{6}} \fi
+
+\item $\displaystyle \lim_{x\rightarrow 1}{\left(5f(x)-g(x)\right)}$
+
+\ifans{\fbox{$18$}} \fi
+
+\item $\displaystyle \lim_{x\rightarrow 1}{\left(\frac{f(x)}{g(x)}\right)}$
+
+\ifans{\fbox{2}} \fi
+
+\end{enumerate}
+
+\item  $\displaystyle \lim_{x\rightarrow 1}{\left(x^2+1\right)}$
+
+\ifans{\fbox{2}} \fi
+
+\item  $\displaystyle \lim_{x\rightarrow 4}{1}$
+
+\ifans{\fbox{1}} \fi
+
+\item $\displaystyle \lim_{x\rightarrow -1}{(x+1)(x^3)}$
+
+\ifans{\fbox{0}} \fi
+
+\item  $\displaystyle \lim_{x\rightarrow 5^-}{\left(\frac{x^2-6x}{x^3-1}\right)}$
+
+\ifans{\fbox{$\displaystyle -\frac{5}{124}$}} \fi
+
+\item $\displaystyle \lim_{x\rightarrow -1}{\left(\frac{x^2-1}{x+1}\right)}$ 
+
+\ifans{\fbox{$-2$}} \fi
+ 
+\item $\displaystyle \lim_{x\rightarrow 2^-}{\left(\frac{x^2-4x+4}{x-2}\right)}$ 
+
+\ifans{\fbox{0}} \fi
+ 
+ \item $\displaystyle \lim_{x\rightarrow 3^+}{\left(\frac{x^2+2x-15}{x-3}\right)}$
+
+\ifans{\fbox{8}} \fi
+
+\item $\displaystyle \lim_{x \rightarrow 1}{\left(\frac{x^3-3x^2-x+3}{x^2-1}\right)}$
+
+\ifans{\fbox{$-2$}} \fi
+
+\item $\displaystyle \lim_{x\rightarrow 16}{\left(\frac{\sqrt{x}-4}{x-16}\right)}$
+
+\ifans{\fbox{$\displaystyle \frac{1}{8}$}} \fi
+
+\item $\lim_{x \rightarrow 0}\left(\frac{|x|}{x}\right)$
+
+\ifans{\fbox{DNE}} \fi
+
+\item $\displaystyle \lim_{x\rightarrow 4^-}{\left(\frac {x}{x-4}\right)}$
+
+\ifans{\fbox{$-\infty$}} \fi
+
+\item  $\displaystyle \lim_{x\rightarrow 4^+}{\left(\frac{x}{x-4}\right)}$
+
+\ifans{\fbox{$+\infty$}} \fi
+
+\item $\displaystyle \lim_{x\rightarrow 4}{\left(\frac{x}{x-4}\right)}$
+
+\ifans{\fbox{DNE}} \fi
+
+\item $\displaystyle \lim_{x\rightarrow -2}{\left(\frac{1}{x-2}\right)}$
+
+\ifans{\fbox{$\displaystyle -\frac{1}{4}$}} \fi
+
+\item $\displaystyle \lim_{x\rightarrow -2^-}{\left(\frac{x}{x^2+2x}\right)}$
+
+\ifans{\fbox{$-\infty$}} \fi
+
+\item $\displaystyle \lim_{x\rightarrow -2^+}{\left(\frac{x}{x^2+2x}\right)}$
+
+\ifans{\fbox{$+\infty$}} \fi
+ 
+\item $\displaystyle \lim_{x\rightarrow 3}{\left(\frac{x^3}{|x-3|}\right)}$
+
+\ifans{\fbox{$+\infty$}} \fi
+
+\item $\displaystyle \lim_{x \rightarrow 1^-}{\left(\frac{x-1}{x^2-2x+1}\right)}$
+
+\ifans{\fbox{$-\infty$}} \fi
+
+\item $\displaystyle \lim_{x \rightarrow 1^+}{\left(\frac{x-1}{x^2+2x-3}\right)}$
+
+\ifans{\fbox{$\displaystyle \frac{1}{4}$}} \fi
+
+\item Let $\displaystyle 
+      f(n) = \begin{cases}
+      n^2+1, & \text{if }n \leq -1 \\
+      3n+1, & \text{if }n > -1 \end{cases}$. Compute $\displaystyle \lim_{n\rightarrow -1}{f(n)}$
+
+\ifans{\fbox{DNE}} \fi
+
+\item Let $\displaystyle 
+        f(x) = \begin{cases}
+        3x^3+2x-3, & \text{if }x < 1   \\
+        100, & \text{if }x = 1 \\
+        \frac{x^2-1}{x-1}, & \text{if }x > 1 \end{cases}$. Determine $\displaystyle \lim_{x\rightarrow 1}{f(x)}$ 
+
+\ifans{\fbox{2}} \fi
+
+\item Let $\displaystyle f(p) = \begin{cases} 
+        3p-1, & \text{if } p<3 \\
+        p^3-4p-7, & \text{if } p>3 \end{cases}$. Find $\displaystyle \lim_{p\rightarrow 3}{f(p)}$
+
+\ifans{\fbox{8}} \fi
+
+\item Let $f(x) = \begin{cases}
+        x^2+2ax+a^2, & \text{if } x < 4 \\
+        432, & \text{if } x = 4 \\
+        x^2 -7, & \text{if } x > 4 \end{cases}$. Find the value(s) of $a$ such that $\displaystyle \lim_{x\rightarrow 4}{f(x)}$ exists. 
+
+\ifans{\fbox{$-1$ or $-7$}} \fi
+
+\item Let $x_0$ be a fixed real number.  Compute $\displaystyle \lim_{h \rightarrow 0}{\frac{(x_0+h)^2-x_0^2}{h}}$
+
+\ifans{\fbox{$2x_0$}} \fi
+
+\item Let $x_0$ be a fixed real number.  Compute $\displaystyle \lim_{x \rightarrow x_0}{\frac{x^2-x_0^2}{x-x_0}}$
+
+\ifans{\fbox{$2x_0$}} \fi
+
+\item Let $x_0$ be a fixed, positive real number.  Compute $\displaystyle \lim_{h \rightarrow 0}{\frac{\sqrt{x_0+h}-\sqrt{x_0}}{h}}$
+
+\ifans{\fbox{$\displaystyle \frac{1}{2\sqrt{x_0}}$}} \fi
+
+\end{enumerate}
+
+\end{document}

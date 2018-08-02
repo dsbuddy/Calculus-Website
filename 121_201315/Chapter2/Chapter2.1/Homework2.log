@@ -1,0 +1,14 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdftex 2012.9.23)  3 OCT 2012 23:09
+entering extended mode
+**C:/Users/jsa33/Desktop/Chapter2.1/Homework2.1_Ans
+(C:/Users/jsa33/Desktop/Chapter2.1/Homework2.1_Ans
+! Undefined control sequence.
+l.1 \documentclass
+                  [12pt]{article}
+? 
+! Emergency stop.
+l.1 \documentclass
+                  [12pt]{article}
+End of file on the terminal!
+
+!  ==> Fatal error occurred, no output PDF file produced!

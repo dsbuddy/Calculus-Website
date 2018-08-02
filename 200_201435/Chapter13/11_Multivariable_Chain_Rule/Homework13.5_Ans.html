@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<p>SUGGESTED REFERENCE MATERIAL:</p>
+<p>As you work through the problems listed below, you should reference Chapter 13.5 of the recommended textbook (or the equivalent chapter in your alternative textbook/online resource) and your lecture notes.</p>
+<p>EXPECTED SKILLS:</p>
+<ul>
+<li><p>Be able to compute partial derivatives with the various versions of the multivariate chain rule.</p></li>
+<li><p>Be able to compare your answer with the direct method of computing the partial derivatives.</p></li>
+</ul>
+<p>PRACTICE PROBLEMS:</p>
+<ol>
+<li><p>Find <span class="math inline">\(\frac{d z}{d t}\)</span> by using the Chain Rule. Check your answer by expressing <span class="math inline">\(z\)</span> as a function of <span class="math inline">\(t\)</span> and then differentiating.</p>
+<ol>
+<li><p><span class="math inline">\(z=2x-y,\ x=\sin{t},\ y=3t\)</span></p></li>
+<li><p><span class="math inline">\(z=x\sin{y},\ x=e^t,\ y=\pi t\)</span></p></li>
+<li><p><span class="math inline">\(z=xy+y^2,\ x=t^2,\ y=t+1\)</span></p></li>
+<li><p><span class="math inline">\(z=\ln{\left(\frac{x^2}{y}\right)},\ x=e^{t},\ y=t^2\)</span></p></li>
+</ol></li>
+<li><p>Suppose <span class="math inline">\(w=x^2+y^2+2z^2,\ x=t+1,\ y=\cos{t},\ z=\sin{t}\)</span>. Find <span class="math inline">\(\frac{d w}{d t}\)</span> using the Chain Rule. Check your answer by expressing <span class="math inline">\(w\)</span> as a function of <span class="math inline">\(t\)</span> and then differentiating.</p></li>
+<li><p>Suppose <span class="math inline">\(f\)</span> is a differentiable function of <span class="math inline">\(x\)</span> &amp; <span class="math inline">\(y\)</span>, and define <span class="math inline">\(g(u,v)=f(3u-v,u^2+v)\)</span>. Use the table of values shown below to calculate <span class="math inline">\(\left.\frac{\partial g}{\partial u}\right|_{(u,v)=(2,-1)}\)</span> and <span class="math inline">\(\left.\frac{\partial g}{\partial v}\right|_{(u,v)=(2,-1)}\)</span>.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><span class="math inline">\((x,y)\)</span></th>
+<th align="center"><span class="math inline">\(f\)</span></th>
+<th align="center"><span class="math inline">\(g\)</span></th>
+<th align="center"><span class="math inline">\(f_x\)</span></th>
+<th align="center"><span class="math inline">\(f_y\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><span class="math inline">\((2,-1)\)</span></td>
+<td align="center">6</td>
+<td align="center"><span class="math inline">\(-7\)</span></td>
+<td align="center">1</td>
+<td align="center">9</td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\((7,3)\)</span></td>
+<td align="center">4</td>
+<td align="center">2</td>
+<td align="center"><span class="math inline">\(-3\)</span></td>
+<td align="center">5</td>
+</tr>
+</tbody>
+</table>
+<p>Hint: Decompose <span class="math inline">\(f(3u-v,u^2+v)\)</span> into <span class="math inline">\(f(x,y)\)</span> where <span class="math inline">\(x=3u-v\)</span> and <span class="math inline">\(y=u^2+v\)</span>.</p></li>
+<li><p>Find <span class="math inline">\(\frac{\partial w}{\partial s}\)</span> and <span class="math inline">\(\frac{\partial w}{\partial t}\)</span> by using the appropriate Chain Rule.</p>
+<ol>
+<li><p><span class="math inline">\(w=xy\sin{\left(z^2\right)},\ x=s-t,\ y=s^2,\ z=t^2\)</span></p></li>
+<li><p><span class="math inline">\(w=xy+yz,\ x=s+t,\ y=st,\ z=s-2t\)</span></p></li>
+</ol></li>
+<li><p>Suppose that <span class="math inline">\(J=f(x,y,z,w)\)</span>, where <span class="math inline">\(x=x(r,s,t)\)</span>, <span class="math inline">\(y=y(r,t)\)</span>, <span class="math inline">\(z=z(r,s)\)</span> and <span class="math inline">\(w=w(s,t)\)</span>. Use the Chain Rule to find <span class="math inline">\(\frac{\partial J}{\partial r}\)</span>, <span class="math inline">\(\frac{\partial J}{\partial s}\)</span>, and <span class="math inline">\(\frac{\partial J}{\partial t}\)</span>.</p></li>
+<li><p>Suppose <span class="math inline">\(g=f(u-v,v-w,w-u)\)</span>. Show that <span class="math inline">\(\frac{\partial g}{\partial u}+\frac{\partial g}{\partial v}+\frac{\partial g}{\partial w}=0\)</span>.</p></li>
+<li><p>Suppose <span class="math inline">\(u=u(x,y)\)</span>, <span class="math inline">\(v=v(x,y)\)</span>, <span class="math inline">\(x=r\cos{\theta}\)</span>, and <span class="math inline">\(y=r\sin{\theta}\)</span>.</p>
+<ol>
+<li><p>Calculate <span class="math inline">\(\frac{\partial u}{\partial r}\)</span>, <span class="math inline">\(\frac{\partial u}{\partial \theta}\)</span>, <span class="math inline">\(\frac{\partial v}{\partial r}\)</span>, and <span class="math inline">\(\frac{\partial v}{\partial \theta}\)</span></p></li>
+<li><p>Suppose that <span class="math inline">\(u(x,y)\)</span> and <span class="math inline">\(v(x,y)\)</span> satisfy the Cauchy-Riemann Equations:</p>
+<p><span class="math display">\[\frac{\partial u}{\partial x}=\frac{\partial v}{\partial y}\]</span> <span class="math display">\[\frac{\partial u}{\partial y}=-\frac{\partial v}{\partial x}\]</span></p>
+<p>Use this along with part (a) to derive the polar form of the Cauchy-Riemann Equations:</p>
+<p><span class="math display">\[\frac{\partial u}{\partial r}=\frac{1}{r}\frac{\partial v}{\partial \theta}\]</span> <span class="math display">\[\frac{\partial u}{\partial \theta}=-r\frac{\partial v}{\partial r}\]</span></p></li>
+</ol></li>
+</ol>
+</body>
+</html>

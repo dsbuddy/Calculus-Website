@@ -1,0 +1,17 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdftex 2012.9.23)  15 NOV 2012 21:28
+entering extended mode
+**C:/Users/jsa33/Google*Drive/Math121-Fall12/Chapter4/Chapter4.1_4.2/Homework4.
+1_4.2_Ans
+
+("C:/Users/jsa33/Google Drive/Math121-Fall12/Chapter4/Chapter4.1_4.2/Homework4.
+1_4.2_Ans"
+! Undefined control sequence.
+l.1 \documentclass
+                  [12pt]{article}
+? 
+! Emergency stop.
+l.1 \documentclass
+                  [12pt]{article}
+End of file on the terminal!
+
+!  ==> Fatal error occurred, no output PDF file produced!

@@ -1,0 +1,87 @@
+;This file was created by Graph (http://www.padowan.dk)
+;Do not change this file from other programs.
+[Graph]
+Version = 4.4.1.540
+MinVersion = 2.5
+OS = Windows NT 6.1 Service Pack 1
+
+[Axes]
+xMin = -1.5496678078203
+xMax = 1.1075371921797
+xTickUnit = 1
+xGridUnit = 1
+xShowGrid = 1
+xAutoTick = 0
+xAutoGrid = 0
+yMin = 0.336019267619954
+yMax = 1.7331520119345
+yTickUnit = 1
+yGridUnit = 1
+yShowGrid = 1
+yAutoTick = 0
+yAutoGrid = 0
+AxesColor = clBlue
+GridColor = 0x00FF9999
+NumberFont = Times New Roman,20,clBlack
+LabelFont = Times New Roman,24,clBlack,B
+ShowLegend = 0
+Radian = 1
+
+[Func1]
+FuncType = 0
+y = sqrt(4-x^2)
+Color = clNavy
+Size = 4
+
+[Shade1]
+LegendText = Shading 1
+ShadeStyle = 2
+BrushStyle = 5
+Color = clGreen
+FuncNo = 1
+sMin = 0
+sMax = 1
+sMin2 = 0
+sMax2 = 1
+
+[Label1]
+Placement = 0
+Pos = 0.371389717138103;0.579191106029131
+Text = {\\rtf1\\ansi\\ansicpg1252\\deff0\\deflang1033{\\fonttbl{\\f0\\fnil\\fcharset0 Times New Roman;}{\\f1\\fnil Times New Roman;}}\n{\\colortbl ;\\red0\\green0\\blue0;}\n\\viewkind4\\uc1\\pard\\cf1\\f0\\fs80 R\\sub triangle\\nosupersub\\f1\\fs120\\par\n}\n
+BackgroundColor = clNone
+ShowInLegend = 0
+
+[Func2]
+FuncType = 0
+y = sqrt(3)x
+From = 0
+To = 1
+Color = clNavy
+Size = 4
+
+[PointSeries1]
+FillColor = clBlack
+LineColor = clBlack
+Size = 6
+Style = 0
+Font = Tahoma,20,clBlack
+LabelPosition = 1
+PointCount = 1
+Points = 1,sqrt(3);
+LegendText = Series 1
+
+[Label2]
+Placement = 0
+Pos = 0.0530556738768713;1.41923927507902
+Text = {\\rtf1\\ansi\\ansicpg1252\\deff0\\deflang1033{\\fonttbl{\\f0\\fnil\\fcharset0 Times New Roman;}{\\f1\\fnil Times New Roman;}}\n{\\colortbl ;\\red0\\green0\\blue0;}\n\\viewkind4\\uc1\\pard\\cf1\\f0\\fs80 R\\sub sector\\nosupersub\\f1\\fs120\\par\n}\n
+BackgroundColor = clNone
+ShowInLegend = 0
+
+[Data]
+TextLabelCount = 2
+FuncCount = 2
+PointSeriesCount = 1
+ShadeCount = 1
+RelationCount = 0
+OleObjectCount = 0
+

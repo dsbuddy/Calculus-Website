@@ -1,0 +1,146 @@
+\documentclass[12pt]{article}
+
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{fullpage}
+%\usepackage{epsfig}
+%\usepackage{epstopdf}
+\everymath{\displaystyle}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+
+\newif\ifans
+
+\ansfalse
+
+\begin{document}
+
+\begin{center}
+\underline{\LARGE{Power Series}}
+\end{center}
+
+\noindent SUGGESTED REFERENCE MATERIAL:
+
+\medskip
+
+\noindent As you work through the problems listed below, you should reference your lecture notes and the relevant chapters in a textbook/online resource.
+
+\medskip
+
+\noindent EXPECTED SKILLS:
+
+\medskip
+
+\begin{itemize}[topsep=0pt]
+
+\item Use sigma notation to write the Maclaurin series for a function $f(x)$.
+
+\item Use sigma notation to write the Taylor series for a function $f(x)$ about a specified $x=x_0$.
+
+\item Find the interval of convergence and the radius of convergence of a power series.
+
+\item Find the domain of a function that is expressed as a power series.
+
+\end{itemize}
+
+\medskip
+
+\noindent PRACTICE PROBLEMS:
+
+\medskip
+
+\noindent {\bf For problems 1 \& 2, use sigma notation to write the Macluarin series for the given function.}
+
+\begin{enumerate}
+
+\item $f(x)=\ln(1+x)$
+
+\ifans{\fbox{$\sum_{k=1}^{\infty}{(-1)^{k+1} \text{ } \frac{x^k}{k}}$ ; Compare this to \underline{Polynomial Approximations of Functions} \#7. }} \fi
+
+\item $f(x)=x\cos{x}$
+
+\ifans{\fbox{$\sum_{k=0}^{\infty}{(-1)^{k} \text{ } \frac{x^{2k+1}}{(2k)!}}$}} \fi
+
+\end{enumerate}
+
+\noindent {\bf For problems 3 \& 4, use sigma notation to write the Taylor series for the given function about $x=x_0$.}
+\begin{enumerate}
+\setcounter{enumi}{2}
+
+\item $f(x)=e^{2x}; \text{   } x_0=\ln{3}$
+
+\ifans{\fbox{$\sum_{k=0}^{\infty}{\frac{2^k(9)}{k!} (x-\ln{3})^k}$ ; Compare this to \underline{Polynomial Approximations of Functions} \#9.  }} \fi
+
+\item $f(x)=\sin{x}; \text{   } x_0=\frac{\pi}{2}$
+
+\ifans{\fbox{$\sum_{k=0}^{\infty}{(-1)^{k} \text{ } \frac{\left(x-\frac{\pi}{2}\right)^{2k}}{(2k)!}}$}} \fi
+
+\end{enumerate}
+
+\noindent {\bf For problems 5 -- 13, find the interval of convergence and the radius of convergence $R$ for the power series.}
+\begin{enumerate}
+\setcounter{enumi}{4}
+
+\item $x+x^2+x^3+x^4+\ldots$
+
+\ifans{\fbox{$(-1, 1); R=1$.  Note that this is the power series from \underline{Infinite Series} \#24.}} \fi
+
+\item $x-\frac{x^2}{2}+\frac{x^3}{3}-\frac{x^4}{4}+\frac{x^5}{5}-\ldots$
+
+\ifans{\fbox{$(-1, 1]; R=1$.  This is the Maclaurin series for $f(x)=\ln(1+x)$.  See problem \#1.}} \fi
+
+\item $\sum_{k=0}^{\infty}{\frac{x^k}{k!}}$
+
+\ifans{\fbox{$(-\infty, +\infty); R=+\infty$.  This is the Maclaurin series for $f(x)=e^x.$}} \fi
+
+\item $\sum_{k=0}^{\infty}{(-1)^k\frac{x^{2k+1}}{2k+1}}$
+
+\ifans{\fbox{$[-1, 1]; R=1$.}} \fi
+
+\item $\sum_{k=0}^{\infty}{\frac{(-5)^k x^k}{\sqrt{k+10}}}$
+
+\ifans{\fbox{$\left(-\frac{1}{5}, \frac{1}{5}\right]; R=\frac{1}{5}$; Detailed Solution: \textcolor{blue}{\href{http://www.math.drexel.edu/classes/Calculus/resources/Math123HW/Solutions/123_12_Power_Series_09.pdf}{Here}}}} \fi
+
+\item $\sum_{k=0}^{\infty}{\left[(2k)! \text{ } (2x+1)^k\right]}$
+
+\ifans{\fbox{$\left[-\frac{1}{2}, -\frac{1}{2}\right]$, or just $\left\{-\frac{1}{2}\right\}; R=0$.  In other words, the series converges only when $x=-\frac{1}{2}$.   }} \fi
+
+\item $\sum_{k=0}^{\infty}{\left[ \left( \frac{2}{7} \right)^k (x+4)^{k+1} \right] }$
+
+\ifans{\fbox{$\left(-\frac{15}{2}, -\frac{1}{2}\right); R=\frac{7}{2}$; Detailed Solution: \textcolor{blue}{\href{http://www.math.drexel.edu/classes/Calculus/resources/Math123HW/Solutions/123_12_Power_Series_11.pdf}{Here}}}} \fi
+
+
+\item $\sum_{k=0}^{\infty}{(-1)^k\frac{x^{2k+1}}{(2k+1)!}}$
+
+\ifans{\fbox{$(-\infty, +\infty); R=+\infty$.  This is the Maclaurin series for $f(x)=\sin{x}$.}} \fi
+
+\item $\sum_{k=2}^{\infty}{\frac{(x-3)^k}{k\ln{k}}}$
+
+\ifans{\fbox{$[2, 4); R = 1$}} \fi
+
+\end{enumerate}
+
+\noindent {\bf For problems 14 -- 16, a function is represented as a power series.  Find the domain of the function.}
+\begin{enumerate}
+\setcounter{enumi}{13}
+
+\item $f(x)=\sum_{k=0}^{\infty}{\left[(-1)^{k+1} \text{ } (x-2)^k\right] }$
+
+\ifans{\fbox{\parbox{1\linewidth}{The domain of $f(x)$ is $1<x<3$.  This is the Taylor series for $f(x)=\frac{1}{1-x}$ about $x=2$.  See \underline{Polynomial Approximations of Functions} \#8.  }}} \fi
+
+\item $f(x)=\sum_{k=0}^{\infty}{(-1)^k\frac{x^{2k}}{(2k)!} }$
+
+\ifans{\fbox{\parbox{1\linewidth}{The domain of $f(x)$ is all real numbers.  This is the Maclaurin series for $f(x)=\cos{x}$.}}} \fi
+
+\item $f(x)=\sum_{k=0}^{\infty}{\frac{e^{(k^2)}x^k}{k!} }$
+
+\ifans{\fbox{The domain of $f(x)$ is only $x=0$.; Detailed Solution: \textcolor{blue}{\href{http://www.math.drexel.edu/classes/Calculus/resources/Math123HW/Solutions/123_12_Power_Series_16.pdf}{Here}}}} \fi
+
+
+\end{enumerate}
+
+
+\end{document}

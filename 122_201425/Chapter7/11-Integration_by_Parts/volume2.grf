@@ -1,0 +1,77 @@
+;This file was created by Graph (http://www.padowan.dk)
+;Do not change this file from other programs.
+[Graph]
+Version = 4.4.1.540
+MinVersion = 2.5
+OS = Windows NT 6.1 Service Pack 1
+
+[Axes]
+xMin = -1.19281191163325
+xMax = 4.87835777539034
+xTickUnit = 1
+xGridUnit = 1
+xShowGrid = 1
+xAutoTick = 0
+xAutoGrid = 0
+yMin = -1.29426948143193
+yMax = 1.89789295321759
+yTickUnit = 1
+yGridUnit = 1
+yShowGrid = 1
+yAutoTick = 0
+yAutoGrid = 0
+AxesColor = clBlue
+GridColor = 0x00FF9999
+NumberFont = Times New Roman,20,clBlack
+LabelFont = Times New Roman,24,clBlack,B
+ShowLegend = 0
+Radian = 1
+
+[Func1]
+FuncType = 0
+y = ln(x)
+Color = clRed
+Size = 4
+
+[Shade1]
+LegendText = Shading 1
+ShadeStyle = 2
+BrushStyle = 5
+Color = clGreen
+FuncNo = 1
+sMin = 1
+sMax = e
+sMin2 = 1
+sMax2 = e
+
+[Func2]
+FuncType = 1
+x = e
+y = t
+From = -10
+To = 10
+Steps = 1000
+Color = clGreen
+Size = 4
+
+[Func3]
+FuncType = 0
+y = 0
+Color = clNavy
+Size = 4
+
+[Label1]
+Placement = 0
+Pos = 1.94745868154245;0.543394235384812
+Text = {\\rtf1\\ansi\\ansicpg1252\\deff0\\deflang1033{\\fonttbl{\\f0\\fnil\\fcharset0 Times New Roman;}{\\f1\\fnil Times New Roman;}}\n{\\colortbl ;\\red0\\green0\\blue0;}\n\\viewkind4\\uc1\\pard\\cf1\\b\\f0\\fs96 R\\f1\\par\n}\n
+BackgroundColor = clNone
+ShowInLegend = 0
+
+[Data]
+TextLabelCount = 1
+FuncCount = 3
+PointSeriesCount = 0
+ShadeCount = 1
+RelationCount = 0
+OleObjectCount = 0
+

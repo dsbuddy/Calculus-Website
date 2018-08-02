@@ -1,0 +1,216 @@
+\documentclass[12pt]{article}
+
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{fullpage}
+\usepackage{epsfig}
+\usepackage{epstopdf}
+\everymath{\displaystyle}
+\usepackage{enumerate}
+
+\newif\ifans
+
+\ansfalse
+
+\begin{document}
+
+\begin{center}
+\underline{\LARGE{Differential Equations \& Separation of Variables}}
+\end{center}
+
+\noindent SUGGESTED REFERENCE MATERIAL:
+
+\bigskip
+
+\noindent As you work through the problems listed below, you should reference Chapter 8.2 of the recommended textbook (or the equivalent chapter in your alternative textbook/online resource) and your lecture notes.
+
+\bigskip
+
+\noindent EXPECTED SKILLS:
+
+\begin{itemize}
+
+\item Be able to verify that a given function is a solution to a differential equation.
+
+\item Be able to solve first-order separable equations by using the technique of separation of variables.
+
+\item Be able to solve initial-value problems for first-order separable equations. 
+
+\end{itemize}
+
+\noindent PRACTICE PROBLEMS:
+
+\medskip
+
+\begin{enumerate}
+
+\item Verify that $y=x^2+1$ is a solution to the differential equation $y-\frac{dy}{dx}=(x-1)^2$.
+
+\ifans{\fbox{\parbox{1\linewidth}{Differentiating $y=x^2+1$ with respect to $x$ yields $y^{\prime}=2x$.  Thus,\\
+ $$y-\frac{dy}{dx}=(x^2+1)-(2x)=(x-1)^2$$}}} \fi
+
+\item Find the value(s) of the constant $A$ for which $y=e^{Ax}$ is a solution to the differential equation $y^{\prime\prime}+5y^{\prime}-6y=0$.
+
+\ifans{\fbox{$A=-6$ and $A=1$}} \fi
+
+\end{enumerate}
+
+\noindent {\bf For problems 3-7, use separation of variables to solve the given differential equation.  Express your solution as an explicit function of $x$.}
+
+\begin{enumerate}
+\setcounter{enumi}{2}
+
+\item $\frac{dy}{dx}=\frac{x^2-1}{y^2}$
+
+\ifans{\fbox{$y=\sqrt[3]{x^3-3x+C}$}} \fi
+
+\item $\frac{dy}{dx}-x(y^2+1)=0$
+
+\ifans{\fbox{$y=\tan{\left(\frac{x^2}{2}+C\right)}$}} \fi
+
+\item $\frac{dy}{dx}-\sqrt{xy}\ln{x}=0$
+
+\ifans{\fbox{$y=\left(\frac{1}{3}x^{3/2}\ln{x}-\frac{2}{9}x^{3/2}+C\right)^2$, $y=0$}} \fi
+
+\item $y^{\prime}=yx^2$
+
+\ifans{\fbox{$y=Ce^{x^3/3}$}} \fi
+
+\item $\frac{dy}{dx}-e^{-y}\sec^2{x}=0$
+
+\ifans{\fbox{$y=\ln{(\tan{x}+C)}$}} \fi
+
+\end{enumerate}
+
+\noindent {\bf For problems 8-9, use separation of variables to solve the given differential equation.  You may leave your solution as an implicitly defined function.}
+
+\begin{enumerate}
+\setcounter{enumi}{7}
+
+\item $\frac{dy}{dx}=xy^3$
+
+\ifans{\fbox{$y^2=\frac{1}{C-x^2}$, $y=0$}} \fi
+
+\item $\frac{dy}{dx}=\frac{1}{(x^2-5x+6)y}$
+
+\ifans{\fbox{$y^2=2\ln{\left|\frac{x-3}{x-2}\right|}+C$}} \fi
+
+\end{enumerate}
+
+\noindent {\bf For problems 10-11, find the solution of the differential equation which satisfies the initial condition.}
+
+\begin{enumerate}
+\setcounter{enumi}{9}
+
+\item $\frac{dy}{dx}=\frac{x^2-2}{y}$, $y(0)=1$
+
+\ifans{\fbox{$y=\sqrt{\frac{2x^3}{3}-4x+1}$}} \fi
+
+\item $\frac{dy}{dx}=\frac{\ln{x}}{xy^2}$, $y(e)=1$
+
+\ifans{\fbox{$y=\sqrt[3]{\frac{3(\ln{x})^2-1}{2}}$}} \fi
+
+\item Find the general solution of the differential equation $\left(\frac{\sqrt{x}}{2+y}\right)\frac{dy}{dx}=1$, for $x \neq 0$.  Express the solution as an explicit function of $x$.
+
+\ifans{\fbox{$y=Ce^{2\sqrt{x}}-2$, $C \neq 0$}} \fi
+
+\item Find an equation of the curve that passes through the point $(0,1)$ and whose slope at $(x,y)$ is $xe^y$.
+
+\ifans{\fbox{$y=-\ln{\left(\frac{1}{e}-\frac{x^2}{2}\right)}$}} \fi
+
+
+\item Suppose that a ball is moving along a straight line through a resistive medium in such a way that its velocity $v=v(t)$ decreases at a rate that is twice the square root of the velocity.  Suppose that at time $t=3$ seconds, the velocity of the ball is 16 meters/second.
+
+\begin{enumerate}
+
+\item Set up and solve an initial value problem whose solution is $v=v(t)$.  Express your solution as an explicit function of $t$.
+
+\ifans{\fbox{\parbox{1\linewidth}{Initial Value Problem:
+$\left\{\begin{array}{l}
+\frac{dv}{dt}=-2\sqrt{v}\\
+\\
+v(3)=16
+\end{array}\right.$; Solution:
+$v(t)=(7-t)^2$}}} \fi
+
+\item At what time does the ball come to a complete stop?
+
+\ifans{\fbox{The ball will stop at $t=7$ seconds.}} \fi
+
+\end{enumerate}
+
+\item {\bf Definition:} A quantity $y=y(t)$ is said to follow an {\bf Exponential Decay Model} if it decreases at a rate which is proportional to the amount of the quantity present.
+
+\begin{enumerate}
+
+\item Assuming that the initial amount the quantity present is $y_0$, we arrive at the following initial value problem: $$\left\{\begin{array}{ll} \frac{dy}{dt}=-ky & (k>0)\\
+ & \\
+y(0)=y_0& \end{array}\right.$$
+
+Show that the solution to this initial value problem is $y(t)=y_0e^{-kt}$.
+
+\item {\bf Definition:} The time required for the original amount of the quantity to reduce by half is called the {\bf half-life}.\\
+
+Compute the half life of a quantity which follow the Exponential Decay Model from part a.
+
+\ifans{\fbox{$t_{1/2}=\frac{\ln{2}}{k}$}} \fi
+
+\end{enumerate}
+
+\end{enumerate}
+
+\newpage
+
+\noindent {\bf For problems 16-18, use the results from problem 15.}
+
+\begin{enumerate}
+\setcounter{enumi}{15}
+
+\item Carbon 14, an isotope of Carbon, is radioactive and decays at a rate proportional to the amount present (and therefore follows an exponential decay model).  Its half life is 5730 years.  If there were 20 grams of Carbon 14 originally present, how much would be left after 2000 years?
+
+\ifans{\fbox{$y(t)=20(2)^{-t/5730}$.  Thus, $y(2000)=20(2)^{-2000/5730}\approx 15.702$ grams.}} \fi
+
+\item A scientist wants to determine the half life of a certain radioactice substance.  She determines that in exactly 5 days an 80 milligram sample decays to 10 milligrams.  Based on this data, what is the half life?
+
+\ifans{\fbox{$\frac{5}{3}$}} \fi
+
+\item An unknown amount of a radioactive substance is being studied.  After two days, the mass is 15 grams.  After eight days, the mass is 9 grams.  Assume exponential decay.
+
+\begin{enumerate}
+
+\item How much of the substance was there initially?
+
+\ifans{\fbox{$y_0\approx 17.78$ grams}} \fi
+
+\item What is the half-life of the substance?
+
+\ifans{\fbox{$t_{1/2}=-\frac{6\ln{2}}{\ln{\left(\frac{9}{15}\right)}}\approx 8.14$ days}} \fi
+
+\end{enumerate}
+
+\item Newton's Law of Cooling states that the rate at which an object cools (or warms) is proportional to the difference in temperature between the object and the surrounding medium.  Suppose an object has an initial temperature $T_0$ is placed in a room with a temperature of $T_R$.  If $T(t)$ represents the temperature of the object at time $t$, then Newton's Law of Cooling can be expressed with the following initial value problem:
+
+$$\left\{\begin{array}{ll}
+\frac{dT}{dt}=-k(T-T_R), & (k >0)\\
+&\\
+T(0)=T_0 &
+\end{array}\right.$$
+
+\begin{enumerate}
+
+\item Use separation of variables to show that $T(t)=(T_0-T_R)e^{-kt}+T_R$ is the particular solution to this initial value problem.
+
+\item An object is taken from $350^{\circ}$ oven has a temperature of $350^{\circ}$ and is left to cool in a room that is $65^{\circ}$.  After 1 hour, the temperature drops to $200^{\circ}$.  Determine $T(t)$, the temperature at time $T$.
+
+\ifans{\fbox{$T(t)=285\left(\frac{9}{19}\right)^t+65$}} \fi
+
+\item For the object described in part (b), determine the temperature after 2 hours.
+
+\ifans{\fbox{$T(2)=\frac{2450}{19}^{\circ}\approx 128.95^{\circ}$}} \fi
+
+\end{enumerate}
+
+\end{enumerate}
+
+\end{document}

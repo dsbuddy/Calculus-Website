@@ -1,0 +1,210 @@
+\documentclass[12pt]{article}
+
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{fullpage}
+\usepackage{epsfig}
+\usepackage{epstopdf}
+\everymath{\displaystyle}
+\usepackage{enumerate}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+
+
+\newif\ifans
+
+\ansfalse
+
+\begin{document}
+
+\begin{center}
+\underline{\LARGE{Second-Order Linear Homogeneous ODE's}}
+\end{center}
+
+\noindent SUGGESTED REFERENCE MATERIAL:
+
+\medskip
+
+\noindent As you work through the problems listed below, you should reference your lecture notes and the relevant chapters in a textbook/online resource.
+
+\bigskip
+
+\noindent EXPECTED SKILLS:
+
+\medskip
+
+\begin{itemize}[topsep=0pt]
+
+\item Show that two functions are linearly independent.
+
+\item Be able to solve second-order linear ODE's with constant coefficients by using the appropriate auxiliary equations.
+
+\item Be able to solve initial value problems and boundary value problems involving second-order linear ODE's with constant coefficients.
+
+\end{itemize}
+
+\bigskip
+
+\noindent PRACTICE PROBLEMS:
+
+\begin{enumerate}
+
+\item Suppose that $y_1(x)$ and $y_2(x)$ are solutions to the second-order ODE $$P(x)\frac{d^2y}{dx^2}+Q(x)\frac{dy}{dx}+R(x)y=0.$$  Show that $y(x)=c_1y_1(x)+c_2y_2(x)$ is also a solution, where $c_1$ and $c_2$ are arbitrary constants.
+
+\ifans{\fbox{\parbox{1\linewidth}{To simplify notation, we will omit the ``of $x$" from the functions $y, y_1,$ and $y_2$ and also write derivatives in prime notation.  Now, since $y_1$ and $y_2$ are solutions
+to the ODE, they satisfy it, i.e. 
+\begin{equation}P(x)y_1''+Q(x)y_1'+R(x)y_1 = 0 \text{ and } P(x)y_2''+Q(x)y_2'+R(x)y_2 = 0. \tag{*} 
+\end{equation}  Now we show that $y=c_1y_1+c_2y_2$ also satisfies the ODE: 
+\begin{align*} P(x)y''+Q(x)y'+R(x)y&=P(x)(c_1y_1+c_2y_2)''+Q(x)(c_1y_1+c_2y_2)' + R(x)(c_1y_1+c_2y_2) \\
+&=P(x)(c_1y_1''+c_2y_2'')+Q(x)(c_1y_1'+c_2y_2') + R(x)(c_1y_1+c_2y_2) \\
+&=c_1\left[P(x)y_1''+Q(x)y_1'+R(x)y_1\right] +c_2\left[P(x)y_2''+Q(x)y_2'+R(x)y_2\right] \\
+&=c_1(0) + c_2(0) \text{ by (*) } \\
+&=0. \end{align*} Thus $y=c_1y_1+c_2y_2$ is a solution to the ODE. }}} \fi
+
+\item Consider the functions $y_1=e^{m_1x}$ and $y_2=e^{m_2x}$, where $m_1$ and $m_2$ are arbitrary real numbers with $m_1 \neq m_2$.  Show that the functions are linearly independent.
+
+\ifans{\fbox{\parbox{1\linewidth}{If $y_1$ and $y_2$ were not linearly independent, then one would be a constant multiple of the other, i.e. $e^{m_1x}=ke^{m_2x}$ for {\bf all} $x$.  In particular, for $x=0$
+we would have $e^{(m_1)(0)}=ke^{(m_2)(0)}$, or $1=k$.  But then  $e^{m_1x}=ke^{m_2x}$ becomes $e^{m_1x}=e^{m_2x}$, which is impossible since $m_1 \neq m_2$.  Thus, $y_1=e^{m_1x}$ and $y_2=e^{m_2x}$ are linearly independent.}}} \fi
+
+\item Consider the functions $y_1=e^{\alpha x}\cos\left({\beta x}\right)$ and $y_2=e^{\alpha x}\sin\left({\beta x}\right)$, where $\alpha$ and $\beta$ are arbitrary real numbers.  
+Show that the functions are linearly independent.
+
+\ifans{\fbox{\parbox{1\linewidth}{If $y_1$ and $y_2$ were not linearly independent, then one would be a constant multiple of the other, i.e. 
+$e^{\alpha x}\cos\left({\beta x}\right)=ke^{\alpha x}\sin\left({\beta x}\right)$ for {\bf all} $x$.  In particular, for $x=0$
+we would have $0=1$, which is absurd.  Thus, $y_1=e^{\alpha x}\cos\left({\beta x}\right)$ and $y_2=e^{\alpha x}\sin\left({\beta x}\right)$ are linearly independent.}}} \fi
+
+\end{enumerate}
+
+\noindent {\bf For problems 4 -- 10, solve the second-order differential equation.  Express your answer as an explicit function of $x$.}
+ 
+\begin{enumerate}
+\setcounter{enumi}{3}
+  
+\item $y''+5y'+4y=0$
+
+\ifans{\fbox{$y=c_1e^{-4x}+c_2e^{-x}$}} \fi
+
+\item $25y=10\frac{dy}{dx}-\frac{d^2y}{dx^2}$
+
+\ifans{\fbox{$y=c_1e^{5x}+c_2xe^{5x}$}} \fi
+
+\item $2\frac{d^2y}{dx^2}+5\frac{dy}{dx}-3y=0$
+
+\ifans{\fbox{$y=c_1e^{x/2}+c_2e^{-3x}$}} \fi
+
+\item $y''+2y'+3y=0$
+
+\ifans{\fbox{$y=c_1e^{-x}\cos\left(\sqrt{2}x\right)+c_2e^{-x}\sin\left(\sqrt{2}x\right)$}} \fi
+
+\item $9y''+12y'+4y=0$
+
+\ifans{\fbox{$y=c_1e^{-2x/3}+c_2xe^{-2x/3}$}} \fi
+
+\item $2\frac{d^2y}{dx^2}-6\frac{dy}{dx}+17y=0$
+
+\ifans{\fbox{$y=c_1e^{3x/2}\cos\left(\frac{5}{2}x\right)+c_2e^{3x/2}\sin\left(\frac{5}{2}x\right)$; Detailed Solution: \textcolor{blue}{\href{http://www.math.drexel.edu/classes/Calculus/resources/Math123HW/Solutions/123_04_Second_Order_ODEs_09.pdf}{Here}}}} \fi
+
+
+\item $9y''=4y$
+
+\ifans{\fbox{$y=c_1e^{2x/3}+c_2e^{-2x/3}$}} \fi
+
+\item Solve the initial value problem. \newline \newline
+$\left\{\begin{array}{l}
+y''+5y'+4y=0
+\\ \\
+y(0)=5
+\\ \\
+y'(0)=7
+\end{array}\right.$
+
+\ifans{\fbox{$y=-4e^{-4x}+9e^{-x}$}} \fi
+
+\item Consider a curve $y=y(x)$ that goes through the point $\left(\frac{\pi}{\sqrt{2}},e^{-\pi/\sqrt{2}}\right)$, has a horizontal tangent line at that point, and satisfies the ODE 
+$y''+2y'+3y=0$.
+
+\begin{enumerate}
+
+\item Set up an initial value problem (IVP) whose solution is $y(x)$.
+
+\ifans{\fbox{$\left\{\begin{array}{l}
+y''+2y'+3y=0
+\\ \\
+y\left(\frac{\pi}{\sqrt{2}}\right)=e^{-\pi/\sqrt{2}}
+\\ \\
+y'\left(\frac{\pi}{\sqrt{2}}\right)=0
+\end{array}\right.$}} \fi
+
+\item Solve the IVP from part (a).
+
+\ifans{\fbox{$y=-e^{-x}\cos\left(\sqrt{2}x\right)-\frac{1}{\sqrt{2}}e^{-x}\sin\left(\sqrt{2}x\right)$}} \fi
+
+\end{enumerate}
+
+\item Consider a curve $y=y(x)$ that has a $y$-intercept of $(0,1)$, has a tangent line at the $y$-intercept that is perpendicular to the line $y=-\frac{1}{2}x+999$, and satisfies the ODE 
+$9y''=4y$.
+
+\begin{enumerate}
+
+\item Set up an initial value problem (IVP) whose solution is $y(x)$.
+
+\ifans{\fbox{$\left\{\begin{array}{l}
+9y''=4y
+\\ \\
+y(0)=1
+\\ \\
+y'(0)=2
+\end{array}\right.$}} \fi
+
+\item Solve the IVP from part (a).
+
+\ifans{\fbox{$y=2e^{2x/3}-e^{-2x/3}$}} \fi
+
+\end{enumerate}
+
+\item Consider a curve $y=y(x)$ that goes through both the origin and the point $\left(\ln{2},64\right)$ and also satisfies the ODE $25y=10\frac{dy}{dx}-\frac{d^2y}{dx^2}$.
+
+\begin{enumerate}
+
+\item A \underline{boundary value problem}, or BVP, is a problem that consists of a differential equation and information about two \emph{different} points on the solution curve.  \newline 
+[Whereas an initial value problem, or IVP, consists of a differential equation and initial conditions about a \emph{single} point.] \newline
+Set up a BVP whose solution is $y(x)$.
+
+\ifans{\fbox{$\left\{\begin{array}{l}
+ 25y=10\frac{dy}{dx}-\frac{d^2y}{dx^2}
+\\ \\
+y(0)=0
+\\ \\
+y(\ln{2})=64
+\end{array}\right.$; Detailed Solution: \textcolor{blue}{\href{http://www.math.drexel.edu/classes/Calculus/resources/Math123HW/Solutions/123_04_Second_Order_ODEs_14.pdf}{Here}}}} \fi
+
+\item Solve the BVP from part (a).
+
+\ifans{\fbox{$y=\frac{2}{\ln{2}}xe^{5x}$}} \fi
+
+\end{enumerate}
+
+\item Suppose an object of mass $M$ is attached to a spring, and the spring is allowed to hang at its natural length.  Let $x=x(t)$ represent the position of the object when the spring is stretched (or compressed)
+$x$ units from its natural length, with $x=0$ corresponding to the spring's natural length.  If we ignore any forces acting on the object except it's weight and the restoring force of the spring, then based on Newton's
+Second Law and Hooke's Law it can be shown that $$M\frac{d^2x}{dt^2}+kx=0$$ where $k$ is a some positive constant, called the \underline{spring constant}.
+
+\begin{enumerate}
+
+\item Solve the above second-order ODE.
+
+\ifans{\fbox{$x(t)=c_1\cos{\left(\sqrt{\frac{k}{M}}t\right)}+c_2\sin{\left(\sqrt{\frac{k}{M}}t\right)}$; Detailed Solution: \textcolor{blue}{\href{http://www.math.drexel.edu/classes/Calculus/resources/Math123HW/Solutions/123_04_Second_Order_ODEs_15.pdf}{Here}}}} \fi
+
+\item Suppose that an object of mass $3$ kg is attached to a spring with spring constant $75$ whose natural length is $1$ meter.  If the spring is stretched to a length of $1.5$ meters and is released with zero initial velocity, find the position of the object at any time $t$.  Describe the motion of the object over time.
+
+\ifans{\fbox{\parbox{1\linewidth}{The position of the object at any time $t$ is $x(t)=0.5\cos{\left(5t\right)}$, so the spring will continue to oscillate indefinitely.  This type of motion
+is called \underline{simple harmonic motion}.  To see an animation of this, visit the Wikipedia page: \\ \url{http://upload.wikimedia.org/wikipedia/commons/2/25/Animated-mass-spring.gif}
+ }}} \fi   
+
+ \end{enumerate}
+
+\end{enumerate}
+
+\end{document}

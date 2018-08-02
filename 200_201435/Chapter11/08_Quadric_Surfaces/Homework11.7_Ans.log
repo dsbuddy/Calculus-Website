@@ -1,0 +1,436 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2012.8.8)  14 APR 2014 10:46
+entering extended mode
+**C:/Users/jsa33/Desktop/Homework11.7/Homework11.7_Ans.tex
+(C:/Users/jsa33/Desktop/Homework11.7/Homework11.7_Ans.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2009-06-19, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, lao, latin, lat
+vian, lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerm
+an, ngerman-x-2009-06-19, nynorsk, oriya, panjabi, pinyin, polish, portuguese, 
+romanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swis
+sgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, u
+senglishmax, welsh, loaded.
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size12.clo"
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+Package: amssymb 2009/06/22 v3.00
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\@emptytoks=\toks14
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amsmath.sty"
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amstext.sty"
+Package: amstext 2000/06/29 v2.01
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks15
+\ex@=\dimen103
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen104
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amsopn.sty"
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count87
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count88
+\leftroot@=\count89
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count90
+\DOTSCASE@=\count91
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen105
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count92
+\c@MaxMatrixCols=\count93
+\dotsspace@=\muskip10
+\c@parentequation=\count94
+\dspbrk@lvl=\count95
+\tag@help=\toks16
+\row@=\count96
+\column@=\count97
+\maxfields@=\count98
+\andhelp@=\toks17
+\eqnshift@=\dimen106
+\alignsep@=\dimen107
+\tagshift@=\dimen108
+\tagwidth@=\dimen109
+\totwidth@=\dimen110
+\lineht@=\dimen111
+\@envbody=\toks18
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks19
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\preprint\fullpage.sty"
+Package: fullpage 1999/02/23 1.1 (PWD)
+\FP@margin=\skip46
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\epsfig.sty"
+Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks20
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count99
+))
+\Gin@req@height=\dimen112
+\Gin@req@width=\dimen113
+)
+\epsfxsize=\dimen114
+\epsfysize=\dimen115
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf.sty"
+Package: epstopdf 2010/02/09 v2.5 Conversion with epstopdf on the fly (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\enumerate.sty"
+Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
+\@enLab=\toks21
+)
+(C:\Users\jsa33\Desktop\Homework11.7\Homework11.7_Ans.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+
+("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count100
+\scratchdimen=\dimen116
+\scratchbox=\box28
+\nofMPsegments=\count101
+\nofMParguments=\count102
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count103
+\MPscratchDim=\dimen117
+\MPnumerator=\count104
+\makeMPintoPDFobject=\count105
+\everyMPtoPDFconversion=\toks23
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 19.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 19.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 34.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 34.
+
+<ellipsoid.pdf, id=1, 343.16536pt x 378.93921pt>
+File: ellipsoid.pdf Graphic file (type pdf)
+ <use ellipsoid.pdf>
+Package pdftex.def Info: ellipsoid.pdf used on input line 50.
+(pdftex.def)             Requested size: 171.58226pt x 189.46913pt.
+ [1
+
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/jsa33/Desktop/Ho
+mework11.7/ellipsoid.pdf, page is rotated 90 degrees>]
+<hyperboloid2.pdf, id=17, 398.81396pt x 360.39003pt>
+File: hyperboloid2.pdf Graphic file (type pdf)
+ <use hyperboloid2.pdf>
+Package pdftex.def Info: hyperboloid2.pdf used on input line 56.
+(pdftex.def)             Requested size: 159.52275pt x 144.15346pt.
+
+<hyperboloid1.pdf, id=18, 494.21077pt x 295.46687pt>
+File: hyperboloid1.pdf Graphic file (type pdf)
+ <use hyperboloid1.pdf>
+Package pdftex.def Info: hyperboloid1.pdf used on input line 60.
+(pdftex.def)             Requested size: 197.6808pt x 118.18465pt.
+
+<paraboloid3.pdf, id=19, 339.96692pt x 393.71141pt>
+File: paraboloid3.pdf Graphic file (type pdf)
+ <use paraboloid3.pdf>
+Package pdftex.def Info: paraboloid3.pdf used on input line 64.
+(pdftex.def)             Requested size: 135.98434pt x 157.48177pt.
+
+[2 <C:/Users/jsa33/Desktop/Homework11.7/hyperboloid2.pdf, page is rotated 90 de
+grees> <C:/Users/jsa33/Desktop/Homework11.7/hyperboloid1.pdf, page is rotated 9
+0 degrees> <C:/Users/jsa33/Desktop/Homework11.7/paraboloid3.pdf, page is rotate
+d 90 degrees>] <cone1.pdf, id=38, 409.41307pt x 365.68982pt>
+File: cone1.pdf Graphic file (type pdf)
+ <use cone1.pdf>
+Package pdftex.def Info: cone1.pdf used on input line 68.
+(pdftex.def)             Requested size: 163.76231pt x 146.27332pt.
+
+<hyperboloid.pdf, id=39, 397.48901pt x 328.59132pt>
+File: hyperboloid.pdf Graphic file (type pdf)
+ <use hyperboloid.pdf>
+Package pdftex.def Info: hyperboloid.pdf used on input line 72.
+(pdftex.def)             Requested size: 158.99278pt x 131.43419pt.
+
+<paraboloid4.pdf, id=40, 398.81335pt x 394.83861pt>
+File: paraboloid4.pdf Graphic file (type pdf)
+ <use paraboloid4.pdf>
+Package pdftex.def Info: paraboloid4.pdf used on input line 76.
+(pdftex.def)             Requested size: 139.58675pt x 138.19557pt.
+
+[3 <C:/Users/jsa33/Desktop/Homework11.7/cone1.pdf, page is rotated 90 degrees> 
+<C:/Users/jsa33/Desktop/Homework11.7/hyperboloid.pdf, page is rotated 90 degree
+s> <C:/Users/jsa33/Desktop/Homework11.7/paraboloid4.pdf, page is rotated 90 deg
+rees>] <ellipsoid2.pdf, id=59, 390.57709pt x 381.11595pt>
+File: ellipsoid2.pdf Graphic file (type pdf)
+ <use ellipsoid2.pdf>
+Package pdftex.def Info: ellipsoid2.pdf used on input line 80.
+(pdftex.def)             Requested size: 156.22806pt x 152.44366pt.
+
+<hyperboloid3.pdf, id=60, 471.68651pt x 247.76807pt>
+File: hyperboloid3.pdf Graphic file (type pdf)
+ <use hyperboloid3.pdf>
+Package pdftex.def Info: hyperboloid3.pdf used on input line 84.
+(pdftex.def)             Requested size: 188.67125pt x 99.10545pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 94--95
+[][] 
+ []
+
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 100--101
+[][] 
+ []
+
+[4 <C:/Users/jsa33/Desktop/Homework11.7/ellipsoid2.pdf, page is rotated 90 degr
+ees> <C:/Users/jsa33/Desktop/Homework11.7/hyperboloid3.pdf, page is rotated 90 
+degrees>] <traces.pdf, id=74, 551.18489pt x 302.09132pt>
+File: traces.pdf Graphic file (type pdf)
+ <use traces.pdf>
+Package pdftex.def Info: traces.pdf used on input line 124.
+(pdftex.def)             Requested size: 181.89157pt x 99.69043pt.
+
+<traces2.pdf, id=75, 555.15976pt x 302.09132pt>
+File: traces2.pdf Graphic file (type pdf)
+ <use traces2.pdf>
+Package pdftex.def Info: traces2.pdf used on input line 142.
+(pdftex.def)             Requested size: 183.20328pt x 99.69043pt.
+ [5 <C:/Users/jsa33/Desktop/Homework11.7/traces.pdf, page is rotated 90 degrees
+> <C:/Users/jsa33/Desktop/Homework11.7/traces2.pdf, page is rotated 90 degrees>
+]
+<paraboloid_trace.pdf, id=93, 307.39142pt x 361.71495pt>
+File: paraboloid_trace.pdf Graphic file (type pdf)
+
+<use paraboloid_trace.pdf>
+Package pdftex.def Info: paraboloid_trace.pdf used on input line 147.
+(pdftex.def)             Requested size: 184.43626pt x 217.03062pt.
+ <trace1.pdf, id=94, 568.40927pt x 307.39111pt>
+File: trace1.pdf Graphic file (type pdf)
+
+<use trace1.pdf>
+Package pdftex.def Info: trace1.pdf used on input line 163.
+(pdftex.def)             Requested size: 284.20393pt x 153.69518pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 163--164
+[][] 
+ []
+
+[6 <C:/Users/jsa33/Desktop/Homework11.7/paraboloid_trace.pdf, page is rotated 9
+0 degrees> <C:/Users/jsa33/Desktop/Homework11.7/trace1.pdf, page is rotated 90 
+degrees>] <traces3.pdf, id=110, 564.4344pt x 327.26544pt>
+File: traces3.pdf Graphic file (type pdf)
+ <use traces3.pdf>
+Package pdftex.def Info: traces3.pdf used on input line 171.
+(pdftex.def)             Requested size: 225.76976pt x 130.90385pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 171--172
+[][] 
+ []
+
+<top.pdf, id=111, 451.81195pt x 378.9393pt>
+File: top.pdf Graphic file (type pdf)
+ <use top.pdf>
+Package pdftex.def Info: top.pdf used on input line 182.
+(pdftex.def)             Requested size: 180.72157pt x 151.57303pt.
+
+<slice.pdf, id=112, 382.91356pt x 377.61478pt>
+File: slice.pdf Graphic file (type pdf)
+ <use slice.pdf>
+Package pdftex.def Info: slice.pdf used on input line 186.
+(pdftex.def)             Requested size: 153.1627pt x 151.04323pt.
+ [7 <C:/Users/jsa33/Desktop/Homework11.7/traces3.pdf, page is rotated 90 degree
+s> <C:/Users/jsa33/Desktop/Homework11.7/top.pdf, page is rotated 90 degrees> <C
+:/Users/jsa33/Desktop/Homework11.7/slice.pdf, page is rotated 90 degrees>]
+<matching3.pdf, id=135, 426.63802pt x 408.0883pt>
+File: matching3.pdf Graphic file (type pdf)
+ <use matching3.pdf>
+Package pdftex.def Info: matching3.pdf used on input line 221.
+(pdftex.def)             Requested size: 170.65218pt x 163.23242pt.
+
+<matching4.pdf, id=136, 347.1399pt x 369.66475pt>
+File: matching4.pdf Graphic file (type pdf)
+ <use matching4.pdf>
+Package pdftex.def Info: matching4.pdf used on input line 221.
+(pdftex.def)             Requested size: 138.85349pt x 147.86328pt.
+
+<matching5.pdf, id=137, 295.46585pt x 413.38841pt>
+File: matching5.pdf Graphic file (type pdf)
+ <use matching5.pdf>
+Package pdftex.def Info: matching5.pdf used on input line 224.
+(pdftex.def)             Requested size: 118.18423pt x 165.35243pt.
+
+<matching1.pdf, id=138, 374.96486pt x 369.66475pt>
+File: matching1.pdf Graphic file (type pdf)
+ <use matching1.pdf>
+Package pdftex.def Info: matching1.pdf used on input line 224.
+(pdftex.def)             Requested size: 149.98328pt x 147.86328pt.
+
+<matching2.pdf, id=139, 280.8924pt x 324.61636pt>
+File: matching2.pdf Graphic file (type pdf)
+ <use matching2.pdf>
+Package pdftex.def Info: matching2.pdf used on input line 227.
+(pdftex.def)             Requested size: 140.44585pt x 162.30777pt.
+
+<matching6.pdf, id=140, 361.71437pt x 437.23822pt>
+File: matching6.pdf Graphic file (type pdf)
+ <use matching6.pdf>
+Package pdftex.def Info: matching6.pdf used on input line 227.
+(pdftex.def)             Requested size: 144.68317pt x 174.89218pt.
+ [8]
+[9 <C:/Users/jsa33/Desktop/Homework11.7/matching3.pdf, page is rotated 90 degre
+es> <C:/Users/jsa33/Desktop/Homework11.7/matching4.pdf, page is rotated 90 degr
+ees> <C:/Users/jsa33/Desktop/Homework11.7/matching5.pdf, page is rotated 90 deg
+rees> <C:/Users/jsa33/Desktop/Homework11.7/matching1.pdf, page is rotated 90 de
+grees> <C:/Users/jsa33/Desktop/Homework11.7/matching2.pdf, page is rotated 90 d
+egrees> <C:/Users/jsa33/Desktop/Homework11.7/matching6.pdf, page is rotated 90 
+degrees>] (C:\Users\jsa33\Desktop\Homework11.7\Homework11.7_Ans.aux) ) 
+Here is how much of TeX's memory you used:
+ 2558 strings out of 494045
+ 34159 string characters out of 3148388
+ 89118 words of memory out of 3000000
+ 5793 multiletter control sequences out of 15000+200000
+ 8891 words of font info for 34 fonts, out of 3000000 for 9000
+ 715 hyphenation exceptions out of 8191
+ 42i,17n,26p,371b,345s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+msy10.pfb>
+Output written on Homework11.7_Ans.pdf (9 pages, 2440962 bytes).
+PDF statistics:
+ 200 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 111 words of extra memory for PDF output out of 10000 (max. 10000000)
+

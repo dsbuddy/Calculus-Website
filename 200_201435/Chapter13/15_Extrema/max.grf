@@ -1,0 +1,150 @@
+;This file was created by Graph (http://www.padowan.dk)
+;Do not change this file from other programs.
+[Graph]
+Version = 4.5.0.562
+MinVersion = 2.5
+OS = Windows XP 5.1 Service Pack 3
+
+[Axes]
+xMin = -1.95140362691579
+xMax = 4.39525018319671
+xTickUnit = 1
+xGridUnit = 1
+xShowGrid = 1
+xAutoTick = 0
+xAutoGrid = 0
+yMin = -0.561318831371252
+yMax = 4.20724808386487
+yTickUnit = 1
+yGridUnit = 1
+yShowGrid = 1
+yAutoTick = 0
+yAutoGrid = 0
+AxesColor = clBlue
+GridColor = 0x00FF9999
+NumberFont = @BiauKai,20,clBlack
+LabelFont = @BiauKai,20,clBlack
+ShowLegend = 0
+Radian = 1
+
+[Func1]
+FuncType = 0
+y = 6-2x
+From = 2
+To = 3
+Color = clRed
+Size = 2
+
+[Shade1]
+LegendText = Shading 2
+ShadeStyle = 2
+BrushStyle = 5
+Color = clGreen
+FuncNo = 1
+MarkBorder = 0
+
+[Func2]
+FuncType = 0
+y = (1/2)(6-x)
+From = 0
+To = 2
+Color = clRed
+Size = 2
+
+[Shade2]
+LegendText = Shading 1
+ShadeStyle = 2
+BrushStyle = 5
+Color = clGreen
+FuncNo = 2
+sMin = 0
+sMax = 2
+sMin2 = 0
+sMax2 = 2
+MarkBorder = 0
+
+[Func3]
+FuncType = 0
+y = 1-x
+Style = 1
+Color = clBlack
+Size = 2
+
+[Func4]
+FuncType = 0
+y = 1-x+1
+Style = 1
+Color = clBlack
+Size = 2
+
+[Func5]
+FuncType = 0
+y = 1-x+2
+Style = 1
+Color = clBlack
+Size = 2
+
+[Func6]
+FuncType = 0
+y = 1-x+3
+Style = 1
+Color = clBlack
+Size = 2
+
+[Func7]
+FuncType = 0
+y = 1-x-1
+Style = 1
+Color = clBlack
+Size = 2
+
+[Label1]
+Placement = 0
+Pos = -1.16291914134173;1.75306706560002
+Text = {\\rtf1\\ansi\\ansicpg1252\\deff0\\deflang1033{\\fonttbl{\\f0\\fnil\\fcharset0 Georgia;}{\\f1\\fnil Georgia;}}\n{\\colortbl ;\\red0\\green0\\blue0;}\n\\viewkind4\\uc1\\pard\\cf1\\b\\f0\\fs44 k=0\\f1\\par\n}\n
+BackgroundColor = clNone
+ShowInLegend = 0
+
+[Label2]
+Placement = 0
+Pos = -0.943177563394863;2.48310825457754
+Text = {\\rtf1\\ansi\\ansicpg1252\\deff0\\deflang1033{\\fonttbl{\\f0\\fnil\\fcharset0 Georgia;}{\\f1\\fnil Georgia;}}\n{\\colortbl ;\\red0\\green0\\blue0;}\n\\viewkind4\\uc1\\pard\\cf1\\b\\f0\\fs44 k=1\\f1\\par\n}\n
+BackgroundColor = clNone
+ShowInLegend = 0
+
+[Label3]
+Placement = 0
+Pos = -0.710510010274649;3.25198142169216
+Text = {\\rtf1\\ansi\\ansicpg1252\\deff0\\deflang1033{\\fonttbl{\\f0\\fnil\\fcharset0 Georgia;}{\\f1\\fnil Georgia;}}\n{\\colortbl ;\\red0\\green0\\blue0;}\n\\viewkind4\\uc1\\pard\\cf1\\b\\f0\\fs44 k=2\\f1\\par\n}\n
+BackgroundColor = clNone
+ShowInLegend = 0
+
+[Label4]
+Placement = 0
+Pos = -0.484305444741107;3.98202261066968
+Text = {\\rtf1\\ansi\\ansicpg1252\\deff0\\deflang1033{\\fonttbl{\\f0\\fnil\\fcharset0 Georgia;}{\\f1\\fnil Georgia;}}\n{\\colortbl ;\\red0\\green0\\blue0;}\n\\viewkind4\\uc1\\pard\\cf1\\b\\f0\\fs44 k=3\\f1\\par\n}\n
+BackgroundColor = clNone
+ShowInLegend = 0
+
+[Label5]
+Placement = 0
+Pos = -1.42790163239531;1.03079227224993
+Text = {\\rtf1\\ansi\\ansicpg1252\\deff0\\deflang1033{\\fonttbl{\\f0\\fnil\\fcharset0 Georgia;}{\\f1\\fnil Georgia;}}\n{\\colortbl ;\\red0\\green0\\blue0;}\n\\viewkind4\\uc1\\pard\\cf1\\b\\f0\\fs44 k=-1\\f1\\par\n}\n
+BackgroundColor = clNone
+ShowInLegend = 0
+
+[Label6]
+Placement = 0
+Pos = 0.905236886393504;1.52007519677741
+Text = {\\rtf1\\ansi\\ansicpg1252\\deff0\\deflang1033{\\fonttbl{\\f0\\fnil\\fcharset0 Georgia;}}\n{\\colortbl ;\\red0\\green0\\blue0;}\n\\viewkind4\\uc1\\pard\\cf1\\b\\f0\\fs120 R\\fs44\\par\n}\n
+BackgroundColor = clNone
+ShowInLegend = 0
+
+[Data]
+TextLabelCount = 6
+FuncCount = 7
+PointSeriesCount = 0
+ShadeCount = 2
+RelationCount = 0
+OleObjectCount = 0
+

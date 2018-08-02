@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<p>SUGGESTED REFERENCE MATERIAL:</p>
+<p>As you work through the problems listed below, you should reference your lecture notes and the relevant chapters in a textbook/online resource.</p>
+<p>EXPECTED SKILLS:</p>
+<ul>
+<li><p>Be able to solve first-order linear equations by using the appropriate integrating factors.</p></li>
+<li><p>Be able to set up and solve application problems using integrating factors.</p></li>
+</ul>
+<p>PRACTICE PROBLEMS:</p>
+<p><span><strong>For problems 1-6, use an integrating factor to solve the given differential equation. Express your answer as an explicit function of <span class="math inline">\(x\)</span>.</strong></span></p>
+<ol>
+<li><p><span class="math inline">\(\frac{dy}{dx}-4y=e^{5x}\)</span></p></li>
+<li><p><span class="math inline">\(\frac{dy}{dx}+3x^2y=x^2\)</span></p></li>
+<li><p><span class="math inline">\(y^{\prime}=x-2y\)</span></p></li>
+<li><p><span class="math inline">\(\frac{dy}{dx}-y=\sin{(e^{-x})}\)</span></p></li>
+<li><p><span class="math inline">\(y^{\prime}+\frac{y}{x\ln{x}}=x\)</span>, for <span class="math inline">\(x&gt;1\)</span></p></li>
+<li><p><span class="math inline">\(\frac{dy}{dx}+y=\frac{1}{e^{2x}-5e^x+4}\)</span></p></li>
+</ol>
+<ol start="7">
+<li><p>Look at the practice problems 3 – 9 and determine which ODE’s, if any, are first-order linear equations. If there are any, solve them using integrating factors.</p></li>
+</ol>
+<p><span><strong>For problems 8-9, solve the initial value problem. Express your answer as an explicit function of <span class="math inline">\(x\)</span>.</strong></span></p>
+<ol start="8">
+<li><p><span class="math inline">\(\frac{dy}{dx}+\frac{1}{x}y=\frac{1}{x+x^3}\)</span>, for <span class="math inline">\(x&gt;0\)</span>; <span class="math inline">\(y(1)=0\)</span></p></li>
+<li><p><span class="math inline">\((\cos{x})\frac{dy}{dx}+y\sin{x}=\sin{x}\cos{x}\)</span>, for <span class="math inline">\(-\frac{\pi}{2}&lt;x&lt;\frac{\pi}{2}\)</span>; <span class="math inline">\(y(0)=5\)</span></p></li>
+<li><p>A tank intially contains 7 pounds of salt dissolved in 100 gallons of water. Then, salt water containing 3 pounds of salt per gallon enters the tank at a rate of 8 gallons per minute, and the mixed solution is drained from the tank at a rate of 8 gallons per minute. Let <span class="math inline">\(y=y(t)\)</span> be the amount of salt in the tank at time <span class="math inline">\(t\)</span>.</p>
+<ol>
+<li><p>Using this information, set up an initial value problem (IVP) whose solution is <span class="math inline">\(y(t)\)</span>.</p></li>
+<li><p>Using integrating factors, solve the IVP from part (a).</p></li>
+<li><p>Using separation of variables, solve the IVP from part (a).</p></li>
+</ol></li>
+<li><p>Suppose the saltwater solution in problem <span class="math inline">\(\#10\)</span> is drained from the tank at a rate of 6 gallons per minute.</p>
+<ol>
+<li><p>Set up an initial value problem (IVP) whose solution is <span class="math inline">\(y(t)\)</span>. [Hint: The volume of saltwater is no longer a constant, but rather a function of <span class="math inline">\(t\)</span>.]</p></li>
+<li><p>Using integrating factors, solve the IVP from part (a).</p></li>
+<li><p>Suppose that the tank has a capacity of 200 gallons. How much salt is in the tank when it reaches the point of overflowing?</p></li>
+</ol></li>
+<li><p>Suppose that an object with mass <span class="math inline">\(m\)</span> falls to the earth with a velocity <span class="math inline">\(v=v(t)\)</span> and is subjected to the force of gravity as well as air resistance (which is propotional to its velocity). Using Newton’s Second Law it can be shown that <span class="math display">\[m\frac{dv}{dt}=-mg-kv\]</span> where <span class="math inline">\(g\)</span> is the acceleration due to gravity and <span class="math inline">\(k\)</span> is some positive constant of proportionality.</p>
+<ol>
+<li><p>Assuming that the object’s initial velocity is <span class="math inline">\(v_0\)</span>, set up an initial value problem (IVP) whose solution is <span class="math inline">\(v(t)\)</span>.</p></li>
+<li><p>Solve the IVP from part (a).</p></li>
+<li><p>Evaluate <span class="math inline">\(\lim_{t \rightarrow \infty}{v(t)}\)</span>.</p></li>
+</ol></li>
+<li><p>Consider the simple electrical circuit shown below. An electromotive force (e.g. a generator) produces a voltage of <span class="math inline">\(V(t)\)</span> volts (V) and a current of <span class="math inline">\(I(t)\)</span> amperes (A) at time <span class="math inline">\(t\)</span>. The circuit also contains a resistor with a constant resistance of <span class="math inline">\(R\)</span> ohms (<span class="math inline">\(\Omega\)</span>) and an inductor with a constant inductance of <span class="math inline">\(L\)</span> henries (H). Such a circuit is called an .</p>
+<p><img src="RL_circuit" alt="image" width="264" /></p>
+<p>Using Ohm’s Law and Kirchoff’s Law it can be shown that <span class="math display">\[L\frac{dI}{dt}+RI=V(t)\]</span> Suppose that the <span class="math inline">\(RL\)</span> circuit above has a resistance of <span class="math inline">\(6\)</span> <span class="math inline">\(  \Omega\)</span> and an inductance of <span class="math inline">\(3\)</span> H. If a generator produces a variable voltage of <span class="math inline">\(V(t)=9\sin{t}\)</span> and the initial current is <span class="math inline">\(I(0) = 2\)</span> A, find <span class="math inline">\(I(t)\)</span>.</p>
+<p>Hint: Recall to solve an integral of the form <span class="math inline">\(\int e^x \sin{x} \,dx\)</span>, use integration by parts twice.</p></li>
+</ol>
+</body>
+</html>

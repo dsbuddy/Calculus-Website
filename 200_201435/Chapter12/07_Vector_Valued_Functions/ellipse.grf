@@ -1,0 +1,175 @@
+;This file was created by Graph (http://www.padowan.dk)
+;Do not change this file from other programs.
+[Graph]
+Version = 4.4.1.540
+MinVersion = 2.5
+OS = Windows NT 6.1 Service Pack 1
+
+[Axes]
+xMin = -4.05565335800112
+xMax = 4.41189054621403
+xTickUnit = 1
+xGridUnit = 1
+xShowGrid = 1
+xAutoTick = 0
+xAutoGrid = 0
+yMin = -2.19577999532645
+yMax = 2.25637287278002
+yTickUnit = 1
+yGridUnit = 1
+yShowGrid = 1
+yAutoTick = 0
+yAutoGrid = 0
+AxesColor = clBlue
+GridColor = 0x00FF9999
+NumberFont = Times New Roman,20,clBlack
+LabelFont = Times New Roman,24,clBlack,B
+ShowLegend = 0
+Radian = 1
+
+[Func1]
+FuncType = 1
+x = t
+y = t^2
+Visible = 0
+From = -10
+To = 10
+Steps = 1000
+Color = clNavy
+Size = 4
+
+[Func2]
+FuncType = 1
+x = t
+y = t^2
+Visible = 0
+From = -10
+To = -1.5
+Steps = 1000
+Color = clNavy
+Size = 4
+EndPoint = 3
+TanCount = 1
+
+[Func2Tan1]
+t = 1
+From = 0
+To = 1
+Color = clRed
+Size = 3
+Visible = 0
+EndPoint = 3
+DrawType = 2
+
+[Func3]
+FuncType = 1
+x = t
+y = t^2
+Visible = 0
+From = -10
+To = 1.5
+Steps = 1000
+Color = clNavy
+Size = 4
+EndPoint = 3
+
+[Func4]
+FuncType = 1
+x = t
+y = t
+Visible = 0
+From = 0
+To = 1
+Steps = 1000
+Color = clRed
+Size = 4
+EndPoint = 3
+
+[Func5]
+FuncType = 1
+x = 1+t
+y = 1+2t
+Visible = 0
+From = 0
+To = 1
+Steps = 1000
+Color = clRed
+Size = 4
+EndPoint = 3
+
+[Label1]
+Placement = 0
+Pos = -3.59775788897118;-0.793915404872426
+Text = {\\rtf1\\ansi\\ansicpg1252\\deff0\\deflang1033{\\fonttbl{\\f0\\fnil\\fcharset0 Times New Roman;}{\\f1\\fnil Times New Roman;}}\n{\\colortbl ;\\red0\\green0\\blue0;}\n\\viewkind4\\uc1\\pard\\cf1\\b\\f0\\fs60 r'\\b0\\fs52 (\\cf0\\u960?\\cf1 )\\f1\\par\n}\n
+BackgroundColor = clNone
+ShowInLegend = 0
+
+[Label2]
+Placement = 0
+Pos = -1.70981964743236;0.375479176644406
+Text = {\\rtf1\\ansi\\ansicpg1252\\deff0\\deflang1033{\\fonttbl{\\f0\\fnil\\fcharset0 Times New Roman;}{\\f1\\fnil Times New Roman;}}\n{\\colortbl ;\\red0\\green0\\blue0;}\n\\viewkind4\\uc1\\pard\\cf1\\b\\f0\\fs60 r\\b0\\fs52 (\\cf0\\u960?\\cf1 )\\f1\\par\n}\n
+BackgroundColor = clNone
+ShowInLegend = 0
+
+[Func6]
+FuncType = 1
+x = 3cos(t)
+y = 2sin(t)
+From = -10
+To = 10
+Steps = 1000
+Color = clNavy
+Size = 4
+
+[Func7]
+FuncType = 1
+x = 3cos(t)
+y = 2sin(t)
+From = -3pi/4
+To = pi/4
+Steps = 1000
+Color = clNavy
+Size = 4
+EndPoint = 3
+
+[Func8]
+FuncType = 1
+x = 3cos(t)
+y = 2sin(t)
+From = -10
+To = 5pi/4
+Steps = 1000
+Color = clNavy
+Size = 4
+EndPoint = 3
+
+[Func9]
+FuncType = 1
+x = -t
+y = 0
+From = 0
+To = 3
+Steps = 1000
+Color = clRed
+Size = 4
+EndPoint = 3
+
+[Func10]
+FuncType = 1
+x = -3
+y = -t
+From = 0
+To = 2
+Steps = 1000
+Color = clRed
+Size = 4
+EndPoint = 3
+
+[Data]
+TextLabelCount = 2
+FuncCount = 10
+PointSeriesCount = 0
+ShadeCount = 0
+RelationCount = 0
+OleObjectCount = 0
+

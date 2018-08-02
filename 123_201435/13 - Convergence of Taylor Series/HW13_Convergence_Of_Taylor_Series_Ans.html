@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<p>SUGGESTED REFERENCE MATERIAL:</p>
+<p>As you work through the problems listed below, you should reference your lecture notes and the relevant chapters in a textbook/online resource.</p>
+<p>EXPECTED SKILLS:</p>
+<ul>
+<li><p>Know (i.e. memorize) the Remainder Estimation Theorem, and use it to find an upper bound on the error in approximating a function with its Taylor polynomial.</p></li>
+<li><p>Find the value(s) of <span class="math inline">\(x\)</span> for which a Taylor series converges to a function <span class="math inline">\(f(x)\)</span>.</p></li>
+</ul>
+<p>PRACTICE PROBLEMS:</p>
+<ol>
+<li><p>Find an upper bound for the remainder error if the <span class="math inline">\(4\)</span>th Maclaurin polynomial for <span class="math inline">\(f(x)=\cos{x}\)</span> is used to approximate <span class="math inline">\(\cos{5^\circ}\)</span>.</p></li>
+<li><p>Find an upper bound for the remainder error if the <span class="math inline">\(2\)</span>nd Maclaurin polynomial for <span class="math inline">\(f(x)=e^x\)</span> is used to approximate <span class="math inline">\(\sqrt{e}\)</span>?<br />
+Note: You may assume that <span class="math inline">\(\sqrt{e} &lt; 2\)</span> (this should be clear since <span class="math inline">\(\sqrt{e}&lt;\sqrt{3}&lt;\sqrt{4}=2\)</span>).</p></li>
+<li><p>Find the smallest value of <span class="math inline">\(n\)</span> that is needed so that the <span class="math inline">\(n\)</span>-th Macluarin polynomial <span class="math inline">\(p_n(x)\)</span> approximates <span class="math inline">\(\sqrt{e}\)</span> to four decimal-place accuracy. In other words, find the smallest value of <span class="math inline">\(n\)</span> so that the <span class="math inline">\(n\)</span>-th remainder <span class="math inline">\(\textstyle |R_n(\frac{1}{2})| \leq 0.00005\)</span>.<br />
+Note: You may assume that <span class="math inline">\(\sqrt{e} &lt; 2\)</span> (this should be clear since <span class="math inline">\(\sqrt{e}&lt;\sqrt{3}&lt;\sqrt{4}=2\)</span>).</p></li>
+<li><p>Find the smallest value of <span class="math inline">\(n\)</span> so that the Taylor polynomial for <span class="math inline">\(f(x)=\ln(x)\)</span> about <span class="math inline">\(x_0=1\)</span> approximates <span class="math inline">\(\ln(1.2)\)</span> to three decimal-place accuracy.</p></li>
+<li><p>The purpose of this problem is to show that the Maclaurin series for <span class="math inline">\(f(x)=\cos{x}\)</span> converges to <span class="math inline">\(\cos{x}\)</span> for all <span class="math inline">\(x\)</span>.</p>
+<ol>
+<li><p>Find the Maclaurin series for <span class="math inline">\(f(x)=\cos{x}\)</span>.</p></li>
+<li><p>Find the interval of convergence for this Maclaurin series.</p></li>
+<li><p>Show that the <span class="math inline">\(n\)</span>-th remainder goes to <span class="math inline">\(0\)</span> as <span class="math inline">\(n\)</span> goes to <span class="math inline">\(+\infty\)</span>,<br />
+i.e. show that <span class="math inline">\(\lim_{n \to +\infty}{|R_n(x)|=0}\)</span>.</p></li>
+</ol></li>
+<li><p>Show that the Maclaurin series for <span class="math inline">\(\textstyle f(x)=\frac{1}{1-x}\)</span> converges to <span class="math inline">\(f(x)\)</span> for all <span class="math inline">\(x\)</span> in its interval of convergence.</p></li>
+<li><p>The pupose of this problem is to show that it is possible for a function <span class="math inline">\(f(x)\)</span> to have a Maclaurin series that converges for all <span class="math inline">\(x\)</span> but does not always converge to <span class="math inline">\(f(x)\)</span>.<br />
+<br />
+Consider the piecewise function <span class="math inline">\(f(x) = \begin{cases} 
+e^{(-1/x^2)}, &amp; \text{if } x \neq 0 \\
+0, &amp; \text{if } x = 0 \end{cases}\)</span> .</p>
+<ol>
+<li><p>Use the definition of the derivative <span class="math inline">\(f^{\prime}(x)=\lim_{h \to 0}{\tfrac{f(x+h)-f(x)}{h}}\)</span> to show that <span class="math inline">\(f&#39;(0)=0\)</span>. Hint: Make the substitution <span class="math inline">\(\textstyle t=\frac{1}{h}\)</span> and compute the one-sided limits as <span class="math inline">\(h \to 0^+\)</span> and <span class="math inline">\(h \to 0^-\)</span>.</p></li>
+<li><p>Assuming that <span class="math inline">\(f^{(n)}(0)=0\)</span> for <span class="math inline">\(n \geq 2\)</span>, find the Macluarin series for <span class="math inline">\(f(x)\)</span> and the interval of convergence for the series.</p></li>
+<li><p>Find the values of <span class="math inline">\(x\)</span> for which the Maclaurin series converges to <span class="math inline">\(f(x)\)</span>.</p></li>
+</ol></li>
+</ol>
+</body>
+</html>

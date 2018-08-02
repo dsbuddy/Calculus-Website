@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<p>SUGGESTED REFERENCE MATERIAL:</p>
+<p>As you work through the problems listed below, you should reference your lecture notes and the relevant chapters in a textbook/online resource.</p>
+<p>EXPECTED SKILLS:</p>
+<ul>
+<li><p>Know (i.e. memorize) the Maclaurin series for <span class="math inline">\(e^x, \sin{x}\)</span> and <span class="math inline">\(\cos{x}\)</span>. Algebraically manipulate these series expansions, as well as other given power series expansions, to form new expansions.</p></li>
+<li><p>Differentiate and integrate power series expansions term-by-term.</p></li>
+<li><p>Use a series expansion to approximate an integral to some specified accuracy.</p></li>
+</ul>
+<p>PRACTICE PROBLEMS:</p>
+<ol>
+<li><p>Confirm that <span class="math inline">\(\frac{d}{dx}(e^x)=e^x\)</span> by differentiating the Maclaurin series for <span class="math inline">\(e^x\)</span> term-by-term.</p></li>
+<li><p>Recall that the Maclaurin series for <span class="math inline">\(e^{x}\)</span> converges to <span class="math inline">\(e^{x}\)</span> for all real numbers <span class="math inline">\(x\)</span>. It can be shown (in a complex analysis course) that this convergence holds for any complex number as well. Based on this fact, use the Maclaurin series for <span class="math inline">\(e^x, \sin{x},\)</span> and <span class="math inline">\(\cos{x}\)</span> to prove : <span class="math display">\[e^{ix}=\cos{x}+i\sin{x},\]</span> where <span class="math inline">\(i\)</span> is the imaginary number with the property <span class="math inline">\(i^2=-1\)</span> (and thus <span class="math inline">\(i^3=-i\)</span>, <span class="math inline">\(i^4=1\)</span>, etc).</p></li>
+<li><p>The purpose of this problem is to find the Maclaurin series for <span class="math inline">\(\arctan{x}\)</span>. If we attempt to take successive derivatives of <span class="math inline">\(\arctan{x}\)</span> the computation becomes unpleasant rather quickly (try it if you want). Here is a simpler alternative.</p>
+<ol>
+<li><p>Find the Maclaurin series for <span class="math inline">\(\textstyle \frac{1}{1-x}\)</span>.</p></li>
+<li><p>Replace <span class="math inline">\(x\)</span> in part (a) with the appropriate quantity to obtain the Maclaurin series for <span class="math inline">\(\textstyle \frac{1}{1+x^2}\)</span>.</p></li>
+<li><p>Integrate the answer in part (b) term-by-term to obtain the Maclaurin series for <span class="math inline">\(\arctan{x}\)</span>.</p></li>
+</ol></li>
+<li><p>Find the first four nonzero terms of the Maclaurin series for <span class="math inline">\(f(x)=e^{(x^2)}\arctan{x}\)</span> by multiplying the Maclaurin series of the factors. See the previous problem for the Maclaurin series for <span class="math inline">\(\arctan{x}\)</span>.</p></li>
+<li><p>Consider the function <span class="math inline">\(f(x)=\sin{x}\cos{x}\)</span>.</p>
+<ol>
+<li><p>Find the first three nonzero terms of the Maclaurin series for <span class="math inline">\(f(x)\)</span> by multiplying the Maclaurin series of the factors.</p></li>
+<li><p>Confirm your answer in part (a) by using the trigonometric identity<br />
+<span class="math inline">\(\sin{2x}=2\sin{x}\cos{x}\)</span>.</p></li>
+</ol></li>
+<li><p>Find the first three nonzero terms of the Maclaurin series for <span class="math inline">\(f(x)=\tan{x}\)</span> by performing a long division on the Maclaurin series for <span class="math inline">\(\sin{x}\)</span> and <span class="math inline">\(\cos{x}\)</span>.</p></li>
+<li><p>Use the result in <span class="math inline">\(\#6\)</span> to find the first three nonzero terms of the Maclaurin series for <span class="math inline">\(f(x)=\sec^2{x}\)</span>.</p></li>
+<li><p>Use a Maclaurin series to approximate <span class="math inline">\(\int_0^1{\cos(x^2)} \text{ } dx \)</span> to four decimal-place accuracy.</p></li>
+<li><p>Use a Maclaurin series to approximate <span class="math inline">\(\int_0^1{\arctan(x^2)} \text{ } dx \)</span> to two decimal-place accuracy. See problem <span class="math inline">\(\#3\)</span> for the Maclaurin series for <span class="math inline">\(\arctan{x}.\)</span></p></li>
+</ol>
+</body>
+</html>

@@ -1,0 +1,138 @@
+\documentclass[12pt]{article}
+
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{fullpage}
+\usepackage{epsfig}
+\usepackage{epstopdf}
+\everymath{\displaystyle}
+
+\newif\ifans
+
+\ansfalse
+
+\begin{document}
+
+\begin{center}
+\underline{\LARGE{Integration by Parts}}
+\end{center}
+
+\noindent SUGGESTED REFERENCE MATERIAL:
+
+\bigskip
+
+\noindent As you work through the problems listed below, you should reference Chapter 7.2 of the recommended textbook (or the equivalent chapter in your alternative textbook/online resource) and your lecture notes.
+
+\bigskip
+
+\noindent EXPECTED SKILLS:
+
+\begin{itemize}
+
+\item Be able to use integration by parts to evaluate various integrals, including integrands involving products of functions, isolated logarithmic functions, or isolated inverse trigonometric functions.
+
+\end{itemize}
+
+\noindent PRACTICE PROBLEMS:
+
+\medskip
+
+\noindent {\bf For problems 1-12, evaluate the given integral.}
+
+\begin{enumerate}
+
+\item $\int xe^{4x}\,dx$ 
+
+\ifans{\fbox{$\frac{x}{4}e^{4x}-\frac{1}{16}e^{4x}+C$}} \fi
+
+\item $\int x^2\cos{(x)}\,dx$ 
+
+\ifans{\fbox{$x^2\sin{x}+2x\cos{x}-2\sin{x}+C$}} \fi
+
+\item $\int x^2\ln{(x)}\,dx$ 
+
+\ifans{\fbox{$\frac{1}{3}x^3\ln{x}-\frac{1}{9}x^3+C$}} \fi
+
+\item $\int{\frac{\ln{x}}{x^4}} \,dx$
+
+\ifans{\fbox{$-\frac{1}{3}x^{-3}\ln{x}-\frac{1}{9}x^{-3}+C$}} \fi
+
+\item $\int \arcsin{(x)}\,dx$ 
+
+\ifans{\fbox{$x\arcsin{x}+\sqrt{1-x^2}+C$}} \fi
+
+\item $\int x\sec^2{(x)}\,dx$ 
+
+\ifans{\fbox{$x\tan{x}+\ln{|\cos{x}|}+C$}} \fi
+
+\item $\int \ln{(x^2+10)}\,dx$ 
+
+\ifans{\fbox{$x\ln{(x^2+10)}-2x+2\sqrt{10}\arctan{\left(\frac{x}{\sqrt{10}}\right)}+C$}} \fi
+
+\item $\int e^{2x}\cos{(3x)}\,dx$ 
+
+\ifans{\fbox{$\frac{2}{13}e^{2x}\cos{(3x)}+\frac{3}{13}e^{2x}\sin{(3x)}+C$}} \fi
+
+\item $\int x\arctan{(x)}\,dx$
+
+\ifans{\fbox{$\frac{x^2}{2}\tan^{-1}x-\frac{x}{2}+\frac{1}{2}\tan^{-1}x+C$}} \fi
+
+\item $\int x^3 \cos{(x^2)} \,dx$
+
+\ifans{\fbox{$\frac{1}{2}\cos{(x^2)}+\frac{1}{2}x^2\sin{(x^2)}+C$}} \fi
+
+\item $\int_{0}^{\pi}3x\sin{(x)}\,dx$ 
+
+\ifans{\fbox{$3\pi$}} \fi
+
+\item $\int_{0}^{1}x^2e^{x}\,dx$ 
+
+\ifans{\fbox{$e-2$}} \fi
+
+\item Suppose that $u$ and $v$ are differentiable functions of $x$ with $\int_{x=0}^{x=1} v \,du = 3$ and the following functional values.\\
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+$x$ & $u(x)$ & $v(x)$\\
+\hline
+0 & 5 & 2 \\
+\hline
+1 & 7 & $-4$\\
+\hline
+\end{tabular}
+\end{center}
+Use this information to compute $\int_{x=0}^{x=1} u \,dv$.
+
+\ifans{\fbox{$-41$}} \fi
+
+\item Evaluate $\int \sin{\sqrt{x}} \,dx$ by first making an appropriate substitution and then applying integration by parts.
+
+\ifans{\fbox{$2\sin{(\sqrt{x})}-2\sqrt{x}\cos{(\sqrt{x})}+C$}} \fi
+
+\item Evaluate $\int \left(\sin^{-1}x\right)^2 \,dx$
+
+\ifans{\fbox{$x\left(\sin^{-1}x\right)^2-2x+2\sqrt{1-x^2}\left(\sin^{-1}x\right)+C$}} \fi
+
+\item Find the area of the region which is enclosed by $y=\ln{x}$, $y=1$, and $x=e^2$.
+
+\ifans{\fbox{$e$}} \fi
+
+\item Let $R$ be the region enclosed by the graphs of $y=\ln{x}$, $x=e$, and the $x$-axis (as shown below).
+
+\begin{center}
+\includegraphics[scale=0.38]{volume2.pdf}
+\end{center}
+
+ Find the volume of the solid that results from revolving $R$ around the line $y=-1$.
+
+\ifans{\fbox{$\pi e$}} \fi
+
+\item Let $f$ be a differentiable function. Use integration by parts to show: 
+$$\int f(x) \,dx=xf(x)-\int x f^{\prime}(x) \,dx$$
+
+\ifans{\fbox{\parbox{1\linewidth}{Consider $\int f(x) \,dx$.  Let $u=f(x)$ and $dv=dx$.  Then, $du=f^{\prime}(x)dx$ and $v=x$.  And, integration by parts yields $\int f(x) \,dx = xf(x)-\int x f^{\prime}(x) \,dx$, as desired.}}} \fi
+
+\end{enumerate}
+
+\end{document}
