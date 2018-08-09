@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Tangents, Arc Length, Area in Polar</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="../vendor/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../css/clean-blog.css" rel="stylesheet">
+    <script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+  </head>
+
+  <body>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+
+
+
+
+
+
+
+<h4 id="example-2">Example 2</h4>
+
+<p>Find the arc length of <span class="math inline">\(r = e^{\theta}\)</span> for <span class="math inline">\(0\leq\theta\leq 2\pi\)</span>.</p>
+
+<button type="button" class="btn btn-primary" onclick="example2()">Click for Solution</button>
+
+<br><br>
+
+<div id="ex2" style="display:none">
+  <p>
+    <span class="math display">
+      \[r^2 = (e^\theta)^2 = e^{2\theta}\]
+    </span>
+  </p>
+  <p>
+    <span class="math display">
+      \[\frac{dr}{d\theta} = e^{\theta}\Longrightarrow\left(\frac{dr}{d\theta}\right)^2 = e^{2\theta}\]
+    </span>
+  </p>
+</div>
+
+
+</div><!-- col-lg-8 -->
+</div><!-- row -->
+</div><!-- container -->
+</div>	<!-- f -->
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../vendor/jquery/jquery.min.js"></script>
+<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom scripts for this template -->
+<script src="../js/clean-blog.min.js"></script>
+
+<script>
+
+
+function example2() {
+    var x = document.getElementById("ex2");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+
+</script>
+
+</body>
+</html>

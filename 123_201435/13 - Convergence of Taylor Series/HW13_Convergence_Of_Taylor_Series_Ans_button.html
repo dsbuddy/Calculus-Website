@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<p>SUGGESTED REFERENCE MATERIAL:</p>
+<p>As you work through the problems listed below, you should reference your lecture notes and the relevant chapters in a textbook/online resource.</p>
+<p>EXPECTED SKILLS:</p>
+<ul>
+<li><p>Know (i.e. memorize) the Remainder Estimation Theorem, and use it to find an upper bound on the error in approximating a function with its Taylor polynomial.</p></li>
+<li><p>Find the value(s) of <span class="math inline">\(x\)</span> for which a Taylor series converges to a function <span class="math inline">\(f(x)\)</span>.</p></li>
+</ul>
+<p>PRACTICE PROBLEMS:</p>
+<ol>
+<li><p>Find an upper bound for the remainder error if the <span class="math inline">\(4\)</span>th Maclaurin polynomial for <span class="math inline">\(f(x)=\cos{x}\)</span> is used to approximate <span class="math inline">\(\cos{5^\circ}\)</span>.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex1')">Click for Solution</button>
+<br><br>
+<div id="ex1" style="display:none">
+<span><span><span>1</span><span>If <span class="math inline">\(f(x)=\cos{x}\)</span>, then <span class="math inline">\(\textstyle|f^{(5)}(x)| \leq 1\)</span> for all <span class="math inline">\(x\)</span>, and so by the Remainder Estimation Theorem, <span class="math inline">\(\textstyle |R_4(\frac{\pi}{36})| \leq \frac{1}{5!} \left(\frac{\pi}{36} - 0 \right)^5\)</span>.<br />
+<br />
+This can be verified with a calculator as follows:<br />
+The <span class="math inline">\(4\)</span>th Maclaurin polynomial for <span class="math inline">\(\cos{x}\)</span> is <span class="math inline">\(\textstyle p_4(x)=1-\frac{1}{2!}x^2+\frac{1}{4!}x^4\)</span>.<br />
+Thus <span class="math inline">\(\textstyle \cos{\left(\frac{\pi}{36}\right)} \approx p_4\left(\frac{\pi}{36}\right) \approx 0.996194698705\)</span><br />
+Now a calculator tells us that <span class="math inline">\(\textstyle \cos{\left(\frac{\pi}{36}\right)} \approx 0.996194698092\)</span>.<br />
+So <span class="math inline">\(\textstyle |R_4(\frac{\pi}{36})| = |\cos({\frac{\pi}{36}}) - p_4(\frac{\pi}{36})| \approx 6 \times 10^{-10} &lt; \frac{1}{5!} \left(\frac{\pi}{36}\right)^5 \approx 4.218 \times 10^{-8}\)</span>. </span></span></span>
+</div></p></li>
+<li><p>Find an upper bound for the remainder error if the <span class="math inline">\(2\)</span>nd Maclaurin polynomial for <span class="math inline">\(f(x)=e^x\)</span> is used to approximate <span class="math inline">\(\sqrt{e}\)</span>?<br />
+Note: You may assume that <span class="math inline">\(\sqrt{e} &lt; 2\)</span> (this should be clear since <span class="math inline">\(\sqrt{e}&lt;\sqrt{3}&lt;\sqrt{4}=2\)</span>).</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex2')">Click for Solution</button>
+<br><br>
+<div id="ex2" style="display:none">
+<span><span><span>1</span><span>Note that <span class="math inline">\(f(x)=e^x\)</span> is an increasing function. So for all <span class="math inline">\(x\)</span> on the interval <span class="math inline">\(\textstyle [0, \frac{1}{2}]\)</span> we have <span class="math inline">\(|f^{(3)}(x)| = e^x \leq e^{\frac{1}{2}} &lt; 2\)</span> , and so by the Remainder Estimation Theorem, <span class="math inline">\(\textstyle |R_2(\frac{1}{2})| \leq \frac{2}{3!} \left(\frac{1}{2} - 0 \right)^3 = \frac{1}{24}\)</span>.<br />
+<br />
+This can be verified with a calculator as follows:<br />
+The <span class="math inline">\(2\)</span>nd Maclaurin polynomial for <span class="math inline">\(e^x\)</span> is <span class="math inline">\(\textstyle p_2(x)=1+x+\frac{1}{2}x^2\)</span>.<br />
+Thus <span class="math inline">\(\textstyle \sqrt{e} \approx p_2(\frac{1}{2}) = 1.625\)</span><br />
+Now a calculator tells us that <span class="math inline">\(\textstyle \sqrt{e} \approx 1.648721271\)</span>.<br />
+So <span class="math inline">\(\textstyle |R_2(\frac{1}{2})| = |\sqrt{e} - p_2(\frac{1}{2})| \approx 0.023721271 &lt; \frac{1}{24} = 0.041\overline{6}\)</span>. </span></span></span>
+</div></p></li>
+<li><p>Find the smallest value of <span class="math inline">\(n\)</span> that is needed so that the <span class="math inline">\(n\)</span>-th Macluarin polynomial <span class="math inline">\(p_n(x)\)</span> approximates <span class="math inline">\(\sqrt{e}\)</span> to four decimal-place accuracy. In other words, find the smallest value of <span class="math inline">\(n\)</span> so that the <span class="math inline">\(n\)</span>-th remainder <span class="math inline">\(\textstyle |R_n(\frac{1}{2})| \leq 0.00005\)</span>.<br />
+Note: You may assume that <span class="math inline">\(\sqrt{e} &lt; 2\)</span> (this should be clear since <span class="math inline">\(\sqrt{e}&lt;\sqrt{3}&lt;\sqrt{4}=2\)</span>).</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex3')">Click for Solution</button>
+<br><br>
+<div id="ex3" style="display:none">
+<span><span><span>1</span><span>Note that <span class="math inline">\(f(x)=e^x\)</span> is an increasing function and <span class="math inline">\(f^{(n)}(x)=e^x\)</span> for all <span class="math inline">\(n\)</span>. So for all <span class="math inline">\(x\)</span> on the interval <span class="math inline">\(\textstyle [0, \frac{1}{2}]\)</span> we have <span class="math inline">\(|f^{(n+1)}(x)| = e^x \leq e^{\frac{1}{2}} &lt; 2\)</span> , and so by the Remainder Estimation Theorem, <span class="math inline">\(\textstyle |R_n(\frac{1}{2})| \leq \frac{2}{(n+1)!} \left(\frac{1}{2} - 0 \right)^{n+1} = \frac{1}{2^n (n+1)!}\)</span>.<br />
+<br />
+So we want <span class="math inline">\(\textstyle \frac{1}{2^n (n+1)!} \leq 0.00005\)</span>, or <span class="math inline">\(2^n (n+1)! \geq 20,000\)</span>.<br />
+For <span class="math inline">\(n=4: 2^4(5!) = 16(120) &lt; 20,000\)</span>.<br />
+For <span class="math inline">\(n=5: 2^5(6!) = 32(720) &gt; 20,000\)</span>.<br />
+So we should let <span class="math inline">\(n=5\)</span>, i.e. the <span class="math inline">\(5\)</span>-th Macluarin polynomial for <span class="math inline">\(e^{x}\)</span> approximates <span class="math inline">\(\sqrt{e}\)</span> to four decimal-place accuracy. </span></span></span>
+</div></p></li>
+<li><p>Find the smallest value of <span class="math inline">\(n\)</span> so that the Taylor polynomial for <span class="math inline">\(f(x)=\ln(x)\)</span> about <span class="math inline">\(x_0=1\)</span> approximates <span class="math inline">\(\ln(1.2)\)</span> to three decimal-place accuracy.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex4')">Click for Solution</button>
+<br><br>
+<div id="ex4" style="display:none">
+<span><span><span class="math inline">\(n=3\)</span>.; Detailed Solution: </span></span>
+</div></p></li>
+<li><p>The purpose of this problem is to show that the Maclaurin series for <span class="math inline">\(f(x)=\cos{x}\)</span> converges to <span class="math inline">\(\cos{x}\)</span> for all <span class="math inline">\(x\)</span>.</p>
+<ol>
+<li><p>Find the Maclaurin series for <span class="math inline">\(f(x)=\cos{x}\)</span>.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex5')">Click for Solution</button>
+<br><br>
+<div id="ex5" style="display:none">
+<span><span><span class="math inline">\(\sum_{k=0}^{\infty}{\frac{(-1)^k x^{2k}}{(2k)!}}\)</span>. </span></span>
+</div></p></li>
+<li><p>Find the interval of convergence for this Maclaurin series.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex6')">Click for Solution</button>
+<br><br>
+<div id="ex6" style="display:none">
+<span><span><span class="math inline">\((-\infty, +\infty)\)</span>. See #15.</span></span>
+</div></p></li>
+<li><p>Show that the <span class="math inline">\(n\)</span>-th remainder goes to <span class="math inline">\(0\)</span> as <span class="math inline">\(n\)</span> goes to <span class="math inline">\(+\infty\)</span>,<br />
+i.e. show that <span class="math inline">\(\lim_{n \to +\infty}{|R_n(x)|=0}\)</span>.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex7')">Click for Solution</button>
+<br><br>
+<div id="ex7" style="display:none">
+<span><span><span>1</span><span>If <span class="math inline">\(f(x)=\cos(x)\)</span>, then <span class="math inline">\(|f^{(n+1)}(x)| \leq 1\)</span> for all <span class="math inline">\(n\)</span> and for all <span class="math inline">\(x\)</span>.<br />
+<br />
+So by the Remainder Estimation Theorem, <span class="math inline">\(\textstyle 0 \leq |R_n(x)| \leq \frac{1}{(n+1)!} |x|^{n+1}\)</span>.<br />
+<br />
+Now <span class="math inline">\(\lim_{n \to +\infty}{0} = \lim_{n \to +\infty}{ \frac{1}{(n+1)!} |x|^{n+1}} = 0\)</span>.<br />
+<br />
+So by the Squeeze Theorem <span class="math inline">\(\lim_{n \to +\infty}{|R_n(x)|=0}\)</span> </span></span></span>
+</div></p></li>
+</ol></li>
+<li><p>Show that the Maclaurin series for <span class="math inline">\(\textstyle f(x)=\frac{1}{1-x}\)</span> converges to <span class="math inline">\(f(x)\)</span> for all <span class="math inline">\(x\)</span> in its interval of convergence.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex8')">Click for Solution</button>
+<br><br>
+<div id="ex8" style="display:none">
+<span><span><span>1</span><span>The Maclaurin series for <span class="math inline">\(\textstyle f(x)=\frac{1}{1-x}\)</span> is <span class="math inline">\(\textstyle 1+x+x^2+x^3+x^4+\ldots = \sum_{k=0}^{\infty}{x^k}\)</span>, which is a geometric series with <span class="math inline">\(a=1\)</span> and <span class="math inline">\(r=x\)</span>. Thus the series converges if, and only if, <span class="math inline">\(-1 &lt; x &lt; 1\)</span>. For these values of <span class="math inline">\(x\)</span>, the series converges to <span class="math inline">\(\textstyle \frac{a}{1-r}=\frac{1}{1-x}=f(x)\)</span>. </span></span></span>
+</div></p></li>
+<li><p>The pupose of this problem is to show that it is possible for a function <span class="math inline">\(f(x)\)</span> to have a Maclaurin series that converges for all <span class="math inline">\(x\)</span> but does not always converge to <span class="math inline">\(f(x)\)</span>.<br />
+<br />
+Consider the piecewise function <span class="math inline">\(f(x) = \begin{cases} 
+e^{(-1/x^2)}, &amp; \text{if } x \neq 0 \\
+0, &amp; \text{if } x = 0 \end{cases}\)</span> .</p>
+<ol>
+<li><p>Use the definition of the derivative <span class="math inline">\(f^{\prime}(x)=\lim_{h \to 0}{\tfrac{f(x+h)-f(x)}{h}}\)</span> to show that <span class="math inline">\(f&#39;(0)=0\)</span>. Hint: Make the substitution <span class="math inline">\(\textstyle t=\frac{1}{h}\)</span> and compute the one-sided limits as <span class="math inline">\(h \to 0^+\)</span> and <span class="math inline">\(h \to 0^-\)</span>.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex9')">Click for Solution</button>
+<br><br>
+<div id="ex9" style="display:none">
+<span><span><span>1</span><span><span class="math inline">\(f^{\prime}(0) = \lim_{h \to 0}{\frac{f(0+h)-f(0)}{h}} = \lim_{h \to 0}{\frac{e^{(-1/h^2)}-0}{h}}\)</span><br />
+<br />
+Now let <span class="math inline">\(\textstyle t=\frac{1}{h}\)</span> and examine the limit as <span class="math inline">\(h \to 0^+\)</span> and <span class="math inline">\(h \to 0^-\)</span>.<br />
+<br />
+So <span class="math inline">\(\lim_{h \to 0^+}{\frac{e^{(-1/h^2)}}{h}}=\lim_{t \to +\infty}{\frac{e^{-t^2}}{\frac{1}{t}}}=\lim_{t \to +\infty}{\frac{t}{e^{t^2}}}=\lim_{t \to +\infty}{\frac{1}{2te^{t^2}}}=0\)</span>,<br />
+<br />
+and <span class="math inline">\(\lim_{h \to 0^-}{\frac{e^{(-1/h^2)}}{h}}=\lim_{t \to -\infty}{\frac{e^{-t^2}}{\frac{1}{t}}}=\lim_{t \to -\infty}{\frac{t}{e^{t^2}}}=\lim_{t \to -\infty}{\frac{1}{2te^{t^2}}}=0\)</span>.<br />
+<br />
+Therefore <span class="math inline">\(f^{\prime}(0)=0\)</span>. </span></span></span>
+</div></p></li>
+<li><p>Assuming that <span class="math inline">\(f^{(n)}(0)=0\)</span> for <span class="math inline">\(n \geq 2\)</span>, find the Macluarin series for <span class="math inline">\(f(x)\)</span> and the interval of convergence for the series.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex10')">Click for Solution</button>
+<br><br>
+<div id="ex10" style="display:none">
+<span><span><span>1</span><span>Since <span class="math inline">\(f(0)=0\)</span> from the function definiton, <span class="math inline">\(f^{\prime}(0)=0\)</span> by part (a), and <span class="math inline">\(f^{(n)}(0)=0\)</span> for <span class="math inline">\(n \geq 2\)</span> by assumption, the Macluarin series for <span class="math inline">\(f(x)\)</span> is <span class="math display">\[0 + 0x + 
+\frac{0x^2}{2!}+\frac{0x^3}{3!}+\ldots = \sum_{k=0}^{\infty}{0}=0.\]</span><br />
+Thus the series converges (to <span class="math inline">\(0\)</span>) for all <span class="math inline">\(x\)</span>, i.e. the interval of convergance is <span class="math inline">\((-\infty, +\infty)\)</span>. </span></span></span>
+</div></p></li>
+<li><p>Find the values of <span class="math inline">\(x\)</span> for which the Maclaurin series converges to <span class="math inline">\(f(x)\)</span>.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex11')">Click for Solution</button>
+<br><br>
+<div id="ex11" style="display:none">
+<span><span><span>1</span><span>From part (b) we know that the Maclaurin series for <span class="math inline">\(f(x)\)</span> converges to <span class="math inline">\(0\)</span> for all <span class="math inline">\(x\)</span>. Now <span class="math inline">\(f(0)=0\)</span>, but if <span class="math inline">\(x \neq 0\)</span> then <span class="math inline">\(f(x)=e^{(-1/x^2)} &gt; 0\)</span>. Thus the Maclaurin series for <span class="math inline">\(f(x)\)</span> converges for all <span class="math inline">\(x\)</span> but only converges to <span class="math inline">\(f(x)\)</span> for <span class="math inline">\(x=0\)</span>. </span></span></span>
+</div></p></li>
+</ol></li>
+</ol>
+</body>
+<script>
+function toggleAnswer(idName) {
+var x = document.getElementById(idName);
+if (x.style.display === "none") {
+x.style.display = "block";
+} else {
+x.style.display = "none";
+}
+}</script>
+</html>

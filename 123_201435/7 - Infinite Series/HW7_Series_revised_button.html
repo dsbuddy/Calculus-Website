@@ -1,0 +1,256 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<p>SUGGESTED REFERENCE MATERIAL:</p>
+<p>As you work through the problems listed below, you should reference your lecture notes and the relevant chapters in a textbook/online resource.</p>
+<p>EXPECTED SKILLS:</p>
+<ul>
+<li><p>Calculate the partial sums of a series.</p></li>
+<li><p>Recognize geometric and telescoping series, determine whether they converge, and if so, determine the sum of the series (i.e. what they converge to).</p></li>
+<li><p>Compute the sum of a finite number of terms from a geometric series.</p></li>
+</ul>
+<p>PRACTICE PROBLEMS:</p>
+<p><span><strong>For problems 1 – 8, calculate the first four partial sums for each series.</strong></span></p>
+<ol>
+<li><p><span class="math inline">\(\sum_{k=1}^{\infty}\frac{1}{2}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex1')">Click for Solution</button>
+<br><br>
+<div id="ex1" style="display:none">
+<span><span><span class="math inline">\(s_1=\frac{1}{2}, s_2=\frac{1}{2}+\frac{1}{2}=1, 
+s_3=\frac{1}{2}+\frac{1}{2}+\frac{1}{2}=\frac{3}{2}, s_4=\frac{1}{2}+\frac{1}{2}+\frac{1}{2}+\frac{1}{2}=2\)</span> </span></span>
+</div></p></li>
+<li><p><span class="math inline">\(\sum_{k=1}^{\infty}k\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex2')">Click for Solution</button>
+<br><br>
+<div id="ex2" style="display:none">
+<span><span><span class="math inline">\(s_1=1, s_2=1+2=3, s_3=1+2+3=6, s_4=1+2+3+4=10\)</span> </span></span>
+</div></p></li>
+<li><p><span class="math inline">\(\sum_{k=1}^{\infty}(-1)^{k}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex3')">Click for Solution</button>
+<br><br>
+<div id="ex3" style="display:none">
+<span><span><span class="math inline">\(s_1=-1, s_2=-1+1=0, s_3=-1+1-1=-1, s_4=-1+1-1+1=0\)</span> </span></span>
+</div></p></li>
+<li><p><span class="math inline">\(\sum_{j=0}^{\infty} \left(\frac{1}{2}\right)^{j}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex4')">Click for Solution</button>
+<br><br>
+<div id="ex4" style="display:none">
+<span><span><span class="math inline">\(s_0=1, s_1=1+\frac{1}{2}=\frac{3}{2}, s_2=1+\frac{1}{2}+\frac{1}{4}=\frac{7}{4}, s_3=1+\frac{1}{2}+\frac{1}{4}+\frac{1}{8}=\frac{15}{8}\)</span> </span></span>
+</div></p></li>
+<li><p><span class="math inline">\(\sum_{j=1}^{\infty} \left(\frac{1}{j}-\frac{1}{j+1}\right)\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex5')">Click for Solution</button>
+<br><br>
+<div id="ex5" style="display:none">
+<span><span><span>1</span><span><span class="math inline">\(s_1=1-\frac{1}{2}=\frac{1}{2}
+\\s_2=\left(1-\frac{1}{2}\right)+\left(\frac{1}{2}-\frac{1}{3}\right)=1-\frac{1}{3}=\frac{2}{3}
+\\s_3=\left(1-\frac{1}{2}\right)+\left(\frac{1}{2}-\frac{1}{3}\right)+\left(\frac{1}{3}-\frac{1}{4}\right)=1-\frac{1}{4}=\frac{3}{4}
+\\s_4=\left(1-\frac{1}{2}\right)+\left(\frac{1}{2}-\frac{1}{3}\right)+\left(\frac{1}{3}-\frac{1}{4}\right)+\left(\frac{1}{4}-\frac{1}{5}\right)=1-\frac{1}{5}=\frac{4}{5}\)</span> </span></span></span>
+</div></p></li>
+<li><p><span class="math inline">\(\sum_{j=0}^{\infty}(7^{j}-7^{j+1})\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex6')">Click for Solution</button>
+<br><br>
+<div id="ex6" style="display:none">
+<span><span><span>1</span><span><span class="math inline">\(s_0=1-7
+\\s_1=(1-7)+(7-7^2)=1-7^2
+\\s_2=(1-7)+(7-7^2)+(7^2-7^3)=1-7^3
+\\s_3=(1-7)+(7-7^2)+(7^2-7^3)+(7^3-7^4)=1-7^4\)</span> </span></span></span>
+</div></p></li>
+<li><p><span class="math inline">\(\sum_{\ell=3}^{\infty}\frac{3^{\ell+1}}{4^{\ell}}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex7')">Click for Solution</button>
+<br><br>
+<div id="ex7" style="display:none">
+<span><span><span>1</span><span><span class="math inline">\(s_3=\frac{3^4}{4^3}
+\\s_4=\frac{3^4}{4^3}+\frac{3^4}{4^3}\left(\frac{3}{4}\right)
+\\s_5=\frac{3^4}{4^3}+\frac{3^4}{4^3}\left(\frac{3}{4}\right)+\frac{3^4}{4^3}\left(\frac{3}{4}\right)^2
+\\s_6=\frac{3^4}{4^3}+\frac{3^4}{4^3}\left(\frac{3}{4}\right)+\frac{3^4}{4^3}\left(\frac{3}{4}\right)^2+\frac{3^4}{4^3}\left(\frac{3}{4}\right)^3\)</span> </span></span></span>
+</div></p></li>
+<li><p><span class="math inline">\(\sum_{\ell=1}^{\infty}\frac{5^{\ell}}{3^{\ell}}.\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex8')">Click for Solution</button>
+<br><br>
+<div id="ex8" style="display:none">
+<span><span><span>1</span><span><span class="math inline">\(s_1=\frac{5}{3}
+\\s_2=\frac{5}{3}+\left(\frac{5}{3}\right)^2
+\\s_3=\frac{5}{3}+\left(\frac{5}{3}\right)^2+\left(\frac{5}{3}\right)^3
+\\s_4=\frac{5}{3}+\left(\frac{5}{3}\right)^2+\left(\frac{5}{3}\right)^3+\left(\frac{5}{3}\right)^4\)</span> </span></span></span>
+</div></p></li>
+<li><p>For numbers 1, 5, and 6 above, find a general formula for the <span class="math inline">\(n^{\mathit{th}}\)</span> partial sum, <span class="math inline">\(s_{n},\)</span> for each series. Use this to determine whether these series converge, and if so, determine the sum of the series.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex9')">Click for Solution</button>
+<br><br>
+<div id="ex9" style="display:none">
+<span><span><span>1</span><span> Problem <span class="math inline">\(1\)</span>: <span class="math inline">\(s_n=\frac{1}{2}n\)</span>, and so <span class="math inline">\(\lim_{n \rightarrow +\infty}s_n = +\infty\)</span>. Thus, the series diverges.<br />
+Problem <span class="math inline">\(5\)</span>: <span class="math inline">\(s_n=1 - \frac{1}{n+1}\)</span>, and so <span class="math inline">\(\lim_{n \rightarrow +\infty}s_n = 1\)</span>. Thus, the sum of the series is <span class="math inline">\(1\)</span>.<br />
+<br />
+Problem <span class="math inline">\(6\)</span>: <span class="math inline">\(s_n=1 - 7^{(n+1)}\)</span>, and so <span class="math inline">\(\lim_{n \rightarrow +\infty}s_n = -\infty\)</span>. Thus, the series diverges. </span></span></span>
+</div></p></li>
+<li><p>For numbers 3, 4, 7, and 8 above, determine whether these series converge, and if so, determine the sum of the series.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex10')">Click for Solution</button>
+<br><br>
+<div id="ex10" style="display:none">
+<span><span><span>1</span><span> Problem <span class="math inline">\(3\)</span>: Geometric series with <span class="math inline">\(a=-1\)</span> and <span class="math inline">\(r=-1\)</span>.<br />
+Since <span class="math inline">\(|r|=1\)</span> the series diverges.<br />
+Alternatively, the sequence of partial sums oscillates bewteen <span class="math inline">\(-1\)</span> and <span class="math inline">\(0\)</span> and thus diverges; hence, the series diverges.<br />
+Problem <span class="math inline">\(4\)</span>: Geometric series with <span class="math inline">\(a=1\)</span> and <span class="math inline">\(r=\frac{1}{2}\)</span>.<br />
+Since <span class="math inline">\(|r|&lt;1\)</span> the series converges to <span class="math inline">\(\frac{1}{1-\frac{1}{2}}=2\)</span>.<br />
+<br />
+Problem <span class="math inline">\(7\)</span>: Geometric series with <span class="math inline">\(a=\frac{3^4}{4^3}\)</span> and <span class="math inline">\(r=\frac{3}{4}\)</span>.<br />
+<br />
+Since <span class="math inline">\(|r|&lt;1\)</span> the series converges to <span class="math inline">\(\frac{\frac{3^4}{4^3}}{1-\frac{3}{4}}=\frac{81}{16}\)</span>.<br />
+<br />
+Problem <span class="math inline">\(8\)</span>: Geometric series with <span class="math inline">\(a=\frac{5}{3}\)</span> and <span class="math inline">\(r=\frac{5}{3}\)</span>.<br />
+<br />
+Since <span class="math inline">\(|r|&gt;1\)</span> the series diverges. </span></span></span>
+</div></p></li>
+</ol>
+<p><span><strong>For problems 11 – 14, determine whether each series converges, and if so, determine the sum of the series.</strong></span></p>
+<ol start="11">
+<li><p><span class="math inline">\(\frac{1}{2}-\frac{1}{4}+\frac{1}{8}-\frac{1}{16}+\ldots\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex11')">Click for Solution</button>
+<br><br>
+<div id="ex11" style="display:none">
+<span><span>The series converges to <span class="math inline">\(\frac{1}{3}\)</span>. </span></span>
+</div></p></li>
+<li><p><span class="math inline">\(2+\frac{4}{7}+\frac{8}{49}+\frac{16}{343}+\ldots\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex12')">Click for Solution</button>
+<br><br>
+<div id="ex12" style="display:none">
+<span><span>The series converges to <span class="math inline">\(\frac{14}{5}\)</span>. </span></span>
+</div></p></li>
+<li><p><span class="math inline">\(2+\frac{22}{10}+\frac{242}{100}+\frac{2662}{1000}+\ldots\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex13')">Click for Solution</button>
+<br><br>
+<div id="ex13" style="display:none">
+<span><span>The series diverges. </span></span>
+</div></p></li>
+<li><p><span class="math inline">\(-3-1-\frac{1}{3}-\frac{1}{9}-\ldots\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex14')">Click for Solution</button>
+<br><br>
+<div id="ex14" style="display:none">
+<span><span>The series converges to <span class="math inline">\(-\frac{9}{2}\)</span>.; Detailed Solution: </span></span>
+</div></p>
+<p><span><span><span>1</span><span>This is a geometric series with <span class="math inline">\(a=-3\)</span> and <span class="math inline">\(r=\frac{1}{3}\)</span>. Since <span class="math inline">\(|r|&lt;1\)</span>, the series converges to <span class="math inline">\(\frac{-3}{1-\frac{1}{3}}= -\frac{9}{2}\)</span>. </span></span></span>
+</div></p></li>
+</ol>
+<p><span><strong>For problems 15 &amp; 16, use a geometric series to write the repeating decimal as a fraction of integers.</strong></span></p>
+<ol start="15">
+<li><p><span class="math inline">\(0.99999...\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex15')">Click for Solution</button>
+<br><br>
+<div id="ex15" style="display:none">
+<span><span><span class="math inline">\(0.99999...=0.9+0.09+0.009+\ldots=\sum_{k=0}^{\infty}0.9\left(\frac{1}{10}\right)^k=\frac{\frac{9}{10}}{1-\frac{1}{10}}=1\)</span></span></span>
+</div></p></li>
+<li><p><span class="math inline">\(8.126262626...\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex16')">Click for Solution</button>
+<br><br>
+<div id="ex16" style="display:none">
+</p>
+<p><span>1</span></p>
+<p>8.126262626...=8.1+0.026+0.00026+0.0000026+…<br />
+<span class="math inline">\(=8.1+\sum_{k=0}^{\infty}0.026\left(\frac{1}{100}\right)^k\)</span><br />
+<span class="math inline">\(=8.1+\frac{\frac{26}{1000}}{1-\frac{1}{100}}=\frac{81}{10}+\frac{26}{990}=\frac{8045}{990}=\frac{1609}{198}\)</span></p>
+<p>
+</div></p></li>
+<li><p>Calculate <span class="math inline">\(\sum_{k=0}^{300}(-2)^{k}.\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex17')">Click for Solution</button>
+<br><br>
+<div id="ex17" style="display:none">
+<span><span><span class="math inline">\(\frac{1-(-2)^{301}}{3}=\frac{1+2^{301}}{3}\)</span> </span></span>
+</div></p></li>
+<li><p>Calculate <span class="math inline">\(\sum_{j=1}^{13}7^{j}.\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex18')">Click for Solution</button>
+<br><br>
+<div id="ex18" style="display:none">
+<span><span><span class="math inline">\(-\frac{7}{6}\left(1-7^{13}\right)\)</span>; Detailed Solution: </span></span>
+</div></p></li>
+<li><p>Calculate <span class="math inline">\(\sum_{\ell=2}^{73}\frac{1}{2^{\ell}}.\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex19')">Click for Solution</button>
+<br><br>
+<div id="ex19" style="display:none">
+<span><span><span class="math inline">\(\frac{1}{2}\left(1-\frac{1}{2^{72}}\right)\)</span> </span></span>
+</div></p></li>
+<li><p>An is a sequence of equal payments made at the end of equal time periods, where the frequency of the payments is the same as the frequency of compounding.</p>
+<ol>
+<li><p>Suppose that <span class="math inline">\(500\)</span> dollars is deposited at the end of each month into an account paying <span class="math inline">\(3\%\)</span> interest compounded monthly.</p>
+<ol>
+<li><p>How much is in the account at the end of <span class="math inline">\(1\)</span> month?</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex20')">Click for Solution</button>
+<br><br>
+<div id="ex20" style="display:none">
+<span><span><span class="math inline">\(500\)</span> dollars.</span></span>
+</div></p></li>
+<li><p>How much is in the account at the end of <span class="math inline">\(2\)</span> months?</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex21')">Click for Solution</button>
+<br><br>
+<div id="ex21" style="display:none">
+<span><span><span class="math inline">\(500 + 500(1.03)\)</span> dollars.</span></span>
+</div></p></li>
+<li><p>How much is in the account at the end of <span class="math inline">\(3\)</span> months?</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex22')">Click for Solution</button>
+<br><br>
+<div id="ex22" style="display:none">
+<span><span><span class="math inline">\(500 + 500(1.03) + 500(1.03)^2\)</span> dollars.</span></span>
+</div></p></li>
+<li><p>How much is in the account at the end of <span class="math inline">\(n\)</span> months? Express your final answer in , i.e. without sigma notation or “<span class="math inline">\(\ldots\)</span>”.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex23')">Click for Solution</button>
+<br><br>
+<div id="ex23" style="display:none">
+<span><span><span class="math inline">\(\sum_{k=0}^{n-1}500(1.03)^{k}=\frac{500\left(1-(1.03)^n\right)}{1-1.03}\)</span> dollars.</span></span>
+</div></p></li>
+</ol></li>
+<li><p>Suppose that <span class="math inline">\(R\)</span> dollars is deposited at the end of some fixed time period into an account paying an interest of <span class="math inline">\(i\)</span> per period. How much is in the account at the end of <span class="math inline">\(n\)</span> periods?</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex24')">Click for Solution</button>
+<br><br>
+<div id="ex24" style="display:none">
+<span><span><span>1</span><span><span class="math inline">\(\frac{R\left(1-(1+i)^n\right)}{1-(1+i)}=\frac{R\left(1-(1+i)^n\right)}{-i}=R\left[\frac{(1+i)^n-1}{i}\right]\)</span>.<br />
+<br />
+This sum is know as the .</span></span></span>
+</div></p></li>
+</ol></li>
+</ol>
+<p><span><strong>For problems 21 &amp; 22, use partial fractions to determine the sum of the series.</strong></span></p>
+<ol start="21">
+<li><p><span class="math inline">\(\sum_{k=0}^{\infty}\frac{10}{k^2+9k+20}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex25')">Click for Solution</button>
+<br><br>
+<div id="ex25" style="display:none">
+<span><span><span class="math inline">\(\frac{5}{2}\)</span></span></span>
+</div></p></li>
+<li><p><span class="math inline">\(\sum_{k=0}^{\infty}\frac{4}{k^2+4k+3}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex26')">Click for Solution</button>
+<br><br>
+<div id="ex26" style="display:none">
+<span><span><span class="math inline">\(3\)</span>; Detailed Solution: </span></span>
+</div></p></li>
+<li><p>Consider the following formula: <span class="math display">\[\sum_{k=1}^{\infty} (x^{k}-x^{k+1})=x.\]</span> For which values of <span class="math inline">\(x\)</span> does the series on the left-hand side of the formula converge? For which values of <span class="math inline">\(x\)</span> is the formula correct?</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex27')">Click for Solution</button>
+<br><br>
+<div id="ex27" style="display:none">
+<span><span><span>1</span><span>This is a telescoping series with an <span class="math inline">\(n^{\mathit{th}}\)</span> partial sum of <span class="math inline">\(s_n=x-x^{n+1}\)</span>.<br />
+Now <span class="math inline">\(\textstyle \lim\limits_{n \rightarrow +\infty}\left(x-x^{n+1}\right)\)</span> equals <span class="math inline">\(x\)</span> if <span class="math inline">\(-1&lt;x&lt;1\)</span> and equals <span class="math inline">\(0\)</span> if <span class="math inline">\(x=1\)</span>. So the series converges if <span class="math inline">\(-1&lt;x\leq1\)</span>, but the formula is only correct if <span class="math inline">\(-1&lt;x&lt;1\)</span>. </span></span></span>
+</div></p></li>
+<li><p>Consider the following formula:: <span class="math display">\[\sum_{k=1}^{\infty}x^{k}=\frac{x}{1-x}.\]</span> For which values of <span class="math inline">\(x\)</span> does the series on the left-hand side of the formula converge? For which values of <span class="math inline">\(x\)</span> is the formula correct?</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex28')">Click for Solution</button>
+<br><br>
+<div id="ex28" style="display:none">
+<span><span><span>1</span><span>This is a geometric series with <span class="math inline">\(a=x\)</span> and <span class="math inline">\(r=x\)</span>. Thus the series converges only if<br />
+<span class="math inline">\(|x|&lt;1\)</span>, i.e. <span class="math inline">\(-1&lt;x&lt;1\)</span>. If this is true, then the sum of the series is <span class="math inline">\(\textstyle \frac{a}{1-r}=\frac{x}{1-x}\)</span>. So the formula is true if <span class="math inline">\(-1&lt;x&lt;1\)</span>. </span></span></span>
+</div></p></li>
+</ol>
+</body>
+<script>
+function toggleAnswer(idName) {
+var x = document.getElementById(idName);
+if (x.style.display === "none") {
+x.style.display = "block";
+} else {
+x.style.display = "none";
+}
+}</script>
+</html>

@@ -1,0 +1,129 @@
+\documentclass[12pt]{article}
+
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{fullpage}
+\usepackage{epsfig}
+\usepackage{epstopdf}
+\everymath{\displaystyle}
+\usepackage{enumerate}
+
+
+
+\begin{document}
+
+\begin{center}
+\underline{\LARGE{Local Linear Approximation}}
+\end{center}
+
+\noindent SUGGESTED REFERENCE MATERIAL:
+
+\bigskip
+
+\noindent As you work through the problems listed below, you should reference Chapter 13.4 of the recommended textbook (or the equivalent chapter in your alternative textbook/online resource) and your lecture notes.
+
+\bigskip
+
+
+\noindent EXPECTED SKILLS:
+
+\begin{itemize}
+
+\item Be able to compute the local linear approximation for a function of two or more variables at a given point.
+
+\item Be able to use a local linear approximation to estimate a given quantity.
+
+\end{itemize}
+
+\noindent PRACTICE PROBLEMS:
+
+\medskip
+
+\noindent {\bf For problems 1-5, find the local linear approximation $L(x,y)$ of the given function at the specified point.}
+
+\begin{enumerate}
+
+\item $f(x,y)=x^2-y^2$; $P(1,2)$
+
+\includegraphics[scale=0.5]{start.pdf}
+{{$L(x,y)=3+2x-4y$}}
+\includegraphics[scale=0.5]{end.pdf}
+
+
+\item $f(x,y)=\frac{x+y}{x-y}$; $P(2,1)$
+
+\includegraphics[scale=0.5]{start.pdf}
+{{$L(x,y)=3-2x+4y$}}
+\includegraphics[scale=0.5]{end.pdf}
+
+
+\item $f(x,y)=e^x\sin{y}$; $P\left(\ln3,\frac{\pi}{2}\right)$
+
+\includegraphics[scale=0.5]{start.pdf}
+{{$L(x,y)=3-3\ln{3}+3x$}}
+\includegraphics[scale=0.5]{end.pdf}
+
+
+\item $f(x,y)=\ln{(x^2-y^2)}$; $P\left(2,\sqrt{3}\right)$
+
+\includegraphics[scale=0.5]{start.pdf}
+{{$L(x,y)=-2+4x-2\sqrt{3}y$}}
+\includegraphics[scale=0.5]{end.pdf}
+
+
+\item $f(x,y)=\tan^{-1}\left(\frac{x}{y}\right)$; $P(1,1)$
+
+\includegraphics[scale=0.5]{start.pdf}
+{{$L(x,y)=\frac{\pi}{4}+\frac{1}{2}x-\frac{1}{2}y$}}
+\includegraphics[scale=0.5]{end.pdf}
+
+
+\item Find the local linear approximation of the function $f(x,y)=\sqrt{32-3x^2-y^2}$ at $(1,2)$ and use it to approximate $f(0.98,2.01)$. 
+
+\includegraphics[scale=0.5]{start.pdf}
+{{{0.65\linewidth}{$f(x,y)\approx L(x,y)=\frac{32}{5}-\frac{3}{5}x-\frac{2}{5}y$ for $(x,y)$ near $(1,2)$.\\
+\\
+ So, $f(0.98,2.01)\approx L(0.98,2.01)=\frac{626}{125}$}}}
+\includegraphics[scale=0.5]{end.pdf}
+
+
+\item Suppose that $f(x,y)$ is a differentiable function at the point $(2,3)$ with $f(2,3)=1$, $f_x(2,3)=5$, and $f_y(2,3)=-2$.  Estimate $f(1.98,3.01)$.
+
+\includegraphics[scale=0.5]{start.pdf}
+{{{0.65\linewidth}{$f(x,y)\approx L(x,y)=-3+5x-2y$ for $(x,y)$ near $(2,3)$.\\
+So, $f(1.98,3.01)\approx L(1.98,3.01)=0.88$}}}
+\includegraphics[scale=0.5]{end.pdf}
+
+
+\item Find the local linear approximation $L(x,y,z)$ to $f(x,y,z)=3x^2-2y^2+xz^3$ at the point $P(-1,2,1)$.
+
+\includegraphics[scale=0.5]{start.pdf}
+{{$L(x,y,z)=8-5x-8y-3z$}}
+\includegraphics[scale=0.5]{end.pdf}
+
+
+\item Verify that $e^x\cos{y} \approx 1+x$ for $(x,y)$ near $(0,0)$.
+
+\includegraphics[scale=0.5]{start.pdf}
+{{{1\linewidth}{Show that the local linear approximation to $f(x,y)=e^x\cos{y}$ at the point $(0,0)$ is $L(x,y)=1+x$}}}
+\includegraphics[scale=0.5]{end.pdf}
+
+
+\item Verify that $(x+y)^3 \approx -16+12x+12y$ for $(x,y)$ near $(1,1)$.
+
+\includegraphics[scale=0.5]{start.pdf}
+{{{1\linewidth}{Show that the local linear approximation to $f(x,y)=(x+y)^3$ at the point $(1,1)$ is $L(x,y)=-16+12x+12y$}}}
+\includegraphics[scale=0.5]{end.pdf}
+
+
+\item At a particular point $P(x_0,y_0)$, the local linear approximation of $f(x,y)=xy+y^2$ is $L(x,y)=-15+3x+8y$.  What is the point $P$?
+
+\includegraphics[scale=0.5]{start.pdf}
+{{$(2,3)$}}
+\includegraphics[scale=0.5]{end.pdf}
+
+
+\end{enumerate}
+
+\end{document}

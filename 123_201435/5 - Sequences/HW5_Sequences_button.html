@@ -1,0 +1,314 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<p>SUGGESTED REFERENCE MATERIAL:</p>
+<p>As you work through the problems listed below, you should reference your lecture notes and the relevant chapters in a textbook/online resource.</p>
+<p>EXPECTED SKILLS:</p>
+<ul>
+<li><p>Find the general term of a sequence.</p></li>
+<li><p>Determine whether a sequence converges, and if so, what it converges to. This may require techniques such as L’Hopital’s Rule and The Squeeze Theorem.</p></li>
+</ul>
+<p>PRACTICE PROBLEMS:</p>
+<p><span><strong>For problems 1 – 8, rewrite the sequence by placing the general term inside braces.</strong></span></p>
+<ol>
+<li><p><span class="math inline">\(\frac{1}{4}, \frac{1}{16}, \frac{1}{64}, \frac{1}{256}, ...\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex1')">Click for Solution</button>
+<br><br>
+<div id="ex1" style="display:none">
+<span><span><span>1</span><span> <span class="math inline">\(\left\{ \frac{1}{4^n} \right\}_{n = 1}^{+\infty}\)</span>. Note that any integer can be used as the lower index for a sequence. So you could describe this sequence with <span class="math inline">\(\left\{ \frac{1}{4^{n+1}} \right\}_{n = 0}^{+\infty}\)</span> or even <span class="math inline">\(\left\{ \frac{1}{4^{n+10}} \right\}_{n = -9}^{+\infty}\)</span>, although admittedly it is weird to use <span class="math inline">\(-9\)</span> as a starting index unless there is some compelling reason to do so. It is recommended to use either 0 or 1 as a starting index in most cases. </span></span></span>
+</div></p></li>
+<li><p><span class="math inline">\(\frac{1}{4}, -\frac{1}{16}, \frac{1}{64}, -\frac{1}{256},...\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex2')">Click for Solution</button>
+<br><br>
+<div id="ex2" style="display:none">
+<span><span> <span class="math inline">\(\left\{ (-1)^{n+1} \text{ } \frac{1}{4^n} \right\}_{n = 1}^{+\infty}\)</span> </span></span>
+</div></p></li>
+<li><p><span class="math inline">\(0, 1, 2^3, 3^4, 4^5, ...\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex3')">Click for Solution</button>
+<br><br>
+<div id="ex3" style="display:none">
+<span><span> <span class="math inline">\(\left\{ n^{n+1} \right\}_{n = 0}^{+\infty}\)</span> </span></span>
+</div></p></li>
+<li><p><span class="math inline">\(3, 2, 1, 0, -1, -2, -3, -4, -5, ...\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex4')">Click for Solution</button>
+<br><br>
+<div id="ex4" style="display:none">
+<span><span> <span class="math inline">\(\left\{ 4-n \right\}_{n = 1}^{+\infty}\)</span> </span></span>
+</div></p></li>
+<li><p><span class="math inline">\(1, \frac{1}{e}, e^2, \frac{1}{e^3}, e^4, \frac{1}{e^5}, ...\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex5')">Click for Solution</button>
+<br><br>
+<div id="ex5" style="display:none">
+<span><span> <span class="math inline">\(\left\{  e^{(-1)^nn}  \right\}_{n = 0}^{+\infty}\)</span> </span></span>
+</div></p></li>
+<li><p><span class="math inline">\(\frac{1}{1 \cdot 2}, \frac{1}{1 \cdot 2 \cdot 3 \cdot 4}, \frac{1}{1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 \cdot 6}, \frac{1}{1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 \cdot 6 \cdot 7 \cdot 8}, ...\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex6')">Click for Solution</button>
+<br><br>
+<div id="ex6" style="display:none">
+<span><span> <span class="math inline">\(\left\{  \frac{1}{(2n)!} \right\}_{n = 1}^{+\infty}\)</span> </span></span>
+</div></p></li>
+<li><p><span class="math inline">\(\frac{3}{1 \cdot 2}, \frac{5}{1 \cdot 2 \cdot 3 \cdot 4}, \frac{7}{1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 \cdot 6}, \frac{9}{1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 \cdot 6 \cdot 7 \cdot 8}, ...\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex7')">Click for Solution</button>
+<br><br>
+<div id="ex7" style="display:none">
+<span><span> <span class="math inline">\(\left\{  \frac{2n+1}{(2n)!} \right\}_{n = 1}^{+\infty}\)</span> </span></span>
+</div></p></li>
+<li><p><span class="math inline">\(0, 1, 0, -1, 0, 1, 0, -1, 0, 1 ...\)</span> [Hint: Think about a trigonometric function.]</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex8')">Click for Solution</button>
+<br><br>
+<div id="ex8" style="display:none">
+<span><span> <span class="math inline">\(\left\{ \sin{  \Bigl( \frac{\pi}{2}}n \Bigr)  \right\}_{n = 0}^{+\infty}\)</span> or <span class="math inline">\(\left\{ -\cos{  \Bigl( \frac{\pi}{2}}n \Bigr)  \right\}_{n = 1}^{+\infty}\)</span> or <span class="math inline">\(\left\{ \cos{  \Bigl( \frac{\pi}{2}}n \Bigr)  \right\}_{n = -1}^{+\infty}\)</span>. There are other possibilities as well. </span></span>
+</div></p></li>
+<li><p>For each of the sequences in problems 1 – 8, determine if the sequence converges, and if so, what it converges to. If it diverges, determine if the general term approaches <span class="math inline">\(+\infty\)</span>, <span class="math inline">\(-\infty\)</span>, or neither.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex9')">Click for Solution</button>
+<br><br>
+<div id="ex9" style="display:none">
+</p>
+<p><span>1</span></p>
+<p>The sequence in problem:</p>
+<ul>
+<li><p>#1 converges to 0.</p></li>
+<li><p>#2 converges to 0.</p></li>
+<li><p>#3 diverges to <span class="math inline">\(+\infty\)</span>.</p></li>
+<li><p>#4 diverges to <span class="math inline">\(-\infty\)</span>.</p></li>
+<li><p>#5 diverges. The even-numbered terms converge to <span class="math inline">\(0\)</span>, but the odd-numbered terms diverge to <span class="math inline">\(+\infty\)</span></p></li>
+<li><p>#6 converges to 0.</p></li>
+<li><p>#7 converges to 0.</p></li>
+<li><p>#8 diverges. The odd-numbered terms converge to <span class="math inline">\(0\)</span> (in fact, they are all equal to <span class="math inline">\(0\)</span>), but the even-numbered terms diverge since they oscillate between <span class="math inline">\(1\)</span> and <span class="math inline">\(-1\)</span>.</p></li>
+</ul>
+<p>Detailed Solution:</p>
+<p>
+</div></p></li>
+</ol>
+<p><span><strong>For problems 10 – 35, determine if the sequence converges, and if so, what it converges to. If it diverges, determine if the general term approaches <span class="math inline">\(+\infty\)</span>, <span class="math inline">\(-\infty\)</span>, or neither.</strong></span></p>
+<ol start="10">
+<li><p><span class="math inline">\(\left\{ 5 \right\}_{n = 1}^{+\infty}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex10')">Click for Solution</button>
+<br><br>
+<div id="ex10" style="display:none">
+<span><span>Converges to <span class="math inline">\(5\)</span>.</span></span>
+</div></p></li>
+<li><p><span class="math inline">\(\left\{ 5n \right\}_{n = 0}^{+\infty}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex11')">Click for Solution</button>
+<br><br>
+<div id="ex11" style="display:none">
+<span><span>Diverges to <span class="math inline">\(+\infty\)</span>.</span></span>
+</div></p></li>
+<li><p><span class="math inline">\(\left\{ 5-5n^3 \right\}_{n = 1}^{+\infty}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex12')">Click for Solution</button>
+<br><br>
+<div id="ex12" style="display:none">
+<span><span>Diverges to <span class="math inline">\(-\infty\)</span>.</span></span>
+</div></p></li>
+<li><p><span class="math inline">\(\left\{ \frac{4n-3n^5}{2n^5+4n^3+n^2+5} \right\}_{n = 1}^{+\infty}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex13')">Click for Solution</button>
+<br><br>
+<div id="ex13" style="display:none">
+<span><span>Converges to <span class="math inline">\(-\frac{3}{2}\)</span>. See problem #2.</span></span>
+</div></p></li>
+<li><p><span class="math inline">\(\left\{ (-1)^n \text{ } \frac{n^3+n^2+n+1}{n^3+1} \right\}_{n = 1}^{+\infty}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex14')">Click for Solution</button>
+<br><br>
+<div id="ex14" style="display:none">
+<span><span><span>1</span><span>The odd-numbered terms converge to <span class="math inline">\(-1\)</span>, but the even-numbered terms converge to <span class="math inline">\(1\)</span>, so the sequence diverges.</span></span></span>
+</div></p></li>
+<li><p><span class="math inline">\(\left\{ \frac{n^4-3n^3-2n}{4n^2+19} \right\}_{n = 0}^{+\infty}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex15')">Click for Solution</button>
+<br><br>
+<div id="ex15" style="display:none">
+<span><span>Diverges to <span class="math inline">\(+\infty\)</span>.</span></span>
+</div></p></li>
+<li><p><span class="math inline">\(\left\{ \frac{1-10n^2}{n^2-4n^3} \right\}_{n = 1}^{+\infty}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex16')">Click for Solution</button>
+<br><br>
+<div id="ex16" style="display:none">
+<span><span>Converges to <span class="math inline">\(0\)</span>.</span></span>
+</div></p></li>
+<li><p><span class="math inline">\(\left\{ (-1)^{n+1} \text{ } \frac{1-10n^2}{n^2-4n^3} \right\}_{n = 1}^{+\infty}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex17')">Click for Solution</button>
+<br><br>
+<div id="ex17" style="display:none">
+<span><span>Converges to <span class="math inline">\(0\)</span>.</span></span>
+</div></p></li>
+<li><p><span class="math inline">\(\left\{ \frac{\sqrt{4+3n^2}}{2+7n} \right\}_{n = 1}^{+\infty}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex18')">Click for Solution</button>
+<br><br>
+<div id="ex18" style="display:none">
+<span><span>Converges to <span class="math inline">\(\frac{\sqrt{3}}{7}\)</span>. See problem #3.</span></span>
+</div></p></li>
+<li><p><span class="math inline">\(\left\{ e^{1/n} \right\}_{n = 1}^{+\infty}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex19')">Click for Solution</button>
+<br><br>
+<div id="ex19" style="display:none">
+<span><span>Converges to <span class="math inline">\(1\)</span>.</span></span>
+</div></p></li>
+<li><p><span class="math inline">\(\left\{ \frac{e^{-n}}{n^{-2}} \right\}_{n = 1}^{+\infty}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex20')">Click for Solution</button>
+<br><br>
+<div id="ex20" style="display:none">
+<span><span>Converges to <span class="math inline">\(0\)</span>.</span></span>
+</div></p></li>
+<li><p><span class="math inline">\(\left\{ \frac{e^n-e^{-n}}{e^n+e^{-n}} \right\}_{n = 1}^{+\infty}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex21')">Click for Solution</button>
+<br><br>
+<div id="ex21" style="display:none">
+<span><span>Converges to <span class="math inline">\(1\)</span>. See problem #5.; Detailed Solution: </span></span>
+</div></p></li>
+<li><p><span class="math inline">\(\left\{ \frac{e^{\sqrt{n}}}{n} \right\}_{n = 1}^{+\infty}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex22')">Click for Solution</button>
+<br><br>
+<div id="ex22" style="display:none">
+<span><span>Diverges to <span class="math inline">\(+\infty\)</span>.</span></span>
+</div></p></li>
+<li><p><span class="math inline">\(\left\{e^n \sin(e^{-n}) \right\}_{n = 1}^{+\infty}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex23')">Click for Solution</button>
+<br><br>
+<div id="ex23" style="display:none">
+<span><span>Converges to <span class="math inline">\(1\)</span>.</span></span>
+</div></p></li>
+<li><p><span class="math inline">\(\left\{ e^n \pi^{-n} \right\}_{n = 1}^{+\infty}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex24')">Click for Solution</button>
+<br><br>
+<div id="ex24" style="display:none">
+<span><span>Converges to <span class="math inline">\(0\)</span>.</span></span>
+</div></p></li>
+<li><p><span class="math inline">\(\left\{ \ln{\left(\frac{1}{n}\right)} \right\}_{n = 1}^{+\infty}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex25')">Click for Solution</button>
+<br><br>
+<div id="ex25" style="display:none">
+<span><span>Diverges to <span class="math inline">\(-\infty\)</span>.</span></span>
+</div></p></li>
+<li><p><span class="math inline">\(\left\{ \frac{\ln{(6n)}}{\ln{(2n)}} \right\}_{n = 1}^{+\infty}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex26')">Click for Solution</button>
+<br><br>
+<div id="ex26" style="display:none">
+<span><span>Converges to <span class="math inline">\(1\)</span>.; Detailed Solution: </span></span>
+</div></p></li>
+<li><p><span class="math inline">\(\left\{ \ln{(n+2)} - \ln{(3n+5)} \right\}_{n = 0}^{+\infty}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex27')">Click for Solution</button>
+<br><br>
+<div id="ex27" style="display:none">
+<span><span>Converges to <span class="math inline">\(\ln{\left(\frac{1}{3}\right)}\)</span>.</span></span>
+</div></p></li>
+<li><p><span class="math inline">\(\left\{ \sqrt{n^2+8n-5}-n \right\}_{n = 1}^{+\infty}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex28')">Click for Solution</button>
+<br><br>
+<div id="ex28" style="display:none">
+<span><span>Converges to <span class="math inline">\(4\)</span>. See problem #4.; Detailed Solution: </span></span>
+</div></p></li>
+<li><p><span class="math inline">\(\left\{ \sqrt{n^2-n} + n \right\}_{n = 0}^{+\infty}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex29')">Click for Solution</button>
+<br><br>
+<div id="ex29" style="display:none">
+<span><span>Diverges to <span class="math inline">\(+\infty\)</span>.</span></span>
+</div></p></li>
+<li><p><span class="math inline">\(\left\{ \sqrt{n^2-n} - n \right\}_{n = 1}^{+\infty}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex30')">Click for Solution</button>
+<br><br>
+<div id="ex30" style="display:none">
+<span><span>Converges to <span class="math inline">\(-\frac{1}{2}\)</span>.</span></span>
+</div></p></li>
+<li><p><span class="math inline">\(\left\{ \frac{\cos{n}}{n} \right\}_{n = 1}^{+\infty}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex31')">Click for Solution</button>
+<br><br>
+<div id="ex31" style="display:none">
+<span><span>Converges to <span class="math inline">\(0\)</span>. See problem #7.</span></span>
+</div></p></li>
+<li><p><span class="math inline">\(\left\{\arccos\left(\frac{n^2}{3n-n^2}\right) \right\}_{n = 1}^{+\infty}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex32')">Click for Solution</button>
+<br><br>
+<div id="ex32" style="display:none">
+<span><span>Converges to <span class="math inline">\(\pi\)</span>.</span></span>
+</div></p></li>
+<li><p><span class="math inline">\(\left\{ \arctan\left({\frac{1}{n}}\right) - \arctan{(n)}  \right\}_{n = 1}^{+\infty}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex33')">Click for Solution</button>
+<br><br>
+<div id="ex33" style="display:none">
+<span><span>Converges to <span class="math inline">\(-\frac{\pi}{2}\)</span>. See problem #8.</span></span>
+</div></p></li>
+<li><p><span class="math inline">\(\left\{ \left(1+\frac{1}{n}\right)^n \right\}_{n = 1}^{+\infty}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex34')">Click for Solution</button>
+<br><br>
+<div id="ex34" style="display:none">
+<span><span>Converges to <span class="math inline">\(e\)</span>. See problem #9.</span></span>
+</div></p></li>
+<li><p><span class="math inline">\(\left\{ \left(1+3^n\right)^{1/n} \right\}_{n = 1}^{+\infty}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex35')">Click for Solution</button>
+<br><br>
+<div id="ex35" style="display:none">
+<span><span>Converges to <span class="math inline">\(3\)</span>. See problem #10.; Detailed Solution: </span></span>
+</div></p></li>
+<li><p><span class="math inline">\(\left\{ \left(\frac{4}{n}\right)^{2/n} \right\}_{n = 1}^{+\infty}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex36')">Click for Solution</button>
+<br><br>
+<div id="ex36" style="display:none">
+<span><span>Converges to <span class="math inline">\(1\)</span>.</span></span>
+</div></p></li>
+<li><p>Consider the sequence <span class="math inline">\(\sqrt{30}, \sqrt{30+\sqrt{30}}, \sqrt{30+\sqrt{30+\sqrt{30}}}, ...\)</span></p>
+<ol>
+<li><p>Define the sequence recursively.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex37')">Click for Solution</button>
+<br><br>
+<div id="ex37" style="display:none">
+<span><span><span class="math inline">\(a_1=\sqrt{30}, a_{n+1}=\sqrt{30+a_n}\)</span> for integers <span class="math inline">\(n\geq1\)</span>.</span></span>
+</div></p></li>
+<li><p>Assuming the sequence converges to some limit <span class="math inline">\(L\)</span>, find <span class="math inline">\(L\)</span>.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex38')">Click for Solution</button>
+<br><br>
+<div id="ex38" style="display:none">
+<span><span><span class="math inline">\(L=6\)</span>.</span></span>
+</div></p></li>
+</ol></li>
+<li><p>Consider the sequence <span class="math inline">\(\left\{ a_n \right\}_{n = 1}^{+\infty}\)</span> that has the following recursive definition: <span class="math inline">\(a_{n+1}=10-a_n\)</span> for integers <span class="math inline">\(n\geq1\)</span>.</p>
+<ol>
+<li><p>Assuming the sequence converges to some limit <span class="math inline">\(L\)</span>, find <span class="math inline">\(L\)</span>.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex39')">Click for Solution</button>
+<br><br>
+<div id="ex39" style="display:none">
+<span><span><span class="math inline">\(L=5\)</span>.</span></span>
+</div></p></li>
+<li><p>How must <span class="math inline">\(a_1\)</span> be defined to ensure that the sequence converges? Justify your answer.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex40')">Click for Solution</button>
+<br><br>
+<div id="ex40" style="display:none">
+<span><span><span>1</span><span>If <span class="math inline">\(a_1 = 5\)</span>, the sequence is <span class="math inline">\(5, 5, 5, 5, ...\)</span>, which clearly converges to 5. If <span class="math inline">\(a_1 \neq 5\)</span>, say <span class="math inline">\(a_1 = K (K \neq 5)\)</span>, then the sequence oscillates bewteen <span class="math inline">\(K\)</span> and <span class="math inline">\(10-K\)</span>, e.g. if <span class="math inline">\(a_1 = 3\)</span> we have <span class="math inline">\(3, 7, 3, 7, 3, 7, ...\)</span> Such a sequence diverges.</span></span></span>
+</div></p></li>
+</ol></li>
+<li><p>The <span class="math inline">\(1, 1, 2, 3, 5, 8, 13, 21, ...\)</span> begins with two <span class="math inline">\(1\)</span>’s and thereafter each term in the sequence is the the sum of previous two terms.</p>
+<ol>
+<li><p>Define the Fibonacci sequence recursively.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex41')">Click for Solution</button>
+<br><br>
+<div id="ex41" style="display:none">
+<span><span><span class="math inline">\(a_1=1, a_2=1, a_{n+2}=a_n + a_{n+1}\)</span> for integers <span class="math inline">\(n\geq1\)</span>.</span></span>
+</div></p></li>
+<li><p>Clearly the Fibonacci sequence diverges to <span class="math inline">\(+\infty\)</span>, but consider the ratio of successive terms <span class="math inline">\(\frac{a_{n+1}}{a_n}\)</span> for <span class="math inline">\(n\geq1\)</span>, i.e <span class="math display">\[\frac{1}{1}, \frac{2}{1}, \frac{3}{2}, \frac{5}{3}, 
+\frac{8}{5}, ...\]</span> Assuming this “ratio sequence” converges to some limit <span class="math inline">\(L\)</span>, find <span class="math inline">\(L\)</span>.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex42')">Click for Solution</button>
+<br><br>
+<div id="ex42" style="display:none">
+<span><span><span>1</span><span> <span class="math inline">\(L=\frac{1+\sqrt{5}}{2}\)</span>. This number is known as the .<br />
+Fibonacci Fun Fact: The Fibonacci Sequence can be described without recursion as <span class="math display">\[\left\{ \frac{ \left(\frac{1+\sqrt{5}}{2}\right)^n -  \left(\frac{1-\sqrt{5}}{2}\right)^n} {\sqrt{5}}\right\}_{n = 1}^{+\infty},\]</span> and with some clever factoring it can be shown from this non-recursive definition that the limit of the “ratio sequence” is <span class="math inline">\(L=\frac{1+\sqrt{5}}{2}\)</span>.<br />
+Detailed Solution: </span></span></span>
+</div></p></li>
+</ol></li>
+</ol>
+</body>
+<script>
+function toggleAnswer(idName) {
+var x = document.getElementById(idName);
+if (x.style.display === "none") {
+x.style.display = "block";
+} else {
+x.style.display = "none";
+}
+}</script>
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<p>EXPECTED SKILLS:</p>
+<ul>
+<li><p>Know how to compute the derivative of a function using the limit definition.</p></li>
+<li><p>Understand the geometric interpretation of a derivative (as the slope of a tangent line), and be able to use the derivative to help find the equation of a tangent line.</p></li>
+<li><p>Understand the physics interpretation of the derivative (as instantaneous velocity).</p></li>
+<li><p>Understand how the graph of a function affects the derivative.</p></li>
+<li><p>If given the graph of a function, be able to make a reasonable sketch of its derivative function.</p></li>
+</ul>
+<p>PRACTICE PROBLEMS:</p>
+<ol>
+<li><p>For each of the following problems, use the definition of the derivative to calculate <span class="math inline">\(f^{\prime}(x)\)</span>.</p>
+<ol>
+<li><p><span class="math inline">\(f(x) = 3x\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex1')">Click for Solution</button>
+<br><br>
+<div id="ex1" style="display:none">
+<span><span>3</span></span>
+</div></p></li>
+<li><p><span class="math inline">\(f(x) = 2x^2-x\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex2')">Click for Solution</button>
+<br><br>
+<div id="ex2" style="display:none">
+<span><span><span class="math inline">\(4x-1\)</span></span></span>
+</div></p></li>
+<li><p><span class="math inline">\(f(x) = 3\sqrt{x}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex3')">Click for Solution</button>
+<br><br>
+<div id="ex3" style="display:none">
+<span><span><span class="math inline">\(\displaystyle \frac{3}{2\sqrt{x}}\)</span></span></span>
+</div></p></li>
+<li><p><span class="math inline">\(\displaystyle f(x)=\frac{1}{\sqrt{x}}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex4')">Click for Solution</button>
+<br><br>
+<div id="ex4" style="display:none">
+<span><span><span class="math inline">\(\displaystyle -\frac{1}{2x^{3/2}}\)</span></span></span>
+</div></p></li>
+<li><p><span class="math inline">\(\displaystyle f(x) = \frac{1}{x-1}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex5')">Click for Solution</button>
+<br><br>
+<div id="ex5" style="display:none">
+<span><span><span class="math inline">\(\displaystyle \frac{-1}{(x-1)^2}\)</span></span></span>
+</div></p></li>
+</ol></li>
+<li><p>Find an equation of the tangent line to the graph of the given function at the specified value of <span class="math inline">\(x\)</span>.</p>
+<ol>
+<li><p><span class="math inline">\(f(x) = x^3\)</span> at <span class="math inline">\(x=2\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex6')">Click for Solution</button>
+<br><br>
+<div id="ex6" style="display:none">
+<span><span><span class="math inline">\(y=12x-16\)</span></span></span>
+</div></p></li>
+<li><p><span class="math inline">\(f(x) = x^2-1\)</span> at <span class="math inline">\(x=-1\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex7')">Click for Solution</button>
+<br><br>
+<div id="ex7" style="display:none">
+<span><span><span class="math inline">\(y=-2x-2\)</span></span></span>
+</div></p></li>
+</ol></li>
+<li><p>Find an equation of the line which is tangent to the graph of <span class="math inline">\(y=f(x)\)</span> when <span class="math inline">\(x=3\)</span> if <span class="math inline">\(f(3)=7\)</span> and <span class="math inline">\(f^{\prime}(3)=-1\)</span>.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex8')">Click for Solution</button>
+<br><br>
+<div id="ex8" style="display:none">
+<span><span><span class="math inline">\(y=-x+10\)</span></span></span>
+</div></p></li>
+<li><p>Suppose the tangent line to the graph of <span class="math inline">\(y=f(x)\)</span> at the point <span class="math inline">\((1,2)\)</span> also passes through the point <span class="math inline">\((7,5)\)</span>. Compute <span class="math inline">\(f(1)\)</span> and <span class="math inline">\(f^{\prime}(1)\)</span>.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex9')">Click for Solution</button>
+<br><br>
+<div id="ex9" style="display:none">
+<span><span><span class="math inline">\(f(1)=2\)</span>; <span class="math inline">\(\displaystyle f^{\prime}(1)=\frac{1}{2}\)</span></span></span>
+</div></p></li>
+<li><p>Suppose <span class="math inline">\(f(x)\)</span> is a function such that <span class="math inline">\(f^{\prime}(x)=x^2-4\)</span>.</p>
+<ol>
+<li><p>For which value(s) of <span class="math inline">\(x\)</span> will the graph of <span class="math inline">\(f(x)\)</span> have horizontal tangent lines?</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex10')">Click for Solution</button>
+<br><br>
+<div id="ex10" style="display:none">
+<span><span><span class="math inline">\(x=2\)</span> or <span class="math inline">\(x=-2\)</span></span></span>
+</div></p></li>
+<li><p>For which value(s) of <span class="math inline">\(x\)</span> will the tangent line to the graph of <span class="math inline">\(f(x)\)</span> be parallel to the line <span class="math inline">\(y=5x-37\)</span>?</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex11')">Click for Solution</button>
+<br><br>
+<div id="ex11" style="display:none">
+<span><span><span class="math inline">\(x=3\)</span> or <span class="math inline">\(x=-3\)</span></span></span>
+</div></p></li>
+<li><p>For which value(s) of <span class="math inline">\(x\)</span> will the tangent line to the graph of <span class="math inline">\(f(x)\)</span> be perpendicular to the line <span class="math inline">\(y=2x+\pi\)</span>?</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex12')">Click for Solution</button>
+<br><br>
+<div id="ex12" style="display:none">
+<span><span><span class="math inline">\(\displaystyle x=\sqrt{\frac{7}{2}}\)</span> or <span class="math inline">\(\displaystyle x=-\sqrt{\frac{7}{2}}\)</span></span></span>
+</div></p></li>
+</ol></li>
+<li><p>Consider the graph of <span class="math inline">\(y=f(x)\)</span> shown below.<br />
+</p>
+<p><embed src="graph.pdf" /></p>
+<p>Arrange <span class="math inline">\(f^{\prime}(a)\)</span>, <span class="math inline">\(f^{\prime}(b)\)</span>, <span class="math inline">\(f^{\prime}(c)\)</span>, <span class="math inline">\(f^{\prime}(d)\)</span>, and <span class="math inline">\(f^{\prime}(e)\)</span> in increasing order.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex13')">Click for Solution</button>
+<br><br>
+<div id="ex13" style="display:none">
+<span><span><span class="math inline">\(f^{\prime}(a)&lt;f^{\prime}(d)&lt;f^{\prime}(e)&lt;f^{\prime}(b)&lt;f^{\prime}(c)\)</span></span></span>
+</div></p></li>
+<li><p>For each of the following, sketch the graph of the given function and determine where the function is not differentiable. Explain.</p>
+<ol>
+<li><p><span class="math inline">\(f(x) = |x+2|\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex14')">Click for Solution</button>
+<br><br>
+<div id="ex14" style="display:none">
+</p>
+<p><span>1</span></p>
+<p><span class="math inline">\(f(x)\)</span> is not differentiable when <span class="math inline">\(x=-2\)</span>.<br />
+The graph has a “sharp corner” at this point.<br />
+<embed src="ndiff1.pdf" /></p>
+<p>
+</div></p></li>
+<li><p><span class="math inline">\(\displaystyle f(x) = \sqrt[3]{x}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex15')">Click for Solution</button>
+<br><br>
+<div id="ex15" style="display:none">
+</p>
+<p><span>1</span></p>
+<p><span class="math inline">\(f(x)\)</span> is not differentiable at <span class="math inline">\(x=0\)</span>.<br />
+It has a vertical tangent line at this point.<br />
+<embed src="ndiff2.pdf" /></p>
+<p>
+</div></p></li>
+<li><p><span class="math inline">\(\displaystyle f(x)=\left\{\begin{array}{lll}
+x+1 &amp; \text{if} &amp; x&gt;1\\
+x^2 &amp; \text{if} &amp; x \leq 1
+\end{array}\right.\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex16')">Click for Solution</button>
+<br><br>
+<div id="ex16" style="display:none">
+</p>
+<p><span>1</span></p>
+<p><span class="math inline">\(f(x)\)</span> is not differentiable at <span class="math inline">\(x=1\)</span>.<br />
+The graph is not continuous at this point.<br />
+<embed src="ndiff3.pdf" /></p>
+<p>
+</div></p></li>
+</ol></li>
+<li><p><span><strong>Multiple Choice:</strong></span> If the function <span class="math inline">\(y=f(x)\)</span> is not differentiable at <span class="math inline">\(x=0\)</span>, then which of the following MUST be true?</p>
+<ol>
+<li><p><span class="math inline">\(f(0)\)</span> is undefined.</p></li>
+<li><p><span class="math inline">\(f(x)\)</span> is NOT continuous when <span class="math inline">\(x=0\)</span>.</p></li>
+<li><p>There is a horizontal tangent line to the graph of <span class="math inline">\(y=f(x)\)</span> when <span class="math inline">\(x=0\)</span>.</p></li>
+<li><p>There is a vertical tangent line to the graph of <span class="math inline">\(y=f(x)\)</span> when <span class="math inline">\(x=0\)</span>.</p></li>
+<li><p><span class="math inline">\(\lim_{h\rightarrow 0}\frac{f(0+h)-f(0)}{h}\)</span> does not exist.</p></li>
+</ol></li>
+<li><p>Match each of the graphs for functions (a)-(d) with the appropriate graph of its derivative (i)-(iv).<br />
+</p>
+<table>
+<tbody>
+<tr class="odd">
+<td align="center">(a)</td>
+<td align="center"></td>
+<td align="center">(i)</td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center"><embed src="match1.pdf" /></td>
+<td align="center"></td>
+<td align="center"><embed src="matchd.pdf" /></td>
+</tr>
+<tr class="odd">
+<td align="center">(b)</td>
+<td align="center"></td>
+<td align="center">(ii)</td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center"><embed src="match2.pdf" /></td>
+<td align="center"></td>
+<td align="center"><embed src="matchc.pdf" /></td>
+</tr>
+<tr class="odd">
+<td align="center">(c)</td>
+<td align="center"></td>
+<td align="center">(iii)</td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center"><embed src="match3.pdf" /></td>
+<td align="center"></td>
+<td align="center"><embed src="matcha.pdf" /></td>
+</tr>
+<tr class="odd">
+<td align="center">(d)</td>
+<td align="center"></td>
+<td align="center">(iv)</td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center"><embed src="match4.pdf" /></td>
+<td align="center"></td>
+<td align="center"><embed src="matchb.pdf" /></td>
+</tr>
+</tbody>
+</table>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex17')">Click for Solution</button>
+<br><br>
+<div id="ex17" style="display:none">
+</p>
+<p>Answer:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><span class="math inline">\(f(x)\)</span></th>
+<th align="center"><span class="math inline">\(f^{\prime}(x)\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">(a)</td>
+<td align="center">(iii)</td>
+</tr>
+<tr class="even">
+<td align="center">(b)</td>
+<td align="center">(iv)</td>
+</tr>
+<tr class="odd">
+<td align="center">(c)</td>
+<td align="center">(ii)</td>
+</tr>
+<tr class="even">
+<td align="center">(d)</td>
+<td align="center">(i)</td>
+</tr>
+</tbody>
+</table>
+<p>
+</div></p></li>
+<li><p>Sketch a function <span class="math inline">\(y=f(x)\)</span> with the given characteristics. (There are many possible answers.)</p>
+<ol>
+<li><p><span class="math inline">\(f^{\prime}(x) &lt;0\)</span> when <span class="math inline">\(x&lt;0\)</span>; <span class="math inline">\(f^{\prime}(x) &gt;0\)</span> when <span class="math inline">\(x&gt;0\)</span>; and <span class="math inline">\(f(0) = 0\)</span>.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex18')">Click for Solution</button>
+<br><br>
+<div id="ex18" style="display:none">
+<span><span><embed src="graph1.pdf" /></span></span>
+</div></p></li>
+<li><p><span class="math inline">\(f^{\prime}(x) = 0\)</span> when <span class="math inline">\(x&lt;0\)</span>; <span class="math inline">\(f^{\prime}(x) &lt;0\)</span> when <span class="math inline">\(x&gt;0\)</span>; and <span class="math inline">\(f(-1) = 3\)</span>; <span class="math inline">\(f^{\prime}(0)\)</span> DNE.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex19')">Click for Solution</button>
+<br><br>
+<div id="ex19" style="display:none">
+<span><span><embed src="graph2.pdf" /></span></span>
+</div></p></li>
+<li><p><span class="math inline">\(f^{\prime}(x) &gt;0\)</span> when <span class="math inline">\(x&lt;-1\)</span> and when <span class="math inline">\(x&gt;1\)</span>; <span class="math inline">\(f^{\prime}(x) &lt; 0\)</span> when <span class="math inline">\(-1&lt;x&lt;1\)</span>.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex20')">Click for Solution</button>
+<br><br>
+<div id="ex20" style="display:none">
+<span><span><embed src="graph3.pdf" /></span></span>
+</div></p></li>
+<li><p><span class="math inline">\(f(x)\)</span> has a vertical tangent line when <span class="math inline">\(x=1\)</span>; <span class="math inline">\(f^{\prime}(x)&gt;0\)</span> for <span class="math inline">\(x &lt; 1\)</span>; <span class="math inline">\(f(x)\)</span> is not differentiable when <span class="math inline">\(x=-1\)</span>.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex21')">Click for Solution</button>
+<br><br>
+<div id="ex21" style="display:none">
+<span><span><embed src="graph4.pdf" /></span></span>
+</div></p></li>
+</ol></li>
+</ol>
+</body>
+<script>
+function toggleAnswer(idName) {
+var x = document.getElementById(idName);
+if (x.style.display === "none") {
+x.style.display = "block";
+} else {
+x.style.display = "none";
+}
+}</script>
+</html>

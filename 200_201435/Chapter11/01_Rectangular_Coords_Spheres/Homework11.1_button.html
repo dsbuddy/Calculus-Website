@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<p>SUGGESTED REFERENCE MATERIAL:</p>
+<p>As you work through the problems listed below, you should reference Chapter 11.1 of the recommended textbook (or the equivalent chapter in your alternative textbook/online resource) and your lecture notes.</p>
+<p>EXPECTED SKILLS:</p>
+<ul>
+<li><p>Be able to determine the location of a point in space using rectangular coordinates.</p></li>
+<li><p>Be able to find the distance between and the midpoint of two points in space.</p></li>
+<li><p>Know the standard equation of a sphere and be able to find the center and radius of a sphere.</p></li>
+<li><p>Be able to sketch cylindrical surfaces.</p></li>
+</ul>
+<p>PRACTICE PROBLEMS:</p>
+<p><span><strong>Problems 1-3 refer to the rectangular box, shown below. The base of the rectangular box is in the <span class="math inline">\(xy\)</span>-plane.</strong></span></p>
+<p><embed src="box.pdf" /></p>
+<ol>
+<li><p>Find the coordinates of the eight corners of the box</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex1')">Click for Solution</button>
+<br><br>
+<div id="ex1" style="display:none">
+<span><span><span class="math inline">\((1,2,0), (3,2,0), (3,5,0), (1,5,0), (1,2,1), (3,2,1), (3,5,1), (1,5,1)\)</span></span></span>
+</div></p></li>
+<li><p>Compute the midpoint of the diagonal which extends from vertex <span class="math inline">\(a\)</span> to vertex <span class="math inline">\(b\)</span>.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex2')">Click for Solution</button>
+<br><br>
+<div id="ex2" style="display:none">
+<span><span><span class="math inline">\(\left(2,\frac{7}{2},\frac{1}{2}\right)\)</span></span></span>
+</div></p></li>
+<li><p>Consider the triangle with vertices <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span>, and <span class="math inline">\(c\)</span>.</p>
+<ol>
+<li><p>Compute the length of each of the three sides.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex3')">Click for Solution</button>
+<br><br>
+<div id="ex3" style="display:none">
+<span><span><span>0.8</span><span>The diagonal from vertex <span class="math inline">\(a\)</span> to vertex <span class="math inline">\(b\)</span> has length <span class="math inline">\(\sqrt{14}\)</span>;<br />
+The line segment from vertex <span class="math inline">\(a\)</span> to vertex <span class="math inline">\(c\)</span> has length <span class="math inline">\(\sqrt{13}\)</span>;<br />
+The line segment from vertex <span class="math inline">\(c\)</span> to vertex <span class="math inline">\(b\)</span> has length 1.</span></span></span>
+</div></p></li>
+<li><p>Verify that the triangle is a right triangle.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex4')">Click for Solution</button>
+<br><br>
+<div id="ex4" style="display:none">
+<span><span><span>1</span><span>Notice that <span class="math inline">\(\left(\sqrt{13}\right)^2+1^2=\left(\sqrt{14}\right)^2\)</span>. So, the sides of the triangle (which are not colinear) satisfy Pythagorean’s Theorem. Thus, the triangle is a right triangle.</span></span></span>
+</div></p></li>
+<li><p>Compute the angle between the diagonal which extends from vertex <span class="math inline">\(a\)</span> to vertex <span class="math inline">\(b\)</span> and the line segment which extends from vertex <span class="math inline">\(a\)</span> to vertex <span class="math inline">\(c\)</span>.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex5')">Click for Solution</button>
+<br><br>
+<div id="ex5" style="display:none">
+<span><span><span class="math inline">\(\cos^{-1}\left(\frac{\sqrt{13}}{\sqrt{14}}\right)\)</span></span></span>
+</div></p></li>
+</ol></li>
+<li><p>Consider the triangle with vertices <span class="math inline">\(A(5,-2,-1)\)</span>, <span class="math inline">\(B(7,0,3)\)</span>, and <span class="math inline">\(C(9,-4,1)\)</span>.</p>
+<ol>
+<li><p>Show that the triangle is an equilateral triangle.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex6')">Click for Solution</button>
+<br><br>
+<div id="ex6" style="display:none">
+<span><span>The length of all sides of the triangle is <span class="math inline">\(\sqrt{24}\)</span></span></span>
+</div></p></li>
+<li><p>Compute the area of the triangle.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex7')">Click for Solution</button>
+<br><br>
+<div id="ex7" style="display:none">
+<span><span><span class="math inline">\(6\sqrt{3}\)</span> square units</span></span>
+</div></p></li>
+</ol></li>
+<li><p>Find an equation of the sphere whose center is <span class="math inline">\((3,0,2)\)</span> and which has a diameter of 6.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex8')">Click for Solution</button>
+<br><br>
+<div id="ex8" style="display:none">
+<span><span><span class="math inline">\((x-3)^2+y^2+(z-2)^2=9\)</span></span></span>
+</div></p></li>
+<li><p>Find an equation of the sphere whose center is <span class="math inline">\((4,2,-1)\)</span> and which passes through the origin.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex9')">Click for Solution</button>
+<br><br>
+<div id="ex9" style="display:none">
+<span><span><span class="math inline">\((x-4)^2+(y-2)^2+(z+1)^2=21\)</span></span></span>
+</div></p></li>
+<li><p>Find an equation of the sphere which contains points <span class="math inline">\(A(1,3,2)\)</span> and <span class="math inline">\(B(4,3,7)\)</span> and the distance between <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> is equal to the diameter of the sphere.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex10')">Click for Solution</button>
+<br><br>
+<div id="ex10" style="display:none">
+<span><span><span class="math inline">\(\left(x-\frac{5}{2}\right)^2+(y-3)^2+\left(z-\frac{9}{2}\right)^2=\frac{17}{2}\)</span></span></span>
+</div></p></li>
+<li><p>Does the origin lie inside of the sphere <span class="math inline">\((x-1)^2+(y+2)^2+(z+3)^2=13\)</span>? Justify your answer.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex11')">Click for Solution</button>
+<br><br>
+<div id="ex11" style="display:none">
+<span><span><span>1</span><span>No. The distance from the origin to the center <span class="math inline">\((1,-2,-3)\)</span> is <span class="math inline">\(\sqrt{14}\)</span> which is greater than the radius, <span class="math inline">\(\sqrt{13}\)</span>.</span></span></span>
+</div></p></li>
+<li><p>Consider the cube with a center at the origin which has sides of length 2 that are parallel to the coordinate planes.</p>
+<ol>
+<li><p>Compute an equation of the sphere which is inscribed in this cube.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex12')">Click for Solution</button>
+<br><br>
+<div id="ex12" style="display:none">
+<span><span><span class="math inline">\(x^2+y^2+z^2=1\)</span></span></span>
+</div></p></li>
+<li><p>Compute an equation of the sphere which is circumscribed around the cube.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex13')">Click for Solution</button>
+<br><br>
+<div id="ex13" style="display:none">
+<span><span><span class="math inline">\(x^2+y^2+z^2=3\)</span></span></span>
+</div></p></li>
+</ol></li>
+<li><p>Find equations of the tangent spheres of equal radii whose centers are <span class="math inline">\((2,3,1)\)</span> and <span class="math inline">\((5,-3,2)\)</span>, respectively.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex14')">Click for Solution</button>
+<br><br>
+<div id="ex14" style="display:none">
+<span><span><span class="math inline">\((x-2)^2+(y-3)^2+(z-1)^2=\frac{23}{2}\)</span> and <span class="math inline">\((x-5)^2+(y+3)^2+(z-2)^2=\frac{23}{2}\)</span></span></span>
+</div></p></li>
+<li><p>Sketch the following surfaces in space.</p>
+<ol>
+<li><p><span class="math inline">\(3x+4y=12\)</span><br />
+<button type="button" class="btn btn-primary" onclick="toggleAnswer('ex15')">Click for Solution</button>
+<br><br>
+<div id="ex15" style="display:none">
+<span><span><embed src="plane.pdf" /></span></span>
+</div></p></li>
+<li><p><span class="math inline">\(\frac{x^2}{4}+\frac{y^2}{9}=1\)</span><br />
+<button type="button" class="btn btn-primary" onclick="toggleAnswer('ex16')">Click for Solution</button>
+<br><br>
+<div id="ex16" style="display:none">
+<span><span><embed src="ellipse.pdf" /></span></span>
+</div></p></li>
+<li><p><span class="math inline">\(z=x^2\)</span><br />
+<button type="button" class="btn btn-primary" onclick="toggleAnswer('ex17')">Click for Solution</button>
+<br><br>
+<div id="ex17" style="display:none">
+<span><span><embed src="parabola.pdf" /></span></span>
+</div></p></li>
+<li><p><span class="math inline">\(z=e^y\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex18')">Click for Solution</button>
+<br><br>
+<div id="ex18" style="display:none">
+<span><span><embed src="expo.pdf" /></span></span>
+</div></p></li>
+</ol></li>
+<li><p>Describe all points in space whose coordinates satisfy the following inequality <span class="math display">\[x^2+z^2-4x-8z+13&gt;0\]</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex19')">Click for Solution</button>
+<br><br>
+<div id="ex19" style="display:none">
+<span><span>All points outside of the cylinder <span class="math inline">\((x-2)^2+(z-4)^2=7\)</span>.</span></span>
+</div></p></li>
+<li><p>Consider the surface <span class="math inline">\(x^2+y^2+z^2-4x-12y-8z=k\)</span>, where <span class="math inline">\(k\)</span> is a real number. For which values of <span class="math inline">\(k\)</span> will the surface be a sphere?</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex20')">Click for Solution</button>
+<br><br>
+<div id="ex20" style="display:none">
+<span><span><span class="math inline">\(k&gt;-56\)</span></span></span>
+</div></p></li>
+</ol>
+</body>
+<script>
+function toggleAnswer(idName) {
+var x = document.getElementById(idName);
+if (x.style.display === "none") {
+x.style.display = "block";
+} else {
+x.style.display = "none";
+}
+}</script>
+</html>

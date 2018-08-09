@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<p>SUGGESTED REFERENCE MATERIAL:</p>
+<p>As you work through the problems listed below, you should reference Chapter 14.3 of the recommended textbook (or the equivalent chapter in your alternative textbook/online resource) and your lecture notes.</p>
+<p>EXPECTED SKILLS:</p>
+<ul>
+<li><p>Be able to convert rectangular double integrals to polar double integrals, including converting the limits of integration, the function to be integrated, and the differential <span class="math inline">\(dA\)</span> to <span class="math inline">\(r\,dr\,d\theta\)</span>.</p></li>
+</ul>
+<p>PRACTICE PROBLEMS:</p>
+<ol>
+<li><p>Consider the region <span class="math inline">\(R\)</span> shown below which is enclosed by <span class="math inline">\(x^2+y^2=1\)</span>, <span class="math inline">\(x^2+y^2=4\)</span>, <span class="math inline">\(y=x\)</span> and the <span class="math inline">\(x\)</span> axis.</p>
+<p><embed src="region1.pdf" /></p>
+<p>Fill in the missing limits of integration: <span class="math inline">\(\iint \limits_{R} f(x,y) \,dA = \int_{\fbox{}}^{\fbox{}}\int_{\fbox{}}^{\fbox{}} f(r,\theta) r \,dr \,d\theta\)</span>.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex1')">Click for Solution</button>
+<br><br>
+<div id="ex1" style="display:none">
+<span><span><span class="math inline">\(\iint \limits_{R} f(x,y) \,dA = \int_{\pi/4}^{\pi}\int_{1}^{2} f(r,\theta) r \,dr \,d\theta\)</span></span></span>
+</div></p></li>
+</ol>
+<p><span><strong>For problems 2-6, evaluate the iterated integral by converting to polar coordinates.</strong></span></p>
+<ol start="2">
+<li><p><span class="math inline">\(\int_0^{4} \int_0^{\sqrt{16-x^2}} \sqrt{x^2+y^2} \,dy \,dx\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex2')">Click for Solution</button>
+<br><br>
+<div id="ex2" style="display:none">
+<span><span><span class="math inline">\(\frac{32\pi}{3}\)</span></span></span>
+</div></p></li>
+<li><p><span class="math inline">\(\int_0^{3/\sqrt{2}} \int_x^{\sqrt{9-x^2}} \left(x^2+y^2\right)^2 \,dy \,dx\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex3')">Click for Solution</button>
+<br><br>
+<div id="ex3" style="display:none">
+<span><span><span class="math inline">\(\frac{243}{8}\pi\)</span></span></span>
+</div></p></li>
+<li><p><span class="math inline">\(\int_0^{2} \int_0^{\sqrt{2x-x^2}} xy \,dy \,dx\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex4')">Click for Solution</button>
+<br><br>
+<div id="ex4" style="display:none">
+<span><span><span class="math inline">\(\frac{2}{3}\)</span></span></span>
+</div></p></li>
+<li><p>Evaluate <span class="math inline">\(\iint \limits_{R} (x-y) \,dA\)</span> where <span class="math inline">\(R=\{(x,y): 4 \leq x^2+y^2 \leq 16 \text{ and } y \leq x\}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex5')">Click for Solution</button>
+<br><br>
+<div id="ex5" style="display:none">
+<span><span><span class="math inline">\(\frac{112}{3}\sqrt{2}\)</span></span></span>
+</div></p></li>
+<li><p>Evaluate <span class="math inline">\(\iint \limits_{R} e^{-(x^2+y^2)} \,dA\)</span> where <span class="math inline">\(R=\{(x,y): x^2+y^2 \leq 3 \text{ and } 0 \leq y \leq \sqrt{3}x\}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex6')">Click for Solution</button>
+<br><br>
+<div id="ex6" style="display:none">
+<span><span><span class="math inline">\(\frac{\pi}{6}\left(1-\frac{1}{e^3}\right)\)</span></span></span>
+</div></p></li>
+<li><p>Use a double integral in polar coordinates to calculate the area of the region which is inside of the cardioid <span class="math inline">\(r=2+2\cos{\theta}\)</span> and outside of the circle <span class="math inline">\(r=3\)</span>.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex7')">Click for Solution</button>
+<br><br>
+<div id="ex7" style="display:none">
+<span><span><span class="math inline">\(\frac{9\sqrt{3}}{2}-\pi\)</span></span></span>
+</div></p></li>
+<li><p>Use a double integral in polar coordinates to calculate the area of the region which is common to both circles <span class="math inline">\(r=3\sin{\theta}\)</span> and <span class="math inline">\(r=\sqrt{3}\cos{\theta}\)</span>.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex8')">Click for Solution</button>
+<br><br>
+<div id="ex8" style="display:none">
+<span><span><span class="math inline">\(\frac{5\pi}{8}-\frac{3\sqrt{3}}{4}\)</span>; Detailed Solution: </span></span>
+</div></p></li>
+<li><p>Consider the top which is bounded above by <span class="math inline">\(z=\sqrt{4-x^2-y^2}\)</span> and bounded below by <span class="math inline">\(z=\sqrt{x^2+y^2}\)</span>, as shown below.</p>
+<p><embed src="top.pdf" /></p>
+<p>Use a double integral in polar coordinates to calculate the volume of the top.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex9')">Click for Solution</button>
+<br><br>
+<div id="ex9" style="display:none">
+<span><span><span class="math inline">\(\frac{16\pi}{3}-\frac{8\pi\sqrt{2}}{3}\)</span></span></span>
+</div></p></li>
+<li><p>Consider the surfaces <span class="math inline">\(x^2+y^2+z^2=16\)</span> and <span class="math inline">\(x^2+y^2=4\)</span>, shown below.</p>
+<p><embed src="earth.pdf" /></p>
+<p>Calculate the volume of the solid which is inside of <span class="math inline">\(x^2+y^2+z^2=16\)</span> but outside of <span class="math inline">\(x^2+y^2=4\)</span>.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex10')">Click for Solution</button>
+<br><br>
+<div id="ex10" style="display:none">
+<span><span><span class="math inline">\(32\pi\sqrt{3}\)</span>; Detailed Solution: </span></span>
+</div></p></li>
+<li><p>Calculate the volume of the solid which is bounded above by <span class="math inline">\(z=9-x^2-y^2\)</span>, bounded below by <span class="math inline">\(z=0\)</span>, and contained within <span class="math inline">\(x^2-3x+y^2=0\)</span>.</p>
+<p><embed src="region2.pdf" /></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex11')">Click for Solution</button>
+<br><br>
+<div id="ex11" style="display:none">
+<span><span><span class="math inline">\(\frac{405\pi}{32}\)</span></span></span>
+</div></p></li>
+</ol>
+</body>
+<script>
+function toggleAnswer(idName) {
+var x = document.getElementById(idName);
+if (x.style.display === "none") {
+x.style.display = "block";
+} else {
+x.style.display = "none";
+}
+}</script>
+</html>

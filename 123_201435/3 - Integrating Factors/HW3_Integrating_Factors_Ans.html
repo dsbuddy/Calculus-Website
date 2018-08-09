@@ -19,42 +19,74 @@
 <p>PRACTICE PROBLEMS:</p>
 <p><span><strong>For problems 1-6, use an integrating factor to solve the given differential equation. Express your answer as an explicit function of <span class="math inline">\(x\)</span>.</strong></span></p>
 <ol>
-<li><p><span class="math inline">\(\frac{dy}{dx}-4y=e^{5x}\)</span></p></li>
-<li><p><span class="math inline">\(\frac{dy}{dx}+3x^2y=x^2\)</span></p></li>
-<li><p><span class="math inline">\(y^{\prime}=x-2y\)</span></p></li>
-<li><p><span class="math inline">\(\frac{dy}{dx}-y=\sin{(e^{-x})}\)</span></p></li>
-<li><p><span class="math inline">\(y^{\prime}+\frac{y}{x\ln{x}}=x\)</span>, for <span class="math inline">\(x&gt;1\)</span></p></li>
-<li><p><span class="math inline">\(\frac{dy}{dx}+y=\frac{1}{e^{2x}-5e^x+4}\)</span></p></li>
+<li><p><span class="math inline">\(\frac{dy}{dx}-4y=e^{5x}\)</span></p>
+<p><embed src="start.pdf" /> <span><span><span class="math inline">\(y=e^{5x}+Ce^{4x}\)</span></span></span> <embed src="end.pdf" /></p></li>
+<li><p><span class="math inline">\(\frac{dy}{dx}+3x^2y=x^2\)</span></p>
+<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\frac{1}{3}+Ce^{-x^3}\)</span></span></span> <embed src="end.pdf" /></p></li>
+<li><p><span class="math inline">\(y^{\prime}=x-2y\)</span></p>
+<p><embed src="start.pdf" /> <span><span><span class="math inline">\(Ce^{-2x}+\frac{1}{2}x-\frac{1}{4}\)</span></span></span> <embed src="end.pdf" /></p></li>
+<li><p><span class="math inline">\(\frac{dy}{dx}-y=\sin{(e^{-x})}\)</span></p>
+<p><embed src="start.pdf" /> <span><span><span class="math inline">\(y=e^x\cos{(e^{-x})}+Ce^x\)</span></span></span> <embed src="end.pdf" /></p></li>
+<li><p><span class="math inline">\(y^{\prime}+\frac{y}{x\ln{x}}=x\)</span>, for <span class="math inline">\(x&gt;1\)</span></p>
+<p><embed src="start.pdf" /> <span><span><span class="math inline">\(y=\frac{1}{2}x^2-\frac{x^2}{4\ln{x}}+\frac{C}{\ln{x}}\)</span></span></span> <embed src="end.pdf" /></p></li>
+<li><p><span class="math inline">\(\frac{dy}{dx}+y=\frac{1}{e^{2x}-5e^x+4}\)</span></p>
+<p><embed src="start.pdf" /> <span><span><span class="math inline">\(y=\frac{1}{3}e^{-x}\ln{\left|\frac{e^x-4}{e^x-1}\right|+Ce^{-x}}\)</span>; Detailed Solution: </span></span> <embed src="end.pdf" /></p></li>
 </ol>
 <ol start="7">
-<li><p>Look at the practice problems 3 – 9 and determine which ODE’s, if any, are first-order linear equations. If there are any, solve them using integrating factors.</p></li>
+<li><p>Look at the practice problems 3 – 9 and determine which ODE’s, if any, are first-order linear equations. If there are any, solve them using integrating factors.</p>
+<p><embed src="start.pdf" /> <span><span><span>1</span><span>Problem #5 is a linear equation since it can be written as <span class="math inline">\(y^{\prime}-x^2y=0\)</span>. The solution is (of course) still <span class="math inline">\(y=Ce^{x^3/3}\)</span>.</span></span></span> <embed src="end.pdf" /></p></li>
 </ol>
 <p><span><strong>For problems 8-9, solve the initial value problem. Express your answer as an explicit function of <span class="math inline">\(x\)</span>.</strong></span></p>
 <ol start="8">
-<li><p><span class="math inline">\(\frac{dy}{dx}+\frac{1}{x}y=\frac{1}{x+x^3}\)</span>, for <span class="math inline">\(x&gt;0\)</span>; <span class="math inline">\(y(1)=0\)</span></p></li>
-<li><p><span class="math inline">\((\cos{x})\frac{dy}{dx}+y\sin{x}=\sin{x}\cos{x}\)</span>, for <span class="math inline">\(-\frac{\pi}{2}&lt;x&lt;\frac{\pi}{2}\)</span>; <span class="math inline">\(y(0)=5\)</span></p></li>
+<li><p><span class="math inline">\(\frac{dy}{dx}+\frac{1}{x}y=\frac{1}{x+x^3}\)</span>, for <span class="math inline">\(x&gt;0\)</span>; <span class="math inline">\(y(1)=0\)</span></p>
+<p><embed src="start.pdf" /> <span><span><span class="math inline">\(y=\frac{\arctan{x}}{x}-\frac{\pi}{4x}\)</span></span></span> <embed src="end.pdf" /></p></li>
+<li><p><span class="math inline">\((\cos{x})\frac{dy}{dx}+y\sin{x}=\sin{x}\cos{x}\)</span>, for <span class="math inline">\(-\frac{\pi}{2}&lt;x&lt;\frac{\pi}{2}\)</span>; <span class="math inline">\(y(0)=5\)</span></p>
+<p><embed src="start.pdf" /> <span><span><span class="math inline">\(y=(\cos{x})\ln{(\sec{x})}+5\cos{x}\)</span>; Detailed Solution: </span></span> <embed src="end.pdf" /></p></li>
 <li><p>A tank intially contains 7 pounds of salt dissolved in 100 gallons of water. Then, salt water containing 3 pounds of salt per gallon enters the tank at a rate of 8 gallons per minute, and the mixed solution is drained from the tank at a rate of 8 gallons per minute. Let <span class="math inline">\(y=y(t)\)</span> be the amount of salt in the tank at time <span class="math inline">\(t\)</span>.</p>
 <ol>
-<li><p>Using this information, set up an initial value problem (IVP) whose solution is <span class="math inline">\(y(t)\)</span>.</p></li>
-<li><p>Using integrating factors, solve the IVP from part (a).</p></li>
-<li><p>Using separation of variables, solve the IVP from part (a).</p></li>
+<li><p>Using this information, set up an initial value problem (IVP) whose solution is <span class="math inline">\(y(t)\)</span>.</p>
+<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\left\{\begin{array}{l}
+\frac{dy}{dt}=24-\frac{2y}{25}\\
+\\
+y(0)=7
+\end{array}\right.\)</span></span></span> <embed src="end.pdf" /></p></li>
+<li><p>Using integrating factors, solve the IVP from part (a).</p>
+<p><embed src="start.pdf" /> <span><span><span class="math inline">\(y(t)=300-293e^{-2t/25}\)</span></span></span> <embed src="end.pdf" /></p></li>
+<li><p>Using separation of variables, solve the IVP from part (a).</p>
+<p><embed src="start.pdf" /> <span><span><span class="math inline">\(y(t)=300-293e^{-2t/25}\)</span></span></span> <embed src="end.pdf" /></p></li>
 </ol></li>
 <li><p>Suppose the saltwater solution in problem <span class="math inline">\(\#10\)</span> is drained from the tank at a rate of 6 gallons per minute.</p>
 <ol>
-<li><p>Set up an initial value problem (IVP) whose solution is <span class="math inline">\(y(t)\)</span>. [Hint: The volume of saltwater is no longer a constant, but rather a function of <span class="math inline">\(t\)</span>.]</p></li>
-<li><p>Using integrating factors, solve the IVP from part (a).</p></li>
-<li><p>Suppose that the tank has a capacity of 200 gallons. How much salt is in the tank when it reaches the point of overflowing?</p></li>
+<li><p>Set up an initial value problem (IVP) whose solution is <span class="math inline">\(y(t)\)</span>. [Hint: The volume of saltwater is no longer a constant, but rather a function of <span class="math inline">\(t\)</span>.]</p>
+<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\left\{\begin{array}{l}
+\frac{dy}{dt}=24-\frac{3y}{50+t}\\
+\\
+y(0)=7
+\end{array}\right.\)</span>; Detailed Solution: </span></span> <embed src="end.pdf" /></p></li>
+<li><p>Using integrating factors, solve the IVP from part (a).</p>
+<p><embed src="start.pdf" /> <span><span><span class="math inline">\(y(t)=6(50+t)-293(50)^3(50+t)^{-3}\)</span></span></span> <embed src="end.pdf" /></p></li>
+<li><p>Suppose that the tank has a capacity of 200 gallons. How much salt is in the tank when it reaches the point of overflowing?</p>
+<p><embed src="start.pdf" /> <span><span><span>1</span><span>The tank overflows at time <span class="math inline">\(t=50\)</span> minutes.<br />
+At that time the amount of salt is <span class="math inline">\(y\left(50\right)=\frac{4507}{8}\approx563.4\)</span> pounds</span></span></span> <embed src="end.pdf" /></p></li>
 </ol></li>
 <li><p>Suppose that an object with mass <span class="math inline">\(m\)</span> falls to the earth with a velocity <span class="math inline">\(v=v(t)\)</span> and is subjected to the force of gravity as well as air resistance (which is propotional to its velocity). Using Newton’s Second Law it can be shown that <span class="math display">\[m\frac{dv}{dt}=-mg-kv\]</span> where <span class="math inline">\(g\)</span> is the acceleration due to gravity and <span class="math inline">\(k\)</span> is some positive constant of proportionality.</p>
 <ol>
-<li><p>Assuming that the object’s initial velocity is <span class="math inline">\(v_0\)</span>, set up an initial value problem (IVP) whose solution is <span class="math inline">\(v(t)\)</span>.</p></li>
-<li><p>Solve the IVP from part (a).</p></li>
-<li><p>Evaluate <span class="math inline">\(\lim_{t \rightarrow \infty}{v(t)}\)</span>.</p></li>
+<li><p>Assuming that the object’s initial velocity is <span class="math inline">\(v_0\)</span>, set up an initial value problem (IVP) whose solution is <span class="math inline">\(v(t)\)</span>.</p>
+<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\left\{\begin{array}{l}
+\frac{dv}{dt}+\frac{k}{m}v=-g\\
+\\
+v(0)=v_0
+\end{array}\right.\)</span></span></span> <embed src="end.pdf" /></p></li>
+<li><p>Solve the IVP from part (a).</p>
+<p><embed src="start.pdf" /> <span><span><span class="math inline">\(v(t)=-\frac{gm}{k}+\left(v_0+\frac{gm}{k}\right)e^{-kt/m}\)</span></span></span> <embed src="end.pdf" /></p></li>
+<li><p>Evaluate <span class="math inline">\(\lim_{t \rightarrow \infty}{v(t)}\)</span>.</p>
+<p><embed src="start.pdf" /> <span><span><span>1</span><span><span class="math inline">\(\lim_{t \rightarrow \infty}{v(t)} = -\frac{gm}{k}\)</span>. This is known as the of the object and occurs when the opposing forces of air resistance and gravity are equal, causing the object to experience no acceleration.</span></span></span> <embed src="end.pdf" /></p></li>
 </ol></li>
 <li><p>Consider the simple electrical circuit shown below. An electromotive force (e.g. a generator) produces a voltage of <span class="math inline">\(V(t)\)</span> volts (V) and a current of <span class="math inline">\(I(t)\)</span> amperes (A) at time <span class="math inline">\(t\)</span>. The circuit also contains a resistor with a constant resistance of <span class="math inline">\(R\)</span> ohms (<span class="math inline">\(\Omega\)</span>) and an inductor with a constant inductance of <span class="math inline">\(L\)</span> henries (H). Such a circuit is called an .</p>
 <p><img src="RL_circuit" alt="image" width="264" /></p>
 <p>Using Ohm’s Law and Kirchoff’s Law it can be shown that <span class="math display">\[L\frac{dI}{dt}+RI=V(t)\]</span> Suppose that the <span class="math inline">\(RL\)</span> circuit above has a resistance of <span class="math inline">\(6\)</span> <span class="math inline">\(  \Omega\)</span> and an inductance of <span class="math inline">\(3\)</span> H. If a generator produces a variable voltage of <span class="math inline">\(V(t)=9\sin{t}\)</span> and the initial current is <span class="math inline">\(I(0) = 2\)</span> A, find <span class="math inline">\(I(t)\)</span>.</p>
-<p>Hint: Recall to solve an integral of the form <span class="math inline">\(\int e^x \sin{x} \,dx\)</span>, use integration by parts twice.</p></li>
+<p>Hint: Recall to solve an integral of the form <span class="math inline">\(\int e^x \sin{x} \,dx\)</span>, use integration by parts twice.</p>
+<p><embed src="start.pdf" /> <span><span><span class="math inline">\(I(t)=-\frac{3}{5}\cos{t}+\frac{6}{5}\sin{t}+\frac{13}{5}e^{-2t}\)</span></span></span> <embed src="end.pdf" /></p></li>
 </ol>
 </body>
 </html>

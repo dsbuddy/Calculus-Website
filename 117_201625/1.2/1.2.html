@@ -21,30 +21,46 @@
 <ol>
 <li><p>Start at <span class="math inline">\(x_0=3\)</span> and do the following.</p>
 <ul>
-<li><p>Find an equation of <span class="math inline">\(T_1\)</span>, the tangent line to the graph at <span class="math inline">\(x_0\)</span>? Find the <span class="math inline">\(x\)</span>-intercept of <span class="math inline">\(T_1\)</span> and call this value <span class="math inline">\(x_1\)</span>.</p></li>
-<li><p>Find an equation of <span class="math inline">\(T_2\)</span>, the tangent line to the graph at <span class="math inline">\(x_1\)</span>? Find the <span class="math inline">\(x\)</span>-intercept of <span class="math inline">\(T_2\)</span> and call this value <span class="math inline">\(x_2\)</span>.</p></li>
-<li><p>Find an equation of <span class="math inline">\(T_3\)</span>, the tangent line to the graph at <span class="math inline">\(x_2\)</span>? Find the <span class="math inline">\(x\)</span>-intercept of <span class="math inline">\(T_3\)</span> and call this value <span class="math inline">\(x_3\)</span>.</p></li>
+<li><p>Find an equation of <span class="math inline">\(T_1\)</span>, the tangent line to the graph at <span class="math inline">\(x_0\)</span>? Find the <span class="math inline">\(x\)</span>-intercept of <span class="math inline">\(T_1\)</span> and call this value <span class="math inline">\(x_1\)</span>.</p>
+<p><embed src="start.pdf" /> <span><span><span class="math inline">\(T_1: y=25x-50\)</span>. <span class="math inline">\(x_1=2\)</span></span></span> <embed src="end.pdf" /></p></li>
+<li><p>Find an equation of <span class="math inline">\(T_2\)</span>, the tangent line to the graph at <span class="math inline">\(x_1\)</span>? Find the <span class="math inline">\(x\)</span>-intercept of <span class="math inline">\(T_2\)</span> and call this value <span class="math inline">\(x_2\)</span>.</p>
+<p><embed src="start.pdf" /> <span><span><span class="math inline">\(T_2: y=10x-12\)</span>. <span class="math inline">\(x_2=1.2\)</span></span></span> <embed src="end.pdf" /></p></li>
+<li><p>Find an equation of <span class="math inline">\(T_3\)</span>, the tangent line to the graph at <span class="math inline">\(x_2\)</span>? Find the <span class="math inline">\(x\)</span>-intercept of <span class="math inline">\(T_3\)</span> and call this value <span class="math inline">\(x_3\)</span>.</p>
+<p><embed src="start.pdf" /> <span><span><span class="math inline">\(T_3: y=\frac{58}{25}x-\frac{68}{125}\)</span>. <span class="math inline">\(x_3=-\frac{34}{145}\approx-.2344827586\)</span></span></span> <embed src="end.pdf" /></p></li>
 </ul></li>
-<li><p>After 3 iterations of Newton’s Method, what is a approximate solution to <span class="math inline">\(x^3-2x+4=0\)</span>?</p></li>
-<li><p>It turns out that the only real solution to <span class="math inline">\(x^3-2x+4=0\)</span> is <span class="math inline">\(x=-2\)</span>. If you were to perform another iteration, would you move closer to or farther away from the actual solution? Explain.</p></li>
+<li><p>After 3 iterations of Newton’s Method, what is a approximate solution to <span class="math inline">\(x^3-2x+4=0\)</span>?</p>
+<p><embed src="start.pdf" /> <span><span><span class="math inline">\(x_3=-\frac{34}{145}\approx-.2344827586\)</span></span></span> <embed src="end.pdf" /></p></li>
+<li><p>It turns out that the only real solution to <span class="math inline">\(x^3-2x+4=0\)</span> is <span class="math inline">\(x=-2\)</span>. If you were to perform another iteration, would you move closer to or farther away from the actual solution? Explain.</p>
+<p><embed src="start.pdf" /> <span><span><span>1</span><span>You would move further away. The tangent line to the graph of <span class="math inline">\(f(x)\)</span> at <span class="math inline">\(x_3\)</span> will intersect the positive <span class="math inline">\(x\)</span>-axis. </span></span></span> <embed src="end.pdf" /></p></li>
 <li><p>It turns out that we would need 22 iterations of Newton’s Method to satisfy either of the following stopping criteria:</p>
 <ul>
 <li><p>Let <span class="math inline">\(\epsilon=0.1\)</span>. If <span class="math inline">\(|f(x_k)|&lt;\epsilon\)</span>, stop. Else, perform another iteration.</p></li>
 <li><p>let <span class="math inline">\(\epsilon=0.1\)</span>. If <span class="math inline">\(|x_k-x_{k-1}|&lt;\epsilon\)</span>, stop. Else, perform another iteration.</p></li>
 </ul>
-<p>Perhaps initializing the algorithm with a different choice of <span class="math inline">\(x_0\)</span> will perform better. Choose <span class="math inline">\(x_0=1\)</span> and perform Newton’s Method until your resulting estimate is “reasonably close” to the actual solution of <span class="math inline">\(x=-2\)</span>. What is your approximation and how many iterations did you perform?</p></li>
+<p>Perhaps initializing the algorithm with a different choice of <span class="math inline">\(x_0\)</span> will perform better. Choose <span class="math inline">\(x_0=1\)</span> and perform Newton’s Method until your resulting estimate is “reasonably close” to the actual solution of <span class="math inline">\(x=-2\)</span>. What is your approximation and how many iterations did you perform?</p>
+<p><embed src="start.pdf" /></p>
+<p><span>1</span></p>
+<p>As you can see in the following diagram, it will only take one iteration of Newton’s Method to obtain the exact solution of <span class="math inline">\(x=2\)</span>. Notice that the initialization of the algorithm can have a big impact on the number of iterations. Also, if there were multiple solutions to the equation, the initial guess could determine which of the solutions is reached.</p>
+<p><embed src="newton2.pdf" /></p>
+<p><embed src="end.pdf" /></p></li>
 </ol></li>
 <li><p>Use Newton’s Method to estimate a solution to <span class="math inline">\(x^3+7x-5=0\)</span> using the stopping procedures listed below. Initialize the algorithm with <span class="math inline">\(x_0=3\)</span>. In each case, what is an estimate of the desired solution?</p>
 <ol>
-<li><p>Stop after 3 iterations.</p></li>
-<li><p>Let <span class="math inline">\(\epsilon=0.1\)</span>. Use the stopping algorithm: “If <span class="math inline">\(|f(x_k)|&lt;\epsilon\)</span>, stop. Else, perform another iteration.&quot;</p></li>
-<li><p>Again let <span class="math inline">\(\epsilon=0.1\)</span>. Use the stopping algorithm: “If <span class="math inline">\(|x_k-x_{k-1}|&lt;\epsilon\)</span>, stop. Else, perform another iteration.&quot;</p></li>
+<li><p>Stop after 3 iterations.</p>
+<p><embed src="start.pdf" /> <span>The solution is approximately 0.693829439.</span> <embed src="end.pdf" /></p></li>
+<li><p>Let <span class="math inline">\(\epsilon=0.1\)</span>. Use the stopping algorithm: “If <span class="math inline">\(|f(x_k)|&lt;\epsilon\)</span>, stop. Else, perform another iteration.&quot;</p>
+<p><embed src="start.pdf" /> <span>The solution is approximately 0.671232257.</span> <embed src="end.pdf" /></p></li>
+<li><p>Again let <span class="math inline">\(\epsilon=0.1\)</span>. Use the stopping algorithm: “If <span class="math inline">\(|x_k-x_{k-1}|&lt;\epsilon\)</span>, stop. Else, perform another iteration.&quot;</p>
+<p><embed src="start.pdf" /> <span>The solution is approximately 0.671232257.</span> <embed src="end.pdf" /></p></li>
 </ol></li>
 <li><p>Estimate <span class="math inline">\(\sqrt{3}\)</span> using Newton’s Method. Initialize your search with <span class="math inline">\(x_0=1\)</span> and use the stopping procedures listed below. In each case, what is the estimated value of <span class="math inline">\(\sqrt{3}\)</span> and how many iterations were required? (Hint: find the positive value of <span class="math inline">\(x\)</span> such that <span class="math inline">\(x^2=3\)</span>.)</p>
 <ol>
-<li><p>Stop after 3 iterations.</p></li>
-<li><p>Let <span class="math inline">\(\epsilon=0.1\)</span>. Use the stopping algorithm: “If <span class="math inline">\(|f(x_k)|&lt;\epsilon\)</span>, stop. Else, perform another iteration.&quot;</p></li>
-<li><p>Again let <span class="math inline">\(\epsilon=0.1\)</span>. Use the stopping algorithm: “If <span class="math inline">\(|x_k-x_{x-1}|&lt;\epsilon\)</span>, stop. Else, perform another iteration.&quot;</p></li>
+<li><p>Stop after 3 iterations.</p>
+<p><embed src="start.pdf" /> <span>The solution is approximately 1.732142857.</span> <embed src="end.pdf" /></p></li>
+<li><p>Let <span class="math inline">\(\epsilon=0.1\)</span>. Use the stopping algorithm: “If <span class="math inline">\(|f(x_k)|&lt;\epsilon\)</span>, stop. Else, perform another iteration.&quot;</p>
+<p><embed src="start.pdf" /> <span>The solution is approximately 1.75 after 2 iterations.</span> <embed src="end.pdf" /></p></li>
+<li><p>Again let <span class="math inline">\(\epsilon=0.1\)</span>. Use the stopping algorithm: “If <span class="math inline">\(|x_k-x_{x-1}|&lt;\epsilon\)</span>, stop. Else, perform another iteration.&quot;</p>
+<p><embed src="start.pdf" /> <span>The solution is approximately 1.732142857 after 3 iterations.</span> <embed src="end.pdf" /></p></li>
 </ol></li>
 <li><p>Newton’s Method will fail to when trying to solve <span class="math inline">\(x^{1/3}=0\)</span>.</p>
 <ol>
@@ -96,15 +112,69 @@
 <td align="center"></td>
 </tr>
 </tbody>
-</table></li>
-<li><p>From one iteration to the next, what is happening to <span class="math inline">\(|f(x_k)|\)</span>? What is an interpretation of this?</p></li>
-<li><p>From one iteration to the next, what is happening to <span class="math inline">\(|x_k-x_{k-1}|)\)</span>? What is an interpretation of this?</p></li>
-<li><p>Sketch <span class="math inline">\(y=x^{1/3}\)</span> and the results from the first 3 iterations of Newton’s Method.</p></li>
+</table>
+<p><embed src="start.pdf" /></p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><span class="math inline">\(k\)</span></th>
+<th align="center"><span class="math inline">\(x_k\)</span></th>
+<th align="center"><span class="math inline">\(|f(x_k)|\)</span></th>
+<th align="center"><span class="math inline">\(|x_k-x_{k-1}|\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center"><span class="math inline">\(-\)</span></td>
+</tr>
+<tr class="even">
+<td align="center">1</td>
+<td align="center"><span class="math inline">\(-2\)</span></td>
+<td align="center"><span class="math inline">\(1.25992105\)</span></td>
+<td align="center">3</td>
+</tr>
+<tr class="odd">
+<td align="center">2</td>
+<td align="center">4</td>
+<td align="center"><span class="math inline">\(1.587401052\)</span></td>
+<td align="center">6</td>
+</tr>
+<tr class="even">
+<td align="center">3</td>
+<td align="center"><span class="math inline">\(-8\)</span></td>
+<td align="center">2</td>
+<td align="center">12</td>
+</tr>
+<tr class="odd">
+<td align="center">4</td>
+<td align="center">16</td>
+<td align="center"><span class="math inline">\(2.5198421\)</span></td>
+<td align="center">24</td>
+</tr>
+<tr class="even">
+<td align="center">5</td>
+<td align="center"><span class="math inline">\(-32\)</span></td>
+<td align="center"><span class="math inline">\(3.174802104\)</span></td>
+<td align="center">48</td>
+</tr>
+</tbody>
+</table>
+<p><embed src="end.pdf" /></p></li>
+<li><p>From one iteration to the next, what is happening to <span class="math inline">\(|f(x_k)|\)</span>? What is an interpretation of this?</p>
+<p><embed src="start.pdf" /> <span><span><span>1</span><span>From one iteration to the next <span class="math inline">\(|f(x_k)|\)</span> gets larger. As a result, the <span class="math inline">\(y\)</span>-values of <span class="math inline">\(y=x^{1/3}\)</span> are getting farther away from 0 (which is the opposite of what we need).</span></span></span> <embed src="end.pdf" /></p></li>
+<li><p>From one iteration to the next, what is happening to <span class="math inline">\(|x_k-x_{k-1}|)\)</span>? What is an interpretation of this?</p>
+<p><embed src="start.pdf" /> <span><span><span>1</span><span>From one iteration to the next <span class="math inline">\(|x_k-x_{k-1}|\)</span> gets larger. As a result, the approximations are getting farther apart (which is the opposite of what we need).</span></span></span> <embed src="end.pdf" /></p></li>
+<li><p>Sketch <span class="math inline">\(y=x^{1/3}\)</span> and the results from the first 3 iterations of Newton’s Method.</p>
+<p><embed src="start.pdf" /> <span><span><embed src="newton_fail.pdf" /></span></span> <embed src="end.pdf" /></p></li>
 </ol></li>
 <li><p>The <span><strong>Secant Method</strong></span> is a modification of Newton’s Method in which an approximation of the derivative is used rather than the derivative itself. Consider the following diagram:</p>
 <p><img src="secant.png" alt="image" /></p>
 <p>The algorithm starts by choosing <span class="math inline">\(x_0\)</span> and <span class="math inline">\(x_1\)</span> “close&quot; to the actual solution to <span class="math inline">\(f(x)=0\)</span>. To get the next estimate, <span class="math inline">\(x_2\)</span>, one finds the <span class="math inline">\(x\)</span>-intercept of the secant line through <span class="math inline">\((x_0,f(x_0)\)</span> and <span class="math inline">\((x_1,f(x_1))\)</span>. If this estimate is sufficiently good, the algorithm terminates. Else, the process is repeated where <span class="math inline">\(x_3\)</span> is the <span class="math inline">\(x\)</span>-intercept of the secant line through <span class="math inline">\((x_1,f(x_1)\)</span> and <span class="math inline">\((x_2,f(x_2))\)</span>. Determine the general update formula for <span class="math inline">\(x_{x+1}\)</span> if you know <span class="math inline">\(x_k\)</span> and <span class="math inline">\(x_{k-1}\)</span>.<br />
-<span><strong>Note:</strong></span> This method can sometimes be faster than Newton’s Method since we only have to compute the function value rather than both the function and derivative values. It is also similar to the False position method discussed in question 6 of the Bisection Method HW; but, unlike the False position method, in the secant method the solution need not remain bracketed by the endpoints <span class="math inline">\(x_{k-1}\)</span> and <span class="math inline">\(x_k\)</span>. So, there can be convergence issues.</p></li>
+<span><strong>Note:</strong></span> This method can sometimes be faster than Newton’s Method since we only have to compute the function value rather than both the function and derivative values. It is also similar to the False position method discussed in question 6 of the Bisection Method HW; but, unlike the False position method, in the secant method the solution need not remain bracketed by the endpoints <span class="math inline">\(x_{k-1}\)</span> and <span class="math inline">\(x_k\)</span>. So, there can be convergence issues.</p>
+<p><embed src="start.pdf" /> <span><span><span class="math inline">\(x_{k+1} = x_k - \frac{f(x_k)(x_k-x_{k-1})}{f(x_k)-f(x_{k-1})}\)</span></span></span> <embed src="end.pdf" /></p></li>
 </ol>
 </body>
 </html>

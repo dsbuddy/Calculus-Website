@@ -1,0 +1,363 @@
+\documentclass[12pt]{article}
+
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{fullpage}
+\usepackage{epsfig}
+\usepackage{epstopdf}
+\everymath{\displaystyle}
+
+
+
+\begin{document}
+
+\begin{center}
+\underline{\LARGE{Chapter 3.3 Practice Problems}}
+\end{center}
+
+\noindent EXPECTED SKILLS:
+
+\begin{itemize}
+
+\item Know how to compute the derivatives of exponential functions.
+
+\item Be able to compute the derivatives of the inverse trigonometric functions, specifically, $\sin^{-1}{x}$, $\cos^{-1}{x}$, $\tan^{-1}{x}$ and $\sec^{-1}{x}$.
+
+\item Know how to apply logarithmic differentiation to compute the derivatives of functions of the form $\left(f(x)\right)^{g(x)}$, where $f$ and $g$ are non-constant functions of $x$.
+
+\end{itemize}
+
+\noindent PRACTICE PROBLEMS:
+
+\medskip
+
+\noindent {\bf For problems 1-16, differentiate. In some cases it may be better to use logarithmic differentiation.}
+
+\begin{enumerate}
+
+\item $y = e^{6x}$ 
+
+\includegraphics[scale=0.5]{start.pdf}
+{{$6e^{6x}$}}
+\includegraphics[scale=0.5]{end.pdf}
+
+
+\item $g(x) = xe^{2x}$ 
+
+\includegraphics[scale=0.5]{start.pdf}
+{{$e^{2x}+2xe^{2x}$}}
+\includegraphics[scale=0.5]{end.pdf}
+
+
+\item $f(x) = 5^{x^2}$ 
+
+\includegraphics[scale=0.5]{start.pdf}
+{{$2x\ln{(5)}5^{x^2}$}}
+\includegraphics[scale=0.5]{end.pdf}
+
+
+\item $y = e^x\cos {x}$ 
+
+\includegraphics[scale=0.5]{start.pdf}
+{{$-e^{x}\sin{x}+e^{x}\cos{x}$}}
+\includegraphics[scale=0.5]{end.pdf}
+
+
+\item $g(x) = e^{x^2(x-1)}$ 
+
+\includegraphics[scale=0.5]{start.pdf}
+{{$e^{x^2(x-1)}(3x^2-2x)$}}
+\includegraphics[scale=0.5]{end.pdf}
+
+
+\item $f(x) = \frac{1-e^{2x}}{1-e^x}$ 
+
+\includegraphics[scale=0.5]{start.pdf}
+{{$e^x$}}
+\includegraphics[scale=0.5]{end.pdf}
+
+
+\item $f(x) = \frac{\ln{x}}{e^{x}+3x}$ 
+
+\includegraphics[scale=0.5]{start.pdf}
+{{$\frac{e^x+3x-x\ln{(x)}e^x-3x\ln{(x)}}{x(e^x+3x)^2}$}}
+\includegraphics[scale=0.5]{end.pdf}
+
+
+\item $f(x) = \ln{(e^{x}+5)}$ 
+
+\includegraphics[scale=0.5]{start.pdf}
+{{$\frac{e^{x}}{e^{x}+5}$}}
+\includegraphics[scale=0.5]{end.pdf}
+
+
+\item $y=x^{x^2}$
+
+\includegraphics[scale=0.5]{start.pdf}
+{{$x^{x^2}(x+2x\ln{x})$}}
+\includegraphics[scale=0.5]{end.pdf}
+
+
+\item $f(x) = e^{\cos^2{2x}+\sin^2{2x}}$ 
+
+\includegraphics[scale=0.5]{start.pdf}
+{{0}}
+\includegraphics[scale=0.5]{end.pdf}
+
+
+\item $h(x) = \exp{\left(\frac{1}{1-\ln x}\right)}$ 
+
+\includegraphics[scale=0.5]{start.pdf}
+{{$\frac{1}{x(1-\ln{x})^2}\exp{\left(\frac{1}{1-\ln x}\right)}$}}
+\includegraphics[scale=0.5]{end.pdf}
+
+
+\item $f(x) = (\ln{x})^{e^{x}}$ 
+
+\includegraphics[scale=0.5]{start.pdf}
+{{$(\ln{x})^{e^{x}}\left(\frac{e^{x}}{x\ln{x}}+e^{x}\ln{(\ln{x})}\right)$}}
+\includegraphics[scale=0.5]{end.pdf}
+
+
+\item $y = \cos^{-1}{(3x)}$ 
+
+\includegraphics[scale=0.5]{start.pdf}
+{{$-\frac{3}{\sqrt{1-{9x}^2}}$}}
+\includegraphics[scale=0.5]{end.pdf}
+
+
+\item $y = \arcsin{(x^2)}$ 
+
+\includegraphics[scale=0.5]{start.pdf}
+{{$\frac{2x}{\sqrt{1-x^4}}$}}
+\includegraphics[scale=0.5]{end.pdf}
+
+
+\item $y = \frac{\arctan{(e^x)}}{x^3}$ 
+
+\includegraphics[scale=0.5]{start.pdf}
+{{$\frac{xe^{x}-3\tan^{-1}{(e^x)}-3e^{2x}\tan^{-1}{(e^x)}}{x^4(1+e^{2x})}$}}
+\includegraphics[scale=0.5]{end.pdf}
+
+
+\item $y=x^{\cos{x}}$
+
+\includegraphics[scale=0.5]{start.pdf}
+{{$x^{\cos{x}}\left(\frac{\cos{x}}{x}-\sin{x}\ln{x}\right)$}}
+\includegraphics[scale=0.5]{end.pdf}
+
+
+\item Compute an equation of the line which is tangent to the graph of $y=e^{3x}$ at the point where $x=\ln2$.
+
+\includegraphics[scale=0.5]{start.pdf}
+{{$y-8=24(x-\ln{2})$}}
+\includegraphics[scale=0.5]{end.pdf}
+
+
+\item Compute an equation of the line which is tangent to the graph of $f(x)=\cos^{-1}{x}$ at the point where $x=\frac{1}{2}$.
+
+\includegraphics[scale=0.5]{start.pdf}
+{{$y=-\frac{2}{\sqrt{3}}x+\frac{\pi+\sqrt{3}}{3}$}}
+\includegraphics[scale=0.5]{end.pdf}
+
+
+\item Find all value(s) of $x$ at which the tangent lines to the graph of $f(x)=\tan^{-1}{(4x)}$ are perpendicular to the line which passes through $(0,1)$ and $(2,0)$.
+
+\includegraphics[scale=0.5]{start.pdf}
+{{$x=\pm\frac{1}{4}$}}
+\includegraphics[scale=0.5]{end.pdf}
+
+
+\item Find a linear function $T_1(x)=mx+b$ which satisfies both of the following conditions:
+
+\begin{itemize}
+
+\item $T_1(x)$ has the same $y$-intercept as $f(x)=e^{2x}$.
+
+\item $T_1(x)$ has the same slope as $f(x)=e^{2x}$ at the $y$-intercept.
+
+\end{itemize}
+
+\includegraphics[scale=0.5]{start.pdf}
+{{$y=2x+1$}}
+\includegraphics[scale=0.5]{end.pdf}
+
+
+\item Compute an equation of the line which is tangent to the curve $e^{xy^2}+y=x^4$ at $(-1,0)$.
+
+\includegraphics[scale=0.5]{start.pdf}
+{{$y=-4x-4$}}
+\includegraphics[scale=0.5]{end.pdf}
+
+
+\item The equation $y^{\prime \prime}+5y^{\prime}-6y=0$ is called a \underline{differential equation} because it involves an unknown function $y$ and its derivatives.  Find the value(s) of the constant $A$ for which $y=e^{Ax}$ satisfies this equation. 
+
+\includegraphics[scale=0.5]{start.pdf}
+{{$A=-6$ and $A=1$}}
+\includegraphics[scale=0.5]{end.pdf}
+
+
+\item Evaluate $\lim_{h \rightarrow 0}{\frac{\sin^{-1}{\left(\frac{\sqrt{3}}{2}+h\right)}-\frac{\pi}{3}}{h}}$ by interpreting the limit as the derivative of a function a particular point.
+
+\includegraphics[scale=0.5]{start.pdf}
+{{$\lim_{h \rightarrow 0}{\frac{\sin^{-1}{\left(\frac{\sqrt{3}}{2}+h\right)}-\frac{\pi}{3}}{h}}=\left.\frac{d}{dx}(\sin^{-1}{(x)}\right|_{x=\frac{\sqrt{3}}{2}}=\left.\frac{1}{\sqrt{1-x^2}}\right|_{x=\frac{\sqrt{3}}{2}}=2$}}
+\includegraphics[scale=0.5]{end.pdf}
+
+
+\item {\bf Multiple Choice:} Which of the following is the equation of the tangent line to the graph of $f(x)=\tan^{-1}(2x)$ at the point where $x=0$?
+
+\begin{enumerate}
+
+\item $y=x$
+
+\item $y=x+1$
+
+\item $y=x-1$
+
+\item $y=2x$
+
+\item $y=2x-1$
+
+\end{enumerate}
+
+\includegraphics[scale=0.5]{start.pdf}
+{{D}}
+\includegraphics[scale=0.5]{end.pdf}
+
+
+\item {\bf Multiple Choice:} Consider the curve defined implicitly by $\sin{x}=e^y$ for $0<x<\pi$. What is $\frac{dy}{dx}$ in terms of $x$?
+
+\begin{enumerate}
+
+\item $-\tan{x}$
+
+\item $-\cot{x}$
+
+\item $\cot{x}$
+
+\item $\tan{x}$
+
+\item $\csc{x}$
+
+\end{enumerate}
+
+\includegraphics[scale=0.5]{start.pdf}
+{{C}}
+\includegraphics[scale=0.5]{end.pdf}
+
+
+\item Consider the following two hyperbolic functions:
+
+\smallskip
+
+\begin{center}
+\begin{tabular}{ccc}
+Hyperbolic Sine & & Hyperbolic Cosine\\
+& & \\
+$\sinh{x}=\frac{e^x-e^{-x}}{2}$ & \hspace{1 cm} & $\cosh{x}=\frac{e^x+e^{-x}}{2}$
+\end{tabular}
+\end{center}
+
+\smallskip
+
+\begin{enumerate}
+
+\item Compute $\lim_{x \rightarrow \infty}{\sinh{x}}$
+
+\includegraphics[scale=0.5]{start.pdf}
+{{$+\infty$}}
+\includegraphics[scale=0.5]{end.pdf}
+
+
+\item Compute $\lim_{x \rightarrow -\infty}{\sinh{x}}$
+
+\includegraphics[scale=0.5]{start.pdf}
+{{$-\infty$}}
+\includegraphics[scale=0.5]{end.pdf}
+
+
+\item Compute $\lim_{x \rightarrow \infty}{\cosh{x}}$
+
+\includegraphics[scale=0.5]{start.pdf}
+{{$+\infty$}}
+\includegraphics[scale=0.5]{end.pdf}
+
+
+\item Compute $\lim_{x \rightarrow -\infty}{\cosh{x}}$
+
+\includegraphics[scale=0.5]{start.pdf}
+{{$+\infty$}}
+\includegraphics[scale=0.5]{end.pdf}
+
+
+\item Compute the $x$ and $y$ intercepts, if any, for $y=\sinh{x}$.
+
+\includegraphics[scale=0.5]{start.pdf}
+{{The $x$ and $y$ intercept of $y=\sinh{x}$ is $(0,0)$.}}
+\includegraphics[scale=0.5]{end.pdf}
+
+
+\item Compute the $x$ and $y$ intercepts, if any, for $y=\cosh{x}$.
+
+\includegraphics[scale=0.5]{start.pdf}
+{{$y=\cosh{x}$ has a $y$-intercept of  $(0,1)$; but, it does not have any $x$ intercepts.}}
+\includegraphics[scale=0.5]{end.pdf}
+
+
+\item Solve $\sinh{x}=1$ for $x$.
+
+\includegraphics[scale=0.5]{start.pdf}
+{{$x=\ln{\left(1+\sqrt{2}\right)}$}}
+\includegraphics[scale=0.5]{end.pdf}
+
+
+\item Show that $\cosh^2{x}-\sinh^2{x}=1$
+
+\includegraphics[scale=0.5]{start.pdf}
+{{{1\linewidth}{
+\begin{align*}
+\cosh^2{x}-\sinh^{2}{x} & = (\cosh{x}+\sinh{x})(\cosh{x}-\sinh{x})\\
+&=\left(\frac{e^x+e^{-x}}{2}+\frac{e^x-e^{-x}}{2}\right)\left(\frac{e^x+e^{-x}}{2}-\frac{e^x-e^{-x}}{2}\right)\\
+&=(e^x)(e^{-x})\\
+&=1
+\end{align*}
+}}}
+\includegraphics[scale=0.5]{end.pdf}
+
+
+\item Show that $\frac{d}{dx}(\sinh{x})=\cosh{x}$
+
+\includegraphics[scale=0.5]{start.pdf}
+{{{1\linewidth}{
+\begin{align*}
+\frac{d}{dx}(\sinh{x}) &= \frac{d}{dx}\left(\frac{e^x-e^{-x}}{2}\right)\\
+&=\frac{d}{dx}\left(\frac{1}{2}e^x-\frac{1}{2}e^{-x}\right)\\
+&=\frac{1}{2}e^x+\frac{1}{2}e^{-x}\\
+&=\frac{e^x+e^{-x}}{2}\\
+&=\cosh{x}
+\end{align*}
+}}}
+\includegraphics[scale=0.5]{end.pdf}
+
+
+\item Show that $\frac{d}{dx}(\cosh{x})=\sinh{x}$
+
+\includegraphics[scale=0.5]{start.pdf}
+{{{1\linewidth}{
+\begin{align*}
+\frac{d}{dx}(\cosh{x}) &= \frac{d}{dx}\left(\frac{e^x+e^{-x}}{2}\right)\\
+&=\frac{d}{dx}\left(\frac{1}{2}e^x+\frac{1}{2}e^{-x}\right)\\
+&=\frac{1}{2}e^x-\frac{1}{2}e^{-x}\\
+&=\frac{e^x-e^{-x}}{2}\\
+&=\sinh{x}
+\end{align*}
+}}}
+\includegraphics[scale=0.5]{end.pdf}
+
+
+\end{enumerate}
+
+\end{enumerate}
+
+\end{document}

@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<p>SUGGESTED REFERENCE MATERIAL:</p>
+<p>As you work through the problems listed below, you should reference Chapter 13.5 of the recommended textbook (or the equivalent chapter in your alternative textbook/online resource) and your lecture notes.</p>
+<p>EXPECTED SKILLS:</p>
+<ul>
+<li><p>Be able to compute partial derivatives with the various versions of the multivariate chain rule.</p></li>
+<li><p>Be able to compare your answer with the direct method of computing the partial derivatives.</p></li>
+</ul>
+<p>PRACTICE PROBLEMS:</p>
+<ol>
+<li><p>Find <span class="math inline">\(\frac{d z}{d t}\)</span> by using the Chain Rule. Check your answer by expressing <span class="math inline">\(z\)</span> as a function of <span class="math inline">\(t\)</span> and then differentiating.</p>
+<ol>
+<li><p><span class="math inline">\(z=2x-y,\ x=\sin{t},\ y=3t\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex1')">Click for Solution</button>
+<br><br>
+<div id="ex1" style="display:none">
+<span><span><span class="math inline">\(\frac{dz}{dt}=2\cos{t}-3\)</span></span></span>
+</div></p></li>
+<li><p><span class="math inline">\(z=x\sin{y},\ x=e^t,\ y=\pi t\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex2')">Click for Solution</button>
+<br><br>
+<div id="ex2" style="display:none">
+<span><span><span class="math inline">\(\frac{dz}{dt}=e^{t}\sin{(\pi t)}+\pi e^{t}\cos{(\pi t)}\)</span></span></span>
+</div></p></li>
+<li><p><span class="math inline">\(z=xy+y^2,\ x=t^2,\ y=t+1\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex3')">Click for Solution</button>
+<br><br>
+<div id="ex3" style="display:none">
+<span><span><span class="math inline">\(\frac{dz}{dt}=3t^2+4t+2\)</span></span></span>
+</div></p></li>
+<li><p><span class="math inline">\(z=\ln{\left(\frac{x^2}{y}\right)},\ x=e^{t},\ y=t^2\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex4')">Click for Solution</button>
+<br><br>
+<div id="ex4" style="display:none">
+<span><span><span class="math inline">\(\frac{dz}{dt}=2-\frac{2}{t}\)</span></span></span>
+</div></p></li>
+</ol></li>
+<li><p>Suppose <span class="math inline">\(w=x^2+y^2+2z^2,\ x=t+1,\ y=\cos{t},\ z=\sin{t}\)</span>. Find <span class="math inline">\(\frac{d w}{d t}\)</span> using the Chain Rule. Check your answer by expressing <span class="math inline">\(w\)</span> as a function of <span class="math inline">\(t\)</span> and then differentiating.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex5')">Click for Solution</button>
+<br><br>
+<div id="ex5" style="display:none">
+<span><span><span class="math inline">\(\frac{dw}{dt}=2t+2+2\sin{t}\cos{t}\)</span></span></span>
+</div></p></li>
+<li><p>Suppose <span class="math inline">\(f\)</span> is a differentiable function of <span class="math inline">\(x\)</span> &amp; <span class="math inline">\(y\)</span>, and define <span class="math inline">\(g(u,v)=f(3u-v,u^2+v)\)</span>. Use the table of values shown below to calculate <span class="math inline">\(\left.\frac{\partial g}{\partial u}\right|_{(u,v)=(2,-1)}\)</span> and <span class="math inline">\(\left.\frac{\partial g}{\partial v}\right|_{(u,v)=(2,-1)}\)</span>.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><span class="math inline">\((x,y)\)</span></th>
+<th align="center"><span class="math inline">\(f\)</span></th>
+<th align="center"><span class="math inline">\(g\)</span></th>
+<th align="center"><span class="math inline">\(f_x\)</span></th>
+<th align="center"><span class="math inline">\(f_y\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><span class="math inline">\((2,-1)\)</span></td>
+<td align="center">6</td>
+<td align="center"><span class="math inline">\(-7\)</span></td>
+<td align="center">1</td>
+<td align="center">9</td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\((7,3)\)</span></td>
+<td align="center">4</td>
+<td align="center">2</td>
+<td align="center"><span class="math inline">\(-3\)</span></td>
+<td align="center">5</td>
+</tr>
+</tbody>
+</table>
+<p>Hint: Decompose <span class="math inline">\(f(3u-v,u^2+v)\)</span> into <span class="math inline">\(f(x,y)\)</span> where <span class="math inline">\(x=3u-v\)</span> and <span class="math inline">\(y=u^2+v\)</span>.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex6')">Click for Solution</button>
+<br><br>
+<div id="ex6" style="display:none">
+<span><span><span class="math inline">\(g_u(2,-1)=11\)</span>; <span class="math inline">\(g_v(2,-1)=8\)</span></span></span>
+</div></p></li>
+<li><p>Find <span class="math inline">\(\frac{\partial w}{\partial s}\)</span> and <span class="math inline">\(\frac{\partial w}{\partial t}\)</span> by using the appropriate Chain Rule.</p>
+<ol>
+<li><p><span class="math inline">\(w=xy\sin{\left(z^2\right)},\ x=s-t,\ y=s^2,\ z=t^2\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex7')">Click for Solution</button>
+<br><br>
+<div id="ex7" style="display:none">
+<span><span><span class="math inline">\(\frac{\partial w}{\partial s}=s^2\sin{\left(t^4\right)}+2s(s-t)\sin{\left(t^4\right)}\)</span>; <span class="math inline">\(\frac{\partial w}{\partial t}=-s^2\sin{\left(t^4\right)}+4s^2t^3(s-t)\cos{\left(t^4\right)}\)</span></span></span>
+</div></p></li>
+<li><p><span class="math inline">\(w=xy+yz,\ x=s+t,\ y=st,\ z=s-2t\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex8')">Click for Solution</button>
+<br><br>
+<div id="ex8" style="display:none">
+<span><span><span class="math inline">\(\frac{\partial w}{\partial s}=4st-t^2\)</span>; <span class="math inline">\(\frac{\partial w}{\partial t}=2s^2-2st\)</span></span></span>
+</div></p></li>
+</ol></li>
+<li><p>Suppose that <span class="math inline">\(J=f(x,y,z,w)\)</span>, where <span class="math inline">\(x=x(r,s,t)\)</span>, <span class="math inline">\(y=y(r,t)\)</span>, <span class="math inline">\(z=z(r,s)\)</span> and <span class="math inline">\(w=w(s,t)\)</span>. Use the Chain Rule to find <span class="math inline">\(\frac{\partial J}{\partial r}\)</span>, <span class="math inline">\(\frac{\partial J}{\partial s}\)</span>, and <span class="math inline">\(\frac{\partial J}{\partial t}\)</span>.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex9')">Click for Solution</button>
+<br><br>
+<div id="ex9" style="display:none">
+<span><span><span>0.4</span><span><span class="math inline">\(\frac{\partial J}{\partial r}=\frac{\partial f}{\partial x}\frac{\partial x}{\partial r}+\frac{\partial f}{\partial y}\frac{\partial y}{\partial r}+\frac{\partial f}{\partial z}\frac{\partial z}{\partial r}\)</span>;<br />
+<br />
+<span class="math inline">\(\frac{\partial J}{\partial s}=\frac{\partial f}{\partial x}\frac{\partial x}{\partial s}+\frac{\partial f}{\partial z}\frac{\partial z}{\partial s}+\frac{\partial f}{\partial w}\frac{\partial w}{\partial s}\)</span>;<br />
+<br />
+<span class="math inline">\(\frac{\partial J}{\partial t}=\frac{\partial f}{\partial x}\frac{\partial x}{\partial t}+\frac{\partial f}{\partial y}\frac{\partial y}{\partial t}+\frac{\partial f}{\partial w}\frac{\partial w}{\partial t}\)</span> </span></span></span>
+</div></p></li>
+<li><p>Suppose <span class="math inline">\(g=f(u-v,v-w,w-u)\)</span>. Show that <span class="math inline">\(\frac{\partial g}{\partial u}+\frac{\partial g}{\partial v}+\frac{\partial g}{\partial w}=0\)</span>.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex10')">Click for Solution</button>
+<br><br>
+<div id="ex10" style="display:none">
+</p>
+<p><span>1</span></p>
+<p>We can express <span class="math inline">\(g\)</span> as <span class="math inline">\(g=f(x,y,z)\)</span>, where <span class="math inline">\(x=u-v\)</span>, <span class="math inline">\(y=v-w\)</span>, and <span class="math inline">\(z=w-u\)</span>. Then, we compute the partial derivatives of <span class="math inline">\(g\)</span> with respect to <span class="math inline">\(u\)</span>, <span class="math inline">\(v\)</span>, and <span class="math inline">\(w\)</span>.</p>
+<p><span class="math display">\[\frac{\partial g}{\partial u}=f_x(u-v,v-w,w-u)-f_z(u-v,v-w,w-u)\]</span> <span class="math display">\[\frac{\partial g}{\partial v}=-f_x(u-v,v-w,w-u)+f_y(u-v,v-w,w-u)\]</span> <span class="math display">\[\frac{\partial g}{\partial w}=-f_y(u-v,v-w,w-u)+f_z(u-v,v-w,w-u)\]</span></p>
+<p>Summing these three partial derivatives yields 0.</p>
+<p>
+</div></p></li>
+<li><p>Suppose <span class="math inline">\(u=u(x,y)\)</span>, <span class="math inline">\(v=v(x,y)\)</span>, <span class="math inline">\(x=r\cos{\theta}\)</span>, and <span class="math inline">\(y=r\sin{\theta}\)</span>.</p>
+<ol>
+<li><p>Calculate <span class="math inline">\(\frac{\partial u}{\partial r}\)</span>, <span class="math inline">\(\frac{\partial u}{\partial \theta}\)</span>, <span class="math inline">\(\frac{\partial v}{\partial r}\)</span>, and <span class="math inline">\(\frac{\partial v}{\partial \theta}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex11')">Click for Solution</button>
+<br><br>
+<div id="ex11" style="display:none">
+<span><span><span>0.7</span><span><span class="math inline">\(\frac{\partial u}{\partial r}=\frac{\partial u}{\partial x}\cos{\theta}+\frac{\partial u}{\partial y}\sin{\theta}\)</span>; <span class="math inline">\(\frac{\partial u}{\partial \theta}=-r\frac{\partial u}{\partial x}\sin{\theta}+r\frac{\partial u}{\partial y}\cos{\theta}\)</span>;<br />
+<br />
+<span class="math inline">\(\frac{\partial v}{\partial r}=\frac{\partial v}{\partial x}\cos{\theta}+\frac{\partial v}{\partial y}\sin{\theta}\)</span>; <span class="math inline">\(\frac{\partial v}{\partial \theta}=-r\frac{\partial v}{\partial x}\sin{\theta}+r\frac{\partial v}{\partial y}\cos{\theta}\)</span></span></span></span>
+</div></p></li>
+<li><p>Suppose that <span class="math inline">\(u(x,y)\)</span> and <span class="math inline">\(v(x,y)\)</span> satisfy the Cauchy-Riemann Equations:</p>
+<p><span class="math display">\[\frac{\partial u}{\partial x}=\frac{\partial v}{\partial y}\]</span> <span class="math display">\[\frac{\partial u}{\partial y}=-\frac{\partial v}{\partial x}\]</span></p>
+<p>Use this along with part (a) to derive the polar form of the Cauchy-Riemann Equations:</p>
+<p><span class="math display">\[\frac{\partial u}{\partial r}=\frac{1}{r}\frac{\partial v}{\partial \theta}\]</span> <span class="math display">\[\frac{\partial u}{\partial \theta}=-r\frac{\partial v}{\partial r}\]</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex12')">Click for Solution</button>
+<br><br>
+<div id="ex12" style="display:none">
+<span><span><span>1</span><span>From part (a), we know that <span class="math inline">\(\frac{\partial u}{\partial r}=\frac{\partial u}{\partial x}\cos{\theta}+\frac{\partial u}{\partial y}\sin{\theta}\)</span>. We apply the Cauchy Riemann Equations to <span class="math inline">\(\frac{\partial u}{\partial x}\)</span> and <span class="math inline">\(\frac{\partial u}{\partial y}\)</span>. Thus, <span class="math display">\[\begin{aligned}
+\frac{\partial u}{\partial r}&amp;=\frac{\partial u}{\partial x}\cos{\theta}+\frac{\partial u}{\partial y}\sin{\theta}\\
+&amp;=\frac{\partial v}{\partial y}\cos{\theta}-\frac{\partial v}{\partial x}\sin{\theta}\\
+&amp;=\frac{1}{r}\left(r\frac{\partial v}{\partial y}\cos{\theta}-r\frac{\partial v}{\partial x}\sin{\theta}\right)\\
+&amp;=\frac{1}{r}\frac{\partial v}{\partial \theta}\end{aligned}\]</span> A similar argument yields the second Cauchy Riemann Equation in polar coordinates. </span></span></span>
+</div></p></li>
+</ol></li>
+</ol>
+</body>
+<script>
+function toggleAnswer(idName) {
+var x = document.getElementById(idName);
+if (x.style.display === "none") {
+x.style.display = "block";
+} else {
+x.style.display = "none";
+}
+}</script>
+</html>
