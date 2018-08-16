@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <!-- Bootstrap core CSS -->
+<link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+<!-- Custom fonts for this template -->
+<link href="vendor/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+<!-- Custom styles for this template -->
+<link href="vendor/bootstrap/css/clean-blog.css" rel="stylesheet">
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script><body>
+<h2 id="expected-skills" class="unnumbered">Expected Skills:</h2>
+<ul>
+<li><p>Be able to state the Intermediate Value Theorem and use it to prove the existence of a solution to <span class="math inline">\(f(x)=0\)</span> in an interval <span class="math inline">\((a,b)\)</span>.</p></li>
+<li><p>Be able to apply the Bisection (Interval Halving) Method to approximate a solution to <span class="math inline">\(f(x)=0\)</span>.</p></li>
+<li><p>Be able to use different stopping procedures to exit the Bisection Method algorithm, as described in the notes.</p></li>
+</ul>
+<h2 id="practice-problems" class="unnumbered">Practice Problems: </h2>
+<ol>
+<li><p>State the Intermediate Value Theorem. What are the assumptions? What are the conclusions?</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex1')">Click for Solution</button>
+<br><br>
+<div id="ex1" style="display:none">
+<span><span><span>1</span><span>See the notes for the theorem’s statement. There are two assumptions. The first is that <span class="math inline">\(f(x)\)</span> is continuous on <span class="math inline">\([a,b]\)</span>. The second is that <span class="math inline">\(f(a)\)</span> and <span class="math inline">\(f(b)\)</span> have different signs. If these assumptions are satisfied, then the conclusion is that there must be at least one <span class="math inline">\(x\)</span> in the interval <span class="math inline">\((a,b)\)</span> for which <span class="math inline">\(f(x)=0\)</span>.</span></span></span>
+</div></p></li>
+<li><p>Sketch the graph of a function which satisfies the assumptions of the intermediate value theorem on the interval <span class="math inline">\([a,b]\)</span> and which has:</p>
+<ol>
+<li><p>Exactly one solution to <span class="math inline">\(f(x)=0\)</span> in the interval <span class="math inline">\((a,b)\)</span>.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex2')">Click for Solution</button>
+<br><br>
+<div id="ex2" style="display:none">
+<span><span><img src="graph3.png" alt="image" /></span></span>
+</div></p></li>
+<li><p>Exactly two solutions to <span class="math inline">\(f(x)=0\)</span> in the interval <span class="math inline">\((a,b)\)</span>.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex3')">Click for Solution</button>
+<br><br>
+<div id="ex3" style="display:none">
+<span><span><img src="graph2.png" alt="image" /></span></span>
+</div></p></li>
+<li><p>Exactly three solutions to <span class="math inline">\(f(x)=0\)</span> in the interval <span class="math inline">\((a,b)\)</span>.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex4')">Click for Solution</button>
+<br><br>
+<div id="ex4" style="display:none">
+<span><span><img src="graph1.png" alt="image" /></span></span>
+</div></p></li>
+</ol></li>
+<li><p>By appealing to the Intermediate Value Theorem, justify the existence of a solution to <span class="math inline">\(x^5-7x+3=0\)</span> in the interval <span class="math inline">\((1,2)\)</span>.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex5')">Click for Solution</button>
+<br><br>
+<div id="ex5" style="display:none">
+<span><span><span>1</span><span>Let <span class="math inline">\(f(x)=x^5-7x+3\)</span>. <span class="math inline">\(f(x)\)</span> is always continuous because it is a polynomial. Thus, since <span class="math inline">\(f(x)\)</span> is continuous on <span class="math inline">\([1,3]\)</span> with <span class="math inline">\(f(1)=-3&lt;0\)</span> and <span class="math inline">\(f(2)=21&gt;0\)</span>, the intermediate value theorem guarantees at least one solution to <span class="math inline">\(f(x)=0\)</span> on the interval <span class="math inline">\((1,2)\)</span>.</span></span></span>
+</div></p></li>
+<li><p>Use the Bisection Method to estimate a solution to <span class="math inline">\(x^3+7x-5=0\)</span> in the interval <span class="math inline">\((0,8)\)</span> using the stopping procedures listed below. In each case, what is an estimate of the desired solution? How many iterations do you have to perform?</p>
+<ol>
+<li><p>Use the stopping algorithm described in Algorithm 1.1.1 of the notes with <span class="math inline">\(\epsilon=0.1\)</span>.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex6')">Click for Solution</button>
+<br><br>
+<div id="ex6" style="display:none">
+<span>The solution is approximately 0.6875 after 7 iterations.</span>
+</div></p></li>
+<li><p>Again let <span class="math inline">\(\epsilon=0.1\)</span>. Use the stopping algorithm: “If <span class="math inline">\(|f(m_k)|&lt;\epsilon\)</span>, stop. Else, perform another iteration.&quot;</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex7')">Click for Solution</button>
+<br><br>
+<div id="ex7" style="display:none">
+<span>The solution is approximately 0.671875 after 9 iterations.</span>
+</div></p></li>
+<li><p>Again let <span class="math inline">\(\epsilon=0.1\)</span>. Use the stopping algorithm: “If <span class="math inline">\(|m_k-m_{k-1}|&lt;\epsilon\)</span>, stop. Else, perform another iteration.&quot;</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex8')">Click for Solution</button>
+<br><br>
+<div id="ex8" style="display:none">
+<span>The solution is approximately 0.6875 after 7 iterations.</span>
+</div></p></li>
+</ol></li>
+<li><p>Estimate <span class="math inline">\(\sqrt{3}\)</span> using the bisection method. Initialize your search with <span class="math inline">\([a,b]=[0,2]\)</span> and use the stopping procedures listed below. In each case, what is the estimated value of <span class="math inline">\(\sqrt{3}\)</span> and how many iterations were required? (Hint: find the positive value of <span class="math inline">\(x\)</span> such that <span class="math inline">\(x^2=3\)</span>.)</p>
+<ol>
+<li><p>Use the stopping algorithm described in Algorithm 1.1.1 of the notes with <span class="math inline">\(\epsilon=0.1\)</span>.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex9')">Click for Solution</button>
+<br><br>
+<div id="ex9" style="display:none">
+<span>The solution is approximately 1.6875 after 5 iterations.</span>
+</div></p></li>
+<li><p>Again let <span class="math inline">\(\epsilon=0.1\)</span>. Use the stopping algorithm: “If <span class="math inline">\(|f(m_k)|&lt;\epsilon\)</span>, stop. Else, perform another iteration.&quot;</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex10')">Click for Solution</button>
+<br><br>
+<div id="ex10" style="display:none">
+<span>The solution is approximately 1.75 after 3 iterations.</span>
+</div></p></li>
+<li><p>Again let <span class="math inline">\(\epsilon=0.1\)</span>. Use the stopping algorithm: “If <span class="math inline">\(|m_k-m_{k-1}|&lt;\epsilon\)</span>, stop. Else, perform another iteration.&quot;</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex11')">Click for Solution</button>
+<br><br>
+<div id="ex11" style="display:none">
+<span>The solution is approximately 1.6875 after 5 iterations.</span>
+</div></p></li>
+</ol></li>
+<li><p>The <span><strong>False position (regula falsi)</strong></span>, sometimes called linear interpolation method, is an iterative process designed to speed up the bisection method; it works to approximate a solution to <span class="math inline">\(f(x)=0\)</span>, where <span class="math inline">\(f(x)\)</span> satisfies the same hypotheses of the bisection method. Given two points <span class="math inline">\((a_n,f(a_n)\)</span> and <span class="math inline">\((b_n,f(b_n))\)</span> satisfying <span class="math inline">\(f(a_n)f(b_n)&lt;0\)</span>, the secant line which passes through both of these points will cross the <span class="math inline">\(x\)</span>-axis, as in the figure below.</p>
+<p><img src="LinearInterp.png" alt="image" /></p>
+<p>In each iteration, rather than choosing the midpoint of the interval <span class="math inline">\((a_n,b_n)\)</span> as the next approximation of the solution as is done in the bisection method, the update is chosen to be the <span class="math inline">\(x\)</span> intercept of this secant line. Then, the algorithm would continue as in the bisection method.<br />
+Derive a formula for <span class="math inline">\(x_n\)</span>, the approximation generated by the False position method when the current interval is <span class="math inline">\((a_n,b_n)\)</span>.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex12')">Click for Solution</button>
+<br><br>
+<div id="ex12" style="display:none">
+<span><span><span class="math inline">\(x_{n} = a_n - \frac{f(a_n)(b_n-a_n)}{f(b_n)-f(a_n)}\)</span></span></span>
+</div></p></li>
+</ol>
+</body>
+<script>
+function toggleAnswer(idName) {
+var x = document.getElementById(idName);
+if (x.style.display === "none") {
+x.style.display = "block";
+} else {
+x.style.display = "none";
+}
+}</script>
+</html>

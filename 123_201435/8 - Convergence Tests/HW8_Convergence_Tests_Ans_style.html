@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <!-- Bootstrap core CSS -->
+<link href="../../../vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+<!-- Custom fonts for this template -->
+<link href="../../../vendor/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+<!-- Custom styles for this template -->
+<link href="../../../vendor/bootstrap/css/clean-blog.css" rel="stylesheet">
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script><body>
+<p>SUGGESTED REFERENCE MATERIAL:</p>
+<p>As you work through the problems listed below, you should reference your lecture notes and the relevant chapters in a textbook/online resource.</p>
+<p>EXPECTED SKILLS:</p>
+<ul>
+<li><p>Recognize series that cannot converge by applying the Divergence Test.</p></li>
+<li><p>Use the Integral Test on appropriate series (all terms positive, corresponding function is decreasing and continuous) to make a conclusion about the convergence of the series.</p></li>
+<li><p>Recognize a <span class="math inline">\(p\)</span>-series and use the value of <span class="math inline">\(p\)</span> to make a conclusion about the convergence of the series.</p></li>
+<li><p>Use the algebraic properties of series.</p></li>
+</ul>
+<p>PRACTICE PROBLEMS:</p>
+<p><span><strong>For problems 1 – 9, apply the Divergence Test. What, if any, conlcusions can you draw about the series?</strong></span></p>
+<ol>
+<li><p><span class="math inline">\(\sum_{k=1}^{\infty}(-1)^k\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex1')">Click for Solution</button>
+<br><br>
+<div id="ex1" style="display:none">
+<span><span><span>1</span><span><span class="math inline">\(\lim_{k \rightarrow \infty}(-1)^k\)</span> DNE and thus is not 0, so by the Divergence Test the series diverges.<br />
+<br />
+Also, recall that this series is a geometric series with ratio <span class="math inline">\(r=-1\)</span>, which<br />
+confirms that it must diverge. </span></span></span>
+</div></p></li>
+<li><p><span class="math inline">\(\sum_{k=1}^{\infty}(-1)^k \text{ } \frac{1}{k}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex2')">Click for Solution</button>
+<br><br>
+<div id="ex2" style="display:none">
+<span><span><span class="math inline">\(\lim_{k \rightarrow \infty}(-1)^k \text{ } \frac{1}{k}=0\)</span>, so the Divergence Test is inconclusive. </span></span>
+</div></p></li>
+<li><p><span class="math inline">\(\sum_{k=3}^{\infty}\frac{\ln{k}}{k}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex3')">Click for Solution</button>
+<br><br>
+<div id="ex3" style="display:none">
+<span><span><span class="math inline">\(\lim_{k \rightarrow \infty}\frac{\ln{k}}{k}=0\)</span>, so the Divergence Test is inconclusive. </span></span>
+</div></p></li>
+<li><p><span class="math inline">\(\sum_{k=1}^{\infty}\frac{\ln{6k}}{\ln{2k}}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex4')">Click for Solution</button>
+<br><br>
+<div id="ex4" style="display:none">
+<span><span><span class="math inline">\(\lim_{k \rightarrow \infty}\frac{\ln{6k}}{\ln{2k}}=1\neq0\)</span> [see problem #26], so by the Divergence Test the series diverges.</span></span>
+</div></p></li>
+<li><p><span class="math inline">\(\sum_{k=1}^{\infty}{ke^{-k}}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex5')">Click for Solution</button>
+<br><br>
+<div id="ex5" style="display:none">
+<span><span><span>1</span><span><span class="math inline">\(\lim_{k \rightarrow \infty}{ke^{-k}}=0\)</span> [see problem #6], so the Divergence Test is inconclusive.</span></span></span>
+</div></p></li>
+<li><p><span class="math inline">\(\sum_{k=1}^{\infty}\frac{e^k-e^{-k}}{e^k+e^{-k}}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex6')">Click for Solution</button>
+<br><br>
+<div id="ex6" style="display:none">
+<span><span><span>1</span><span><span class="math inline">\(\lim_{k \rightarrow \infty}\frac{e^k-e^{-k}}{e^k+e^{-k}}=1\neq0\)</span> [see problem #21],<br />
+<br />
+so by the Divergence Test the series diverges.</span></span></span>
+</div></p></li>
+<li><p><span class="math inline">\(\sum_{k=1}^{\infty}\left(1+\frac{1}{k}\right)^k\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex7')">Click for Solution</button>
+<br><br>
+<div id="ex7" style="display:none">
+<span><span><span>1</span><span><span class="math inline">\(\lim_{k \rightarrow \infty}\left(1+\frac{1}{k}\right)^k=e\neq0\)</span> [see problem #34],<br />
+<br />
+so by the Divergence Test the series diverges.</span></span></span>
+</div></p></li>
+<li><p><span class="math inline">\(\sum_{k=1}^{\infty}(\sqrt{k^2+8k-5}-k)\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex8')">Click for Solution</button>
+<br><br>
+<div id="ex8" style="display:none">
+<span><span><span>1</span><span><span class="math inline">\(\lim_{k \rightarrow \infty}(\sqrt{k^2+8k-5}-k)=4\neq0\)</span> [see problem #28],<br />
+<br />
+so by the Divergence Test the series diverges.</span></span></span>
+</div></p></li>
+<li><p><span class="math inline">\(\sum_{k=2}^{\infty}(\sqrt{k^2+3}-\sqrt{k^2-4})\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex9')">Click for Solution</button>
+<br><br>
+<div id="ex9" style="display:none">
+<span><span><span class="math inline">\(\lim_{k \rightarrow \infty}(\sqrt{k^2+3}-\sqrt{k^2-4})=0\)</span>, so the Divergence Test is inconclusive.; Detailed Solution: </span></span>
+</div></p></li>
+</ol>
+<p><span><strong>For problems 10 – 20, determine if the series converges or diverges by applying the Divergence Test, Integral Test, or noting that the series is a <span class="math inline">\(p\)</span>-series. Explicitly state what test you are using. If you use the Integral Test, you must first verify that the test is applicable. If the series is a <span class="math inline">\(p\)</span>-series, state the value of <span class="math inline">\(p\)</span>.</strong></span></p>
+<ol start="10">
+<li><p><span class="math inline">\(\sum_{k=3}^{\infty}\frac{\ln{k}}{k}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex10')">Click for Solution</button>
+<br><br>
+<div id="ex10" style="display:none">
+<span><span>The series diverges by the Integral Test.</span></span>
+</div></p></li>
+<li><p><span class="math inline">\(\sum_{k=1}^{\infty}{ke^{-k}}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex11')">Click for Solution</button>
+<br><br>
+<div id="ex11" style="display:none">
+<span><span>The series converges by the Integral Test.</span></span>
+</div></p></li>
+<li><p><span class="math inline">\(\sum_{k=1}^{\infty}{\left(\arctan\left(\frac{1}{k}\right)-\arctan(k)\right)}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex12')">Click for Solution</button>
+<br><br>
+<div id="ex12" style="display:none">
+<span><span>The series diverges by the Divergence Test. [see problem #33.]</span></span>
+</div></p></li>
+<li><p><span class="math inline">\(\sum_{k=1}^{\infty}{\frac{1}{\sqrt[4]{k+15}}}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex13')">Click for Solution</button>
+<br><br>
+<div id="ex13" style="display:none">
+<span><span><span class="math inline">\(\sum_{k=1}^{\infty}{\frac{1}{\sqrt[4]{k+15}}}=\sum_{k=16}^{\infty}{\frac{1}{\sqrt[4]{k}}}\)</span>, which is a <span class="math inline">\(p\)</span>-series with <span class="math inline">\(p=\frac{1}{4}&lt;1\)</span>, so the series diverges. </span></span>
+</div></p></li>
+<li><p><span class="math inline">\(\sum_{k=1}^{\infty}{\pi^k e^{-k}}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex14')">Click for Solution</button>
+<br><br>
+<div id="ex14" style="display:none">
+<span><span><span>1</span><span>The series diverges by the Divergence Test. Also, observe that this is a geometric series with ratio <span class="math inline">\(r=\textstyle \frac{\pi}{e}&gt;1\)</span>, which confirms that the series diverges.</span></span></span>
+</div></p></li>
+<li><p><span class="math inline">\(\sum_{k=2}^{\infty}{\frac{1}{4k^2}}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex15')">Click for Solution</button>
+<br><br>
+<div id="ex15" style="display:none">
+<span><span>The series is a constant multiple of a <span class="math inline">\(p\)</span>-series with <span class="math inline">\(p=2&gt;1\)</span>, so the series converges.</span></span>
+</div></p></li>
+<li><p><span class="math inline">\(\sum_{k=2}^{\infty}{\frac{k^2}{4k^2+9}}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex16')">Click for Solution</button>
+<br><br>
+<div id="ex16" style="display:none">
+<span><span>The series diverges by the Divergence Test.</span></span>
+</div></p></li>
+<li><p><span class="math inline">\(\sum_{k=2}^{\infty}{\frac{k}{4k^2+9}}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex17')">Click for Solution</button>
+<br><br>
+<div id="ex17" style="display:none">
+<span><span>The series diverges by the Integral Test.</span></span>
+</div></p></li>
+<li><p><span class="math inline">\(\sum_{k=2}^{\infty}{\frac{1}{4k^2+9}}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex18')">Click for Solution</button>
+<br><br>
+<div id="ex18" style="display:none">
+<span><span>The series converges by the Integral Test.; Detailed Solution: </span></span>
+</div></p></li>
+<li><p><span class="math inline">\(\sum_{k=2}^{\infty}{\frac{1}{4k^2-9}}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex19')">Click for Solution</button>
+<br><br>
+<div id="ex19" style="display:none">
+<span><span>The series converges by the Integral Test.; Detailed Solution: </span></span>
+</div></p></li>
+<li><p><span class="math inline">\(\sum_{k=10}^{\infty}{15k^{-0.999}}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex20')">Click for Solution</button>
+<br><br>
+<div id="ex20" style="display:none">
+<span><span>The series is a constant multiple of a <span class="math inline">\(p\)</span>-series with <span class="math inline">\(p=0.999&lt;1\)</span>, so the series diverges.</span></span>
+</div></p></li>
+</ol>
+<p><span><strong>For problems 21 &amp; 22, use algebraic properties of series to find the sum of the series.</strong></span></p>
+<ol start="21">
+<li><p><span class="math inline">\(\sum_{k=1}^{\infty}{\left[\frac{1}{6^k}-\left(\frac{1}{k}-\frac{1}{k+1}\right)\right]   }\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex21')">Click for Solution</button>
+<br><br>
+<div id="ex21" style="display:none">
+<span><span><span class="math inline">\(-\frac{4}{5}\)</span> </span></span>
+</div></p></li>
+<li><p><span class="math inline">\(\frac{1}{2}+2-\frac{1}{4}+\frac{4}{7}+\frac{1}{8}+\frac{8}{49}-\frac{1}{16}+\frac{16}{343}+\ldots\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex22')">Click for Solution</button>
+<br><br>
+<div id="ex22" style="display:none">
+<span><span><span class="math inline">\(\frac{47}{15}\)</span> </span></span>
+</div></p></li>
+</ol>
+</body>
+<script>
+function toggleAnswer(idName) {
+var x = document.getElementById(idName);
+if (x.style.display === "none") {
+x.style.display = "block";
+} else {
+x.style.display = "none";
+}
+}</script>
+</html>

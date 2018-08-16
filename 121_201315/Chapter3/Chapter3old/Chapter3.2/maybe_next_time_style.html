@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <!-- Bootstrap core CSS -->
+<link href="../../../vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+<!-- Custom fonts for this template -->
+<link href="../../../vendor/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+<!-- Custom styles for this template -->
+<link href="../../../vendor/bootstrap/css/clean-blog.css" rel="stylesheet">
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script><body>
+<p><span><strong>Review of Log Properties</strong></span><br />
+For all of these problems, assume that <span class="math inline">\(b&gt;0\)</span>, <span class="math inline">\(b \neq 1\)</span>, <span class="math inline">\(M&gt;0\)</span>, and <span class="math inline">\(N&gt;0\)</span>.</p>
+<ol>
+<li><p>Suppose you have the logarithmic equation <span class="math inline">\(y=\log_b{x}\)</span>. What is an equivalent exponential equation? i.e., What is an equivalent statement in terms of inverse functions?</p></li>
+<li><p>Suppose that you have the quantities <span class="math inline">\(x=\log_b{M}\)</span> and <span class="math inline">\(y=\log_b{N}\)</span>.</p>
+<ol>
+<li><p>Rewrite each of these logarithmic equations as equivalent exponential equations.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex1')">Click for Solution</button>
+<br><br>
+<div id="ex1" style="display:none">
+<span><span><span class="math inline">\(b^x=M\)</span> and <span class="math inline">\(b^y=N\)</span></span></span>
+</div></p></li>
+<li><p>Using part (a), compute <span class="math inline">\(MN\)</span> and simplify completely.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex2')">Click for Solution</button>
+<br><br>
+<div id="ex2" style="display:none">
+<span><span><span class="math inline">\(MN=b^xb^y=b^{x+y}\)</span></span></span>
+</div></p></li>
+<li><p>Now take <span class="math inline">\(log_b\)</span> of both sides of your answer from part (b) and simplify.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex3')">Click for Solution</button>
+<br><br>
+<div id="ex3" style="display:none">
+<span><span><span class="math inline">\(\log_b{(MN)}=\log_b{(b^{x+y})}=x+y\)</span></span></span>
+</div></p></li>
+<li><p>Replace <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> with their definitions (from above) and recognize that you have just proven the following rule of logarithms: <span class="math inline">\(\log_b{(MN)}=\log_b{M}+\log_b{N}\)</span>.</p></li>
+</ol></li>
+</ol>
+</body>
+<script>
+function toggleAnswer(idName) {
+var x = document.getElementById(idName);
+if (x.style.display === "none") {
+x.style.display = "block";
+} else {
+x.style.display = "none";
+}
+}</script>
+</html>

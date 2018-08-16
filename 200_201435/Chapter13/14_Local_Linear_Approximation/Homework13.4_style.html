@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <!-- Bootstrap core CSS -->
+<link href="../../../vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+<!-- Custom fonts for this template -->
+<link href="../../../vendor/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+<!-- Custom styles for this template -->
+<link href="../../../vendor/bootstrap/css/clean-blog.css" rel="stylesheet">
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script><body>
+<p>SUGGESTED REFERENCE MATERIAL:</p>
+<p>As you work through the problems listed below, you should reference Chapter 13.4 of the recommended textbook (or the equivalent chapter in your alternative textbook/online resource) and your lecture notes.</p>
+<p>EXPECTED SKILLS:</p>
+<ul>
+<li><p>Be able to compute the local linear approximation for a function of two or more variables at a given point.</p></li>
+<li><p>Be able to use a local linear approximation to estimate a given quantity.</p></li>
+</ul>
+<p>PRACTICE PROBLEMS:</p>
+<p><span><strong>For problems 1-5, find the local linear approximation <span class="math inline">\(L(x,y)\)</span> of the given function at the specified point.</strong></span></p>
+<ol>
+<li><p><span class="math inline">\(f(x,y)=x^2-y^2\)</span>; <span class="math inline">\(P(1,2)\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex1')">Click for Solution</button>
+<br><br>
+<div id="ex1" style="display:none">
+<span><span><span class="math inline">\(L(x,y)=3+2x-4y\)</span></span></span>
+</div></p></li>
+<li><p><span class="math inline">\(f(x,y)=\frac{x+y}{x-y}\)</span>; <span class="math inline">\(P(2,1)\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex2')">Click for Solution</button>
+<br><br>
+<div id="ex2" style="display:none">
+<span><span><span class="math inline">\(L(x,y)=3-2x+4y\)</span></span></span>
+</div></p></li>
+<li><p><span class="math inline">\(f(x,y)=e^x\sin{y}\)</span>; <span class="math inline">\(P\left(\ln3,\frac{\pi}{2}\right)\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex3')">Click for Solution</button>
+<br><br>
+<div id="ex3" style="display:none">
+<span><span><span class="math inline">\(L(x,y)=3-3\ln{3}+3x\)</span></span></span>
+</div></p></li>
+<li><p><span class="math inline">\(f(x,y)=\ln{(x^2-y^2)}\)</span>; <span class="math inline">\(P\left(2,\sqrt{3}\right)\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex4')">Click for Solution</button>
+<br><br>
+<div id="ex4" style="display:none">
+<span><span><span class="math inline">\(L(x,y)=-2+4x-2\sqrt{3}y\)</span></span></span>
+</div></p></li>
+<li><p><span class="math inline">\(f(x,y)=\tan^{-1}\left(\frac{x}{y}\right)\)</span>; <span class="math inline">\(P(1,1)\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex5')">Click for Solution</button>
+<br><br>
+<div id="ex5" style="display:none">
+<span><span><span class="math inline">\(L(x,y)=\frac{\pi}{4}+\frac{1}{2}x-\frac{1}{2}y\)</span></span></span>
+</div></p></li>
+<li><p>Find the local linear approximation of the function <span class="math inline">\(f(x,y)=\sqrt{32-3x^2-y^2}\)</span> at <span class="math inline">\((1,2)\)</span> and use it to approximate <span class="math inline">\(f(0.98,2.01)\)</span>.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex6')">Click for Solution</button>
+<br><br>
+<div id="ex6" style="display:none">
+<span><span><span>0.65</span><span><span class="math inline">\(f(x,y)\approx L(x,y)=\frac{32}{5}-\frac{3}{5}x-\frac{2}{5}y\)</span> for <span class="math inline">\((x,y)\)</span> near <span class="math inline">\((1,2)\)</span>.<br />
+<br />
+So, <span class="math inline">\(f(0.98,2.01)\approx L(0.98,2.01)=\frac{626}{125}\)</span></span></span></span>
+</div></p></li>
+<li><p>Suppose that <span class="math inline">\(f(x,y)\)</span> is a differentiable function at the point <span class="math inline">\((2,3)\)</span> with <span class="math inline">\(f(2,3)=1\)</span>, <span class="math inline">\(f_x(2,3)=5\)</span>, and <span class="math inline">\(f_y(2,3)=-2\)</span>. Estimate <span class="math inline">\(f(1.98,3.01)\)</span>.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex7')">Click for Solution</button>
+<br><br>
+<div id="ex7" style="display:none">
+<span><span><span>0.65</span><span><span class="math inline">\(f(x,y)\approx L(x,y)=-3+5x-2y\)</span> for <span class="math inline">\((x,y)\)</span> near <span class="math inline">\((2,3)\)</span>.<br />
+So, <span class="math inline">\(f(1.98,3.01)\approx L(1.98,3.01)=0.88\)</span></span></span></span>
+</div></p></li>
+<li><p>Find the local linear approximation <span class="math inline">\(L(x,y,z)\)</span> to <span class="math inline">\(f(x,y,z)=3x^2-2y^2+xz^3\)</span> at the point <span class="math inline">\(P(-1,2,1)\)</span>.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex8')">Click for Solution</button>
+<br><br>
+<div id="ex8" style="display:none">
+<span><span><span class="math inline">\(L(x,y,z)=8-5x-8y-3z\)</span></span></span>
+</div></p></li>
+<li><p>Verify that <span class="math inline">\(e^x\cos{y} \approx 1+x\)</span> for <span class="math inline">\((x,y)\)</span> near <span class="math inline">\((0,0)\)</span>.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex9')">Click for Solution</button>
+<br><br>
+<div id="ex9" style="display:none">
+<span><span><span>1</span><span>Show that the local linear approximation to <span class="math inline">\(f(x,y)=e^x\cos{y}\)</span> at the point <span class="math inline">\((0,0)\)</span> is <span class="math inline">\(L(x,y)=1+x\)</span></span></span></span>
+</div></p></li>
+<li><p>Verify that <span class="math inline">\((x+y)^3 \approx -16+12x+12y\)</span> for <span class="math inline">\((x,y)\)</span> near <span class="math inline">\((1,1)\)</span>.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex10')">Click for Solution</button>
+<br><br>
+<div id="ex10" style="display:none">
+<span><span><span>1</span><span>Show that the local linear approximation to <span class="math inline">\(f(x,y)=(x+y)^3\)</span> at the point <span class="math inline">\((1,1)\)</span> is <span class="math inline">\(L(x,y)=-16+12x+12y\)</span></span></span></span>
+</div></p></li>
+<li><p>At a particular point <span class="math inline">\(P(x_0,y_0)\)</span>, the local linear approximation of <span class="math inline">\(f(x,y)=xy+y^2\)</span> is <span class="math inline">\(L(x,y)=-15+3x+8y\)</span>. What is the point <span class="math inline">\(P\)</span>?</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex11')">Click for Solution</button>
+<br><br>
+<div id="ex11" style="display:none">
+<span><span><span class="math inline">\((2,3)\)</span></span></span>
+</div></p></li>
+</ol>
+</body>
+<script>
+function toggleAnswer(idName) {
+var x = document.getElementById(idName);
+if (x.style.display === "none") {
+x.style.display = "block";
+} else {
+x.style.display = "none";
+}
+}</script>
+</html>

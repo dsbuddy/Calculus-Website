@@ -1,0 +1,224 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <!-- Bootstrap core CSS -->
+<link href="../../../vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+<!-- Custom fonts for this template -->
+<link href="../../../vendor/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+<!-- Custom styles for this template -->
+<link href="../../../vendor/bootstrap/css/clean-blog.css" rel="stylesheet">
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script><body>
+<p>EXPECTED SKILLS:</p>
+<ul>
+<li><p>Be able to compute the derivatives of logarithmic functions.</p></li>
+<li><p>Know how to use logarithmic differentiation to help find the derivatives of functions involving products and quotients.</p></li>
+</ul>
+<p>PRACTICE PROBLEMS:</p>
+<p><span><strong>For problems 1-16, calculate <span class="math inline">\(\frac{dy}{dx}\)</span>.</strong></span></p>
+<ol>
+<li><p><span class="math inline">\(y = \ln{(x^2)}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex1')">Click for Solution</button>
+<br><br>
+<div id="ex1" style="display:none">
+<span><span><span class="math inline">\(\frac{2}{x}\)</span></span></span>
+</div></p></li>
+<li><p><span class="math inline">\(y = \frac{1}{\ln{(3x)}}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex2')">Click for Solution</button>
+<br><br>
+<div id="ex2" style="display:none">
+<span><span><span class="math inline">\(-\frac{1}{x[\ln{(3x)}]^2}\)</span></span></span>
+</div></p></li>
+<li><p><span class="math inline">\(y = x^2\ln{x}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex3')">Click for Solution</button>
+<br><br>
+<div id="ex3" style="display:none">
+<span><span><span class="math inline">\(x+2x\ln{x}\)</span></span></span>
+</div></p></li>
+<li><p><span class="math inline">\(y = \ln{\left(\frac{1}{x}\right)}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex4')">Click for Solution</button>
+<br><br>
+<div id="ex4" style="display:none">
+<span><span><span class="math inline">\(-\frac{1}{x}\)</span></span></span>
+</div></p></li>
+<li><p><span class="math inline">\(y = \ln|x^3|\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex5')">Click for Solution</button>
+<br><br>
+<div id="ex5" style="display:none">
+<span><span><span class="math inline">\(\frac{3}{x}\)</span></span></span>
+</div></p></li>
+<li><p><span class="math inline">\(y = \ln{(x^2+1)^2}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex6')">Click for Solution</button>
+<br><br>
+<div id="ex6" style="display:none">
+<span><span><span class="math inline">\(\frac{4x}{x^2+1}\)</span></span></span>
+</div></p></li>
+<li><p><span class="math inline">\(y = \left[\ln{(x^2+1)}\right]^2\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex7')">Click for Solution</button>
+<br><br>
+<div id="ex7" style="display:none">
+<span><span><span class="math inline">\(\frac{4x\ln{(x^2+1)}}{x^2+1}\)</span></span></span>
+</div></p></li>
+<li><p><span class="math inline">\(y = \sqrt{\ln{2x}}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex8')">Click for Solution</button>
+<br><br>
+<div id="ex8" style="display:none">
+<span><span><span class="math inline">\(\frac{1}{2x\sqrt{\ln{(2x)}}}\)</span></span></span>
+</div></p></li>
+<li><p><span class="math inline">\(y = \log_{2}{(3x-1)}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex9')">Click for Solution</button>
+<br><br>
+<div id="ex9" style="display:none">
+<span><span><span class="math inline">\(\frac{3}{(3x-1)\ln2}\)</span></span></span>
+</div></p></li>
+<li><p><span class="math inline">\(y = \tan{(\ln{x})}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex10')">Click for Solution</button>
+<br><br>
+<div id="ex10" style="display:none">
+<span><span><span class="math inline">\(\frac{1}{x}\sec^{2}(\ln{x})\)</span></span></span>
+</div></p></li>
+<li><p><span class="math inline">\(y = \ln{(\ln x)}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex11')">Click for Solution</button>
+<br><br>
+<div id="ex11" style="display:none">
+<span><span><span class="math inline">\(\frac{1}{x\ln{x}}\)</span></span></span>
+</div></p></li>
+<li><p><span class="math inline">\(y=\frac{\log{x}}{2-\log{x}}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex12')">Click for Solution</button>
+<br><br>
+<div id="ex12" style="display:none">
+<span><span><span class="math inline">\(\frac{2}{x\ln{(10)}(2-\log{x})^2}\)</span></span></span>
+</div></p></li>
+<li><p><span class="math inline">\(y=\ln{|\sec{x}|}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex13')">Click for Solution</button>
+<br><br>
+<div id="ex13" style="display:none">
+<span><span><span class="math inline">\(\tan{x}\)</span></span></span>
+</div></p></li>
+<li><p><span class="math inline">\(y=\ln{|\sec{x}+\tan{x}|}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex14')">Click for Solution</button>
+<br><br>
+<div id="ex14" style="display:none">
+<span><span><span class="math inline">\(\sec{x}\)</span></span></span>
+</div></p></li>
+<li><p><span class="math inline">\(y=\ln{\left(x^x\right)}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex15')">Click for Solution</button>
+<br><br>
+<div id="ex15" style="display:none">
+<span><span><span class="math inline">\(1+\ln(x)\)</span></span></span>
+</div></p></li>
+<li><p><span class="math inline">\(y=\ln{\left(\frac{2x+1}{\sqrt{x}(3x-4)^{10}}\right)}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex16')">Click for Solution</button>
+<br><br>
+<div id="ex16" style="display:none">
+<span><span><span class="math inline">\(\frac{2}{2x+1}-\frac{1}{2x}-\frac{30}{3x-4}\)</span></span></span>
+</div></p></li>
+<li><p>Use logarithmic differentiation to calculate <span class="math inline">\(\frac{dy}{dx}\)</span> if <span class="math inline">\(y=\frac{2x+1}{\sqrt{x}(3x-4)^{10}}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex17')">Click for Solution</button>
+<br><br>
+<div id="ex17" style="display:none">
+<span><span><span class="math inline">\(\frac{2x+1}{\sqrt{x}(3x-4)^{10}}\left(\frac{2}{2x+1}-\frac{1}{2x}-\frac{30}{3x-4}\right)\)</span></span></span>
+</div></p></li>
+<li><p>Recall the change of base formula: <span class="math inline">\(\log_{b}{x}=\frac{\ln{x}}{\ln{b}}\)</span></p>
+<ol>
+<li><p>Remind yourself of why this is true.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex18')">Click for Solution</button>
+<br><br>
+<div id="ex18" style="display:none">
+<span><span><span>1</span><span>Proof: Suppose <span class="math inline">\(y=\log_b{x}\)</span>. This is equivalent to the exponential equation <span class="math inline">\(b^y=x\)</span>. Now, we take the natural log of both sides, which gives us <span class="math inline">\(\ln{(b^y)}=\ln{x}\)</span>.<br />
+Using a property of logarithms, we see that this is equivalent to <span class="math inline">\(y\ln{b}=\ln{x}\)</span>. Finally, we solve for <span class="math inline">\(y\)</span> by dividing both sides of the equation by <span class="math inline">\(\ln{b}\)</span>, a non-zero constant since <span class="math inline">\(b&gt;0\)</span> and <span class="math inline">\(b\neq 1\)</span>.<br />
+Thus, <span class="math inline">\(y=\frac{\ln{x}}{\ln{b}}\)</span>.</span></span></span>
+</div></p></li>
+<li><p>Compute <span class="math inline">\(y^{\prime}\)</span> if <span class="math inline">\(y=\log_{x^2}{(e)}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex19')">Click for Solution</button>
+<br><br>
+<div id="ex19" style="display:none">
+<span><span><span class="math inline">\(-\frac{1}{2x(\ln{x})^2}\)</span></span></span>
+</div></p></li>
+<li><p>Compute <span class="math inline">\(\frac{dy}{dx}\)</span> if <span class="math inline">\(y = \log_{3x}{(x)}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex20')">Click for Solution</button>
+<br><br>
+<div id="ex20" style="display:none">
+<span><span><span class="math inline">\(\frac{\ln{3}}{x(\ln{3x})^2}\)</span></span></span>
+</div></p></li>
+</ol></li>
+<li><p>Compute an equation of the line which is tangent to the graph of <span class="math inline">\(f(x)=\ln{(x^2-3)}\)</span> at the point where <span class="math inline">\(x=2\)</span>.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex21')">Click for Solution</button>
+<br><br>
+<div id="ex21" style="display:none">
+<span><span><span class="math inline">\(y=4x-8\)</span></span></span>
+</div></p></li>
+<li><p>Find the value(s) of <span class="math inline">\(x\)</span> at which the tangent line to the graph of <span class="math inline">\(y=\ln{(x^2+11)}\)</span> is perpendicular to <span class="math inline">\(y=-6x+5\)</span>.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex22')">Click for Solution</button>
+<br><br>
+<div id="ex22" style="display:none">
+<span><span><span class="math inline">\(x=1\)</span> and <span class="math inline">\(x=11\)</span></span></span>
+</div></p></li>
+<li><p>Find the value(s) of <span class="math inline">\(x\)</span> at which the tangent line to the graph of <span class="math inline">\(y=-\ln{x}\)</span> passes through the origin.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex23')">Click for Solution</button>
+<br><br>
+<div id="ex23" style="display:none">
+<span><span><span class="math inline">\(x=e\)</span></span></span>
+</div></p></li>
+<li><p>Calculate <span class="math inline">\(\frac{d^2y}{dx^2}\)</span> if <span class="math inline">\(y=\ln{(3x^2+2)}\)</span>.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex24')">Click for Solution</button>
+<br><br>
+<div id="ex24" style="display:none">
+<span><span><span class="math inline">\(\frac{12-18x^2}{(3x^2+2)^2}\)</span></span></span>
+</div></p></li>
+<li><p><span><strong>Multiple Choice:</strong></span> Let <span class="math inline">\(y=\ln{(\cos{x})}\)</span>. Which of the following is <span class="math inline">\(\frac{dy}{dx}\)</span>?</p>
+<ol>
+<li><p><span class="math inline">\((\ln{x})(-\sin{x})+(\cos{x})(\ln{x})\)</span></p></li>
+<li><p><span class="math inline">\(-\tan{x}\)</span></p></li>
+<li><p><span class="math inline">\(\cot{x}\)</span></p></li>
+<li><p><span class="math inline">\(\sec{x}\)</span></p></li>
+<li><p><span class="math inline">\(\frac{1}{\ln{(\cos{x})}}\)</span></p></li>
+</ol>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex25')">Click for Solution</button>
+<br><br>
+<div id="ex25" style="display:none">
+<span><span>B</span></span>
+</div></p></li>
+<li><p><span><strong>Multiple Choice:</strong></span> Let <span class="math inline">\(h(x)=\ln[(f(x))^2+1]\)</span>. Suppose that <span class="math inline">\(f(1)=-1\)</span> and <span class="math inline">\(f^{\prime}(1)=1\)</span>. Find <span class="math inline">\(h^{\prime}(1)\)</span>.</p>
+<ol>
+<li><p><span class="math inline">\(-2\)</span></p></li>
+<li><p><span class="math inline">\(-1\)</span></p></li>
+<li><p><span class="math inline">\(0\)</span></p></li>
+<li><p><span class="math inline">\(1\)</span></p></li>
+<li><p><span class="math inline">\(2\)</span></p></li>
+</ol>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex26')">Click for Solution</button>
+<br><br>
+<div id="ex26" style="display:none">
+<span><span>B</span></span>
+</div></p></li>
+<li><p>Consider the triangle formed by the tangent line to the graph of <span class="math inline">\(y=-\ln{x}\)</span> at the point <span class="math inline">\(P(t,-\ln{t})\)</span>, the horizontal line which passes through <span class="math inline">\(P\)</span>, and the <span class="math inline">\(y\)</span>-axis. Find a function <span class="math inline">\(A(t)\)</span> which gives the area of this triangle.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex27')">Click for Solution</button>
+<br><br>
+<div id="ex27" style="display:none">
+<span><span><span class="math inline">\(A(t)=\frac{1}{2}t\)</span></span></span>
+</div></p></li>
+</ol>
+</body>
+<script>
+function toggleAnswer(idName) {
+var x = document.getElementById(idName);
+if (x.style.display === "none") {
+x.style.display = "block";
+} else {
+x.style.display = "none";
+}
+}</script>
+</html>

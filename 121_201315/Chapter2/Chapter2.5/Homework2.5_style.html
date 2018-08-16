@@ -1,0 +1,291 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <!-- Bootstrap core CSS -->
+<link href="../../../vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+<!-- Custom fonts for this template -->
+<link href="../../../vendor/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+<!-- Custom styles for this template -->
+<link href="../../../vendor/bootstrap/css/clean-blog.css" rel="stylesheet">
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script><body>
+<p>EXPECTED SKILLS:</p>
+<ul>
+<li><p>Know the derivatives of the 6 elementary trigonometric functions.</p></li>
+<li><p>Be able to use these derivatives in the context of word problems.</p></li>
+</ul>
+<p>PRACTICE PROBLEMS:</p>
+<ol>
+<li><p>Fill in the given table:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><span class="math inline">\(f(x)\)</span></th>
+<th align="center"><span class="math inline">\(f^{\prime}(x)\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><span class="math inline">\(\sin{x}\)</span></td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(\cos{x}\)</span></td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(\tan{x}\)</span></td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(\cot{x}\)</span></td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(\sec{x}\)</span></td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(\csc{x}\)</span></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex1')">Click for Solution</button>
+<br><br>
+<div id="ex1" style="display:none">
+</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><span class="math inline">\(f(x)\)</span></th>
+<th align="center"><span class="math inline">\(f^{\prime}(x)\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><span class="math inline">\(\sin{x}\)</span></td>
+<td align="center"><span class="math inline">\(\cos{x}\)</span></td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(\cos{x}\)</span></td>
+<td align="center"><span class="math inline">\(-\sin{x}\)</span></td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(\tan{x}\)</span></td>
+<td align="center"><span class="math inline">\(\sec^2{x}\)</span></td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(\cot{x}\)</span></td>
+<td align="center"><span class="math inline">\(-\csc^2{x}\)</span></td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(\sec{x}\)</span></td>
+<td align="center"><span class="math inline">\(\sec{x}\tan{x}\)</span></td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(\csc{x}\)</span></td>
+<td align="center"><span class="math inline">\(-\csc{x}\cot{x}\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>
+</div></p></li>
+<li><p>Use the definition of the derivative to show that <span class="math inline">\(\frac{d}{dx}(\cos{x})=-\sin{x}\)</span><br />
+Hint: <span class="math inline">\(\cos{(\alpha + \beta)}=\cos{\alpha}\cos{\beta}-\sin{\alpha}\sin{\beta}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex2')">Click for Solution</button>
+<br><br>
+<div id="ex2" style="display:none">
+<span><span><span>0.5</span><span> <span class="math display">\[\begin{aligned}
+\frac{d}{dx}(\cos{x})&amp;=\lim_{h \rightarrow 0}{\frac{\cos{(x+h)}-\cos{x}}{h}}\\
+&amp;=\lim_{h \rightarrow 0}{\frac{\cos{x}\cos{h}-\sin{x}\sin{h}-\cos{x}}{h}}\\
+&amp;=\lim_{h \rightarrow 0}{\left(\frac{\cos{x}\cos{h}-\cos{x}}{h}-\frac{\sin{x}\sin{h}}{h}\right)}\\
+&amp;=\lim_{h \rightarrow 0}{\left(\cos{x}\frac{\cos{h}-1}{h}-\sin{x}\frac{\sin{h}}{h}\right)}\\
+&amp;=(\cos{x})(0)-(\sin{x})(1)\\
+&amp;=-\sin{x}\end{aligned}\]</span> </span></span></span>
+</div></p></li>
+<li><p>Use the quotient rule to show that <span class="math inline">\(\frac{d}{dx}(\cot{x})=-\csc^2{x}\)</span>.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex3')">Click for Solution</button>
+<br><br>
+<div id="ex3" style="display:none">
+<span><span><span>0.5</span><span> <span class="math display">\[\begin{aligned}
+\frac{d}{dx}(\cot{x})&amp;=\frac{d}{dx}\left(\frac{\cos{x}}{\sin{x}}\right)\\
+&amp;=\frac{(\sin{x})(-\sin{x})-(\cos{x})(\cos{x})}{\sin^2{x}}\\
+&amp;=\frac{-(\sin^2{x}+\cos^2{x})}{\sin^2{x}}\\
+&amp;=-\frac{1}{\sin^2{x}}\\
+&amp;=-\csc^2{x}\end{aligned}\]</span> </span></span></span>
+</div></p></li>
+<li><p>Use the quotient rule to show that <span class="math inline">\(\frac{d}{dx}(\csc{x})=-\csc{x}\cot{x}\)</span>.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex4')">Click for Solution</button>
+<br><br>
+<div id="ex4" style="display:none">
+<span><span><span>0.5</span><span> <span class="math display">\[\begin{aligned}
+\frac{d}{dx}(\csc{x})&amp;=\frac{d}{dx}\left(\frac{1}{\sin{x}}\right)\\
+&amp;=\frac{(\sin{x})(0)-(1)(\cos{x})}{\sin^2{x}}\\
+&amp;=-\frac{\cos{x}}{\sin^2{x}}\\
+&amp;=-\frac{1}{\sin{x}}\frac{\cos{x}}{\sin{x}}\\
+&amp;=-\csc{x}\cot{x}\end{aligned}\]</span> </span></span></span>
+</div></p></li>
+<li><p>Evaluate <span class="math inline">\(\lim_{h \rightarrow 0}{\frac{\tan{\left(\frac{\pi}{3}+h\right)}-\tan{\left(\frac{\pi}{3}\right)}}{h}}\)</span> by interpreting the limit as the derivative of a function at a particular point.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex5')">Click for Solution</button>
+<br><br>
+<div id="ex5" style="display:none">
+<span><span><span class="math inline">\(\lim_{h \rightarrow 0}{\frac{\tan{\left(\frac{\pi}{3}+h\right)}-\tan{\left(\frac{\pi}{3}\right)}}{h}}=\left.\frac{d}{dx}(\tan{x})\right|_{x=\frac{\pi}{3}}=\sec^2{\left(\frac{\pi}{3}\right)}=4\)</span></span></span>
+</div></p></li>
+</ol>
+<p><span><strong>For problems 6-14, differentiate</strong></span></p>
+<ol start="6">
+<li><p><span class="math inline">\(f(x) = 2\cos{x}+4\sin{x}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex6')">Click for Solution</button>
+<br><br>
+<div id="ex6" style="display:none">
+<span><span><span class="math inline">\(-2\sin{x}+4\cos{x}\)</span></span></span>
+</div></p></li>
+<li><p><span class="math inline">\(f(x) = 5\cos{x}+\cot{x}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex7')">Click for Solution</button>
+<br><br>
+<div id="ex7" style="display:none">
+<span><span><span class="math inline">\(-5\sin{x}-\csc^2{x}\)</span></span></span>
+</div></p></li>
+<li><p><span class="math inline">\(g(x) = 4\csc {x} + 2\sec{x}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex8')">Click for Solution</button>
+<br><br>
+<div id="ex8" style="display:none">
+<span><span><span class="math inline">\(-4\csc{(x)}\cot{(x)}+2\sec{(x)}\tan{(x)}\)</span></span></span>
+</div></p></li>
+<li><p><span class="math inline">\(f(x) = \sin{x}\cos{x}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex9')">Click for Solution</button>
+<br><br>
+<div id="ex9" style="display:none">
+<span><span><span class="math inline">\(\cos^2{x}-\sin^2{x}\)</span></span></span>
+</div></p></li>
+<li><p><span class="math inline">\(f(x) = \frac{\sin^2{x}}{\cos{x}}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex10')">Click for Solution</button>
+<br><br>
+<div id="ex10" style="display:none">
+<span><span><span class="math inline">\(2\sin{x}+\sin{x}\tan^{2}{x} \)</span></span></span>
+</div></p></li>
+<li><p><span class="math inline">\(f(x) = x^3\sin{x}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex11')">Click for Solution</button>
+<br><br>
+<div id="ex11" style="display:none">
+<span><span><span class="math inline">\(3x^2\sin{x}+x^3\cos{x}\)</span></span></span>
+</div></p></li>
+<li><p><span class="math inline">\(f(x) = \sec^2{x}+\tan^2{x}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex12')">Click for Solution</button>
+<br><br>
+<div id="ex12" style="display:none">
+<span><span><span class="math inline">\(4\sec^2{(x)}\tan{(x)}\)</span></span></span>
+</div></p></li>
+<li><p><span class="math inline">\(f(x) = \frac{x+\sec{x}}{1+\cos{x}}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex13')">Click for Solution</button>
+<br><br>
+<div id="ex13" style="display:none">
+<span><span><span class="math inline">\(\frac{1+2\tan{x}+\cos{x}+\sec{(x)}\tan{(x)}+x\sin{x}}{(1+\cos{x})^2}\)</span> </span></span>
+</div></p></li>
+</ol>
+<p><span><strong>For problems 14-17, compute <span class="math inline">\(\frac{d^2y}{dx^2}\)</span></strong></span></p>
+<ol start="14">
+<li><p><span class="math inline">\(f(x) = \tan{x}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex14')">Click for Solution</button>
+<br><br>
+<div id="ex14" style="display:none">
+<span><span><span class="math inline">\(2\sec^2{x}\tan{x}\)</span></span></span>
+</div></p></li>
+<li><p><span class="math inline">\(f(x) = \sin{x}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex15')">Click for Solution</button>
+<br><br>
+<div id="ex15" style="display:none">
+<span><span><span class="math inline">\(-\sin{x}\)</span></span></span>
+</div></p></li>
+<li><p><span class="math inline">\(f(x) = \cos^2{x}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex16')">Click for Solution</button>
+<br><br>
+<div id="ex16" style="display:none">
+<span><span><span class="math inline">\(2\sin^2{x}-2\cos^2{x}\)</span></span></span>
+</div></p></li>
+<li><p><span class="math inline">\(f(x) = \sin^2{x}+\cos^2{x}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex17')">Click for Solution</button>
+<br><br>
+<div id="ex17" style="display:none">
+<span><span>0</span></span>
+</div></p></li>
+</ol>
+<p><span><strong>For problems 18-19, find all values of <span class="math inline">\(x\)</span> in the interval <span class="math inline">\([0,2\pi]\)</span> where the graph of the given function has horizontal tangent lines.</strong></span></p>
+<ol start="18">
+<li><p><span class="math inline">\(f(x) = \sin{x}\cos{x}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex18')">Click for Solution</button>
+<br><br>
+<div id="ex18" style="display:none">
+<span><span><span class="math inline">\(\frac{\pi}{4}, \frac{3\pi}{4}, \frac{5\pi}{4}, \frac{7\pi}{4}\)</span></span></span>
+</div></p></li>
+<li><p><span class="math inline">\(g(x) = \csc{x}\)</span></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex19')">Click for Solution</button>
+<br><br>
+<div id="ex19" style="display:none">
+<span><span><span class="math inline">\(\frac{\pi}{2}, \frac{3\pi}{2}\)</span></span></span>
+</div></p></li>
+<li><p>Compute an equation of the line which is tangent to the graph of <span class="math inline">\(f(x)=\frac{\cos{x}}{x}\)</span> at the point where <span class="math inline">\(x=\pi\)</span>.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex20')">Click for Solution</button>
+<br><br>
+<div id="ex20" style="display:none">
+<span><span><span class="math inline">\(y=\frac{1}{\pi^2}x-\frac{2}{\pi}\)</span></span></span>
+</div></p></li>
+<li><p>Consider the graphs of <span class="math inline">\(f(x)=\sqrt{2}\cos(x)\)</span> and <span class="math inline">\(g(x)=\sqrt{2}\sin(x)\)</span> shown below on the interval <span class="math inline">\(\left[0,\frac{\pi}{2}\right]\)</span>.</p>
+<p><embed src="graph.pdf" /></p>
+<p>Show that the graphs of <span class="math inline">\(f(x)\)</span> and <span class="math inline">\(g(x)\)</span> intersect at a right angle when <span class="math inline">\(x=\frac{\pi}{4}\)</span>. (Hint: Show that the tangent lines to <span class="math inline">\(f\)</span> and <span class="math inline">\(g\)</span> at <span class="math inline">\(x=\frac{\pi}{4}\)</span> are perpendicular to each other.)</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex21')">Click for Solution</button>
+<br><br>
+<div id="ex21" style="display:none">
+<span><span><span>1</span><span><span class="math inline">\(f^{\prime}\left(\frac{\pi}{4}\right)=-1\)</span> and <span class="math inline">\(g^{\prime}\left(\frac{\pi}{4}\right)=1\)</span>. So, the tangent lines to <span class="math inline">\(f\)</span> and <span class="math inline">\(g\)</span> at <span class="math inline">\(x=\frac{\pi}{4}\)</span> are perpendicular to one another since the product of their slopes is <span class="math inline">\(-1\)</span>.</span></span></span>
+</div></p></li>
+<li><p>A 15 foot ladder leans against a vertical wall at an angle of <span class="math inline">\(\theta\)</span> with the horizontal, as shown in the figure below. The top of the ladder is <span class="math inline">\(h\)</span> feet above the ground. If the ladder is pushed towards the wall, find the rate at which <span class="math inline">\(h\)</span> changes with respect to <span class="math inline">\(\theta\)</span> at the instant when <span class="math inline">\(\theta=30^{\circ }\)</span>. Express your answer in <span><strong>feet/degree</strong></span>.</p>
+<p><embed src="wall.pdf" /></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex22')">Click for Solution</button>
+<br><br>
+<div id="ex22" style="display:none">
+<span><span><span class="math inline">\(\frac{dh}{d\theta}=\frac{15\sqrt{3}}{2} \text{ ft/radian}=\frac{\pi\sqrt{3}}{24} \text{ ft/degree}\)</span></span></span>
+</div></p></li>
+<li><p>Use the Intermediate Value Theorem to show that there is at least one point in the interval <span class="math inline">\((0,1)\)</span> where the graph of <span class="math inline">\(f(x)=\sin{x}-\frac{1}{3}x^3\)</span> will have a horizontal tangent line.</p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex23')">Click for Solution</button>
+<br><br>
+<div id="ex23" style="display:none">
+<span><span><span>1</span><span><span class="math inline">\(f^{\prime}(x)=\cos{x}-x^2\)</span>. Firstly, notice that <span class="math inline">\(f^{\prime}(x)\)</span> is continuous for all <span class="math inline">\(x\)</span>; therefore, it is continuous for all <span class="math inline">\(x\)</span> in <span class="math inline">\([0,1]\)</span>. Secondly, notice that <span class="math inline">\(f^{\prime}(0)=1&gt;0\)</span> and <span class="math inline">\(f^{\prime}(1)=\cos{(1)}-1&lt;0\)</span>. Thus, the Intermediate Value Theorem states there is at least one <span class="math inline">\(x_0\)</span> in the interval <span class="math inline">\((0,1)\)</span> with <span class="math inline">\(f^{\prime}(x_0)=0\)</span>. In other words, there is at least one <span class="math inline">\(x_0\)</span> in <span class="math inline">\((0,1)\)</span> where <span class="math inline">\(f(x)\)</span> will have a horizontal tangent line.</span></span></span>
+</div></p></li>
+<li><p><span><strong>Multiple Choice:</strong></span> At how many points on the interval <span class="math inline">\([-\pi,\pi]\)</span> is the tangent line to the graph of <span class="math inline">\(y=2x+\sin{x}\)</span> parallel to the secant line which passes through the graph endpoints of the interval?</p>
+<ol>
+<li><p>0</p></li>
+<li><p>1</p></li>
+<li><p>2</p></li>
+<li><p>3</p></li>
+<li><p>None of these</p></li>
+</ol>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex24')">Click for Solution</button>
+<br><br>
+<div id="ex24" style="display:none">
+<span><span>C</span></span>
+</div></p></li>
+</ol>
+</body>
+<script>
+function toggleAnswer(idName) {
+var x = document.getElementById(idName);
+if (x.style.display === "none") {
+x.style.display = "block";
+} else {
+x.style.display = "none";
+}
+}</script>
+</html>
