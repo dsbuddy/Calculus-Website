@@ -1,6 +1,0 @@
-change latex to html
-$ pandoc filename.tex -s --mathjax -o newFilename.html
-
-
-read all filenames from list
-$ cat latexFiles.txt | while read LINE; do echo "${LINE}"; done

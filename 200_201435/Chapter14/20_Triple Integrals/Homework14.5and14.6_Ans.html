@@ -4,11 +4,24 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
-  <title></title>
-  <style type="text/css">code{white-space: pre;}</style>
+<title>Triple Integrals</title>  <style type="text/css">code{white-space: pre;}</style>
   <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-</head>
-<body>
+    <!-- Bootstrap core CSS -->
+<link href="../../../vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+<!-- Custom fonts for this template -->
+<link href="../../../vendor/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+<!-- Custom styles for this template -->
+<link href="../../../vendor/bootstrap/css/clean-blog.css" rel="stylesheet">
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script><body>
+<center><h1 id='titleHeader'>Triple Integrals</h1></center>
+
 <p>SUGGESTED REFERENCE MATERIAL:</p>
 <p>As you work through the problems listed below, you should reference Chapters 14.5 &amp; 14.6 of the recommended textbook (or the equivalent chapter in your alternative textbook/online resource) and your lecture notes.</p>
 <p>EXPECTED SKILLS:</p>
@@ -22,54 +35,114 @@
 <li><p>Evaluate the following triple integrals.</p>
 <ol>
 <li><p><span class="math inline">\(\int_1^3 \int_0^1 \int_0^z ye^{-z^3} \,dy\,dz\,dx\)</span></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\frac{1}{3}\left(1-\frac{1}{e}\right)\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex1')">Click for Solution</button>
+<br><br>
+<div id="ex1" style="display:none">
+<span><span><span class="math inline">\(\frac{1}{3}\left(1-\frac{1}{e}\right)\)</span></span></span>
+</div></p></li>
 <li><p><span class="math inline">\(\iiint \limits_{G} z\sqrt{y} \,dV\)</span>, where <span class="math inline">\(G\)</span> is the solid exclosed by <span class="math inline">\(z=y\)</span>, <span class="math inline">\(y=x^2\)</span>, <span class="math inline">\(y=4\)</span>, and the <span class="math inline">\(xy\)</span>-plane.</p>
-<p><embed src="start.pdf" /> <span><span>64</span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex2')">Click for Solution</button>
+<br><br>
+<div id="ex2" style="display:none">
+<span><span>64</span></span>
+</div></p></li>
 </ol></li>
 <li><p>Consider the region <span class="math inline">\(G\)</span> in 3-space which is enclosed by <span class="math inline">\(z=0\)</span>, <span class="math inline">\(z=1\)</span>, <span class="math inline">\(x=0\)</span>, <span class="math inline">\(y=x\)</span>, and <span class="math inline">\(y=1-x\)</span>. For each of the following, set up <span class="math inline">\(\iiint \limits_{G} f(x,y,z)\,dV\)</span> with the indicated order of integration. Sketching <span class="math inline">\(G\)</span> may be helpful.</p>
 <ol>
 <li><p><span class="math inline">\(dzdydx\)</span></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\int_0^{1/2} \int_x^{1-x} \int_0^1 f(x,y,z) \,dz\,dy\,dx\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex3')">Click for Solution</button>
+<br><br>
+<div id="ex3" style="display:none">
+<span><span><span class="math inline">\(\int_0^{1/2} \int_x^{1-x} \int_0^1 f(x,y,z) \,dz\,dy\,dx\)</span></span></span>
+</div></p></li>
 <li><p><span class="math inline">\(dzdxdy\)</span></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\int_0^{1/2} \int_0^y \int_0^1 f(x,y,z) \,dz\,dx\,dy+\int_{1/2}^1 \int_0^{1-y} \int_0^1 f(x,y,z)\,dz\,dx\,dy\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex4')">Click for Solution</button>
+<br><br>
+<div id="ex4" style="display:none">
+<span><span><span class="math inline">\(\int_0^{1/2} \int_0^y \int_0^1 f(x,y,z) \,dz\,dx\,dy+\int_{1/2}^1 \int_0^{1-y} \int_0^1 f(x,y,z)\,dz\,dx\,dy\)</span></span></span>
+</div></p></li>
 <li><p><span class="math inline">\(dydzdx\)</span></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\int_0^{1/2} \int_0^1 \int_x^{1-x} f(x,y,z) \,dy\,dz\,dx\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex5')">Click for Solution</button>
+<br><br>
+<div id="ex5" style="display:none">
+<span><span><span class="math inline">\(\int_0^{1/2} \int_0^1 \int_x^{1-x} f(x,y,z) \,dy\,dz\,dx\)</span></span></span>
+</div></p></li>
 <li><p><span class="math inline">\(dydxdz\)</span></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\int_0^1 \int_0^{1/2} \int_x^{1-x} f(x,y,z) \,dy\,dx\,dz\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex6')">Click for Solution</button>
+<br><br>
+<div id="ex6" style="display:none">
+<span><span><span class="math inline">\(\int_0^1 \int_0^{1/2} \int_x^{1-x} f(x,y,z) \,dy\,dx\,dz\)</span></span></span>
+</div></p></li>
 <li><p><span class="math inline">\(dxdzdy\)</span></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\int_0^{1/2} \int_0^1 \int_0^y f(x,y,z) \,dx\,dz\,dy+\int_{1/2}^1 \int_0^1 \int_0^{1-y} f(x,y,z)\,dx\,dz\,dy\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex7')">Click for Solution</button>
+<br><br>
+<div id="ex7" style="display:none">
+<span><span><span class="math inline">\(\int_0^{1/2} \int_0^1 \int_0^y f(x,y,z) \,dx\,dz\,dy+\int_{1/2}^1 \int_0^1 \int_0^{1-y} f(x,y,z)\,dx\,dz\,dy\)</span></span></span>
+</div></p></li>
 <li><p><span class="math inline">\(dxdydz\)</span></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\int_0^1 \int_0^{1/2} \int_0^y f(x,y,z) \,dx\,dy\,dz+\int_0^1 \int_{1/2}^1 \int_0^{1-y} f(x,y,z)\,dx\,dy\,dz\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex8')">Click for Solution</button>
+<br><br>
+<div id="ex8" style="display:none">
+<span><span><span class="math inline">\(\int_0^1 \int_0^{1/2} \int_0^y f(x,y,z) \,dx\,dy\,dz+\int_0^1 \int_{1/2}^1 \int_0^{1-y} f(x,y,z)\,dx\,dy\,dz\)</span></span></span>
+</div></p></li>
 </ol></li>
 <li><p>Consider the integral <span class="math inline">\(I=\int_0^7 \int_0^{3-\frac{3}{7}x} \int_0^{21-3x-7y} 1 \,dz\,dy\,dx\)</span>.</p>
 <ol>
 <li><p>Sketch a solid whose volume is equivalent to the value of <span class="math inline">\(I\)</span>.</p>
-<p><embed src="start.pdf" /></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex9')">Click for Solution</button>
+<br><br>
+<div id="ex9" style="display:none">
+</p>
 <p><span>1</span></p>
 <p>The integral represents the volume of the solid in the first octant which is enclosed by the plane <span class="math inline">\(3x+7y+z=21\)</span> and the coordinate axes.</p>
 <p><embed src="volume2.pdf" /></p>
-<p><embed src="end.pdf" /></p></li>
+<p>
+</div></p></li>
 <li><p>Reverse the order of integration to <span class="math inline">\(\,dy\,dz\,dx\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\int_0^7 \int_0^{21-3x} \int_0^{3-\frac{3}{7}x-\frac{1}{7}z} 1\,dy\,dz\,dx\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex10')">Click for Solution</button>
+<br><br>
+<div id="ex10" style="display:none">
+<span><span><span class="math inline">\(\int_0^7 \int_0^{21-3x} \int_0^{3-\frac{3}{7}x-\frac{1}{7}z} 1\,dy\,dz\,dx\)</span></span></span>
+</div></p></li>
 </ol></li>
 <li><p>The solid below is enclosed by <span class="math inline">\(x=0\)</span>, <span class="math inline">\(x=1\)</span>, <span class="math inline">\(y=0\)</span>, <span class="math inline">\(z=0\)</span>, <span class="math inline">\(z=1\)</span>, and <span class="math inline">\(2x+y+2z=6\)</span>.</p>
 <p><embed src="volume.pdf" /></p>
 <ol>
 <li><p>Set up a triple integral or triple integrals with the order of integration as which represent(s) the volume of the solid.</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\int_0^1 \int_0^1 \int_0^{6-2x-2z} 1 \,dy\,dx\,dz\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex11')">Click for Solution</button>
+<br><br>
+<div id="ex11" style="display:none">
+<span><span><span class="math inline">\(\int_0^1 \int_0^1 \int_0^{6-2x-2z} 1 \,dy\,dx\,dz\)</span></span></span>
+</div></p></li>
 <li><p>Set up a triple integral or triple integrals with the order of integration as which represent(s) the volume of the solid.</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\int_0^1 \int_0^{4-2x} \int_0^{1} 1 \,dz\,dy\,dx+\int_0^1 \int_{4-2x}^{6-2x} \int_0^{3-x-\frac{1}{2}y} 1 \,dz\,dy\,dx\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex12')">Click for Solution</button>
+<br><br>
+<div id="ex12" style="display:none">
+<span><span><span class="math inline">\(\int_0^1 \int_0^{4-2x} \int_0^{1} 1 \,dz\,dy\,dx+\int_0^1 \int_{4-2x}^{6-2x} \int_0^{3-x-\frac{1}{2}y} 1 \,dz\,dy\,dx\)</span></span></span>
+</div></p></li>
 </ol></li>
 <li><p>Use a triple integral to calculate the volume of the solid which is bounded by <span class="math inline">\(z=3-x^2\)</span>, <span class="math inline">\(z=2x^2\)</span>, <span class="math inline">\(y=0\)</span>, and <span class="math inline">\(y=1\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span>4; Detailed Solution: </span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex13')">Click for Solution</button>
+<br><br>
+<div id="ex13" style="display:none">
+<span><span>4; Detailed Solution: </span></span>
+</div></p></li>
 <li><p>Use a triple integral to calculate the volume of the solid which is bounded by <span class="math inline">\(z=y+4\)</span>, <span class="math inline">\(z=0\)</span>, and <span class="math inline">\(x^2+y^2=4\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(16\pi\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex14')">Click for Solution</button>
+<br><br>
+<div id="ex14" style="display:none">
+<span><span><span class="math inline">\(16\pi\)</span></span></span>
+</div></p></li>
 <li><p>The integral <span class="math inline">\(\int_0^{\pi/2} \int_0^{\pi/3} \int_0^1 \rho^2\sin{\phi} \,d\rho\,d\phi\,d\theta\)</span> is given in spherical coordinates. Sketch a solid whose volume is represented by the value of this integral.</p>
-<p><embed src="start.pdf" /></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex15')">Click for Solution</button>
+<br><br>
+<div id="ex15" style="display:none">
+</p>
 <p><span>1</span></p>
 <p>The integral can be interpreted as the volume of the solid in the first octant which is contained within the sphere <span class="math inline">\(x^2+y^2+z^2=1\)</span>, the cone <span class="math inline">\(z=\frac{1}{\sqrt{3}}\sqrt{x^2+y^2}\)</span>, and the planes <span class="math inline">\(x=0\)</span> and <span class="math inline">\(y=0\)</span>.</p>
 <p><embed src="volume3.pdf" /></p>
-<p><embed src="end.pdf" /></p></li>
+<p>
+</div></p></li>
 <li><p>Mario and Luigi run a concession stand in Wario Stadium, “Missed Jump Creamery,&quot; and their top selling product is ice cream cones. Mario’s ice cream cones can be modeled by the solid which is bounded above by <span class="math inline">\(x^2+y^2+z^2=4\)</span> and is bounded below by <span class="math inline">\(z=\sqrt{x^2+y^2}\)</span>. Luigi’s ice cream cones can be modeled by the solid which is bounded above by <span class="math inline">\(z=2-x^2-y^2\)</span> and bounded below by <span class="math inline">\(z=\sqrt{x^2+y^2}\)</span>.</p>
 <table>
 <tbody>
@@ -87,37 +160,94 @@
 (Images are not to scale)</p>
 <ol>
 <li><p>Set up a triple integral in rectangular coordinates which represents the volume of Mario’s ice cream cones.</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(V_M=\int_{-\sqrt{2}}^{\sqrt{2}} \int_{-\sqrt{2-x^2}}^{\sqrt{2-x^2}} \int_{\sqrt{x^2+y^2}}^{\sqrt{4-x^2-y^2}} 1 \,dz\,dy\,dx\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex16')">Click for Solution</button>
+<br><br>
+<div id="ex16" style="display:none">
+<span><span><span class="math inline">\(V_M=\int_{-\sqrt{2}}^{\sqrt{2}} \int_{-\sqrt{2-x^2}}^{\sqrt{2-x^2}} \int_{\sqrt{x^2+y^2}}^{\sqrt{4-x^2-y^2}} 1 \,dz\,dy\,dx\)</span></span></span>
+</div></p></li>
 <li><p>Set up a triple integral in cylindrical coordinates which represents the volume of Mario’s ice cream cones.</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(V_M=\int_0^{2\pi} \int_0^{\sqrt{2}} \int_r^{\sqrt{4-r^2}} r\,dz\,dr\,d\theta\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex17')">Click for Solution</button>
+<br><br>
+<div id="ex17" style="display:none">
+<span><span><span class="math inline">\(V_M=\int_0^{2\pi} \int_0^{\sqrt{2}} \int_r^{\sqrt{4-r^2}} r\,dz\,dr\,d\theta\)</span></span></span>
+</div></p></li>
 <li><p>Set up a triple integral in spherical coordinates which represents the volume of Mario’s ice cream cones.</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(V_M=\int_0^{\pi/4} \int_0^{2\pi} \int_0^2 \rho^2 \sin{\phi} \,d\rho \,d\theta \,d\phi\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex18')">Click for Solution</button>
+<br><br>
+<div id="ex18" style="display:none">
+<span><span><span class="math inline">\(V_M=\int_0^{\pi/4} \int_0^{2\pi} \int_0^2 \rho^2 \sin{\phi} \,d\rho \,d\theta \,d\phi\)</span></span></span>
+</div></p></li>
 <li><p>Set up a triple integral in rectangular coordinates which represents the volume of Luigi’s ice cream cones.</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(V_L=\int_{-1}^{1} \int_{-\sqrt{1-x^2}}^{\sqrt{1-x^2}} \int_{\sqrt{x^2+y^2}}^{2-x^2-y^2} 1 \,dz\,dy\,dx\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex19')">Click for Solution</button>
+<br><br>
+<div id="ex19" style="display:none">
+<span><span><span class="math inline">\(V_L=\int_{-1}^{1} \int_{-\sqrt{1-x^2}}^{\sqrt{1-x^2}} \int_{\sqrt{x^2+y^2}}^{2-x^2-y^2} 1 \,dz\,dy\,dx\)</span></span></span>
+</div></p></li>
 <li><p>Set up a triple integral in cylindrical coordinates which represents the volume of Luigi’s ice cream cones.</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(V_L=\int_0^{2\pi} \int_0^{1} \int_r^{2-r^2} r\,dz\,dr\,d\theta\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex20')">Click for Solution</button>
+<br><br>
+<div id="ex20" style="display:none">
+<span><span><span class="math inline">\(V_L=\int_0^{2\pi} \int_0^{1} \int_r^{2-r^2} r\,dz\,dr\,d\theta\)</span></span></span>
+</div></p></li>
 <li><p>Determine whose ice cream cones have the larger volume.</p>
-<p><embed src="start.pdf" /> <span><span><span>1</span><span><span class="math inline">\(V_M=\frac{16\pi}{3}\left(1-\frac{\sqrt{2}}{2}\right)\approx 4.907\)</span>; <span class="math inline">\(V_L=\frac{5\pi}{6}\approx 2.618\)</span>; So, Mario’s ice cream cones have the larger volume.</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex21')">Click for Solution</button>
+<br><br>
+<div id="ex21" style="display:none">
+<span><span><span>1</span><span><span class="math inline">\(V_M=\frac{16\pi}{3}\left(1-\frac{\sqrt{2}}{2}\right)\approx 4.907\)</span>; <span class="math inline">\(V_L=\frac{5\pi}{6}\approx 2.618\)</span>; So, Mario’s ice cream cones have the larger volume.</span></span></span>
+</div></p></li>
 </ol></li>
 <li><p>Consider the surfaces <span class="math inline">\(x^2+y^2+z^2=16\)</span> and <span class="math inline">\(x^2+y^2=4\)</span>, shown below.</p>
 <p><embed src="earth.pdf" /></p>
 <ol>
 <li><p>Set up a triple integral in cylindrical coordinates which can be used to calculate the volume of the solid which is inside of <span class="math inline">\(x^2+y^2+z^2=16\)</span> but outside of <span class="math inline">\(x^2+y^2=4\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(V=\int_0^{2\pi} \int_2^4 \int_{-\sqrt{16-r^2}}^{\sqrt{16-r^2}} r \,dz\,dr\,d\theta\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex22')">Click for Solution</button>
+<br><br>
+<div id="ex22" style="display:none">
+<span><span><span class="math inline">\(V=\int_0^{2\pi} \int_2^4 \int_{-\sqrt{16-r^2}}^{\sqrt{16-r^2}} r \,dz\,dr\,d\theta\)</span></span></span>
+</div></p></li>
 <li><p>Set up a triple integral in spherical coordinates which can be used to calculate the volume of the solid which is inside of <span class="math inline">\(x^2+y^2+z^2=16\)</span> but outside of <span class="math inline">\(x^2+y^2=4\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(V=\int_0^{2\pi} \int_{\pi/6}^{5\pi/6} \int_{2\csc{\phi}}^4 \rho^2\sin{\phi} \,d\rho\,d\phi\,d\theta\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex23')">Click for Solution</button>
+<br><br>
+<div id="ex23" style="display:none">
+<span><span><span class="math inline">\(V=\int_0^{2\pi} \int_{\pi/6}^{5\pi/6} \int_{2\csc{\phi}}^4 \rho^2\sin{\phi} \,d\rho\,d\phi\,d\theta\)</span></span></span>
+</div></p></li>
 <li><p>Calculate the volume of the solid which is inside of <span class="math inline">\(x^2+y^2+z^2=16\)</span> but outside of <span class="math inline">\(x^2+y^2=4\)</span> by evaluating one of your integrals from parts (a) or (b).</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(32\pi\sqrt{3}\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex24')">Click for Solution</button>
+<br><br>
+<div id="ex24" style="display:none">
+<span><span><span class="math inline">\(32\pi\sqrt{3}\)</span></span></span>
+</div></p></li>
 </ol></li>
 <li><p>Convert the integral <span class="math inline">\(\int_0^4 \int_{-\sqrt{4-(y-2)^2}}^{\sqrt{4-(y-2)^2}} \int_0^{\sqrt{4-x^2-y^2}} xyz \,dz\,dx\,dy\)</span> from rectangular coordinates to cylindrical coordinates.</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\int_0^\pi \int_0^{4\sin{\theta}} \int_0^{\sqrt{4-r^2}} r^3z\cos{\theta}\sin{\theta} \,dz\,dr\,d\theta\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex25')">Click for Solution</button>
+<br><br>
+<div id="ex25" style="display:none">
+<span><span><span class="math inline">\(\int_0^\pi \int_0^{4\sin{\theta}} \int_0^{\sqrt{4-r^2}} r^3z\cos{\theta}\sin{\theta} \,dz\,dr\,d\theta\)</span></span></span>
+</div></p></li>
 <li><p>Consider the integral <span class="math inline">\(\int_{-3}^3 \int_0^{\sqrt{9-y^2}} \int_0^{\sqrt{9-x^2-y^2}} (x^2+y^2) \,dz\,dx\,dy\)</span>.</p>
 <ol>
 <li><p>Convert the given integral from rectangular coordinates to cylindrical coordinates.</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\int_{-\pi/2}^{\pi/2} \int_0^3 \int_0^{\sqrt{9-r^2}} r^3 \,dz\,dr\,d\theta\)</span>; Detailed Solution: </span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex26')">Click for Solution</button>
+<br><br>
+<div id="ex26" style="display:none">
+<span><span><span class="math inline">\(\int_{-\pi/2}^{\pi/2} \int_0^3 \int_0^{\sqrt{9-r^2}} r^3 \,dz\,dr\,d\theta\)</span>; Detailed Solution: </span></span>
+</div></p></li>
 <li><p>Convert the given integral from rectangular coordinates to spherical coordinates.</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\int_0^{\pi/2} \int_{-\pi/2}^{\pi/2} \int_0^3 \rho^4\sin^3{\phi}\,d\rho\,d\theta\,d\phi\)</span>; Detailed Solution: </span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex27')">Click for Solution</button>
+<br><br>
+<div id="ex27" style="display:none">
+<span><span><span class="math inline">\(\int_0^{\pi/2} \int_{-\pi/2}^{\pi/2} \int_0^3 \rho^4\sin^3{\phi}\,d\rho\,d\theta\,d\phi\)</span>; Detailed Solution: </span></span>
+</div></p></li>
 </ol></li>
 </ol>
 </body>
+<script>
+function toggleAnswer(idName) {
+var x = document.getElementById(idName);
+if (x.style.display === "none") {
+x.style.display = "block";
+} else {
+x.style.display = "none";
+}
+}</script>
 </html>

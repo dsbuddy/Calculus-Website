@@ -4,11 +4,24 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
-  <title></title>
-  <style type="text/css">code{white-space: pre;}</style>
+<title>Vector Valued Functions</title>  <style type="text/css">code{white-space: pre;}</style>
   <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-</head>
-<body>
+    <!-- Bootstrap core CSS -->
+<link href="../../../vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+<!-- Custom fonts for this template -->
+<link href="../../../vendor/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+<!-- Custom styles for this template -->
+<link href="../../../vendor/bootstrap/css/clean-blog.css" rel="stylesheet">
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script><body>
+<center><h1 id='titleHeader'>Vector Valued Functions</h1></center>
+
 <p>SUGGESTED REFERENCE MATERIAL:</p>
 <p>As you work through the problems listed below, you should reference Chapters 12.1 &amp; 12.2 of the recommended textbook (or the equivalent chapter in your alternative textbook/online resource) and your lecture notes.</p>
 <p>EXPECTED SKILLS:</p>
@@ -25,105 +38,205 @@
 <li><p>For each of the following, determine the domain of the given function.</p>
 <ol>
 <li><p><span class="math inline">\({\bf r}(t)=t^2\text{ }{\bf i}+\sqrt{1-t}\text{ }{\bf j}-\frac{1}{t}\text{ }{\bf k}\)</span></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\((-\infty,0)\cup(0,1]\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex1')">Click for Solution</button>
+<br><br>
+<div id="ex1" style="display:none">
+<span><span><span class="math inline">\((-\infty,0)\cup(0,1]\)</span></span></span>
+</div></p></li>
 <li><p><span class="math inline">\({\bf r}(t)=\left\langle \ln{(t+1)}, \frac{1}{e^t-2}, t\right\rangle\)</span></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\((-1,\ln2)\cup(\ln2,\infty)\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex2')">Click for Solution</button>
+<br><br>
+<div id="ex2" style="display:none">
+<span><span><span class="math inline">\((-1,\ln2)\cup(\ln2,\infty)\)</span></span></span>
+</div></p></li>
 <li><p><span class="math inline">\({\bf r}(t)=\cos{(t)}{\bf i}+\sin{(t)}{\bf j}+5{\bf k}\)</span></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\((-\infty,\infty)\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex3')">Click for Solution</button>
+<br><br>
+<div id="ex3" style="display:none">
+<span><span><span class="math inline">\((-\infty,\infty)\)</span></span></span>
+</div></p></li>
 </ol></li>
 <li><p>Consider the curve <span class="math inline">\(C: {\bf r}(t)=\langle -5+t,-4+2t\rangle\)</span>, shown below.</p>
 <p><embed src="line.pdf" /></p>
 <ol>
 <li><p>Sketch the following position vectors: <span class="math inline">\({\bf r}(-1)\)</span>, <span class="math inline">\({\bf r}(0)\)</span>, <span class="math inline">\({\bf r}(1)\)</span>, <span class="math inline">\({\bf r}(2)\)</span>, and <span class="math inline">\({\bf r}(3)\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span><embed src="line_a.pdf" /></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex4')">Click for Solution</button>
+<br><br>
+<div id="ex4" style="display:none">
+<span><span><embed src="line_a.pdf" /></span></span>
+</div></p></li>
 <li><p>Indicate the orientation of the curve (i.e., the direction or increasing <span class="math inline">\(t\)</span>).</p>
-<p><embed src="start.pdf" /> <span><span><embed src="line_b.pdf" /></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex5')">Click for Solution</button>
+<br><br>
+<div id="ex5" style="display:none">
+<span><span><embed src="line_b.pdf" /></span></span>
+</div></p></li>
 </ol></li>
 <li><p>Sketch the following vector valued functions. Also, describe the curve in words.</p>
 <ol>
 <li><p><span class="math inline">\(\overrightarrow{r}(t)=\langle 4\cos{t}, 4\sin{t}, 5 \rangle\)</span>, <span class="math inline">\(0 \leq t \leq 4\pi\)</span></p>
-<p><embed src="start.pdf" /></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex6')">Click for Solution</button>
+<br><br>
+<div id="ex6" style="display:none">
+</p>
 <p><span>1</span></p>
 <p>The curve is a circle in the <span class="math inline">\(z=5\)</span> plane which has a radius of 4 and a center at <span class="math inline">\((0,0,5)\)</span>, traversed twice counterclockwise.</p>
 <p><embed src="curve1.pdf" /></p>
-<p><embed src="end.pdf" /></p></li>
+<p>
+</div></p></li>
 <li><p><span class="math inline">\(\overrightarrow{r}(t)=\langle 4\cos{t}, 4\sin{t}, t \rangle\)</span>, <span class="math inline">\(0 \leq t \leq 4\pi\)</span>.</p>
-<p><embed src="start.pdf" /></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex7')">Click for Solution</button>
+<br><br>
+<div id="ex7" style="display:none">
+</p>
 <p><span>1</span></p>
 <p>The curve is a helix on the cylinder <span class="math inline">\(x^2+y^2=16\)</span> which climbs from the point <span class="math inline">\((4,0,0)\)</span> to the point <span class="math inline">\((4,0,4\pi)\)</span></p>
 <p><embed src="curve2.pdf" /></p>
-<p><embed src="end.pdf" /></p></li>
+<p>
+</div></p></li>
 </ol></li>
 <li><p>Consider <span class="math inline">\({\bf r}(t)=\langle t,t^2\rangle\)</span></p>
 <ol>
 <li><p>Sketch <span class="math inline">\({\bf r}(t)\)</span> and indicate the direction of increasing <span class="math inline">\(t\)</span>.</p></li>
 <li><p>On your sketch, draw <span class="math inline">\({\bf r}(1)\)</span> and <span class="math inline">\({\bf r}^{\prime}(1)\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span><embed src="parabola.pdf" /></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex8')">Click for Solution</button>
+<br><br>
+<div id="ex8" style="display:none">
+<span><span><embed src="parabola.pdf" /></span></span>
+</div></p></li>
 </ol></li>
 <li><p>Consider <span class="math inline">\({\bf r}(t)=\langle 3\cos{t},2\sin{t}\rangle\)</span></p>
 <ol>
 <li><p>Sketch <span class="math inline">\({\bf r}(t)\)</span> and indicate the direction of increasing <span class="math inline">\(t\)</span>.</p></li>
 <li><p>On your sketch, draw <span class="math inline">\({\bf r}(\pi)\)</span> and <span class="math inline">\({\bf r}^{\prime}(\pi)\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span><embed src="ellipse.pdf" /></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex9')">Click for Solution</button>
+<br><br>
+<div id="ex9" style="display:none">
+<span><span><embed src="ellipse.pdf" /></span></span>
+</div></p></li>
 </ol></li>
 <li><p>For each of the following, find an equation of the line which is tangent to the given curve at the indicated point.</p>
 <ol>
 <li><p><span class="math inline">\({\bf r}(t)=\left\langle \ln{t}, 2\sqrt{t}, t^2\right\rangle\)</span> at <span class="math inline">\((x,y,z)=(0,2,1)\)</span></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\overrightarrow{\ell}(t)=\langle 0,2,1 \rangle + t\langle 1, 1, 2\rangle\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex10')">Click for Solution</button>
+<br><br>
+<div id="ex10" style="display:none">
+<span><span><span class="math inline">\(\overrightarrow{\ell}(t)=\langle 0,2,1 \rangle + t\langle 1, 1, 2\rangle\)</span></span></span>
+</div></p></li>
 <li><p><span class="math inline">\({\bf r}(t)=\left\langle \sin{t},\cos{t},\tan{t}\right\rangle\)</span> when <span class="math inline">\(t=\pi\)</span></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\overrightarrow{\ell}(t)=\langle 0,-1,0 \rangle + t\langle -1, 0, 1\rangle\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex11')">Click for Solution</button>
+<br><br>
+<div id="ex11" style="display:none">
+<span><span><span class="math inline">\(\overrightarrow{\ell}(t)=\langle 0,-1,0 \rangle + t\langle -1, 0, 1\rangle\)</span></span></span>
+</div></p></li>
 </ol></li>
 <li><p>Find all points on the curve <span class="math inline">\({\bf r}(t)=t{\bf i}+t^2{\bf j}+t^3{\bf k}\)</span> where its tangent line is parallel to the vector <span class="math inline">\(2{\bf i}+8{\bf j}+24{\bf k}\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span><span>1</span><span>The tangent line will be parallel to the given vector when <span class="math inline">\(t=2\)</span> which corresponds to the point <span class="math inline">\((x,y,z)=(2,4,8)\)</span>; Detailed Solution: </span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex12')">Click for Solution</button>
+<br><br>
+<div id="ex12" style="display:none">
+<span><span><span>1</span><span>The tangent line will be parallel to the given vector when <span class="math inline">\(t=2\)</span> which corresponds to the point <span class="math inline">\((x,y,z)=(2,4,8)\)</span>; Detailed Solution: </span></span></span>
+</div></p></li>
 <li><p>The following vector valued functions describe the paths of two bugs flying in space.</p>
 <p><span class="math display">\[{\bf r_1}(t)=\langle t^2, 2t+3, t^2\rangle\]</span> <span class="math display">\[{\bf r_2}(t)=\langle 5t-6, t^2, 9\rangle\]</span></p>
 <p>At some moment in time, the two bugs collide.</p>
 <ol>
 <li><p>Determine the moment in time when the bugs collide as well as the location in space where the bugs collide.</p>
-<p><embed src="start.pdf" /> <span><span><span>1</span><span>The bugs intersect when <span class="math inline">\(t=3\)</span>. This corresponds to the point <span class="math inline">\((x,y,z)=(9,9,9)\)</span>. Detailed Solution: </span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex13')">Click for Solution</button>
+<br><br>
+<div id="ex13" style="display:none">
+<span><span><span>1</span><span>The bugs intersect when <span class="math inline">\(t=3\)</span>. This corresponds to the point <span class="math inline">\((x,y,z)=(9,9,9)\)</span>. Detailed Solution: </span></span></span>
+</div></p></li>
 <li><p>What is the angle between their paths at the point of collision?</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\cos^{-1}\left(\frac{42}{\sqrt{76}\sqrt{61}}\right)\)</span>; Detailed Solution: </span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex14')">Click for Solution</button>
+<br><br>
+<div id="ex14" style="display:none">
+<span><span><span class="math inline">\(\cos^{-1}\left(\frac{42}{\sqrt{76}\sqrt{61}}\right)\)</span>; Detailed Solution: </span></span>
+</div></p></li>
 </ol></li>
 <li><p>Prove the following theorem:</p>
 <p><span><strong>Theorem:</strong></span> <em>If <span class="math inline">\(\overrightarrow{r}(t)\)</span> is a differentiable vector valued function in 2-space or 3-space, and if <span class="math inline">\(\|\overrightarrow{r}(t)\|\)</span> is constant for all <span class="math inline">\(t\)</span>, then <span class="math inline">\(\overrightarrow{r}(t)\cdot\overrightarrow{r}^{\prime}(t)=0\)</span>. That is, <span class="math inline">\(\overrightarrow{r}(t)\)</span> and <span class="math inline">\(\overrightarrow{r}^{\prime}(t)\)</span> are orthogonal vectors for all <span class="math inline">\(t\)</span>.</em></p>
 <p>(Hint: <span class="math inline">\(\|\overrightarrow{r}(t)\|^2=\overrightarrow{r}(t)\cdot\overrightarrow{r}(t)\)</span>)</p>
-<p><embed src="start.pdf" /> <span><span><span>1</span><span>Suppose <span class="math inline">\(\|\overrightarrow{r}(t)\|=k\)</span>, where <span class="math inline">\(k\)</span> is constant. Then: <span class="math display">\[\begin{aligned}
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex15')">Click for Solution</button>
+<br><br>
+<div id="ex15" style="display:none">
+<span><span><span>1</span><span>Suppose <span class="math inline">\(\|\overrightarrow{r}(t)\|=k\)</span>, where <span class="math inline">\(k\)</span> is constant. Then: <span class="math display">\[\begin{aligned}
 \|\overrightarrow{r}(t)\|^2&amp;=k^2\\
 \overrightarrow{r}(t)\cdot\overrightarrow{r}(t)&amp;=k^2\\
 \frac{d}{dt}\left[\overrightarrow{r}(t)\cdot\overrightarrow{r}(t)\right]&amp;=\frac{d}{dt}\left(k^2\right)\\
 \overrightarrow{r}(t)\cdot \overrightarrow{r}^{\prime}(t)+\overrightarrow{r}^{\prime}(t)\cdot \overrightarrow{r}(t)&amp;=0\\
 2\left[\overrightarrow{r}(t)\cdot \overrightarrow{r}^{\prime}(t)\right]&amp;=0\\
-\overrightarrow{r}(t)\cdot \overrightarrow{r}^{\prime}(t)&amp;=0\end{aligned}\]</span> And, the result is proven. </span></span></span> <embed src="end.pdf" /></p></li>
+\overrightarrow{r}(t)\cdot \overrightarrow{r}^{\prime}(t)&amp;=0\end{aligned}\]</span> And, the result is proven. </span></span></span>
+</div></p></li>
 <li><p>Explain why the following calculation is incorrect: <span class="math display">\[\frac{d}{dt}\left[{\bf r_1}(t)\times{\bf r_2}(t)\right]={\bf r_1}(t)\times {\bf r_2}^{\prime}(t)+{\bf r_2}(t)\times{\bf r_1}^{\prime}(t)\]</span></p>
-<p><embed src="start.pdf" /> <span><span><span>1</span><span>The order of the terms matters when dealing with cross products. The correct derivative statement is: <span class="math display">\[\frac{d}{dt}\left[{\bf r_1}(t)\times{\bf r_2}(t)\right]={\bf r_1}(t)\times {\bf r_2}^{\prime}(t)+{\bf r_1}^{\prime}(t)\times{\bf r_2}(t)\]</span></span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex16')">Click for Solution</button>
+<br><br>
+<div id="ex16" style="display:none">
+<span><span><span>1</span><span>The order of the terms matters when dealing with cross products. The correct derivative statement is: <span class="math display">\[\frac{d}{dt}\left[{\bf r_1}(t)\times{\bf r_2}(t)\right]={\bf r_1}(t)\times {\bf r_2}^{\prime}(t)+{\bf r_1}^{\prime}(t)\times{\bf r_2}(t)\]</span></span></span></span>
+</div></p></li>
 <li><p>Evaluate the following integrals.</p>
 <ol>
 <li><p><span class="math inline">\(\int \left[(2t+1)^5{\bf i}-\frac{1}{t}{\bf j}\right]\,dt\)</span></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\left(\frac{1}{12}(2t+1)^6+c_1\right){\bf i}-(\ln{|t|}+c_2){\bf j}\)</span>; i.e., <span class="math inline">\(\left\langle\frac{1}{12}(2t+1)^6,-\ln{|t|}\right\rangle+\overrightarrow{c}\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex17')">Click for Solution</button>
+<br><br>
+<div id="ex17" style="display:none">
+<span><span><span class="math inline">\(\left(\frac{1}{12}(2t+1)^6+c_1\right){\bf i}-(\ln{|t|}+c_2){\bf j}\)</span>; i.e., <span class="math inline">\(\left\langle\frac{1}{12}(2t+1)^6,-\ln{|t|}\right\rangle+\overrightarrow{c}\)</span></span></span>
+</div></p></li>
 <li><p><span class="math inline">\(\int \langle \sin{t},\cos{t},\tan{t} \rangle \,dt\)</span></p>
-<p><embed src="start.pdf" /> <span><span><span>1</span><span><span class="math inline">\((-\cos{t}+c_1){\bf i}+(\sin{t}+c_2){\bf j}+(\ln{|\sec{t}|}+c_3){\bf k}\)</span>; or, equivalently, <span class="math inline">\(\left\langle -\cos{t}, \sin{t}, \ln{|\sec{t}|}\right\rangle+\overrightarrow{c}\)</span></span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex18')">Click for Solution</button>
+<br><br>
+<div id="ex18" style="display:none">
+<span><span><span>1</span><span><span class="math inline">\((-\cos{t}+c_1){\bf i}+(\sin{t}+c_2){\bf j}+(\ln{|\sec{t}|}+c_3){\bf k}\)</span>; or, equivalently, <span class="math inline">\(\left\langle -\cos{t}, \sin{t}, \ln{|\sec{t}|}\right\rangle+\overrightarrow{c}\)</span></span></span></span>
+</div></p></li>
 <li><p><span class="math inline">\(\int_0^{\ln3} \left[e^t{\bf i}+e^{2t}{\bf j}\right] \,dt\)</span></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\langle 2,4 \rangle\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex19')">Click for Solution</button>
+<br><br>
+<div id="ex19" style="display:none">
+<span><span><span class="math inline">\(\langle 2,4 \rangle\)</span></span></span>
+</div></p></li>
 </ol></li>
 <li><p>Evaluate <span class="math inline">\(\int_0^{2\pi} \|{\bf r}^{\prime}(t)\| \,dt\)</span> if <span class="math inline">\({\bf r}(t)=\langle 3\cos{t}, 3\sin{t} \rangle\)</span>. Interpret your answer geometrically.</p>
-<p><embed src="start.pdf" /> <span><span><span>1</span><span><span class="math inline">\(6\pi\)</span>. The given curve represents a circle centered at the origin with a radius of 3; this integral gives the arc length (circumference) of the circle.</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex20')">Click for Solution</button>
+<br><br>
+<div id="ex20" style="display:none">
+<span><span><span>1</span><span><span class="math inline">\(6\pi\)</span>. The given curve represents a circle centered at the origin with a radius of 3; this integral gives the arc length (circumference) of the circle.</span></span></span>
+</div></p></li>
 <li><p>Solve the following vector initial value problems: <span class="math inline">\(\left\{\begin{array}{l}
 \frac{d{\bf r}}{dt}=e^{-t}{\bf i}+3t^2{\bf j}\\
 \\
 {\bf r}(0)=2{\bf i}-8{\bf j}\end{array}\right.\)</span></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\({\bf r}(t)=\langle -e^{-t}+3, t^3-8 \rangle\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex21')">Click for Solution</button>
+<br><br>
+<div id="ex21" style="display:none">
+<span><span><span class="math inline">\({\bf r}(t)=\langle -e^{-t}+3, t^3-8 \rangle\)</span></span></span>
+</div></p></li>
 <li><p>A particle moves through 3-space in such a way that its velocity is <span class="math inline">\({\bf v}(t)=t{\bf i}+t^2{\bf j}+t^3{\bf k}\)</span>. If the particle’s initial position at time <span class="math inline">\(t=0\)</span> is <span class="math inline">\((1,2,3)\)</span>, what is the particle’s position when <span class="math inline">\(t=1\)</span>? (Hint: set up an initial value problem.)</p>
-<p><embed src="start.pdf" /> <span><span><span>1</span><span>The position of the particle at time <span class="math inline">\(t=1\)</span> is <span class="math inline">\((x,y,z)=\left( \frac{3}{2}, \frac{7}{3}, \frac{13}{4}\right)\)</span>. Detailed Solution: </span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex22')">Click for Solution</button>
+<br><br>
+<div id="ex22" style="display:none">
+<span><span><span>1</span><span>The position of the particle at time <span class="math inline">\(t=1\)</span> is <span class="math inline">\((x,y,z)=\left( \frac{3}{2}, \frac{7}{3}, \frac{13}{4}\right)\)</span>. Detailed Solution: </span></span></span>
+</div></p></li>
 <li><p>Suppose that <span class="math inline">\(C: {\bf r}(t)\)</span> is a smooth vector valued function in 2-space or 3-space defined for <span class="math inline">\(a \leq t \leq b\)</span>. We define the <span><strong>arc length function</strong></span> by <span class="math display">\[s(t)=\int_{t_0}^t \|{\bf r}^{\prime}(u)\| \,du\]</span></p>
 <p>This function gives the arc length for the part of <span class="math inline">\(C\)</span> between <span class="math inline">\({\bf r}(t_0)\)</span> and <span class="math inline">\({\bf r}(t)\)</span>.</p>
 <ol>
 <li><p>Compute the arc length function for the helix <span class="math inline">\({\bf r}(t)=\cos{t} {\bf i}+\sin{t} {\bf j}+t {\bf k}\)</span> which gives the length of the curve from <span class="math inline">\(t_0=0\)</span> to an arbitrary <span class="math inline">\(t\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(s=\sqrt{2}t\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex23')">Click for Solution</button>
+<br><br>
+<div id="ex23" style="display:none">
+<span><span><span class="math inline">\(s=\sqrt{2}t\)</span></span></span>
+</div></p></li>
 <li><p>Use your answer from part (a) to reparameterize the helix with respect to arc length. (In other words, express the curve <span class="math inline">\(C\)</span> as <span class="math inline">\({\bf r}(s)\)</span>.)</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\({\bf r}(s)=\cos\left(\frac{s}{\sqrt{2}}\right){\bf i}+\sin\left(\frac{s}{\sqrt{2}}\right){\bf j}+\frac{s}{\sqrt{2}}{\bf k}\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex24')">Click for Solution</button>
+<br><br>
+<div id="ex24" style="display:none">
+<span><span><span class="math inline">\({\bf r}(s)=\cos\left(\frac{s}{\sqrt{2}}\right){\bf i}+\sin\left(\frac{s}{\sqrt{2}}\right){\bf j}+\frac{s}{\sqrt{2}}{\bf k}\)</span></span></span>
+</div></p></li>
 <li><p>Compute <span class="math inline">\({\bf r}^{\prime}(s)\)</span> and <span class="math inline">\(\|{\bf r}^{\prime}(s)\|\)</span></p>
-<p><embed src="start.pdf" /> <span><span><span>1</span><span><span class="math inline">\({\bf r}^{\prime}(s)=-\frac{1}{\sqrt{2}}\sin\left(\frac{s}{\sqrt{2}}\right){\bf i}+\frac{1}{\sqrt{2}}\cos\left(\frac{s}{\sqrt{2}}\right){\bf j}+\frac{1}{\sqrt{2}}{\bf k}\)</span> and <span class="math inline">\(\|{\bf r}^{\prime}(s)\|=1\)</span><br />
-In fact, whenever a curve is parameterized in terms of arc length, it can be shown using the chain rule that all tangent vectors will be unit tangent vectors. </span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex25')">Click for Solution</button>
+<br><br>
+<div id="ex25" style="display:none">
+<span><span><span>1</span><span><span class="math inline">\({\bf r}^{\prime}(s)=-\frac{1}{\sqrt{2}}\sin\left(\frac{s}{\sqrt{2}}\right){\bf i}+\frac{1}{\sqrt{2}}\cos\left(\frac{s}{\sqrt{2}}\right){\bf j}+\frac{1}{\sqrt{2}}{\bf k}\)</span> and <span class="math inline">\(\|{\bf r}^{\prime}(s)\|=1\)</span><br />
+In fact, whenever a curve is parameterized in terms of arc length, it can be shown using the chain rule that all tangent vectors will be unit tangent vectors. </span></span></span>
+</div></p></li>
 </ol></li>
 <li><p>From the ground, a projectile is shot upward at an angle of <span class="math inline">\(\alpha\)</span> with the horizontal, <span class="math inline">\(\left(0&lt;\alpha&lt;\frac{\pi}{2}\right)\)</span>, at an initial speed of <span class="math inline">\(v_0\)</span> meters/second, as demonstrated in the diagram below.</p>
 <p><embed src="projectile.pdf" /></p>
@@ -134,16 +247,27 @@ In fact, whenever a curve is parameterized in terms of arc length, it can be sho
 </ul>
 <ol>
 <li><p>Set up an initial value problem which can be used to find <span class="math inline">\({\bf r}(t)\)</span>, a vector valued function that gives the position of the particle at time <span class="math inline">\(t\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\left\{\begin{array}{l}
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex26')">Click for Solution</button>
+<br><br>
+<div id="ex26" style="display:none">
+<span><span><span class="math inline">\(\left\{\begin{array}{l}
 {\bf a}(t)=\frac{d^2{\bf r}}{dt^2}=\langle 0, -g \rangle\\
 \\
 {\bf v}(0)={\bf r}^{\prime}(0)=\langle v_0\cos{\alpha}, v_0\sin{\alpha} \rangle\\
 \\
-{\bf r}(0)= \langle 0,0 \rangle\end{array}\right.\)</span></span></span> <embed src="end.pdf" /></p></li>
+{\bf r}(0)= \langle 0,0 \rangle\end{array}\right.\)</span></span></span>
+</div></p></li>
 <li><p>Solve your initial value problem from part (a) to determine <span class="math inline">\({\bf r}(t)\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\({\bf r}(t)=\left\langle v_0(\cos{\alpha})t, -\frac{1}{2}gt^2+v_0(\sin\alpha)t\right\rangle\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex27')">Click for Solution</button>
+<br><br>
+<div id="ex27" style="display:none">
+<span><span><span class="math inline">\({\bf r}(t)=\left\langle v_0(\cos{\alpha})t, -\frac{1}{2}gt^2+v_0(\sin\alpha)t\right\rangle\)</span></span></span>
+</div></p></li>
 <li><p>Verify that the trajectory of the projectile is a parabola.</p>
-<p><embed src="start.pdf" /></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex28')">Click for Solution</button>
+<br><br>
+<div id="ex28" style="display:none">
+</p>
 <p><span>1</span></p>
 <p>We can express the trajectory of the projectile (from part b) parametrically:<br />
 <span class="math display">\[\left\{\begin{array}{l}
@@ -154,16 +278,29 @@ y=-\frac{1}{2}gt^2+v_0(\sin\alpha)t\end{array}\right.\]</span></p>
 y&amp;=-\frac{1}{2}g\left(\frac{x}{v_0\cos{\alpha}} \right)^2+v_0(\sin\alpha)\left(\frac{x}{v_0\cos{\alpha}}\right)\\
 &amp;=-\frac{g}{2(v_0\cos\alpha)^2}x^2+(\tan{\alpha})x\\
 &amp;=-Ax^2+Bx\end{aligned}\]</span> where <span class="math inline">\(A\)</span> is the constant <span class="math inline">\(\frac{g}{2(v_0\cos\alpha)^2}\)</span> and <span class="math inline">\(B\)</span> is the constant <span class="math inline">\(\tan\alpha\)</span>. Thus, the trajectory is parabolic.</p>
-<p><embed src="end.pdf" /></p></li>
+<p>
+</div></p></li>
 <li><p>What is the flight time of the projectile?</p>
-<p><embed src="start.pdf" /> <span><span><span>1</span><span>We can find the value of <span class="math inline">\(t\)</span> for which the projectile returns to the ground by setting <span class="math inline">\(y=0\)</span> in the parametric representation of the trajectory. <span class="math display">\[\begin{aligned}
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex29')">Click for Solution</button>
+<br><br>
+<div id="ex29" style="display:none">
+<span><span><span>1</span><span>We can find the value of <span class="math inline">\(t\)</span> for which the projectile returns to the ground by setting <span class="math inline">\(y=0\)</span> in the parametric representation of the trajectory. <span class="math display">\[\begin{aligned}
 y&amp;=0\\
 -\frac{1}{2}gt^2+v_0(\sin\alpha)t &amp;=0\\
--t\left(\frac{1}{2}gt-v_0\sin\alpha\right)&amp;=0\end{aligned}\]</span> which happens when <span class="math inline">\(t=0\)</span> and when <span class="math inline">\(t=\frac{2v_0\sin\alpha}{g}\)</span> </span></span></span> <embed src="end.pdf" /></p></li>
+-t\left(\frac{1}{2}gt-v_0\sin\alpha\right)&amp;=0\end{aligned}\]</span> which happens when <span class="math inline">\(t=0\)</span> and when <span class="math inline">\(t=\frac{2v_0\sin\alpha}{g}\)</span> </span></span></span>
+</div></p></li>
 <li><p>What is the range of the projectile?</p>
-<p><embed src="start.pdf" /> <span><span><span>1</span><span>To find the range, we need to determine the <span class="math inline">\(x\)</span> coordinate at the time when the projectile returns to the ground. Specifically, the range is: <span class="math display">\[x\left(\frac{2v_0\sin\alpha}{g}\right)=v_0(\cos\alpha)\left(\frac{2v_0\sin\alpha}{g}\right)=\frac{v_0^2\sin{(2\alpha)}}{g}\]</span> </span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex30')">Click for Solution</button>
+<br><br>
+<div id="ex30" style="display:none">
+<span><span><span>1</span><span>To find the range, we need to determine the <span class="math inline">\(x\)</span> coordinate at the time when the projectile returns to the ground. Specifically, the range is: <span class="math display">\[x\left(\frac{2v_0\sin\alpha}{g}\right)=v_0(\cos\alpha)\left(\frac{2v_0\sin\alpha}{g}\right)=\frac{v_0^2\sin{(2\alpha)}}{g}\]</span> </span></span></span>
+</div></p></li>
 <li><p>What angle <span class="math inline">\(\alpha\)</span> maximizes the range?</p>
-<p><embed src="start.pdf" /> <span><span><span>1</span><span>In part (e), we have already computed the range to be <span class="math inline">\(\frac{v_0^2}{g}\sin{(2\alpha)}\)</span>. This is maximized when <span class="math inline">\(\sin(2\alpha)=1\)</span>; i.e., when <span class="math inline">\(\alpha =\frac{\pi}{4}\)</span> </span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex31')">Click for Solution</button>
+<br><br>
+<div id="ex31" style="display:none">
+<span><span><span>1</span><span>In part (e), we have already computed the range to be <span class="math inline">\(\frac{v_0^2}{g}\sin{(2\alpha)}\)</span>. This is maximized when <span class="math inline">\(\sin(2\alpha)=1\)</span>; i.e., when <span class="math inline">\(\alpha =\frac{\pi}{4}\)</span> </span></span></span>
+</div></p></li>
 </ol></li>
 <li><p>Suppose that <span class="math inline">\(C:{\bf r}(t)\)</span> is a curve in 2-space or 3-space and that <span class="math inline">\(\|{\bf r}^{\prime}(t)\|\neq 0\)</span>. We define the following vectors:</p>
 <ul>
@@ -174,22 +311,47 @@ y&amp;=0\\
 <p>The coordinate system determined at the point <span class="math inline">\(t\)</span> by <span class="math inline">\({\bf T}(t)\)</span>, <span class="math inline">\({\bf N}(t)\)</span>, and <span class="math inline">\({\bf B}(t)\)</span> is called the or the .</p>
 <ol>
 <li><p>Explain why <span class="math inline">\({\bf T}(t)\)</span>, <span class="math inline">\({\bf N}(t)\)</span>, and <span class="math inline">\({\bf B}(t)\)</span> are all mutually othogonal.</p>
-<p><embed src="start.pdf" /> <span><span><span>1</span><span><span class="math inline">\({\bf N}(t)\perp {\bf T}(t)\)</span> by problem 9. <span class="math inline">\({\bf B}(t) \perp {\bf N}(t)\)</span> and <span class="math inline">\({\bf B}(t) \perp {\bf T}(t)\)</span> because for any vectors in three space <span class="math inline">\({\bf v} \cdot ({\bf v}\times{\bf w})=0\)</span> and <span class="math inline">\({\bf w} \cdot ({\bf v}\times{\bf w})=0\)</span></span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex32')">Click for Solution</button>
+<br><br>
+<div id="ex32" style="display:none">
+<span><span><span>1</span><span><span class="math inline">\({\bf N}(t)\perp {\bf T}(t)\)</span> by problem 9. <span class="math inline">\({\bf B}(t) \perp {\bf N}(t)\)</span> and <span class="math inline">\({\bf B}(t) \perp {\bf T}(t)\)</span> because for any vectors in three space <span class="math inline">\({\bf v} \cdot ({\bf v}\times{\bf w})=0\)</span> and <span class="math inline">\({\bf w} \cdot ({\bf v}\times{\bf w})=0\)</span></span></span></span>
+</div></p></li>
 <li><p>Consider the helix described by <span class="math inline">\({\bf r}(t)=\langle 2 \cos{t}, t, 2\sin{t} \rangle\)</span>.</p>
 <p><embed src="helix.pdf" /></p>
 <p>Compute the unit tangent, principal unit normal, and binormal vectors <span class="math inline">\({\bf T}(t)\)</span>, <span class="math inline">\({\bf N}(t)\)</span>, and <span class="math inline">\({\bf B}(t)\)</span>.<br />
 NOTE: Here is a sketch of the helix from problems 17b with the <span class="math inline">\({\bf TNB}\)</span>-Frame (Frenet Frame) represented at four different points.</p>
 <p><embed src="frenet.pdf" /></p>
-<p><embed src="start.pdf" /> <span><span><span>1</span><span><span class="math inline">\({\bf T}(t)=\left\langle -\frac{2}{\sqrt{5}}\sin{t}, \frac{1}{\sqrt{5}}, \frac{2}{\sqrt{5}}\cos{t}\right\rangle\)</span>; <span class="math inline">\({\bf N}(t)=\left\langle -\cos{t}, 0, -\sin{t}\right\rangle\)</span>;<br />
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex33')">Click for Solution</button>
+<br><br>
+<div id="ex33" style="display:none">
+<span><span><span>1</span><span><span class="math inline">\({\bf T}(t)=\left\langle -\frac{2}{\sqrt{5}}\sin{t}, \frac{1}{\sqrt{5}}, \frac{2}{\sqrt{5}}\cos{t}\right\rangle\)</span>; <span class="math inline">\({\bf N}(t)=\left\langle -\cos{t}, 0, -\sin{t}\right\rangle\)</span>;<br />
 <span class="math inline">\({\bf B}(t)=\left\langle -\frac{1}{\sqrt{5}}\sin{t}, -\frac{2}{\sqrt{5}}, \frac{1}{\sqrt{5}}\cos{t}\right\rangle\)</span><br />
-</span></span></span> <embed src="end.pdf" /></p></li>
+</span></span></span>
+</div></p></li>
 <li><p><em><span><strong>Definition:</strong></span> The plane determined by the unit tangent and normal vectors <span class="math inline">\({\bf T}\)</span> and <span class="math inline">\({\bf N}\)</span> at a point <span class="math inline">\(P\)</span> on a curve <span class="math inline">\(C\)</span> is called the <span><strong>osculating plane</strong></span> of <span class="math inline">\(C\)</span> at <span class="math inline">\(P\)</span>. From the latin “Osculum,&quot; meaning to kiss, this is the plane that comes closest to containing the part of the curve near <span class="math inline">\(P\)</span>.</em><br />
 Compute an equation of the osculating plane of the helix from part (b) at the point which corresponds to <span class="math inline">\(t=\pi\)</span>.<br />
-<embed src="start.pdf" /> <span><span><span class="math inline">\(2y+z=2\pi\)</span></span></span> <embed src="end.pdf" /></p></li>
+<button type="button" class="btn btn-primary" onclick="toggleAnswer('ex34')">Click for Solution</button>
+<br><br>
+<div id="ex34" style="display:none">
+<span><span><span class="math inline">\(2y+z=2\pi\)</span></span></span>
+</div></p></li>
 <li><p><em><span><strong>Definition:</strong></span> The plane determined by the unit normal and binormal vectors <span class="math inline">\({\bf N}\)</span> and <span class="math inline">\({\bf B}\)</span> at a point <span class="math inline">\(P\)</span> on a curve <span class="math inline">\(C\)</span> is called the <span><strong>normal plane</strong></span> of <span class="math inline">\(C\)</span> at <span class="math inline">\(P\)</span>. It consists of all lines that are orthogonal to the tangent vector <span class="math inline">\({\bf T}\)</span>.</em><br />
 Compute an equation of the normal plane of the helix from part (b) at the point which corresponds to <span class="math inline">\(t=\pi\)</span>.<br />
-<embed src="start.pdf" /> <span><span><span class="math inline">\(y-2z=\pi\)</span></span></span> <embed src="end.pdf" /></p></li>
+<button type="button" class="btn btn-primary" onclick="toggleAnswer('ex35')">Click for Solution</button>
+<br><br>
+<div id="ex35" style="display:none">
+<span><span><span class="math inline">\(y-2z=\pi\)</span></span></span>
+</div></p></li>
 </ol></li>
 </ol>
 </body>
+<script>
+function toggleAnswer(idName) {
+var x = document.getElementById(idName);
+if (x.style.display === "none") {
+x.style.display = "block";
+} else {
+x.style.display = "none";
+}
+}</script>
 </html>

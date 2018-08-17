@@ -4,11 +4,24 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
-  <title></title>
-  <style type="text/css">code{white-space: pre;}</style>
+<title>Chapter 5.2: Related Rates</title>  <style type="text/css">code{white-space: pre;}</style>
   <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-</head>
-<body>
+    <!-- Bootstrap core CSS -->
+<link href="../../../vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+<!-- Custom fonts for this template -->
+<link href="../../../vendor/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+<!-- Custom styles for this template -->
+<link href="../../../vendor/bootstrap/css/clean-blog.css" rel="stylesheet">
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script><body>
+<center><h1 id='titleHeader'>Chapter 5.2: Related Rates</h1></center>
+
 <h2 id="expected-skills" class="unnumbered">Expected Skills:</h2>
 <ul>
 <li><p>Be able to solve related rates problems. It may be helpful to remember the following strategy:</p>
@@ -27,40 +40,96 @@
 <li><p>Assume that <span class="math inline">\(x=x(t)\)</span> and <span class="math inline">\(y=y(t)\)</span>. Use the given information to find the indicated rate of change.</p>
 <ol>
 <li><p>Suppose <span class="math inline">\(y=3x^5-7\)</span> and <span class="math inline">\(\frac{dx}{dt}=4\)</span> when <span class="math inline">\(x=2\)</span>. Compute <span class="math inline">\(\frac{dy}{dt}\)</span> when <span class="math inline">\(x=2\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(960\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex1')">Click for Solution</button>
+<br><br>
+<div id="ex1" style="display:none">
+<span><span><span class="math inline">\(960\)</span></span></span>
+</div></p></li>
 <li><p>Suppose <span class="math inline">\(x^2+2xy+y^3=4\)</span> and <span class="math inline">\(\frac{dx}{dt}=-4\)</span> at the point <span class="math inline">\((-3,1)\)</span>. Compute <span class="math inline">\(\frac{dy}{dt}\)</span> at <span class="math inline">\((-3,1)\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\frac{16}{3}\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex2')">Click for Solution</button>
+<br><br>
+<div id="ex2" style="display:none">
+<span><span><span class="math inline">\(\frac{16}{3}\)</span></span></span>
+</div></p></li>
 </ol></li>
 <li><p>A point is moving on the graph of <span class="math inline">\(xy=24\)</span>. At the moment when <span class="math inline">\(y=3\)</span>, the <span class="math inline">\(y\)</span> coordinate is increasing at a rate of <span class="math inline">\(2\)</span> units per second. How fast is the <span class="math inline">\(x\)</span> coordinate changing at that moment?</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(-\frac{16}{3}\)</span> units per second</span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex3')">Click for Solution</button>
+<br><br>
+<div id="ex3" style="display:none">
+<span><span><span class="math inline">\(-\frac{16}{3}\)</span> units per second</span></span>
+</div></p></li>
 <li><p>A boat is being pulled towards a dock by a rope. The rope is attached to the bow of the boat and is pulled through a pulley which is 4 feet above the dock, as shown in the sketch below. If the rope is being pulled in at a constant rate of 2 feet per second, how fast is the distance between the boat and the dock changing at the instant when the boat is 10 feet from the dock?</p>
 <p><embed src="boat.pdf" /></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(-\frac{\sqrt{116}}{5}\)</span> feet per second</span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex4')">Click for Solution</button>
+<br><br>
+<div id="ex4" style="display:none">
+<span><span><span class="math inline">\(-\frac{\sqrt{116}}{5}\)</span> feet per second</span></span>
+</div></p></li>
 <li><p>A plane flying horizontally at an altitude of 2 miles and a constant speed of 1000 miles per hour passes directly over a radar station. At the instant when it is 4 miles away from the station, how fast is the plane’s distance from the station increasing?</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(500\sqrt{3}\)</span> miles per hour</span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex5')">Click for Solution</button>
+<br><br>
+<div id="ex5" style="display:none">
+<span><span><span class="math inline">\(500\sqrt{3}\)</span> miles per hour</span></span>
+</div></p></li>
 <li><p>Two cars start moving from the same point. Car A travels due south at 20 miles per hour and car B travels due west at 15 miles per hour. At what rate is the distance between cars A and B increasing after 2 hours?</p>
-<p><embed src="start.pdf" /> <span><span>25 miles per hour</span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex6')">Click for Solution</button>
+<br><br>
+<div id="ex6" style="display:none">
+<span><span>25 miles per hour</span></span>
+</div></p></li>
 <li><p>A 24 foot plank is leaning against a vertical wall. The bottom of the plank is pushed towards the wall at a constant rate of 3 ft/min. How fast is the acute angle that the plank makes with the ground changing at the instant when the bottom of the plank is 12 ft from the wall? Your answer should include the appropriate units.</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\frac{1}{4\sqrt{3}}\)</span> radians per minute</span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex7')">Click for Solution</button>
+<br><br>
+<div id="ex7" style="display:none">
+<span><span><span class="math inline">\(\frac{1}{4\sqrt{3}}\)</span> radians per minute</span></span>
+</div></p></li>
 <li><p>The blood that Dexter drips from his dropper onto a slide spreads in a circle whose area increases at a constant rate of 2 square millimeters per second. How fast is the radius of the drop increasing at the instant when the area is 6 square millimeters?</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\frac{1}{\sqrt{6\pi}}\)</span> millimeters per second</span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex8')">Click for Solution</button>
+<br><br>
+<div id="ex8" style="display:none">
+<span><span><span class="math inline">\(\frac{1}{\sqrt{6\pi}}\)</span> millimeters per second</span></span>
+</div></p></li>
 <li><p>A spherical snowball melts in such a way that its surface area decreases at a constant rate of 2 square centimeters per minute. Find the rate at which the radius is changing at the instant when the diameter is <span class="math inline">\(\frac{1}{2}\)</span> centimeter?</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(-\frac{1}{\pi}\)</span> cm per min</span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex9')">Click for Solution</button>
+<br><br>
+<div id="ex9" style="display:none">
+<span><span><span class="math inline">\(-\frac{1}{\pi}\)</span> cm per min</span></span>
+</div></p></li>
 <li><p>Recall that the volume <span class="math inline">\(V\)</span> of a right circular cylinder of radius <span class="math inline">\(r\)</span> and height <span class="math inline">\(h\)</span> (as shown below) is <span class="math inline">\(V=\pi r^2h\)</span>.</p>
 <p><embed src="cylinder.pdf" /></p>
 <ol>
 <li><p>How is <span class="math inline">\(\frac{dV}{dt}\)</span> related to <span class="math inline">\(\frac{dr}{dt}\)</span> if <span class="math inline">\(h\)</span> is constant and <span class="math inline">\(r\)</span> varies with time?</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\frac{dV}{dt}=2\pi r h \frac{dr}{dt}\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex10')">Click for Solution</button>
+<br><br>
+<div id="ex10" style="display:none">
+<span><span><span class="math inline">\(\frac{dV}{dt}=2\pi r h \frac{dr}{dt}\)</span></span></span>
+</div></p></li>
 <li><p>How is <span class="math inline">\(\frac{dV}{dt}\)</span> related to <span class="math inline">\(\frac{dh}{dt}\)</span> if <span class="math inline">\(r\)</span> is constant and <span class="math inline">\(h\)</span> varies with time?</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\frac{dV}{dt}=\pi r^2 \frac{dh}{dt}\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex11')">Click for Solution</button>
+<br><br>
+<div id="ex11" style="display:none">
+<span><span><span class="math inline">\(\frac{dV}{dt}=\pi r^2 \frac{dh}{dt}\)</span></span></span>
+</div></p></li>
 <li><p>How is <span class="math inline">\(\frac{dV}{dt}\)</span> related to <span class="math inline">\(\frac{dr}{dt}\)</span> and <span class="math inline">\(\frac{dh}{dt}\)</span> if both <span class="math inline">\(h\)</span> and <span class="math inline">\(r\)</span> vary with time?</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\frac{dV}{dt}=\pi\left(r^2 \frac{dh}{dt}+2rh \frac{dr}{dt}\right)\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex12')">Click for Solution</button>
+<br><br>
+<div id="ex12" style="display:none">
+<span><span><span class="math inline">\(\frac{dV}{dt}=\pi\left(r^2 \frac{dh}{dt}+2rh \frac{dr}{dt}\right)\)</span></span></span>
+</div></p></li>
 </ol></li>
 <li><p>Sand falling from a chute at a rate of 8 cubic feet per minute forms a conical pile whose height is always 3 times its radius. How fast is the radius increasing at the instant when the height of the pile is 12 feet?</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\frac{1}{6\pi}\)</span> ft per min</span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex13')">Click for Solution</button>
+<br><br>
+<div id="ex13" style="display:none">
+<span><span><span class="math inline">\(\frac{1}{6\pi}\)</span> ft per min</span></span>
+</div></p></li>
 <li><p>The trough pictured below is 15 feet long and 4 feet wide at the top. The ends of the trough are isosceles triangles with a height of 3 feet. If the water runs into the trough at the rate of 4 cubic feet per second, how fast is the water level rising at the instant when the water is 2 feet deep? (Recall: The volume of such a trough is <span class="math inline">\(V=\frac{1}{2}lwh\)</span>)</p>
 <p><embed src="trough.pdf" /></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\frac{1}{10}\)</span> feet per second</span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex14')">Click for Solution</button>
+<br><br>
+<div id="ex14" style="display:none">
+<span><span><span class="math inline">\(\frac{1}{10}\)</span> feet per second</span></span>
+</div></p></li>
 <li><p><span><strong>Multiple Choice:</strong></span> Consider the triangle shown below.</p>
 <p>(7,5)(0,0) (0,0)<span>(1,0)<span>4</span></span> (4,0)<span>(0,1)<span>3</span></span> (0,0)<span>(4,3)<span>4</span></span> (4.25,1.5)<span>(0,0)<span><span class="math inline">\(x\)</span></span></span> (2,2)<span>(0,0)<span><span class="math inline">\(5\)</span></span></span> (0.7,0.2)<span>(0,0)<span><span class="math inline">\(\theta\)</span></span></span></p>
 <p>If <span class="math inline">\(\theta\)</span> increases at a constant rate of 3 radians per minute, at what rate is <span class="math inline">\(x\)</span> increasing in units per minute at the instant when <span class="math inline">\(x\)</span> equals 3 units?</p>
@@ -71,13 +140,38 @@
 <li><p>9</p></li>
 <li><p>12</p></li>
 </ol>
-<p><embed src="start.pdf" /> <span><span>E</span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex15')">Click for Solution</button>
+<br><br>
+<div id="ex15" style="display:none">
+<span><span>E</span></span>
+</div></p></li>
 <li><p>Two sides of a triangle have fixed lengths of 12 feet and 15 feet, respectively, and the angle between them is increasing at a rate of <span class="math inline">\(2\)</span> radians per minute. How fast is the length of the third side increasing when the angle between the sides of fixed length is <span class="math inline">\(\frac{\pi}{3}\)</span> radians? Hint: Consider the law of cosines.</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\frac{60}{\sqrt{7}}\)</span> feet per minute</span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex16')">Click for Solution</button>
+<br><br>
+<div id="ex16" style="display:none">
+<span><span><span class="math inline">\(\frac{60}{\sqrt{7}}\)</span> feet per minute</span></span>
+</div></p></li>
 <li><p>A street light is mounted at the top of a 19 foot-tall pole. A 6 foot tall man walks away from the pole at a speed of 5 feet per second along a straight path. How fast is the length of his shadow changing at the instant when he is 24 feet from the pole?</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\frac{30}{13}\)</span> feet per second</span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex17')">Click for Solution</button>
+<br><br>
+<div id="ex17" style="display:none">
+<span><span><span class="math inline">\(\frac{30}{13}\)</span> feet per second</span></span>
+</div></p></li>
 <li><p>A lighthouse is located on a small island <span class="math inline">\(2\)</span> km away from the nearest point <span class="math inline">\(P\)</span> on a straight shoreline. If the light makes 3 revolutions per minute (counterclockwise), how fast is the beam of light moving along the shoreline at the instant when it is 1 km from <span class="math inline">\(P\)</span>?</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(15\pi\)</span> km per minute</span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex18')">Click for Solution</button>
+<br><br>
+<div id="ex18" style="display:none">
+<span><span><span class="math inline">\(15\pi\)</span> km per minute</span></span>
+</div></p></li>
 </ol>
 </body>
+<script>
+function toggleAnswer(idName) {
+var x = document.getElementById(idName);
+if (x.style.display === "none") {
+x.style.display = "block";
+} else {
+x.style.display = "none";
+}
+}</script>
 </html>

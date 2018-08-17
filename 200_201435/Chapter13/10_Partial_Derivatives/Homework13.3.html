@@ -4,11 +4,24 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
-  <title></title>
-  <style type="text/css">code{white-space: pre;}</style>
+<title>Partial Derivatives</title>  <style type="text/css">code{white-space: pre;}</style>
   <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-</head>
-<body>
+    <!-- Bootstrap core CSS -->
+<link href="../../../vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+<!-- Custom fonts for this template -->
+<link href="../../../vendor/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+<!-- Custom styles for this template -->
+<link href="../../../vendor/bootstrap/css/clean-blog.css" rel="stylesheet">
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script><body>
+<center><h1 id='titleHeader'>Partial Derivatives</h1></center>
+
 <p>SUGGESTED REFERENCE MATERIAL:</p>
 <p>As you work through the problems listed below, you should reference Chapter 13.3 of the recommended textbook (or the equivalent chapter in your alternative textbook/online resource) and your lecture notes.</p>
 <p>EXPECTED SKILLS:</p>
@@ -22,84 +35,193 @@
 <li><p>A portion of the surface defined by <span class="math inline">\(z=f(x,y)\)</span> is shown below.</p>
 <p><embed src="tangents2.pdf" /></p>
 <p>Use the tangent lines in this figure to calculate the values of the first order partial derivatives of <span class="math inline">\(f\)</span> at the point <span class="math inline">\((1,2)\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(f_x(1,2)=-1\)</span>; <span class="math inline">\(f_y(1,2)=\frac{1}{2}\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex1')">Click for Solution</button>
+<br><br>
+<div id="ex1" style="display:none">
+<span><span><span class="math inline">\(f_x(1,2)=-1\)</span>; <span class="math inline">\(f_y(1,2)=\frac{1}{2}\)</span></span></span>
+</div></p></li>
 </ol>
 <p><span><strong>For problems 2-9, find all first order partial derivatives.</strong></span></p>
 <ol start="2">
 <li><p><span class="math inline">\(f(x,y)=(3x-y)^5\)</span></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(f_x(x,y)=15(3x-y)^4\)</span>; <span class="math inline">\(f_y(x,y)=-5(3x-y)^4\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex2')">Click for Solution</button>
+<br><br>
+<div id="ex2" style="display:none">
+<span><span><span class="math inline">\(f_x(x,y)=15(3x-y)^4\)</span>; <span class="math inline">\(f_y(x,y)=-5(3x-y)^4\)</span></span></span>
+</div></p></li>
 <li><p><span class="math inline">\(f(x,y)=e^x\sin{y}\)</span></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(f_x(x,y)=e^x\sin{y}\)</span>; <span class="math inline">\(f_y(x,y)=e^x\cos{y}\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex3')">Click for Solution</button>
+<br><br>
+<div id="ex3" style="display:none">
+<span><span><span class="math inline">\(f_x(x,y)=e^x\sin{y}\)</span>; <span class="math inline">\(f_y(x,y)=e^x\cos{y}\)</span></span></span>
+</div></p></li>
 <li><p><span class="math inline">\(f(x,y)=\tan^{-1}{(4x-7y)}\)</span></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(f_x(x,y)=\frac{4}{1+(4x-7y)^2}\)</span>; <span class="math inline">\(f_y(x,y)=-\frac{7}{1+(4x-7y)^2}\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex4')">Click for Solution</button>
+<br><br>
+<div id="ex4" style="display:none">
+<span><span><span class="math inline">\(f_x(x,y)=\frac{4}{1+(4x-7y)^2}\)</span>; <span class="math inline">\(f_y(x,y)=-\frac{7}{1+(4x-7y)^2}\)</span></span></span>
+</div></p></li>
 <li><p><span class="math inline">\(f(x,y)=x\cos{(x^2+y^2)}\)</span></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(f_x(x,y)=\cos{(x^2+y^2)}-2x^2\sin{(x^2+y^2)}\)</span>; <span class="math inline">\(f_y(x,y)=-2xy\sin{(x^2+y^2)}\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex5')">Click for Solution</button>
+<br><br>
+<div id="ex5" style="display:none">
+<span><span><span class="math inline">\(f_x(x,y)=\cos{(x^2+y^2)}-2x^2\sin{(x^2+y^2)}\)</span>; <span class="math inline">\(f_y(x,y)=-2xy\sin{(x^2+y^2)}\)</span></span></span>
+</div></p></li>
 <li><p>Let <span class="math inline">\(f(x,y,z)=\sqrt{x^2-2y+3z^2}\)</span>. Compute <span class="math inline">\(\frac{\partial f}{\partial x}\)</span>, <span class="math inline">\(\frac{\partial f}{\partial y}\)</span>, and <span class="math inline">\(\frac{\partial f}{\partial z}\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\frac{\partial f}{\partial x}=\frac{x}{\sqrt{x^2-2y+3z^2}}\)</span>; <span class="math inline">\(\frac{\partial f}{\partial y}=\frac{-1}{\sqrt{x^2-2y+3z^2}}\)</span>; <span class="math inline">\(\frac{\partial f}{\partial z}=\frac{3z}{\sqrt{x^2-2y+3z^2}}\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex6')">Click for Solution</button>
+<br><br>
+<div id="ex6" style="display:none">
+<span><span><span class="math inline">\(\frac{\partial f}{\partial x}=\frac{x}{\sqrt{x^2-2y+3z^2}}\)</span>; <span class="math inline">\(\frac{\partial f}{\partial y}=\frac{-1}{\sqrt{x^2-2y+3z^2}}\)</span>; <span class="math inline">\(\frac{\partial f}{\partial z}=\frac{3z}{\sqrt{x^2-2y+3z^2}}\)</span></span></span>
+</div></p></li>
 <li><p>Let <span class="math inline">\(w=\frac{4z}{x^2+y^2}\)</span>. Compute <span class="math inline">\(\frac{\partial w}{\partial x}\)</span>, <span class="math inline">\(\frac{\partial w}{\partial y}\)</span>, and <span class="math inline">\(\frac{\partial w}{\partial z}\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\frac{\partial w}{\partial x}=-\frac{8xz}{(x^2+y^2)^2}\)</span>; <span class="math inline">\(\frac{\partial w}{\partial y}=-\frac{8yz}{(x^2+y^2)^2}\)</span>; <span class="math inline">\(\frac{\partial w}{\partial z}=\frac{4}{x^2+y^2}\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex7')">Click for Solution</button>
+<br><br>
+<div id="ex7" style="display:none">
+<span><span><span class="math inline">\(\frac{\partial w}{\partial x}=-\frac{8xz}{(x^2+y^2)^2}\)</span>; <span class="math inline">\(\frac{\partial w}{\partial y}=-\frac{8yz}{(x^2+y^2)^2}\)</span>; <span class="math inline">\(\frac{\partial w}{\partial z}=\frac{4}{x^2+y^2}\)</span></span></span>
+</div></p></li>
 <li><p>Consider <span class="math inline">\(f(x,y,z)=\frac{xy}{x^2+z^2}\)</span>. Determine <span class="math inline">\(\frac{\partial f}{\partial x}(-1, 1, 2)\)</span>, <span class="math inline">\(\frac{\partial f}{\partial y}(-1, 1, 2)\)</span>, and <span class="math inline">\(\frac{\partial f}{\partial z}(-1, 1, 2)\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\left.\frac{\partial f}{\partial x}\right|_{(x,y,z)=(-1,1,2)}=\frac{3}{25}\)</span>; <span class="math inline">\(\left.\frac{\partial f}{\partial y}\right|_{(x,y,z)=(-1,1,2)}=-\frac{1}{5}\)</span>; <span class="math inline">\(\left.\frac{\partial f}{\partial z}\right|_{(x,y,z)=(-1,1,2)}=\frac{4}{25}\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex8')">Click for Solution</button>
+<br><br>
+<div id="ex8" style="display:none">
+<span><span><span class="math inline">\(\left.\frac{\partial f}{\partial x}\right|_{(x,y,z)=(-1,1,2)}=\frac{3}{25}\)</span>; <span class="math inline">\(\left.\frac{\partial f}{\partial y}\right|_{(x,y,z)=(-1,1,2)}=-\frac{1}{5}\)</span>; <span class="math inline">\(\left.\frac{\partial f}{\partial z}\right|_{(x,y,z)=(-1,1,2)}=\frac{4}{25}\)</span></span></span>
+</div></p></li>
 <li><p>Suppose <span class="math inline">\(f(x,y,z)=z^2\sin{(2xy)}\)</span>. Compute <span class="math inline">\(f_x\left(4, \frac{\pi}{3}, 1\right)\)</span>, <span class="math inline">\(f_y\left(4, \frac{\pi}{3}, 1\right)\)</span>, and <span class="math inline">\(f_z\left(4, \frac{\pi}{3}, 1\right)\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(f_x\left(4,\frac{\pi}{3},1\right)=-\frac{\pi}{3}\)</span>, <span class="math inline">\(f_y\left(4,\frac{\pi}{3},2\right)=-4\)</span>, <span class="math inline">\(f_z\left(4,\frac{\pi}{3},2\right)=\sqrt{3}\)</span></span> </span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex9')">Click for Solution</button>
+<br><br>
+<div id="ex9" style="display:none">
+<span><span><span class="math inline">\(f_x\left(4,\frac{\pi}{3},1\right)=-\frac{\pi}{3}\)</span>, <span class="math inline">\(f_y\left(4,\frac{\pi}{3},2\right)=-4\)</span>, <span class="math inline">\(f_z\left(4,\frac{\pi}{3},2\right)=\sqrt{3}\)</span></span> </span>
+</div></p></li>
 </ol>
 <p><span><strong>For problems 10-11, find all values of <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> such that <span class="math inline">\(f_x(x,y)=0\)</span> and <span class="math inline">\(f_y(x,y)=0\)</span> simultaneously.</strong> </span></p>
 <ol start="10">
 <li><p><span class="math inline">\(f(x,y)=4x^2+y^2-8xy+4x+6y-10\)</span></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\((x,y)=\left(\frac{7}{6},\frac{5}{3}\right)\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex10')">Click for Solution</button>
+<br><br>
+<div id="ex10" style="display:none">
+<span><span><span class="math inline">\((x,y)=\left(\frac{7}{6},\frac{5}{3}\right)\)</span></span></span>
+</div></p></li>
 <li><p><span class="math inline">\(f(x,y)=x^2+4y^2-3xy+3\)</span></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\((x,y)=(0,0)\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex11')">Click for Solution</button>
+<br><br>
+<div id="ex11" style="display:none">
+<span><span><span class="math inline">\((x,y)=(0,0)\)</span></span></span>
+</div></p></li>
 </ol>
 <p><span><strong>For problems 12-13, compute all second partial derivatives.</strong></span></p>
 <ol start="12">
 <li><p><span class="math inline">\(z=x^2y-y^3x^4\)</span></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\frac{\partial^2z}{\partial x^2}=2y-12x^2y^3\)</span>; <span class="math inline">\(\frac{\partial^2z}{\partial y \partial x}=2x-12x^3y^2\)</span>; <span class="math inline">\(\frac{\partial^2z}{\partial x \partial y}=2x-12x^3y^2\)</span>; <span class="math inline">\(\frac{\partial^2z}{\partial y^2}=-6x^4y\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex12')">Click for Solution</button>
+<br><br>
+<div id="ex12" style="display:none">
+<span><span><span class="math inline">\(\frac{\partial^2z}{\partial x^2}=2y-12x^2y^3\)</span>; <span class="math inline">\(\frac{\partial^2z}{\partial y \partial x}=2x-12x^3y^2\)</span>; <span class="math inline">\(\frac{\partial^2z}{\partial x \partial y}=2x-12x^3y^2\)</span>; <span class="math inline">\(\frac{\partial^2z}{\partial y^2}=-6x^4y\)</span></span></span>
+</div></p></li>
 <li><p><span class="math inline">\(f(x,y)=\ln{(x^2+3y)}\)</span></p>
-<p><embed src="start.pdf" /> <span><span><span>0.6</span><span><span class="math inline">\(f_{xx}(x,y)=\frac{-2x^2+6y}{(x^2+3y)^2}\)</span>; <span class="math inline">\(f_{xy}(x,y)=-\frac{6x}{(x^2+3y)^2}\)</span>;<br />
-<span class="math inline">\(f_{yx}(x,y)=-\frac{6x}{(x^2+3y)^2}\)</span>; <span class="math inline">\(f_{yy}(x,y)=-\frac{9}{(x^2+3y)^2}\)</span></span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex13')">Click for Solution</button>
+<br><br>
+<div id="ex13" style="display:none">
+<span><span><span>0.6</span><span><span class="math inline">\(f_{xx}(x,y)=\frac{-2x^2+6y}{(x^2+3y)^2}\)</span>; <span class="math inline">\(f_{xy}(x,y)=-\frac{6x}{(x^2+3y)^2}\)</span>;<br />
+<span class="math inline">\(f_{yx}(x,y)=-\frac{6x}{(x^2+3y)^2}\)</span>; <span class="math inline">\(f_{yy}(x,y)=-\frac{9}{(x^2+3y)^2}\)</span></span></span></span>
+</div></p></li>
 <li><p>Consider the surface <span class="math inline">\(S: z=x^2+3y^2\)</span>.</p>
 <ol>
 <li><p>Find the slope of the tangent line to the curve of intersection of the surface <span class="math inline">\(S\)</span> and the plane <span class="math inline">\(y=1\)</span> at the point <span class="math inline">\((1,1,4)\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span>2</span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex14')">Click for Solution</button>
+<br><br>
+<div id="ex14" style="display:none">
+<span><span>2</span></span>
+</div></p></li>
 <li><p>Find a set of parametric equations for the tangent line whose slope you computed in part (a).</p>
-<p><embed src="start.pdf" /> <span><span><span>1</span><span>There are many possible parameterizations. One possibility is <span class="math inline">\(x=1+t\)</span>, <span class="math inline">\(y=1\)</span>, <span class="math inline">\(z=4+2t\)</span>.</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex15')">Click for Solution</button>
+<br><br>
+<div id="ex15" style="display:none">
+<span><span><span>1</span><span>There are many possible parameterizations. One possibility is <span class="math inline">\(x=1+t\)</span>, <span class="math inline">\(y=1\)</span>, <span class="math inline">\(z=4+2t\)</span>.</span></span></span>
+</div></p></li>
 <li><p>Find the slope of the tangent line to the curve of intersection of the surface <span class="math inline">\(S\)</span> and the plane <span class="math inline">\(x=1\)</span> at the point <span class="math inline">\((1,1,4)\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span>6</span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex16')">Click for Solution</button>
+<br><br>
+<div id="ex16" style="display:none">
+<span><span>6</span></span>
+</div></p></li>
 <li><p>Find a set of parametric equations for the tangent line whose slope you computed in part (b).</p>
-<p><embed src="start.pdf" /> <span><span><span>1</span><span>There are many possible parameterizations. One possibility is <span class="math inline">\(x=1\)</span>, <span class="math inline">\(y=1+t\)</span>, <span class="math inline">\(z=4+6t\)</span>.</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex17')">Click for Solution</button>
+<br><br>
+<div id="ex17" style="display:none">
+<span><span><span>1</span><span>There are many possible parameterizations. One possibility is <span class="math inline">\(x=1\)</span>, <span class="math inline">\(y=1+t\)</span>, <span class="math inline">\(z=4+6t\)</span>.</span></span></span>
+</div></p></li>
 <li><p>Find an equation of the tangent plane to the surface <span class="math inline">\(S\)</span> at the point <span class="math inline">\((1,1,4)\)</span>. (Hint: The tangent plane contains both of tangent lines from parts (b) and (d).)</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(-2(x-1)-6(y-1)+1(z-4)=0\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex18')">Click for Solution</button>
+<br><br>
+<div id="ex18" style="display:none">
+<span><span><span class="math inline">\(-2(x-1)-6(y-1)+1(z-4)=0\)</span></span></span>
+</div></p></li>
 </ol></li>
 <li><p>Consider a closed rectangular box.</p>
 <ol>
 <li><p>Find the instantaneous rate of change of the volume with respect to the width, <span class="math inline">\(w\)</span>, if the length, <span class="math inline">\(l\)</span>, and height, <span class="math inline">\(h\)</span>, are held constant at the instant when <span class="math inline">\(l=3\)</span>, <span class="math inline">\(w=7\)</span>, and <span class="math inline">\(h=6\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span>18</span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex19')">Click for Solution</button>
+<br><br>
+<div id="ex19" style="display:none">
+<span><span>18</span></span>
+</div></p></li>
 <li><p>Find the instantaneous rate of change of the surface area with respect to the height, <span class="math inline">\(h\)</span>, if the length, <span class="math inline">\(l\)</span>, and width, <span class="math inline">\(w\)</span>, are held constant at the instant when <span class="math inline">\(l=3\)</span>, <span class="math inline">\(w=7\)</span>, and <span class="math inline">\(h=6\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span>20</span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex20')">Click for Solution</button>
+<br><br>
+<div id="ex20" style="display:none">
+<span><span>20</span></span>
+</div></p></li>
 </ol></li>
 <li><p>Use implicit partial differentiation to compute the slope of the surface <span class="math inline">\(x^2+4y^2-36z^2=-19\)</span> in the <span class="math inline">\(x\)</span>-direction at the points <span class="math inline">\((1,2,1)\)</span> and <span class="math inline">\((1,2,-1)\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\left.\frac{\partial z}{\partial x}\right|_{(x,y,z)=(1,2,1)}=\frac{1}{36}\)</span>; <span class="math inline">\(\left.\frac{\partial z}{\partial x}\right|_{(x,y,z)=(1,2,-1)}=-\frac{1}{36}\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex21')">Click for Solution</button>
+<br><br>
+<div id="ex21" style="display:none">
+<span><span><span class="math inline">\(\left.\frac{\partial z}{\partial x}\right|_{(x,y,z)=(1,2,1)}=\frac{1}{36}\)</span>; <span class="math inline">\(\left.\frac{\partial z}{\partial x}\right|_{(x,y,z)=(1,2,-1)}=-\frac{1}{36}\)</span></span></span>
+</div></p></li>
 <li><p>Compute <span class="math inline">\(\frac{\partial z}{\partial x}\)</span> and <span class="math inline">\(\frac{\partial z}{\partial y}\)</span> if <span class="math inline">\(x\cos{(y^2+z^2)}=3yz\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\frac{\partial z}{\partial x}=\frac{\cos{(y^2+z^2)}}{3y+2zx\sin{(x^2+y^2)}}\)</span>; <span class="math inline">\(\frac{\partial z}{\partial y}=\frac{-3z-2xy\sin{(y^2+z^2)}}{3y+2xz\sin{(y^2+z^2)}}\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex22')">Click for Solution</button>
+<br><br>
+<div id="ex22" style="display:none">
+<span><span><span class="math inline">\(\frac{\partial z}{\partial x}=\frac{\cos{(y^2+z^2)}}{3y+2zx\sin{(x^2+y^2)}}\)</span>; <span class="math inline">\(\frac{\partial z}{\partial y}=\frac{-3z-2xy\sin{(y^2+z^2)}}{3y+2xz\sin{(y^2+z^2)}}\)</span></span></span>
+</div></p></li>
 <li><p><span><strong>Laplace’s Equation</strong></span>, shown below, is a second order partial differential equation. In the study of heat conduction, the Laplace Equation is the steady state heat equation.</p>
 <p>Laplace’s Equation: <span class="math display">\[\frac{d^2f}{dx^2}+\frac{d^2f}{dy^2}=0\]</span></p>
 <p>A function which satisfies Laplace’s Equation is said to be <span><strong>harmonic</strong></span>.</p>
 <ol>
 <li><p>Verify that <span class="math inline">\(f(x,y)=e^x\cos{y}\)</span> is a harmonic function.</p>
-<p><embed src="start.pdf" /> <span><span><span>1</span><span>You can verify by direct computation that <span class="math inline">\(f_{xx}(x,y)=e^x\cos{y}\)</span> and <span class="math inline">\(f_{yy}(x,y)=-e^x\cos{y}\)</span>. Then, <span class="math inline">\(f_{xx}(x,y)+f_{yy}(x,y)=e^x\cos{y}+\left(-e^x\cos{y}\right)=0\)</span>. Thus, since <span class="math inline">\(f(x,y)\)</span> satisfies Laplace’s Equation, it is a harmonic function.</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex23')">Click for Solution</button>
+<br><br>
+<div id="ex23" style="display:none">
+<span><span><span>1</span><span>You can verify by direct computation that <span class="math inline">\(f_{xx}(x,y)=e^x\cos{y}\)</span> and <span class="math inline">\(f_{yy}(x,y)=-e^x\cos{y}\)</span>. Then, <span class="math inline">\(f_{xx}(x,y)+f_{yy}(x,y)=e^x\cos{y}+\left(-e^x\cos{y}\right)=0\)</span>. Thus, since <span class="math inline">\(f(x,y)\)</span> satisfies Laplace’s Equation, it is a harmonic function.</span></span></span>
+</div></p></li>
 <li><p>Suppose <span class="math inline">\(u(x,y)\)</span> and <span class="math inline">\(v(x,y)\)</span> are functions which have continuous mixed partial derivatives. Also, assume that <span class="math inline">\(u(x,y)\)</span> and <span class="math inline">\(v(x,y)\)</span> satisfy the <span><strong>Cauchy Riemann Equations</strong></span>:</p>
 <p><span class="math display">\[\frac{\partial u}{\partial x}=\frac{\partial v}{\partial y}\]</span> <span class="math display">\[\frac{\partial u}{\partial y}=-\frac{\partial v}{\partial x}\]</span></p>
 <p>Verify that <span class="math inline">\(u(x,y)\)</span> and <span class="math inline">\(v(x,y)\)</span> are both harmonic functions.</p>
-<p><embed src="start.pdf" /> <span><span><span>1</span><span>We begin by showing that <span class="math inline">\(u(x,y)\)</span> is a harmonic function. To do so, we differentiate the first of the Riemann Equations with respect to <span class="math inline">\(x\)</span> which yields <span class="math inline">\(\frac{\partial^2 u}{\partial x \partial x}=\frac{\partial^2 v}{\partial x\partial y}\)</span>. And, we differentiate the second of the Cauch-Riemann Equations with respect to <span class="math inline">\(y\)</span> which yields <span class="math inline">\(\frac{\partial^2 u}{\partial y \partial y}=-\frac{\partial^2 v}{\partial y \partial x}\)</span>. Then, <span class="math display">\[\begin{aligned}
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex24')">Click for Solution</button>
+<br><br>
+<div id="ex24" style="display:none">
+<span><span><span>1</span><span>We begin by showing that <span class="math inline">\(u(x,y)\)</span> is a harmonic function. To do so, we differentiate the first of the Riemann Equations with respect to <span class="math inline">\(x\)</span> which yields <span class="math inline">\(\frac{\partial^2 u}{\partial x \partial x}=\frac{\partial^2 v}{\partial x\partial y}\)</span>. And, we differentiate the second of the Cauch-Riemann Equations with respect to <span class="math inline">\(y\)</span> which yields <span class="math inline">\(\frac{\partial^2 u}{\partial y \partial y}=-\frac{\partial^2 v}{\partial y \partial x}\)</span>. Then, <span class="math display">\[\begin{aligned}
 \frac{d^2u}{dx^2}+\frac{d^2u}{dy^2} &amp; = \frac{\partial^2 v}{\partial x\partial y}+\left(-\frac{\partial^2 v}{\partial y \partial x}\right)\\
 &amp;=\frac{\partial^2 v}{\partial x\partial y}-\frac{\partial^2 v}{\partial x\partial y}\\
 &amp;\text{by symmetry of mixed partial derivatives}\\
-&amp;=0\end{aligned}\]</span> So, since <span class="math inline">\(u(x,y)\)</span> satisfies Laplace’s Equation, it is a harmonic function. A similar argument holds for <span class="math inline">\(v(x,y)\)</span>.</span></span></span> <embed src="end.pdf" /></p></li>
+&amp;=0\end{aligned}\]</span> So, since <span class="math inline">\(u(x,y)\)</span> satisfies Laplace’s Equation, it is a harmonic function. A similar argument holds for <span class="math inline">\(v(x,y)\)</span>.</span></span></span>
+</div></p></li>
 </ol></li>
 <li><p>The figure below shows some level curves of a function <span class="math inline">\(z=f(x,y)\)</span>.</p>
 <p><embed src="contour.pdf" /></p>
 <p>Use this to give an approximation for <span class="math inline">\(\frac{\partial f}{\partial x}(1,0)\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span><span>1</span><span>The slope is approximately 2. Note: You should use the level curve which passes through <span class="math inline">\((1,0)\)</span> as well as one which is close to <span class="math inline">\((1,0)\)</span> to the slope.</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex25')">Click for Solution</button>
+<br><br>
+<div id="ex25" style="display:none">
+<span><span><span>1</span><span>The slope is approximately 2. Note: You should use the level curve which passes through <span class="math inline">\((1,0)\)</span> as well as one which is close to <span class="math inline">\((1,0)\)</span> to the slope.</span></span></span>
+</div></p></li>
 </ol>
 </body>
+<script>
+function toggleAnswer(idName) {
+var x = document.getElementById(idName);
+if (x.style.display === "none") {
+x.style.display = "block";
+} else {
+x.style.display = "none";
+}
+}</script>
 </html>

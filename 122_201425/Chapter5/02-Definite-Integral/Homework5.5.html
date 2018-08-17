@@ -4,11 +4,24 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
-  <title></title>
-  <style type="text/css">code{white-space: pre;}</style>
+<title>The Definite Integral</title>  <style type="text/css">code{white-space: pre;}</style>
   <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-</head>
-<body>
+    <!-- Bootstrap core CSS -->
+<link href="../../../vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+<!-- Custom fonts for this template -->
+<link href="../../../vendor/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+<!-- Custom styles for this template -->
+<link href="../../../vendor/bootstrap/css/clean-blog.css" rel="stylesheet">
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script><body>
+<center><h1 id='titleHeader'>The Definite Integral</h1></center>
+
 <p>SUGGESTED REFERENCE MATERIAL:</p>
 <p>As you work through the problems listed below, you should reference Chapter 5.5 of the recommended textbook (or the equivalent chapter in your alternative textbook/online resource) and your lecture notes.</p>
 <p>EXPECTED SKILLS:</p>
@@ -21,75 +34,188 @@
 <p><span><strong>For problems 1 &amp; 2, use the given values of <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> to express the given limit as a definite integral. Do not evaluate the limits or integrals.</strong></span></p>
 <ol>
 <li><p><span class="math inline">\(\lim_{\max \Delta x_k \rightarrow 0} \sum_{k=1}^n \frac{1}{1+(x_k^*)^2} \Delta x_k\)</span>, <span class="math inline">\(a=-1\)</span>, <span class="math inline">\(b=1\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\int_{-1}^1{\frac{1}{1+x^2}} \,dx\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex1')">Click for Solution</button>
+<br><br>
+<div id="ex1" style="display:none">
+<span><span><span class="math inline">\(\int_{-1}^1{\frac{1}{1+x^2}} \,dx\)</span></span></span>
+</div></p></li>
 <li><p><span class="math inline">\(\lim_{\max \Delta x_k \rightarrow 0} \sum_{k=1}^n \cos{(x_k^*)} \Delta x_k\)</span>, <span class="math inline">\(a=0\)</span>, <span class="math inline">\(b=\pi\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\int_0^{\pi}\cos{x} \,dx\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex2')">Click for Solution</button>
+<br><br>
+<div id="ex2" style="display:none">
+<span><span><span class="math inline">\(\int_0^{\pi}\cos{x} \,dx\)</span></span></span>
+</div></p></li>
 </ol>
 <p><span><strong>For problems 3-9, sketch the region whose net signed area is represented by the given definite integral. Evaluate the given integral using an appropriate formula from geometry.</strong></span></p>
 <ol start="3">
 <li><p><span class="math inline">\(\int_0^7{(x+1)}\,dx\)</span></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\frac{63}{2}\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex3')">Click for Solution</button>
+<br><br>
+<div id="ex3" style="display:none">
+<span><span><span class="math inline">\(\frac{63}{2}\)</span></span></span>
+</div></p></li>
 <li><p><span class="math inline">\(\int_{-7}^7{x}\,dx\)</span></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(0\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex4')">Click for Solution</button>
+<br><br>
+<div id="ex4" style="display:none">
+<span><span><span class="math inline">\(0\)</span></span></span>
+</div></p></li>
 <li><p><span class="math inline">\(\int_{-1}^4{6}\,dx\)</span></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(30\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex5')">Click for Solution</button>
+<br><br>
+<div id="ex5" style="display:none">
+<span><span><span class="math inline">\(30\)</span></span></span>
+</div></p></li>
 <li><p><span class="math inline">\(\int_{-4}^{2}{|x-1|} \,dx\)</span></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(13\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex6')">Click for Solution</button>
+<br><br>
+<div id="ex6" style="display:none">
+<span><span><span class="math inline">\(13\)</span></span></span>
+</div></p></li>
 <li><p><span class="math inline">\(\int_{-2}^2{\sqrt{4-x^2}} \,dx\)</span></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(2\pi\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex7')">Click for Solution</button>
+<br><br>
+<div id="ex7" style="display:none">
+<span><span><span class="math inline">\(2\pi\)</span></span></span>
+</div></p></li>
 <li><p><span class="math inline">\(\int_{-2}^0{\left(3x+5\sqrt{4-x^2}\right)} \,dx\)</span></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(-6+5\pi\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex8')">Click for Solution</button>
+<br><br>
+<div id="ex8" style="display:none">
+<span><span><span class="math inline">\(-6+5\pi\)</span></span></span>
+</div></p></li>
 <li><p><span class="math inline">\(\int_4^8{\sqrt{8x-x^2}} \,dx\)</span></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(4\pi\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex9')">Click for Solution</button>
+<br><br>
+<div id="ex9" style="display:none">
+<span><span><span class="math inline">\(4\pi\)</span></span></span>
+</div></p></li>
 <li><p>Let <span class="math inline">\(f(x)=\left\{\begin{array}{lll}
 3x &amp; \text{ if} &amp; x \leq 2 \\
 6 &amp; \text{ if} &amp; x&gt;2
 \end{array}\right.\)</span>. Compute <span class="math inline">\(\int_{-1}^5{f(x)} \,dx\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\frac{45}{2}\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex10')">Click for Solution</button>
+<br><br>
+<div id="ex10" style="display:none">
+<span><span><span class="math inline">\(\frac{45}{2}\)</span></span></span>
+</div></p></li>
 <li><p>For each of the following, use the areas shown to evaluate the given definite integral.</p>
 <p><embed src="area_graph.pdf" /></p>
 <ol>
 <li><p><span class="math inline">\(\int_b^c{f(x)} \,dx\)</span></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(17\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex11')">Click for Solution</button>
+<br><br>
+<div id="ex11" style="display:none">
+<span><span><span class="math inline">\(17\)</span></span></span>
+</div></p></li>
 <li><p><span class="math inline">\(\int_c^d{f(x)} \,dx\)</span></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(-4.5\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex12')">Click for Solution</button>
+<br><br>
+<div id="ex12" style="display:none">
+<span><span><span class="math inline">\(-4.5\)</span></span></span>
+</div></p></li>
 <li><p><span class="math inline">\(\int_a^e{f(x)} \,dx\)</span></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(11\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex13')">Click for Solution</button>
+<br><br>
+<div id="ex13" style="display:none">
+<span><span><span class="math inline">\(11\)</span></span></span>
+</div></p></li>
 <li><p><span class="math inline">\(\int_b^a{f(x)} \,dx\)</span></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(4\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex14')">Click for Solution</button>
+<br><br>
+<div id="ex14" style="display:none">
+<span><span><span class="math inline">\(4\)</span></span></span>
+</div></p></li>
 </ol></li>
 <li><p>Again consider the graph of <span class="math inline">\(y=f(x)\)</span> shown in problem 11. Compute <span class="math inline">\(\int_a^e{|f(x)|} \,dx\)</span> and <span class="math inline">\(\left|\int_a^e{f(x)} \,dx \right|\)</span>. Which is larger?</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\int_a^e|f(x)| \,dx=28\)</span>; <span class="math inline">\(\left|\int_a^e{f(x)} \,dx\right|=11\)</span>; <span class="math inline">\(\int_a^e{|f(x)|} \,dx\)</span> is larger.</span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex15')">Click for Solution</button>
+<br><br>
+<div id="ex15" style="display:none">
+<span><span><span class="math inline">\(\int_a^e|f(x)| \,dx=28\)</span>; <span class="math inline">\(\left|\int_a^e{f(x)} \,dx\right|=11\)</span>; <span class="math inline">\(\int_a^e{|f(x)|} \,dx\)</span> is larger.</span></span>
+</div></p></li>
 <li><p>Suppose that <span class="math inline">\(\int_{-1}^3{f(x)} \,dx=6\)</span> and <span class="math inline">\(\int_{-1}^{3}{g(x)} \,dx=-8\)</span>. Compute <span class="math inline">\(\int_{-1}^3{(f(x)+4g(x))} \,dx\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(-26\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex16')">Click for Solution</button>
+<br><br>
+<div id="ex16" style="display:none">
+<span><span><span class="math inline">\(-26\)</span></span></span>
+</div></p></li>
 <li><p>Suppose that <span class="math inline">\(\int_0^8{f(x)} \,dx=3\)</span> and <span class="math inline">\(\int_4^{8}{f(x)} \,dx=10\)</span>. Compute <span class="math inline">\(\int_0^4{f(x)} \,dx\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(-7\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex17')">Click for Solution</button>
+<br><br>
+<div id="ex17" style="display:none">
+<span><span><span class="math inline">\(-7\)</span></span></span>
+</div></p></li>
 <li><p>Suppose that <span class="math inline">\(\int_{-2}^9{f(x)} \,dx=4\)</span> and <span class="math inline">\(\int_{-2}^{6}{f(x)} \,dx=11\)</span>. Compute <span class="math inline">\(\int_{9}^6{f(x)} \,dx\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(7\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex18')">Click for Solution</button>
+<br><br>
+<div id="ex18" style="display:none">
+<span><span><span class="math inline">\(7\)</span></span></span>
+</div></p></li>
 <li><p>Express each of the following in terms of <span class="math inline">\(\int_0^{\pi}\sin{x} \,dx\)</span>. <span><strong>Do not evaluate any of the integrals.</strong></span> Hint: Draw a graph and consider the net signed area.</p>
 <ol>
 <li><p><span class="math inline">\(\int_{\frac{\pi}{2}}^{\frac{3\pi}{2}}\cos{x} \,dx\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\int_{\frac{\pi}{2}}^{\frac{3\pi}{2}}\cos{x} \,dx=-\int_0^{\pi}\sin{x} \,dx\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex19')">Click for Solution</button>
+<br><br>
+<div id="ex19" style="display:none">
+<span><span><span class="math inline">\(\int_{\frac{\pi}{2}}^{\frac{3\pi}{2}}\cos{x} \,dx=-\int_0^{\pi}\sin{x} \,dx\)</span></span></span>
+</div></p></li>
 <li><p><span class="math inline">\(\int_{\frac{3\pi}{2}}^{2\pi}\cos{x} \,dx\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\int_{\frac{3\pi}{2}}^{2\pi}\cos{x} \,dx=\frac{1}{2}\int_0^{\pi}\sin{x} \,dx\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex20')">Click for Solution</button>
+<br><br>
+<div id="ex20" style="display:none">
+<span><span><span class="math inline">\(\int_{\frac{3\pi}{2}}^{2\pi}\cos{x} \,dx=\frac{1}{2}\int_0^{\pi}\sin{x} \,dx\)</span></span></span>
+</div></p></li>
 <li><p><span class="math inline">\(\int_{\pi}^{\frac{3\pi}{2}}\sin{x} \,dx\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\int_{\pi}^{\frac{3\pi}{2}}\sin{x} \,dx=-\frac{1}{2}\int_0^{\pi}\sin{x} \,dx\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex21')">Click for Solution</button>
+<br><br>
+<div id="ex21" style="display:none">
+<span><span><span class="math inline">\(\int_{\pi}^{\frac{3\pi}{2}}\sin{x} \,dx=-\frac{1}{2}\int_0^{\pi}\sin{x} \,dx\)</span></span></span>
+</div></p></li>
 </ol></li>
 <li><p>Suppose <span class="math inline">\(F(x)=\int_0^x{f(t)} \,dt\)</span>, where <span class="math inline">\(f(t)\)</span> is shown below.</p>
 <p><embed src="graph2.pdf" /></p>
 <p>Arrange the following quantities in order from least to greatest. <span class="math inline">\(F(0)\)</span>, <span class="math inline">\(F(1)\)</span>, <span class="math inline">\(F(5)\)</span>, <span class="math inline">\(F(1)-F(5)\)</span>, <span class="math inline">\(F(5)-F(1)\)</span></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(F(5)-F(1)&lt;F(5)&lt;F(0)&lt;F(1)&lt;F(1)-F(5)\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex22')">Click for Solution</button>
+<br><br>
+<div id="ex22" style="display:none">
+<span><span><span class="math inline">\(F(5)-F(1)&lt;F(5)&lt;F(0)&lt;F(1)&lt;F(1)-F(5)\)</span></span></span>
+</div></p></li>
 <li><p>The following Riemann Sum was derived by dividing an interval <span class="math inline">\([a,b]\)</span> into <span class="math inline">\(n\)</span> subintervals of equal width and then choosing <span class="math inline">\(x_k^*\)</span> to be the right endpoint of each subinterval.</p>
 <p><span class="math display">\[\lim_{n \rightarrow +\infty} \sum_{k=1}^n{\left(1+\frac{4}{n}k\right)\frac{4}{n}}\]</span></p>
 <ol>
 <li><p>What is the interval, <span class="math inline">\([a,b]\)</span>?</p>
-<p><embed src="start.pdf" /> <span><span>If we consider <span class="math inline">\(f(x)=x\)</span>, then the interval is <span class="math inline">\([1,5]\)</span>.</span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex23')">Click for Solution</button>
+<br><br>
+<div id="ex23" style="display:none">
+<span><span>If we consider <span class="math inline">\(f(x)=x\)</span>, then the interval is <span class="math inline">\([1,5]\)</span>.</span></span>
+</div></p></li>
 <li><p>Convert the Riemann Sum to an equivalent definite integral.</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\lim_{n \rightarrow +\infty} \sum_{k=1}^n{\left(1+\frac{4}{n}k\right)\frac{4}{n}}=\int_1^5{x} \,dx\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex24')">Click for Solution</button>
+<br><br>
+<div id="ex24" style="display:none">
+<span><span><span class="math inline">\(\lim_{n \rightarrow +\infty} \sum_{k=1}^n{\left(1+\frac{4}{n}k\right)\frac{4}{n}}=\int_1^5{x} \,dx\)</span></span></span>
+</div></p></li>
 <li><p>Using the definite integral from part (b) and an appropriate formula from geometry, evaluate the limit.</p>
-<p><embed src="start.pdf" /> <span><span>12</span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex25')">Click for Solution</button>
+<br><br>
+<div id="ex25" style="display:none">
+<span><span>12</span></span>
+</div></p></li>
 </ol>
-<p><embed src="start.pdf" /> <span><span><strong>NOTE:</strong></span> In number 18, we could have considered <span class="math inline">\(f(x)=1+x\)</span>. In that case, <span class="math inline">\([a,b]=[0,4]\)</span> and <span class="math inline">\(\lim_{n \rightarrow +\infty} \sum_{k=1}^n{\left(1+\frac{4}{n}k\right)\frac{4}{n}}=\int_0^4{(1+x)} \,dx\)</span>. The value of this definite integral is also 12.</span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex26')">Click for Solution</button>
+<br><br>
+<div id="ex26" style="display:none">
+<span><span><strong>NOTE:</strong></span> In number 18, we could have considered <span class="math inline">\(f(x)=1+x\)</span>. In that case, <span class="math inline">\([a,b]=[0,4]\)</span> and <span class="math inline">\(\lim_{n \rightarrow +\infty} \sum_{k=1}^n{\left(1+\frac{4}{n}k\right)\frac{4}{n}}=\int_0^4{(1+x)} \,dx\)</span>. The value of this definite integral is also 12.</span>
+</div></p></li>
 </ol>
 </body>
+<script>
+function toggleAnswer(idName) {
+var x = document.getElementById(idName);
+if (x.style.display === "none") {
+x.style.display = "block";
+} else {
+x.style.display = "none";
+}
+}</script>
 </html>

@@ -4,11 +4,24 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
-  <title></title>
-  <style type="text/css">code{white-space: pre;}</style>
+<title>Chapter 3.4: Trigonometric Identities</title>  <style type="text/css">code{white-space: pre;}</style>
   <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-</head>
-<body>
+    <!-- Bootstrap core CSS -->
+<link href="../../../vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+<!-- Custom fonts for this template -->
+<link href="../../../vendor/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+<!-- Custom styles for this template -->
+<link href="../../../vendor/bootstrap/css/clean-blog.css" rel="stylesheet">
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script><body>
+<center><h1 id='titleHeader'>Chapter 3.4: Trigonometric Identities</h1></center>
+
 <h2 id="expected-skills" class="unnumbered">Expected Skills:</h2>
 <ul>
 <li><p>Be able to derive Pythagorean Identities relating tangent/secant or cotangent/cosecant from <span class="math inline">\(\sin^2\theta+\cos^2\theta=1\)</span>.</p></li>
@@ -20,61 +33,128 @@
 <li><p>Find the exact values of each of the following:</p>
 <ol>
 <li><p><span class="math inline">\(\sin15^\circ\)</span> and <span class="math inline">\(\cos15^\circ\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span class="math inline">\(\sin15^\circ=\frac{\sqrt{6}-\sqrt{2}}{4}\)</span> and <span class="math inline">\(\cos15^\circ=\frac{\sqrt{6}+\sqrt{2}}{4}\)</span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex1')">Click for Solution</button>
+<br><br>
+<div id="ex1" style="display:none">
+<span><span class="math inline">\(\sin15^\circ=\frac{\sqrt{6}-\sqrt{2}}{4}\)</span> and <span class="math inline">\(\cos15^\circ=\frac{\sqrt{6}+\sqrt{2}}{4}\)</span></span>
+</div></p></li>
 <li><p><span class="math inline">\(\sin165^\circ\)</span> and <span class="math inline">\(\cos165^\circ\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span class="math inline">\(\sin165^\circ=\frac{\sqrt{6}-\sqrt{2}}{4}\)</span> and <span class="math inline">\(\cos165^\circ=-\,\frac{\sqrt{6}+\sqrt{2}}{4}\)</span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex2')">Click for Solution</button>
+<br><br>
+<div id="ex2" style="display:none">
+<span><span class="math inline">\(\sin165^\circ=\frac{\sqrt{6}-\sqrt{2}}{4}\)</span> and <span class="math inline">\(\cos165^\circ=-\,\frac{\sqrt{6}+\sqrt{2}}{4}\)</span></span>
+</div></p></li>
 <li><p><span class="math inline">\(\sin195^\circ\)</span> and <span class="math inline">\(\cos195^\circ\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span class="math inline">\(\sin195^\circ=\frac{\sqrt{2}-\sqrt{6}}{4}\)</span> and <span class="math inline">\(\cos195^\circ=-\,\frac{\sqrt{6}+\sqrt{2}}{4}\)</span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex3')">Click for Solution</button>
+<br><br>
+<div id="ex3" style="display:none">
+<span><span class="math inline">\(\sin195^\circ=\frac{\sqrt{2}-\sqrt{6}}{4}\)</span> and <span class="math inline">\(\cos195^\circ=-\,\frac{\sqrt{6}+\sqrt{2}}{4}\)</span></span>
+</div></p></li>
 </ol></li>
 <li><p>Express <span class="math inline">\(\cos{\alpha}\cos{\beta}\)</span> in terms of <span class="math inline">\(\cos{(\alpha+\beta)}\)</span> and <span class="math inline">\(\cos{(\alpha-\beta)}\)</span>.<br />
 <span><strong>Hint:</strong></span> write out the sum and difference identities for cosine and combine them appropriately.</p>
-<p><embed src="start.pdf" /> <span><span class="math inline">\(\frac{1}{2}\left[\cos(\alpha-\beta)+\cos(\alpha+\beta)\right]\)</span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex4')">Click for Solution</button>
+<br><br>
+<div id="ex4" style="display:none">
+<span><span class="math inline">\(\frac{1}{2}\left[\cos(\alpha-\beta)+\cos(\alpha+\beta)\right]\)</span></span>
+</div></p></li>
 <li><p>Express <span class="math inline">\(\sin{\alpha}\sin{\beta}\)</span> in terms of <span class="math inline">\(\cos{(\alpha+\beta)}\)</span> and <span class="math inline">\(\cos{(\alpha-\beta)}\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span class="math inline">\(\frac{1}{2}\left[\cos(\alpha-\beta)-\cos(\alpha+\beta)\right]\)</span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex5')">Click for Solution</button>
+<br><br>
+<div id="ex5" style="display:none">
+<span><span class="math inline">\(\frac{1}{2}\left[\cos(\alpha-\beta)-\cos(\alpha+\beta)\right]\)</span></span>
+</div></p></li>
 <li><p>Express <span class="math inline">\(\sin{\alpha}\cos{\beta}\)</span> in terms of <span class="math inline">\(\sin{(\alpha+\beta)}\)</span> and <span class="math inline">\(\sin{(\alpha-\beta)}\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span class="math inline">\(\frac{1}{2}\left[\sin(\alpha-\beta)+\sin(\alpha+\beta)\right]\)</span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex6')">Click for Solution</button>
+<br><br>
+<div id="ex6" style="display:none">
+<span><span class="math inline">\(\frac{1}{2}\left[\sin(\alpha-\beta)+\sin(\alpha+\beta)\right]\)</span></span>
+</div></p></li>
 <li><p>Suppose <span class="math inline">\(\tan\alpha=\frac{3}{4}\)</span>, <span class="math inline">\(\tan\beta=8\)</span> where <span class="math inline">\(0&lt;\alpha&lt;\frac{\pi}{2}\)</span> and <span class="math inline">\(0&lt;\beta&lt;\frac{\pi}{2}\)</span>. Evaluate <span class="math inline">\(\sin(\alpha+\beta)\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span class="math inline">\(\frac{7}{\sqrt{65}}\)</span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex7')">Click for Solution</button>
+<br><br>
+<div id="ex7" style="display:none">
+<span><span class="math inline">\(\frac{7}{\sqrt{65}}\)</span></span>
+</div></p></li>
 <li><p>Derive the following identity: <span class="math inline">\(\tan{(\alpha+\beta)}=\frac{\tan\alpha+\tan\beta}{1-\tan\alpha\tan\beta}\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span>1</span><span>We will begin on the left hand side, applying a series of trigonometric identities until we arrive at the desired conclusion: <span class="math display">\[\begin{aligned}
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex8')">Click for Solution</button>
+<br><br>
+<div id="ex8" style="display:none">
+<span><span>1</span><span>We will begin on the left hand side, applying a series of trigonometric identities until we arrive at the desired conclusion: <span class="math display">\[\begin{aligned}
 \tan(\alpha+\beta) &amp;=\frac{\sin(\alpha+\beta)}{\cos(\alpha+\beta)} &amp;&amp; \text{By definition of tangent.}\\
 &amp;=\frac{\sin\alpha\cos\beta+\cos\alpha\sin\beta}{\cos\alpha\cos\beta-\sin\alpha\sin\beta} &amp;&amp; \text{By the sum identities for sine and cosine.}\\
 &amp;=\frac{\sin\alpha\cos\beta+\cos\alpha\sin\beta}{\cos\alpha\cos\beta-\sin\alpha\sin\beta}\cdot\frac{\frac{1}{\cos\alpha\cos\beta}}{\frac{1}{\cos\alpha\cos\beta}}\\
 &amp;=\frac{\frac{\sin\alpha}{\cos\alpha}+\frac{\sin\beta}{\cos\beta}}{1-\frac{\sin\alpha\sin\beta}{\cos\alpha\cos\beta}}\\
-&amp;=\frac{\tan\alpha+\tan\beta}{1-\tan\alpha\tan\beta}\end{aligned}\]</span></span></span> <embed src="end.pdf" /></p></li>
+&amp;=\frac{\tan\alpha+\tan\beta}{1-\tan\alpha\tan\beta}\end{aligned}\]</span></span></span>
+</div></p></li>
 <li><p>Suppose <span class="math inline">\(\tan\alpha=\frac{3}{4}\)</span> and <span class="math inline">\(\tan\beta=8\)</span>. Use the result of the previous exercise to evaluate <span class="math inline">\(\tan(\alpha+\beta)\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span class="math inline">\(-\frac{7}{4}\)</span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex9')">Click for Solution</button>
+<br><br>
+<div id="ex9" style="display:none">
+<span><span class="math inline">\(-\frac{7}{4}\)</span></span>
+</div></p></li>
 <li><p>Suppose <span class="math inline">\(\cos\theta=\frac{3}{5}\)</span> and <span class="math inline">\(\sin\theta&lt;0\)</span>. Evaluate each of the following:</p>
 <ol>
 <li><p><span class="math inline">\(\sin{(2\theta)}\)</span></p>
-<p><embed src="start.pdf" /> <span><span class="math inline">\(-\frac{24}{25}\)</span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex10')">Click for Solution</button>
+<br><br>
+<div id="ex10" style="display:none">
+<span><span class="math inline">\(-\frac{24}{25}\)</span></span>
+</div></p></li>
 <li><p><span class="math inline">\(\cos{(2\theta)}\)</span></p>
-<p><embed src="start.pdf" /> <span><span class="math inline">\(-\frac{7}{25}\)</span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex11')">Click for Solution</button>
+<br><br>
+<div id="ex11" style="display:none">
+<span><span class="math inline">\(-\frac{7}{25}\)</span></span>
+</div></p></li>
 <li><p><span class="math inline">\(\tan{(2\theta)}\)</span></p>
-<p><embed src="start.pdf" /> <span><span class="math inline">\(\frac{24}{7}\)</span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex12')">Click for Solution</button>
+<br><br>
+<div id="ex12" style="display:none">
+<span><span class="math inline">\(\frac{24}{7}\)</span></span>
+</div></p></li>
 </ol></li>
 <li><p>Rewrite <span class="math inline">\(\sin^4\theta\)</span> as an equivalent expression which does not have any trigonometric functions with powers greater than 1.</p>
-<p><embed src="start.pdf" /> <span><span class="math inline">\(\frac{3}{8}-\frac{1}{2}\cos2\theta+\frac{1}{8}\cos4\theta\)</span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex13')">Click for Solution</button>
+<br><br>
+<div id="ex13" style="display:none">
+<span><span class="math inline">\(\frac{3}{8}-\frac{1}{2}\cos2\theta+\frac{1}{8}\cos4\theta\)</span></span>
+</div></p></li>
 <li><p>One hand of a very large clock is 3 feet long and the other is 4 feet long.</p>
 <ol>
 <li><p>What is the distance between their tips at the moment when the clock strikes 3:00 pm?</p>
-<p><embed src="start.pdf" /> <span>5 feet</span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex14')">Click for Solution</button>
+<br><br>
+<div id="ex14" style="display:none">
+<span>5 feet</span>
+</div></p></li>
 <li><p>What is the distance between their tips at the moment when the clock strikes 1:00 pm?</p>
-<p><embed src="start.pdf" /> <span><span class="math inline">\(\sqrt{25-12\sqrt{3}}\)</span> feet</span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex15')">Click for Solution</button>
+<br><br>
+<div id="ex15" style="display:none">
+<span><span class="math inline">\(\sqrt{25-12\sqrt{3}}\)</span> feet</span>
+</div></p></li>
 </ol></li>
 <li><p>Consider the following triangle:</p>
 <p><embed src="heron.pdf" /></p>
 <ol>
 <li><p>Calculate the area of this triangle using the following theorem:<br />
 <span><strong>Heron’s Formula:</strong></span> The area of a triangle with sides of length <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span>, and <span class="math inline">\(c\)</span> is <span class="math inline">\(A=\sqrt{s(s-a)(s-b)(s-c)}\)</span> where <span class="math inline">\(s=\frac{a+b+c}{2}\)</span></p>
-<p><embed src="start.pdf" /> <span><span>1</span><span>Using the Law of Cosines, the missing side of the triangle has length 6. So, it follows that <span class="math inline">\(a=2\sqrt{3}\)</span>, <span class="math inline">\(b=2\sqrt{3}\)</span>, <span class="math inline">\(c=6\)</span>, and <span class="math inline">\(s=2\sqrt{3}+3\)</span>. Appealing to Heron’s Formula gives: <span class="math display">\[\begin{aligned}
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex16')">Click for Solution</button>
+<br><br>
+<div id="ex16" style="display:none">
+<span><span>1</span><span>Using the Law of Cosines, the missing side of the triangle has length 6. So, it follows that <span class="math inline">\(a=2\sqrt{3}\)</span>, <span class="math inline">\(b=2\sqrt{3}\)</span>, <span class="math inline">\(c=6\)</span>, and <span class="math inline">\(s=2\sqrt{3}+3\)</span>. Appealing to Heron’s Formula gives: <span class="math display">\[\begin{aligned}
 A&amp;=\sqrt{s(s-a)(s-b)(s-c)}\\
 &amp;=\sqrt{\left(2\sqrt{3}+3\right)\left(2\sqrt{3}+3-2\sqrt{3}\right)\left(2\sqrt{3}+3-2\sqrt{3}\right)\left(2\sqrt{3}+3-6\right)}\\
 &amp;=\sqrt{\left(2\sqrt{3}+3\right)(3)(3)\left(2\sqrt{3}-3\right)}\\
 &amp;=3\sqrt{\left(2\sqrt{3}+3\right)\left(2\sqrt{3}-3\right)}\\
-&amp;=3\sqrt{3}\end{aligned}\]</span> </span></span> <embed src="end.pdf" /></p></li>
+&amp;=3\sqrt{3}\end{aligned}\]</span> </span></span>
+</div></p></li>
 <li><p>Calculate the area of this triangle using the formula <span class="math inline">\(A=\frac{1}{2}bh\)</span>.</p>
-<p><embed src="start.pdf" /></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex17')">Click for Solution</button>
+<br><br>
+<div id="ex17" style="display:none">
+</p>
 <p><span>1</span></p>
 <p>Dropping a perpendicular from the upper vertex forms a 30-60-90 triangle. Since the hypotenuse has length <span class="math inline">\(2\sqrt{3}\)</span>, we must scale all other sides of the triangle accordingly, as shown in the following figure:</p>
 <p><embed src="heron1.pdf" /></p>
@@ -82,8 +162,18 @@ A&amp;=\sqrt{s(s-a)(s-b)(s-c)}\\
 A&amp;=\frac{1}{2}bh\\
 &amp;=\frac{1}{2}\left(2\sqrt{3}\right)(3)\\
 &amp;=3\sqrt{3}\end{aligned}\]</span></p>
-<p><embed src="end.pdf" /></p></li>
+<p>
+</div></p></li>
 </ol></li>
 </ol>
 </body>
+<script>
+function toggleAnswer(idName) {
+var x = document.getElementById(idName);
+if (x.style.display === "none") {
+x.style.display = "block";
+} else {
+x.style.display = "none";
+}
+}</script>
 </html>

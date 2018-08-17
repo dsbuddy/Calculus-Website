@@ -4,11 +4,24 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
-  <title></title>
-  <style type="text/css">code{white-space: pre;}</style>
+<title>Partial Fraction Decomposition</title>  <style type="text/css">code{white-space: pre;}</style>
   <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-</head>
-<body>
+    <!-- Bootstrap core CSS -->
+<link href="../../../vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+<!-- Custom fonts for this template -->
+<link href="../../../vendor/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+<!-- Custom styles for this template -->
+<link href="../../../vendor/bootstrap/css/clean-blog.css" rel="stylesheet">
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script><body>
+<center><h1 id='titleHeader'>Partial Fraction Decomposition</h1></center>
+
 <p>SUGGESTED REFERENCE MATERIAL:</p>
 <p>As you work through the problems listed below, you should reference Chapter 7.5 of the recommended textbook (or the equivalent chapter in your alternative textbook/online resource) and your lecture notes.</p>
 <p>EXPECTED SKILLS:</p>
@@ -20,66 +33,154 @@
 <p><span><strong>For problems 1-3, write out the partial fraction decomposition. (Do not solve for the numerical values of the coefficients.)</strong></span></p>
 <ol>
 <li><p><span class="math inline">\(\frac{2x+3}{(x-2)(x-5)}\)</span></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\frac{A}{x-2}+\frac{B}{x-5}\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex1')">Click for Solution</button>
+<br><br>
+<div id="ex1" style="display:none">
+<span><span><span class="math inline">\(\frac{A}{x-2}+\frac{B}{x-5}\)</span></span></span>
+</div></p></li>
 <li><p><span class="math inline">\(\frac{6}{x^2(x^2-9)}\)</span></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\frac{A}{x}+\frac{B}{x^2}+\frac{C}{x-3}+\frac{D}{x+3}\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex2')">Click for Solution</button>
+<br><br>
+<div id="ex2" style="display:none">
+<span><span><span class="math inline">\(\frac{A}{x}+\frac{B}{x^2}+\frac{C}{x-3}+\frac{D}{x+3}\)</span></span></span>
+</div></p></li>
 <li><p><span class="math inline">\(\frac{5x^4-1}{x(x-2)(x^2+x+1)^2}\)</span></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\frac{A}{x}+\frac{B}{x-2}+\frac{Cx+D}{x^2+x+1}+\frac{Ex+F}{(x^2+x+1)^2}\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex3')">Click for Solution</button>
+<br><br>
+<div id="ex3" style="display:none">
+<span><span><span class="math inline">\(\frac{A}{x}+\frac{B}{x-2}+\frac{Cx+D}{x^2+x+1}+\frac{Ex+F}{(x^2+x+1)^2}\)</span></span></span>
+</div></p></li>
 </ol>
 <p><span><strong>For problems 4 &amp; 5, use the given partial fraction decomposition to evaluate the integral.</strong></span></p>
 <ol start="4">
 <li><p><span class="math inline">\(\int \frac{11x^2-28x+20}{(2x+1)(x-3)^2} \,dx\)</span><br />
 Hint: <span class="math inline">\(\frac{11x^2-28x+20}{(2x+1)(x-3)^2} = \frac{3}{2x+1}+\frac{4}{x-3}+\frac{5}{(x-3)^2}\)</span></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\frac{3}{2}\ln{|2x+1|}+4\ln{|x-3|}-\frac{5}{2(x-3)}+C\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex4')">Click for Solution</button>
+<br><br>
+<div id="ex4" style="display:none">
+<span><span><span class="math inline">\(\frac{3}{2}\ln{|2x+1|}+4\ln{|x-3|}-\frac{5}{2(x-3)}+C\)</span></span></span>
+</div></p></li>
 <li><p><span class="math inline">\(\int \frac{11x^2+7x-15}{(3x-4)(x^2+1)} \,dx\)</span></p>
 <p>Hint: <span class="math inline">\(\frac{11x^2+7x-15}{(3x-4)(x^2+1)} = \frac{5}{3x-4}+\frac{2x+5}{x^2+1}\)</span></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\frac{5}{3}\ln{|3x-4|}+\ln(x^2+1)+5\tan^{-1}{x}+C\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex5')">Click for Solution</button>
+<br><br>
+<div id="ex5" style="display:none">
+<span><span><span class="math inline">\(\frac{5}{3}\ln{|3x-4|}+\ln(x^2+1)+5\tan^{-1}{x}+C\)</span></span></span>
+</div></p></li>
 </ol>
 <p><span><strong>For problems 6-17, evaluate the given integral.</strong></span></p>
 <ol start="6">
 <li><p><span class="math inline">\(\int \frac{4}{x^2 - 1} \, dx\)</span></p>
-<p><embed src="end.pdf" /></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(2\ln{|x-1|}-2\ln{|x+1|}+C\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p>
+</div></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex6')">Click for Solution</button>
+<br><br>
+<div id="ex6" style="display:none">
+<span><span><span class="math inline">\(2\ln{|x-1|}-2\ln{|x+1|}+C\)</span></span></span>
+</div></p></li>
 <li><p><span class="math inline">\(\int \frac{4x-1}{x^2-5x+6}\,dx\)</span></p>
-<p><embed src="end.pdf" /></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(11\ln{|x-3|}-7\ln{|x-2|}+C\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p>
+</div></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex7')">Click for Solution</button>
+<br><br>
+<div id="ex7" style="display:none">
+<span><span><span class="math inline">\(11\ln{|x-3|}-7\ln{|x-2|}+C\)</span></span></span>
+</div></p></li>
 <li><p><span class="math inline">\(\int \frac{x^2}{x^2+1} \,dx\)</span></p>
-<p><embed src="end.pdf" /></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(x-\tan^{-1}{x}+C\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p>
+</div></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex8')">Click for Solution</button>
+<br><br>
+<div id="ex8" style="display:none">
+<span><span><span class="math inline">\(x-\tan^{-1}{x}+C\)</span></span></span>
+</div></p></li>
 <li><p><span class="math inline">\(\int \frac{3x^2-4}{x+1}\,dx\)</span></p>
-<p><embed src="end.pdf" /></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\frac{3}{2}x^2-3x-\ln{|x-1|}+C\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p>
+</div></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex9')">Click for Solution</button>
+<br><br>
+<div id="ex9" style="display:none">
+<span><span><span class="math inline">\(\frac{3}{2}x^2-3x-\ln{|x-1|}+C\)</span></span></span>
+</div></p></li>
 <li><p><span class="math inline">\(\int \frac{4x-1}{2x^2-18x+36} \,dx\)</span></p>
-<p><embed src="end.pdf" /></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\frac{23}{6}\ln{|x-6|}-\frac{11}{6}\ln{|x-3|}+C\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p>
+</div></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex10')">Click for Solution</button>
+<br><br>
+<div id="ex10" style="display:none">
+<span><span><span class="math inline">\(\frac{23}{6}\ln{|x-6|}-\frac{11}{6}\ln{|x-3|}+C\)</span></span></span>
+</div></p></li>
 <li><p><span class="math inline">\(\int \frac{1}{x^2(x-1)^2} \,dx\)</span></p>
-<p><embed src="end.pdf" /></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(2\ln{|x|}-\frac{1}{x}-2\ln{|x-1|}-\frac{1}{(x-1)}+C\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p>
+</div></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex11')">Click for Solution</button>
+<br><br>
+<div id="ex11" style="display:none">
+<span><span><span class="math inline">\(2\ln{|x|}-\frac{1}{x}-2\ln{|x-1|}-\frac{1}{(x-1)}+C\)</span></span></span>
+</div></p></li>
 <li><p><span class="math inline">\(\int \frac{2x+3}{(x-3)(x+1)^2} \,dx\)</span></p>
-<p><embed src="end.pdf" /></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\frac{9}{16}\ln{|x-3|}-\frac{9}{16}\ln{|x+1|}+\frac{1}{4(x+1)}+C\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p>
+</div></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex12')">Click for Solution</button>
+<br><br>
+<div id="ex12" style="display:none">
+<span><span><span class="math inline">\(\frac{9}{16}\ln{|x-3|}-\frac{9}{16}\ln{|x+1|}+\frac{1}{4(x+1)}+C\)</span></span></span>
+</div></p></li>
 <li><p><span class="math inline">\(\int \frac{x^4-4x^2+5}{x^3-4x} \,dx\)</span></p>
-<p><embed src="end.pdf" /></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\frac{x^2}{2}-\frac{5}{4}\ln{|x|}+\frac{5}{8}\ln{|x+2|}+\frac{5}{8}\ln{|x-2|}+C\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p>
+</div></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex13')">Click for Solution</button>
+<br><br>
+<div id="ex13" style="display:none">
+<span><span><span class="math inline">\(\frac{x^2}{2}-\frac{5}{4}\ln{|x|}+\frac{5}{8}\ln{|x+2|}+\frac{5}{8}\ln{|x-2|}+C\)</span></span></span>
+</div></p></li>
 <li><p><span class="math inline">\(\int \frac{x^5-3x^3+6}{x^3+x}dx\)</span></p>
-<p><embed src="end.pdf" /></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\frac{1}{3}x^3-4x+6\ln{|x|}-3\ln{|x^2+1|}+4\arctan{(x)}+C\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p>
+</div></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex14')">Click for Solution</button>
+<br><br>
+<div id="ex14" style="display:none">
+<span><span><span class="math inline">\(\frac{1}{3}x^3-4x+6\ln{|x|}-3\ln{|x^2+1|}+4\arctan{(x)}+C\)</span></span></span>
+</div></p></li>
 <li><p><span class="math inline">\(\int \frac{x^3-6x^2+3x-17}{x^2+3}\,dx\)</span></p>
-<p><embed src="end.pdf" /></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\frac{1}{2}x^2-6x+\frac{1}{\sqrt{3}}\tan^{-1}\left(\frac{x}{\sqrt{3}}\right)+C\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p>
+</div></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex15')">Click for Solution</button>
+<br><br>
+<div id="ex15" style="display:none">
+<span><span><span class="math inline">\(\frac{1}{2}x^2-6x+\frac{1}{\sqrt{3}}\tan^{-1}\left(\frac{x}{\sqrt{3}}\right)+C\)</span></span></span>
+</div></p></li>
 <li><p><span class="math inline">\(\int \frac{2x^2}{(x-1)^3}dx\)</span></p>
-<p><embed src="end.pdf" /></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(2\ln{|x-1|}-\frac{4}{x-1}-\frac{1}{(x-1)^2}+C\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p>
+</div></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex16')">Click for Solution</button>
+<br><br>
+<div id="ex16" style="display:none">
+<span><span><span class="math inline">\(2\ln{|x-1|}-\frac{4}{x-1}-\frac{1}{(x-1)^2}+C\)</span></span></span>
+</div></p></li>
 <li><p><span class="math inline">\(\int \frac{4x^2-4x+2}{x^2-x}dx\)</span></p>
-<p><embed src="end.pdf" /></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(4x-2\ln{|x|}+2\ln{|x-1|}+C\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p>
+</div></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex17')">Click for Solution</button>
+<br><br>
+<div id="ex17" style="display:none">
+<span><span><span class="math inline">\(4x-2\ln{|x|}+2\ln{|x-1|}+C\)</span></span></span>
+</div></p></li>
 </ol>
 <p><span><strong>For problems 18-19, evaluate the given integral by making substitution that transforms the problem into integrating a rational function.</strong></span></p>
 <ol start="18">
 <li><p><span class="math inline">\(\int \frac{\sin{x}}{\cos^2{x}+6\cos{x}+5} \,dx\)</span></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\ln{|\cos{x}+3|}-\ln{|\cos{x}+2|}+C\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex18')">Click for Solution</button>
+<br><br>
+<div id="ex18" style="display:none">
+<span><span><span class="math inline">\(\ln{|\cos{x}+3|}-\ln{|\cos{x}+2|}+C\)</span></span></span>
+</div></p></li>
 <li><p><span class="math inline">\(\int \frac{e^{5x}}{e^{4x}-1} \,dx\)</span></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(e^{x}+\frac{1}{4}\ln|e^x-1|-\frac{1}{4}\ln(e^x+1)-\frac{1}{2}\tan^{-1}(e^x)+C\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex19')">Click for Solution</button>
+<br><br>
+<div id="ex19" style="display:none">
+<span><span><span class="math inline">\(e^{x}+\frac{1}{4}\ln|e^x-1|-\frac{1}{4}\ln(e^x+1)-\frac{1}{2}\tan^{-1}(e^x)+C\)</span></span></span>
+</div></p></li>
 <li><p>By the end of this problem, you will know the antiderivatives of <span class="math inline">\(\sec{x}\)</span>. Observe the following:</p>
 <p><span class="math display">\[\begin{aligned}
 \int \sec{x} \,dx &amp;= \int \frac{1}{\cos{x}} \,dx\\
@@ -87,12 +188,20 @@ Hint: <span class="math inline">\(\frac{11x^2-28x+20}{(2x+1)(x-3)^2} = \frac{3}{
 &amp;= \int \frac{\cos{x}}{1-\sin^2{x}} \,dx\end{aligned}\]</span></p>
 <ol>
 <li><p>Use the substitution <span class="math inline">\(u=\sin{x}\)</span> to convert the given integral to an integral of a rational function.</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\int \frac{1}{1-u^2} \,du\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex20')">Click for Solution</button>
+<br><br>
+<div id="ex20" style="display:none">
+<span><span><span class="math inline">\(\int \frac{1}{1-u^2} \,du\)</span></span></span>
+</div></p></li>
 <li><p>Use partial fractions to evaluate your integral from part (a). Show that the antiderivatives have the form <span class="math inline">\(\frac{1}{2}\ln{\left|\frac{u+1}{u-1}\right|}+C\)</span></p>
-<p><embed src="start.pdf" /> <span><span><span>1</span><span> <span class="math display">\[\begin{aligned}
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex21')">Click for Solution</button>
+<br><br>
+<div id="ex21" style="display:none">
+<span><span><span>1</span><span> <span class="math display">\[\begin{aligned}
 \int \frac{1}{u^2-1}\,du &amp;= \int \frac{1}{2}\left(\frac{1}{u-1}\right)-\frac{1}{2}\left(\frac{1}{u+1}\right) \,du\\
 &amp;=\frac{1}{2}\ln{|u+1|}-\frac{1}{2}\ln{|u-1|}+C\\
-&amp;=\frac{1}{2}\ln{\left|\frac{u+1}{u-1}\right|}+C\end{aligned}\]</span> </span></span></span> <embed src="end.pdf" /></p></li>
+&amp;=\frac{1}{2}\ln{\left|\frac{u+1}{u-1}\right|}+C\end{aligned}\]</span> </span></span></span>
+</div></p></li>
 </ol>
 <p>Notice that substituting back in for <span class="math inline">\(u\)</span> yields:</p>
 <p><span class="math display">\[\begin{aligned}
@@ -104,4 +213,13 @@ Hint: <span class="math inline">\(\frac{11x^2-28x+20}{(2x+1)(x-3)^2} = \frac{3}{
 &amp;=\ln{\left|\tan{x}+\sec{x}\right|}+C\end{aligned}\]</span></p></li>
 </ol>
 </body>
+<script>
+function toggleAnswer(idName) {
+var x = document.getElementById(idName);
+if (x.style.display === "none") {
+x.style.display = "block";
+} else {
+x.style.display = "none";
+}
+}</script>
 </html>

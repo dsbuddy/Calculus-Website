@@ -4,11 +4,24 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
-  <title></title>
-  <style type="text/css">code{white-space: pre;}</style>
+<title>Dot Product & Projections</title>  <style type="text/css">code{white-space: pre;}</style>
   <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-</head>
-<body>
+    <!-- Bootstrap core CSS -->
+<link href="../../../vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+<!-- Custom fonts for this template -->
+<link href="../../../vendor/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+<!-- Custom styles for this template -->
+<link href="../../../vendor/bootstrap/css/clean-blog.css" rel="stylesheet">
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script><body>
+<center><h1 id='titleHeader'>Dot Product & Projections</h1></center>
+
 <p>SUGGESTED REFERENCE MATERIAL:</p>
 <p>As you work through the problems listed below, you should reference Chapter 11.3 of the recommended textbook (or the equivalent chapter in your alternative textbook/online resource) and your lecture notes.</p>
 <p>EXPECTED SKILLS:</p>
@@ -23,88 +36,177 @@
 <li><p>For each of the following, compute <span class="math inline">\(\overrightarrow{u}\cdot\overrightarrow{v}\)</span> based on the given information.</p>
 <ol>
 <li><p><span class="math inline">\(\overrightarrow{u}=\langle 3,-1 \rangle\)</span>; <span class="math inline">\(\overrightarrow{v}=\langle 2,-5 \rangle\)</span></p>
-<p><embed src="start.pdf" /> <span><span>11</span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex1')">Click for Solution</button>
+<br><br>
+<div id="ex1" style="display:none">
+<span><span>11</span></span>
+</div></p></li>
 <li><p><span class="math inline">\(\overrightarrow{u}=\langle 4,-5,1 \rangle\)</span>; <span class="math inline">\(\overrightarrow{v}=\langle 3,6,-1 \rangle\)</span></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(-19\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex2')">Click for Solution</button>
+<br><br>
+<div id="ex2" style="display:none">
+<span><span><span class="math inline">\(-19\)</span></span></span>
+</div></p></li>
 <li><p><span class="math inline">\(\overrightarrow{u}={\bf i}-3{\bf j}+4{\bf k}\)</span>; <span class="math inline">\(\overrightarrow{v}=9{\bf i}-2{\bf j}\)</span>;</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(15\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex3')">Click for Solution</button>
+<br><br>
+<div id="ex3" style="display:none">
+<span><span><span class="math inline">\(15\)</span></span></span>
+</div></p></li>
 <li><p><span class="math inline">\(\|\overrightarrow{u}\|=3\)</span>; <span class="math inline">\(\|\overrightarrow{v}\|=4\)</span>; the angle between <span class="math inline">\(\overrightarrow{u}\)</span> and <span class="math inline">\(\overrightarrow{v}\)</span> is <span class="math inline">\(\frac{\pi}{4}\)</span></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(6\sqrt{2}\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex4')">Click for Solution</button>
+<br><br>
+<div id="ex4" style="display:none">
+<span><span><span class="math inline">\(6\sqrt{2}\)</span></span></span>
+</div></p></li>
 </ol></li>
 <li><p>Explain why the operation <span class="math inline">\(({\bf u}\cdot{\bf v})\cdot{\bf w}\)</span> does not make sense.</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\({\bf u}\cdot {\bf v}\)</span> is a scalar. We cannot take the dot product of a scalar with a vector.</span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex5')">Click for Solution</button>
+<br><br>
+<div id="ex5" style="display:none">
+<span><span><span class="math inline">\({\bf u}\cdot {\bf v}\)</span> is a scalar. We cannot take the dot product of a scalar with a vector.</span></span>
+</div></p></li>
 <li><p>Determine whether the angle between <span class="math inline">\(\overrightarrow{v}=\langle 1,2,3 \rangle\)</span> and <span class="math inline">\(\overrightarrow{w}=\langle -6,4,-1\rangle\)</span> is acute, obtuse, or right. Explain.</p>
-<p><embed src="start.pdf" /> <span><span>Since <span class="math inline">\(\overrightarrow{v}\cdot\overrightarrow{w}=-1&lt;0\)</span>, the angle between the two vectors is obtuse.</span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex6')">Click for Solution</button>
+<br><br>
+<div id="ex6" style="display:none">
+<span><span>Since <span class="math inline">\(\overrightarrow{v}\cdot\overrightarrow{w}=-1&lt;0\)</span>, the angle between the two vectors is obtuse.</span></span>
+</div></p></li>
 <li><p>Give an example of a vector which is orthogonal to both <span class="math inline">\(\overrightarrow{v}=\langle 1,1,1\rangle\)</span> and <span class="math inline">\(\overrightarrow{w}=\langle 2,0,4 \rangle\)</span>. (Hint: Set up a system of equations.)</p>
-<p><embed src="start.pdf" /> <span><span>Any scalar multiple of <span class="math inline">\(\overrightarrow{n}=\langle -2,1,1 \rangle\)</span> is orthogonal to both given vectors.</span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex7')">Click for Solution</button>
+<br><br>
+<div id="ex7" style="display:none">
+<span><span>Any scalar multiple of <span class="math inline">\(\overrightarrow{n}=\langle -2,1,1 \rangle\)</span> is orthogonal to both given vectors.</span></span>
+</div></p></li>
 <li><p>Consider the triangle with vertices <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span>, and <span class="math inline">\(c\)</span>.</p>
 <p><embed src="box.pdf" /></p>
 <p>Use vectors to compute the angle between the diagonal which extends from vertex <span class="math inline">\(a\)</span> to vertex <span class="math inline">\(b\)</span> and the line segment which extends from vertex <span class="math inline">\(a\)</span> to vertex <span class="math inline">\(c\)</span>. (Verify your answer with HW 11.1 #3c.)</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\cos^{-1}\left(\frac{\sqrt{13}}{\sqrt{14}}\right)\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex8')">Click for Solution</button>
+<br><br>
+<div id="ex8" style="display:none">
+<span><span><span class="math inline">\(\cos^{-1}\left(\frac{\sqrt{13}}{\sqrt{14}}\right)\)</span></span></span>
+</div></p></li>
 <li><p>Consider the triangle, shown below,with vertices <span class="math inline">\(A(1,-2,6)\)</span>, <span class="math inline">\(B(3,0,-1)\)</span>, and <span class="math inline">\(C(-2,1,0)\)</span>.</p>
 <p><embed src="triangle.pdf" /></p>
 <p>Compute all three angles of the triangle.</p>
-<p><embed src="start.pdf" /> <span><span><span>1</span><span>Angle <span class="math inline">\(A\)</span> has a measure of <span class="math inline">\(\cos^{-1}\left(\frac{42}{\sqrt{57}\sqrt{54}}\right)\)</span> radians.<br />
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex9')">Click for Solution</button>
+<br><br>
+<div id="ex9" style="display:none">
+<span><span><span>1</span><span>Angle <span class="math inline">\(A\)</span> has a measure of <span class="math inline">\(\cos^{-1}\left(\frac{42}{\sqrt{57}\sqrt{54}}\right)\)</span> radians.<br />
 Angle <span class="math inline">\(B\)</span> has a measure of <span class="math inline">\(\cos^{-1}\left(\frac{15}{\sqrt{57}\sqrt{27}}\right)\)</span> radians.<br />
 Angle <span class="math inline">\(C\)</span> has a measure of <span class="math inline">\(\cos^{-1}\left(\frac{12}{\sqrt{54}\sqrt{27}}\right)\)</span> radians.<br />
-(NOTE: Once you find any two of the angles, you can use the fact that the sum of all of the angles must be <span class="math inline">\(\pi\)</span> radians to compute the remaining angle.) </span></span></span> <embed src="end.pdf" /></p></li>
+(NOTE: Once you find any two of the angles, you can use the fact that the sum of all of the angles must be <span class="math inline">\(\pi\)</span> radians to compute the remaining angle.) </span></span></span>
+</div></p></li>
 <li><p>Let <span class="math inline">\(\overrightarrow{v}=\langle 1,2 \rangle\)</span> and <span class="math inline">\(\overrightarrow{b}=\langle -3,4 \rangle\)</span>.</p>
 <ol>
 <li><p>Find the vector component of <span class="math inline">\(\overrightarrow{v}\)</span> along <span class="math inline">\(\overrightarrow{b}\)</span> and the vector component of <span class="math inline">\(\overrightarrow{v}\)</span> orthogonal to <span class="math inline">\(\overrightarrow{b}\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span><span>1</span><span>The vector component of <span class="math inline">\(\overrightarrow{v}\)</span> along <span class="math inline">\(\overrightarrow{b}\)</span> is <span class="math inline">\(\text{Proj}_{\overrightarrow{b}}\overrightarrow{v}=\left\langle -\frac{3}{5},\frac{4}{5}\right\rangle\)</span> and the vector component of <span class="math inline">\(\overrightarrow{v}\)</span> orthogonal to <span class="math inline">\(\overrightarrow{b}\)</span> is <span class="math inline">\(\overrightarrow{v}-\text{Proj}_{\overrightarrow{b}}\overrightarrow{v}=\left\langle\frac{8}{5},\frac{6}{5}\right\rangle\)</span>.</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex10')">Click for Solution</button>
+<br><br>
+<div id="ex10" style="display:none">
+<span><span><span>1</span><span>The vector component of <span class="math inline">\(\overrightarrow{v}\)</span> along <span class="math inline">\(\overrightarrow{b}\)</span> is <span class="math inline">\(\text{Proj}_{\overrightarrow{b}}\overrightarrow{v}=\left\langle -\frac{3}{5},\frac{4}{5}\right\rangle\)</span> and the vector component of <span class="math inline">\(\overrightarrow{v}\)</span> orthogonal to <span class="math inline">\(\overrightarrow{b}\)</span> is <span class="math inline">\(\overrightarrow{v}-\text{Proj}_{\overrightarrow{b}}\overrightarrow{v}=\left\langle\frac{8}{5},\frac{6}{5}\right\rangle\)</span>.</span></span></span>
+</div></p></li>
 <li><p>Sketch <span class="math inline">\(\overrightarrow{v}\)</span>, <span class="math inline">\(\overrightarrow{b}\)</span>, and the vector components that you found in part (a).</p>
-<p><embed src="start.pdf" /> <span><span><embed src="projection.pdf" /></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex11')">Click for Solution</button>
+<br><br>
+<div id="ex11" style="display:none">
+<span><span><embed src="projection.pdf" /></span></span>
+</div></p></li>
 </ol></li>
 <li><p>Express <span class="math inline">\({\bf v}={\bf i}+2{\bf j}+3{\bf k}\)</span> as the sum of a vector parallel to <span class="math inline">\({\bf b}=-2{\bf i}+4{\bf j}-{\bf k}\)</span> and a vector perpendicular to <span class="math inline">\({\bf b}\)</span></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\({\bf v}=\left\langle-\frac{2}{7},\frac{4}{7},-\frac{1}{7}\right\rangle+\left\langle \frac{9}{7},\frac{10}{7},\frac{22}{7}\right\rangle\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex12')">Click for Solution</button>
+<br><br>
+<div id="ex12" style="display:none">
+<span><span><span class="math inline">\({\bf v}=\left\langle-\frac{2}{7},\frac{4}{7},-\frac{1}{7}\right\rangle+\left\langle \frac{9}{7},\frac{10}{7},\frac{22}{7}\right\rangle\)</span></span></span>
+</div></p></li>
 <li><p>Suppose that <span class="math inline">\({\bf u} \neq {\bf 0}\)</span> and <span class="math inline">\({\bf v} \neq {\bf 0}\)</span>. Under what condition will <span class="math inline">\(\|{\bf u}+{\bf v}\|=\|{\bf u}-{\bf v}\|\)</span>? Explain.</p>
-<p><embed src="start.pdf" /> <span><span>The result follows if <span class="math inline">\({\bf u}\)</span> is orthogonal to <span class="math inline">\({\bf v}\)</span>.</span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex13')">Click for Solution</button>
+<br><br>
+<div id="ex13" style="display:none">
+<span><span>The result follows if <span class="math inline">\({\bf u}\)</span> is orthogonal to <span class="math inline">\({\bf v}\)</span>.</span></span>
+</div></p></li>
 <li><p>The following questions deal with finding the distance from a point to a line:</p>
 <ol>
 <li><p>Given three points <span class="math inline">\(A\)</span>, <span class="math inline">\(B\)</span>, and <span class="math inline">\(P\)</span> in 2-space or 3-space as shown in the picture below, describe two different ways that you could use the dot product to calculate the distance, <span class="math inline">\(d\)</span>, between the point <span class="math inline">\(P\)</span> and the line which contains <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>.</p>
 <p><embed src="length.pdf" /></p>
-<p><embed src="start.pdf" /> <span><span><span>1</span><span><br />
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex14')">Click for Solution</button>
+<br><br>
+<div id="ex14" style="display:none">
+<span><span><span>1</span><span><br />
 One can compute <span class="math inline">\(\left\|\overrightarrow{AP}\right\|\)</span> and <span class="math inline">\(\left\|\text{Proj}_{\overrightarrow{AB}}\overrightarrow{AP}\right\|\)</span>. Then, use Pythagorean Theorem to calculate <span class="math inline">\(d\)</span>.<br />
 <br />
 <br />
-One can compute <span class="math inline">\(\text{Proj}_{\overrightarrow{AB}}\overrightarrow{AP}\)</span>. Then, <span class="math inline">\(d=\left\|\overrightarrow{AP}-\text{Proj}_{\overrightarrow{AB}}\overrightarrow{AP}\right\|\)</span>.</span></span></span> <embed src="end.pdf" /></p></li>
+One can compute <span class="math inline">\(\text{Proj}_{\overrightarrow{AB}}\overrightarrow{AP}\)</span>. Then, <span class="math inline">\(d=\left\|\overrightarrow{AP}-\text{Proj}_{\overrightarrow{AB}}\overrightarrow{AP}\right\|\)</span>.</span></span></span>
+</div></p></li>
 <li><p>Use one of your methods from part (a) to compute the distance from the point <span class="math inline">\(P(5,3,0)\)</span> to the line containing <span class="math inline">\(A(1,0,1)\)</span> and <span class="math inline">\(B(2,3,1)\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(d=\sqrt{\frac{91}{10}}\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex15')">Click for Solution</button>
+<br><br>
+<div id="ex15" style="display:none">
+<span><span><span class="math inline">\(d=\sqrt{\frac{91}{10}}\)</span></span></span>
+</div></p></li>
 </ol></li>
 <li><p>Consider the triangle shown below which is formed by vectors <span class="math inline">\({\bf v}\)</span> and <span class="math inline">\({\bf w}\)</span>.</p>
 <p><embed src="Pythag.pdf" /></p>
 <p>Prove Pythagorean’s Theorem <span class="math inline">\(\|{\bf v}+{\bf w}\|^2=\|{\bf v}\|^2+\|{\bf w}\|^2\)</span>. (Hint: Use properties of the dot product to expand <span class="math inline">\(\|{\bf v}+{\bf w}\|^2\)</span>.)</p>
-<p><embed src="start.pdf" /> <span><span><span>1</span><span>We expand <span class="math inline">\(\|{\bf v}+{\bf w}\|^2\)</span> using properties of the dot product: <span class="math display">\[\begin{aligned}
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex16')">Click for Solution</button>
+<br><br>
+<div id="ex16" style="display:none">
+<span><span><span>1</span><span>We expand <span class="math inline">\(\|{\bf v}+{\bf w}\|^2\)</span> using properties of the dot product: <span class="math display">\[\begin{aligned}
 \|{\bf v}+{\bf w}\|^2&amp;=({\bf v}+{\bf w})\cdot({\bf v}+{\bf w})\\
 &amp;={\bf v}\cdot{\bf v}+{\bf v}\cdot{\bf w}+{\bf w}\cdot{\bf v}+{\bf w}\cdot{\bf w}\\
 &amp;=\|{\bf v}\|^2+2({\bf v}\cdot {\bf w})+\|{\bf w}\|^2 \text{ (since } {\bf v}\cdot {\bf w}={\bf w}\cdot {\bf v})\\
-&amp;=\|{\bf v}\|^2+\|{\bf w}\|^2 \text{ (since }{\bf v}\perp{\bf w}\Leftrightarrow {\bf v}\cdot{\bf w}=0)\end{aligned}\]</span> Thus, <span class="math inline">\(\|{\bf v}+{\bf w}\|^2=\|{\bf v}\|^2+\|{\bf w}\|^2\)</span>, as promised. </span></span></span> <embed src="end.pdf" /></p></li>
+&amp;=\|{\bf v}\|^2+\|{\bf w}\|^2 \text{ (since }{\bf v}\perp{\bf w}\Leftrightarrow {\bf v}\cdot{\bf w}=0)\end{aligned}\]</span> Thus, <span class="math inline">\(\|{\bf v}+{\bf w}\|^2=\|{\bf v}\|^2+\|{\bf w}\|^2\)</span>, as promised. </span></span></span>
+</div></p></li>
 <li><p>Let <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> be endpoints of a diameter of a circle with a radius of <span class="math inline">\(r\)</span> . And, suppose that <span class="math inline">\(C\)</span> is any other point on the circle, as shown below.</p>
 <p><embed src="circle.pdf" /></p>
 <p>Prove that triangle <span class="math inline">\(ABC\)</span> is a right triangle. (Hint: Express each of <span class="math inline">\(\overrightarrow{CA}\)</span> and <span class="math inline">\(\overrightarrow{CB}\)</span> as the combination of <span class="math inline">\(\overrightarrow{CO}\)</span> and some other vector.)</p>
-<p><embed src="start.pdf" /> <span><span><span>1</span><span>Notice that <span class="math inline">\({\bf CA}={\bf CO}+{\bf OA}\)</span> and <span class="math inline">\({\bf CB}={\bf CO}+{\bf OB}\)</span>. But, <span class="math inline">\({\bf OB}=-{\bf OA}\)</span>. Thus, <span class="math inline">\({\bf CB}={\bf CO}-{\bf OA}\)</span>. We will show that <span class="math inline">\({\bf CA} \perp {\bf CB}\)</span> by showing that <span class="math inline">\({\bf CA} \cdot {\bf CB}=0\)</span>. <span class="math display">\[\begin{aligned}
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex17')">Click for Solution</button>
+<br><br>
+<div id="ex17" style="display:none">
+<span><span><span>1</span><span>Notice that <span class="math inline">\({\bf CA}={\bf CO}+{\bf OA}\)</span> and <span class="math inline">\({\bf CB}={\bf CO}+{\bf OB}\)</span>. But, <span class="math inline">\({\bf OB}=-{\bf OA}\)</span>. Thus, <span class="math inline">\({\bf CB}={\bf CO}-{\bf OA}\)</span>. We will show that <span class="math inline">\({\bf CA} \perp {\bf CB}\)</span> by showing that <span class="math inline">\({\bf CA} \cdot {\bf CB}=0\)</span>. <span class="math display">\[\begin{aligned}
 {\bf CA}\cdot {\bf CB}&amp;=\left({\bf CO}+{\bf OA}\right) \cdot \left({\bf CO}-{\bf OA}\right)\\
 &amp;= {\bf CO}\cdot{\bf CO}-{\bf CO}\cdot {\bf OA}+{\bf OA}\cdot{\bf CO}-{\bf OA}\cdot{\bf OA}\\
 &amp;=\|{\bf CO}\|^2-\|{\bf OA}\|^2\\
 &amp;=r^2-r^2\\
-&amp;=0\end{aligned}\]</span> So, <span class="math inline">\({\bf CA}\perp{\bf CB}\)</span> and the triangle is a right triangle. </span></span></span> <embed src="end.pdf" /></p></li>
+&amp;=0\end{aligned}\]</span> So, <span class="math inline">\({\bf CA}\perp{\bf CB}\)</span> and the triangle is a right triangle. </span></span></span>
+</div></p></li>
 <li><p>Let <span class="math inline">\(\overrightarrow{v}\)</span> and <span class="math inline">\(\overrightarrow{w}\)</span> be vectors, either both in <span class="math inline">\(\mathbb{R}^2\)</span> or in <span class="math inline">\(\mathbb{R}^3\)</span>. Prove the Cauchy-Schwarz Inequality: <span class="math inline">\(|\overrightarrow{v}\cdot \overrightarrow{w}|\leq \|\overrightarrow{v}\|\|\overrightarrow{w}\|\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span><span>1</span><span> Suppose that <span class="math inline">\(\theta\)</span> is the angle between <span class="math inline">\(\overrightarrow{v}\)</span> and <span class="math inline">\(\overrightarrow{w}\)</span>. Then: <span class="math display">\[\begin{aligned}
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex18')">Click for Solution</button>
+<br><br>
+<div id="ex18" style="display:none">
+<span><span><span>1</span><span> Suppose that <span class="math inline">\(\theta\)</span> is the angle between <span class="math inline">\(\overrightarrow{v}\)</span> and <span class="math inline">\(\overrightarrow{w}\)</span>. Then: <span class="math display">\[\begin{aligned}
 |\overrightarrow{v}\cdot\overrightarrow{w}|&amp;=\left|\|\overrightarrow{v}\|\|\overrightarrow{w}\|\cos{\theta}\right|\\
 &amp;=\left(\|\overrightarrow{v}\|\right)\left(\|\overrightarrow{w}\|\right)\left(|\cos{\theta}|\right)\\
 &amp;\leq\left(\|\overrightarrow{v}\|\right)\left(\|\overrightarrow{w}\|\right)(1)\\
-&amp;=\|\overrightarrow{v}\| \|\overrightarrow{w}\|\end{aligned}\]</span> Thus, <span class="math inline">\(|\overrightarrow{v}\cdot \overrightarrow{w}|\leq \|\overrightarrow{v}\|\|\overrightarrow{w}\|\)</span>, as promised. </span></span></span> <embed src="end.pdf" /></p></li>
+&amp;=\|\overrightarrow{v}\| \|\overrightarrow{w}\|\end{aligned}\]</span> Thus, <span class="math inline">\(|\overrightarrow{v}\cdot \overrightarrow{w}|\leq \|\overrightarrow{v}\|\|\overrightarrow{w}\|\)</span>, as promised. </span></span></span>
+</div></p></li>
 <li><p>Let <span class="math inline">\(\overrightarrow{v}=\langle 1,2,3 \rangle\)</span>.</p>
 <ol>
 <li><p>Compute the direction cosines of <span class="math inline">\(\overrightarrow{v}\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span><span>1</span><span>Let <span class="math inline">\(\alpha\)</span>, <span class="math inline">\(\beta\)</span>, and <span class="math inline">\(\gamma\)</span> be the angles between <span class="math inline">\(\overrightarrow{v}\)</span> and <span class="math inline">\({\bf i}\)</span>, <span class="math inline">\({\bf j}\)</span>, and <span class="math inline">\({\bf k}\)</span>, respectively. Then:<br />
-<span class="math inline">\(\cos{\alpha}=\frac{1}{\sqrt{14}}\)</span>, <span class="math inline">\(\cos{\beta}=\frac{2}{\sqrt{14}}\)</span>, and <span class="math inline">\(\cos{\gamma}=\frac{3}{\sqrt{14}}\)</span></span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex19')">Click for Solution</button>
+<br><br>
+<div id="ex19" style="display:none">
+<span><span><span>1</span><span>Let <span class="math inline">\(\alpha\)</span>, <span class="math inline">\(\beta\)</span>, and <span class="math inline">\(\gamma\)</span> be the angles between <span class="math inline">\(\overrightarrow{v}\)</span> and <span class="math inline">\({\bf i}\)</span>, <span class="math inline">\({\bf j}\)</span>, and <span class="math inline">\({\bf k}\)</span>, respectively. Then:<br />
+<span class="math inline">\(\cos{\alpha}=\frac{1}{\sqrt{14}}\)</span>, <span class="math inline">\(\cos{\beta}=\frac{2}{\sqrt{14}}\)</span>, and <span class="math inline">\(\cos{\gamma}=\frac{3}{\sqrt{14}}\)</span></span></span></span>
+</div></p></li>
 <li><p>Verify that <span class="math inline">\(\cos^2\alpha+\cos^2\beta+\cos^2\gamma=1\)</span>, where <span class="math inline">\(\alpha\)</span>, <span class="math inline">\(\beta\)</span>, and <span class="math inline">\(\gamma\)</span> be the angles between <span class="math inline">\(\overrightarrow{v}\)</span> and <span class="math inline">\({\bf i}\)</span>, <span class="math inline">\({\bf j}\)</span>, and <span class="math inline">\({\bf k}\)</span>, respectively.</p>
-<p><embed src="start.pdf" /> <span><span><span>1</span><span>Using the information from part (a), we obtain: <span class="math display">\[\begin{aligned}
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex20')">Click for Solution</button>
+<br><br>
+<div id="ex20" style="display:none">
+<span><span><span>1</span><span>Using the information from part (a), we obtain: <span class="math display">\[\begin{aligned}
 \cos^2\alpha+\cos^2\beta+\cos^2\gamma&amp;=\left(\frac{1}{\sqrt{14}}\right)^2+\left(\frac{2}{\sqrt{14}}\right)^2+\left(\frac{3}{\sqrt{14}}\right)^2\\
 &amp;=\frac{1}{14}+\frac{4}{14}+\frac{9}{14}\\
-&amp;=1\end{aligned}\]</span> </span></span></span> <embed src="end.pdf" /></p></li>
+&amp;=1\end{aligned}\]</span> </span></span></span>
+</div></p></li>
 </ol></li>
 </ol>
 </body>
+<script>
+function toggleAnswer(idName) {
+var x = document.getElementById(idName);
+if (x.style.display === "none") {
+x.style.display = "block";
+} else {
+x.style.display = "none";
+}
+}</script>
 </html>

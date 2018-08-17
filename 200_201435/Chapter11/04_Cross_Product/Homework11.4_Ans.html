@@ -4,11 +4,24 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
-  <title></title>
-  <style type="text/css">code{white-space: pre;}</style>
+<title>Cross Product</title>  <style type="text/css">code{white-space: pre;}</style>
   <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-</head>
-<body>
+    <!-- Bootstrap core CSS -->
+<link href="../../../vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+<!-- Custom fonts for this template -->
+<link href="../../../vendor/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+<!-- Custom styles for this template -->
+<link href="../../../vendor/bootstrap/css/clean-blog.css" rel="stylesheet">
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script><body>
+<center><h1 id='titleHeader'>Cross Product</h1></center>
+
 <p>SUGGESTED REFERENCE MATERIAL:</p>
 <p>As you work through the problems listed below, you should reference Chapter 11.4 of the recommended textbook (or the equivalent chapter in your alternative textbook/online resource) and your lecture notes.</p>
 <p>EXPECTED SKILLS:</p>
@@ -23,44 +36,96 @@
 <li><p>For each of the following, compute <span class="math inline">\(\overrightarrow{u}\times\overrightarrow{v}\)</span> and verify that it is orthogonal to both <span class="math inline">\(\overrightarrow{u}\)</span> and <span class="math inline">\(\overrightarrow{v}\)</span>.</p>
 <ol>
 <li><p><span class="math inline">\(\overrightarrow{u}=\langle 3,-4,1 \rangle\)</span>; <span class="math inline">\(\overrightarrow{v}=\langle 2,-2,3 \rangle\)</span></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\langle -10,-7,2\rangle\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex1')">Click for Solution</button>
+<br><br>
+<div id="ex1" style="display:none">
+<span><span><span class="math inline">\(\langle -10,-7,2\rangle\)</span></span></span>
+</div></p></li>
 <li><p><span class="math inline">\(\overrightarrow{u}=\langle 2,-2,6 \rangle\)</span>; <span class="math inline">\(\overrightarrow{v}=\langle -1,2,-1 \rangle\)</span></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\langle -10,-4,2\rangle\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex2')">Click for Solution</button>
+<br><br>
+<div id="ex2" style="display:none">
+<span><span><span class="math inline">\(\langle -10,-4,2\rangle\)</span></span></span>
+</div></p></li>
 <li><p><span class="math inline">\({\bf u}=2{\bf i}+3{\bf k}\)</span>; <span class="math inline">\({\bf v}={\bf i}-{\bf j}\)</span></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\langle 3,3,-2\rangle\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex3')">Click for Solution</button>
+<br><br>
+<div id="ex3" style="display:none">
+<span><span><span class="math inline">\(\langle 3,3,-2\rangle\)</span></span></span>
+</div></p></li>
 </ol></li>
 <li><ol>
 <li><p>Using appropriate properties of the cross product (<span><strong>Not Determinants</strong></span>), compute <span class="math inline">\(({\bf i}-{\bf j})\times({\bf j}-{\bf i})\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\({\bf 0}\)</span>; Detailed Solution: </span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex4')">Click for Solution</button>
+<br><br>
+<div id="ex4" style="display:none">
+<span><span><span class="math inline">\({\bf 0}\)</span>; Detailed Solution: </span></span>
+</div></p></li>
 <li><p>Verify that your answer to part (a) is correct by using determinants.</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\({\bf 0}\)</span>; Detailed Solution: </span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex5')">Click for Solution</button>
+<br><br>
+<div id="ex5" style="display:none">
+<span><span><span class="math inline">\({\bf 0}\)</span>; Detailed Solution: </span></span>
+</div></p></li>
 </ol></li>
 <li><p>Compute two unit vectors which are normal to the plane which is determined by the points <span class="math inline">\(A(1,2,3)\)</span>, <span class="math inline">\(B(6,4,7)\)</span>, and <span class="math inline">\(C(1,5,2)\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\overrightarrow{u_{1,2}}=\pm\frac{1}{\sqrt{446}}\langle -14,5,15 \rangle\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex6')">Click for Solution</button>
+<br><br>
+<div id="ex6" style="display:none">
+<span><span><span class="math inline">\(\overrightarrow{u_{1,2}}=\pm\frac{1}{\sqrt{446}}\langle -14,5,15 \rangle\)</span></span></span>
+</div></p></li>
 <li><p>Compute the area of the triangle with vertices <span class="math inline">\(A(1,2,3)\)</span>, <span class="math inline">\(B(6,4,7)\)</span>, and <span class="math inline">\(C(1,5,2)\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\frac{1}{2}\sqrt{446}\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex7')">Click for Solution</button>
+<br><br>
+<div id="ex7" style="display:none">
+<span><span><span class="math inline">\(\frac{1}{2}\sqrt{446}\)</span></span></span>
+</div></p></li>
 <li><p>Compute <span class="math inline">\(\|{\bf u} \times {\bf v}\|\)</span> if <span class="math inline">\(\|{\bf u}\|=2\)</span>, <span class="math inline">\(\|{\bf v}\|=5\)</span>, and the angle between <span class="math inline">\({\bf u}\)</span> and <span class="math inline">\({\bf v}\)</span> is <span class="math inline">\(30^{\circ}\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span>5</span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex8')">Click for Solution</button>
+<br><br>
+<div id="ex8" style="display:none">
+<span><span>5</span></span>
+</div></p></li>
 <li><p>The following questions deal with finding the distance from a point to a line:</p>
 <ol>
 <li><p>Given three points <span class="math inline">\(A\)</span>, <span class="math inline">\(B\)</span>, and <span class="math inline">\(P\)</span> in 3-space as shown in the picture below, explain how you could use the cross product to calculate the distance, <span class="math inline">\(d\)</span>, between the point <span class="math inline">\(P\)</span> and the line which contains <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>.</p>
 <p><embed src="length.pdf" /></p>
 <p>(Hint: Consider the vectors <span class="math inline">\({\bf AP}\)</span> and <span class="math inline">\({\bf AB}\)</span>)</p>
-<p><embed src="start.pdf" /> <span><span><span>1</span><span>Let <span class="math inline">\(\theta\)</span> be the angle between <span class="math inline">\({\bf AP}\)</span> and <span class="math inline">\({\bf AB}\)</span>. Then: <span class="math display">\[\begin{aligned}
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex9')">Click for Solution</button>
+<br><br>
+<div id="ex9" style="display:none">
+<span><span><span>1</span><span>Let <span class="math inline">\(\theta\)</span> be the angle between <span class="math inline">\({\bf AP}\)</span> and <span class="math inline">\({\bf AB}\)</span>. Then: <span class="math display">\[\begin{aligned}
 d&amp;=\|{\bf AP}\|\sin{\theta}\\
 &amp;=\frac{\|{\bf AP}\|\|{\bf AB}\|\sin{\theta}}{\|{\bf AB}\|}\\
-&amp;=\frac{\|{\bf AP}\times{\bf AB}\|}{\|{\bf AB}\|}\end{aligned}\]</span> </span></span></span> <embed src="end.pdf" /></p></li>
+&amp;=\frac{\|{\bf AP}\times{\bf AB}\|}{\|{\bf AB}\|}\end{aligned}\]</span> </span></span></span>
+</div></p></li>
 <li><p>Use your method from part (a) to compute the distance from the point <span class="math inline">\(P(5,3,0)\)</span> to the line containing <span class="math inline">\(A(1,0,1)\)</span> and <span class="math inline">\(B(2,3,1)\)</span>. Verify your answer with HW 11.3 #10(b).</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(d=\sqrt{\frac{91}{10}}\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex10')">Click for Solution</button>
+<br><br>
+<div id="ex10" style="display:none">
+<span><span><span class="math inline">\(d=\sqrt{\frac{91}{10}}\)</span></span></span>
+</div></p></li>
 </ol></li>
 <li><p>Consider the parallelepiped with adjacent edges <span class="math inline">\(\overrightarrow{u}=\langle1,2,3\rangle\)</span>, <span class="math inline">\(\overrightarrow{v}=\langle3,4,0\rangle\)</span>, and <span class="math inline">\(\overrightarrow{w}=\langle-1,3,-2\rangle\)</span>.</p>
 <ol>
 <li><p>Compute the volume of the parallelepiped.</p>
-<p><embed src="start.pdf" /> <span><span>43; Detailed Solution: </span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex11')">Click for Solution</button>
+<br><br>
+<div id="ex11" style="display:none">
+<span><span>43; Detailed Solution: </span></span>
+</div></p></li>
 <li><p>Determine the area of the face determined by <span class="math inline">\(\overrightarrow{v}\)</span> and <span class="math inline">\(\overrightarrow{w}\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\sqrt{269}\)</span>; Detailed Solution: </span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex12')">Click for Solution</button>
+<br><br>
+<div id="ex12" style="display:none">
+<span><span><span class="math inline">\(\sqrt{269}\)</span>; Detailed Solution: </span></span>
+</div></p></li>
 <li><p>Compute the angle between <span class="math inline">\(\overrightarrow{u}\)</span> and the plane containing the face determined by <span class="math inline">\(\overrightarrow{v}\)</span> and <span class="math inline">\(\overrightarrow{w}\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\frac{\pi}{2}-\cos^{-1}\left(\frac{43}{\sqrt{14}\sqrt{269}}\right)\)</span>; Detailed Solution: </span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex13')">Click for Solution</button>
+<br><br>
+<div id="ex13" style="display:none">
+<span><span><span class="math inline">\(\frac{\pi}{2}-\cos^{-1}\left(\frac{43}{\sqrt{14}\sqrt{269}}\right)\)</span>; Detailed Solution: </span></span>
+</div></p></li>
 </ol></li>
 <li><p><span><strong>Multiple Choice:</strong></span> Suppose <span class="math inline">\({\bf u}\)</span> and <span class="math inline">\({\bf v}\)</span> are non-zero vectors in <span class="math inline">\(\mathbb{R}^3\)</span> and that <span class="math inline">\({\bf u}\cdot{\bf v}=\|{\bf u}\times{\bf v}\|\)</span>, which of the following is the angle between <span class="math inline">\({\bf u}\)</span> and <span class="math inline">\({\bf v}\)</span>?</p>
 <ol>
@@ -70,20 +135,53 @@ d&amp;=\|{\bf AP}\|\sin{\theta}\\
 <li><p><span class="math inline">\(\frac{\pi}{3}\)</span></p></li>
 <li><p><span class="math inline">\(\frac{\pi}{2}\)</span></p></li>
 </ol>
-<p><embed src="start.pdf" /> <span><span>c</span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex14')">Click for Solution</button>
+<br><br>
+<div id="ex14" style="display:none">
+<span><span>c</span></span>
+</div></p></li>
 <li><p><span><strong>True or False:</strong></span> Mark each of the following as either true or false. If the statement is false, explain why or provide a counterexample.</p>
 <ol>
 <li><p>The cross product of two vectors in <span class="math inline">\(\mathbb{R}^3\)</span> is ; i.e., <span class="math inline">\({\bf v}\times{\bf w}=-({\bf w}\times{\bf v})\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span>True</span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex15')">Click for Solution</button>
+<br><br>
+<div id="ex15" style="display:none">
+<span><span>True</span></span>
+</div></p></li>
 <li><p><span class="math inline">\({\bf i}\times{\bf k}={\bf j}\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span>False; <span class="math inline">\({\bf i}\times{\bf k}=-{\bf j}\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex16')">Click for Solution</button>
+<br><br>
+<div id="ex16" style="display:none">
+<span><span>False; <span class="math inline">\({\bf i}\times{\bf k}=-{\bf j}\)</span></span></span>
+</div></p></li>
 <li><p>For any vectors <span class="math inline">\({\bf u}\)</span> and <span class="math inline">\({\bf v}\)</span> in <span class="math inline">\(\mathbb{R}^3\)</span>, <span class="math inline">\(\|{\bf u}\times{\bf v}\|=\|{\bf v}\times{\bf u}\|\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span>True</span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex17')">Click for Solution</button>
+<br><br>
+<div id="ex17" style="display:none">
+<span><span>True</span></span>
+</div></p></li>
 <li><p>If <span class="math inline">\({\bf u}\times{\bf v}={\bf 0}\)</span>, then either <span class="math inline">\({\bf u}={\bf 0}\)</span> or <span class="math inline">\({\bf v}={\bf 0}\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span>False; If <span class="math inline">\({\bf u}\)</span> is parallel to <span class="math inline">\({\bf v}\)</span>, then <span class="math inline">\({\bf u}\times{\bf v}={\bf 0}\)</span>.</span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex18')">Click for Solution</button>
+<br><br>
+<div id="ex18" style="display:none">
+<span><span>False; If <span class="math inline">\({\bf u}\)</span> is parallel to <span class="math inline">\({\bf v}\)</span>, then <span class="math inline">\({\bf u}\times{\bf v}={\bf 0}\)</span>.</span></span>
+</div></p></li>
 <li><p>If <span class="math inline">\({\bf u}\cdot {\bf v}=0\)</span> and <span class="math inline">\({\bf u}\times{\bf v}={\bf 0}\)</span>, then either <span class="math inline">\({\bf u}={\bf 0}\)</span> or <span class="math inline">\({\bf v}={\bf 0}\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span>True</span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex19')">Click for Solution</button>
+<br><br>
+<div id="ex19" style="display:none">
+<span><span>True</span></span>
+</div></p></li>
 </ol></li>
 </ol>
 </body>
+<script>
+function toggleAnswer(idName) {
+var x = document.getElementById(idName);
+if (x.style.display === "none") {
+x.style.display = "block";
+} else {
+x.style.display = "none";
+}
+}</script>
 </html>

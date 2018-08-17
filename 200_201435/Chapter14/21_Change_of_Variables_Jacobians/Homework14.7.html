@@ -4,11 +4,24 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
-  <title></title>
-  <style type="text/css">code{white-space: pre;}</style>
+<title>Jacobian & Change of Variables</title>  <style type="text/css">code{white-space: pre;}</style>
   <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-</head>
-<body>
+    <!-- Bootstrap core CSS -->
+<link href="../../../vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+<!-- Custom fonts for this template -->
+<link href="../../../vendor/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+<!-- Custom styles for this template -->
+<link href="../../../vendor/bootstrap/css/clean-blog.css" rel="stylesheet">
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script><body>
+<center><h1 id='titleHeader'>Jacobian & Change of Variables</h1></center>
+
 <p>SUGGESTED REFERENCE MATERIAL:</p>
 <p>As you work through the problems listed below, you should reference Chapter 14.7 of the recommended textbook (or the equivalent chapter in your alternative textbook/online resource) and your lecture notes.</p>
 <p>EXPECTED SKILLS:</p>
@@ -21,54 +34,135 @@
 <ol>
 <li><p><span class="math inline">\(R\)</span> is the region shown below and the transformation is: <span class="math inline">\(x=r\cos{\theta}\)</span>, <span class="math inline">\(y=r\sin{\theta}\)</span>, with <span class="math inline">\(r \geq 0\)</span> and <span class="math inline">\(0 \leq \theta \leq 2\pi\)</span>.</p>
 <p><embed src="region1.pdf" /></p>
-<p><embed src="start.pdf" /> <span><span><embed src="region1a.pdf" /></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex1')">Click for Solution</button>
+<br><br>
+<div id="ex1" style="display:none">
+<span><span><embed src="region1a.pdf" /></span></span>
+</div></p></li>
 <li><p><span class="math inline">\(R\)</span> is the region shown below and the transformation is: <span class="math inline">\(x=2u+v\)</span>, <span class="math inline">\(y=2u+2v\)</span>.</p>
 <p><embed src="region2.pdf" /></p>
-<p><embed src="start.pdf" /> <span><span><embed src="region2a.pdf" /></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex2')">Click for Solution</button>
+<br><br>
+<div id="ex2" style="display:none">
+<span><span><embed src="region2a.pdf" /></span></span>
+</div></p></li>
 </ol></li>
 <li><p>Consider the region <span class="math inline">\(R\)</span> shown below in the <span class="math inline">\(xy\)</span>-plane.</p>
 <p><embed src="region3.pdf" /></p>
 <ol>
 <li><p>Find a transformation that would map a rectangular region <span class="math inline">\(S\)</span> in the <span class="math inline">\(uv\)</span> plane to the region <span class="math inline">\(R\)</span> in the <span class="math inline">\(xy\)</span> plane. (You may express your answer as <span class="math inline">\(u=u(x,y)\)</span> and <span class="math inline">\(v=v(x,y)\)</span>.)</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(u=y-e^x\)</span>, <span class="math inline">\(v=y+e^x\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex3')">Click for Solution</button>
+<br><br>
+<div id="ex3" style="display:none">
+<span><span><span class="math inline">\(u=y-e^x\)</span>, <span class="math inline">\(v=y+e^x\)</span></span></span>
+</div></p></li>
 <li><p>Sketch the region <span class="math inline">\(S\)</span> from part (a) whose image under your transformation is <span class="math inline">\(R\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span><embed src="region3s.pdf" /></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex4')">Click for Solution</button>
+<br><br>
+<div id="ex4" style="display:none">
+<span><span><embed src="region3s.pdf" /></span></span>
+</div></p></li>
 <li><p>Solve for <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> in terms of <span class="math inline">\(u\)</span> and <span class="math inline">\(v\)</span>. In doing so, you are finding the inverse transformation. (You may express your answer as <span class="math inline">\(x=x(u,v)\)</span>, <span class="math inline">\(y=y(u,v)\)</span>.)</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(x=\ln\left(\frac{1}{2}(v-u)\right)\)</span> (where <span class="math inline">\(v&gt;u\)</span>), <span class="math inline">\(y=\frac{1}{2}(u+v)\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex5')">Click for Solution</button>
+<br><br>
+<div id="ex5" style="display:none">
+<span><span><span class="math inline">\(x=\ln\left(\frac{1}{2}(v-u)\right)\)</span> (where <span class="math inline">\(v&gt;u\)</span>), <span class="math inline">\(y=\frac{1}{2}(u+v)\)</span></span></span>
+</div></p></li>
 </ol></li>
 <li><p>For each of the following transformations, compute the Jacobian <span class="math inline">\(\frac{\partial(x,y)}{\partial(u,v)}\)</span>.</p>
 <ol>
 <li><p><span class="math inline">\(x=u+2v\)</span>, <span class="math inline">\(y=-3u+v\)</span></p>
-<p><embed src="start.pdf" /> <span><span>7</span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex6')">Click for Solution</button>
+<br><br>
+<div id="ex6" style="display:none">
+<span><span>7</span></span>
+</div></p></li>
 <li><p><span class="math inline">\(x=ve^u\)</span>, <span class="math inline">\(y=ve^{-u}\)</span></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(2v\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex7')">Click for Solution</button>
+<br><br>
+<div id="ex7" style="display:none">
+<span><span><span class="math inline">\(2v\)</span></span></span>
+</div></p></li>
 <li><p><span class="math inline">\(x=e^{u}\cos{v}\)</span> and <span class="math inline">\(y=e^{u}\sin{v}\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(e^{2u}\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex8')">Click for Solution</button>
+<br><br>
+<div id="ex8" style="display:none">
+<span><span><span class="math inline">\(e^{2u}\)</span></span></span>
+</div></p></li>
 </ol></li>
 <li><p>Consider the transformation <span class="math inline">\(x=u+v\)</span>, <span class="math inline">\(y=v-u\)</span>.</p>
 <ol>
 <li><p>Compute the Jacobian <span class="math inline">\(\frac{\partial(x,y)}{\partial(u,v)}\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span>2</span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex9')">Click for Solution</button>
+<br><br>
+<div id="ex9" style="display:none">
+<span><span>2</span></span>
+</div></p></li>
 <li><p>Solve the <span class="math inline">\(u\)</span> and <span class="math inline">\(v\)</span> in terms of <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>. (That is, find the inverse transformation.)</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(u=\frac{1}{2}(x-y)\)</span>, <span class="math inline">\(v=\frac{1}{2}(x+y)\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex10')">Click for Solution</button>
+<br><br>
+<div id="ex10" style="display:none">
+<span><span><span class="math inline">\(u=\frac{1}{2}(x-y)\)</span>, <span class="math inline">\(v=\frac{1}{2}(x+y)\)</span></span></span>
+</div></p></li>
 <li><p>Compute the Jacobian <span class="math inline">\(\frac{\partial(u,v)}{\partial(x,y)}\)</span> for the transformation that you found in part (b).</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\frac{1}{2}\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex11')">Click for Solution</button>
+<br><br>
+<div id="ex11" style="display:none">
+<span><span><span class="math inline">\(\frac{1}{2}\)</span></span></span>
+</div></p></li>
 </ol></li>
 <li><p>Verify that the Jacobian <span class="math inline">\(\frac{\partial(x,y)}{\partial(r,\theta)}\)</span> for the transformation <span class="math inline">\(x=r\cos{\theta}\)</span>, <span class="math inline">\(y=r\sin{\theta}\)</span> is <span class="math inline">\(r\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\frac{\partial(x,y)}{\partial(r,\theta)}=\begin{vmatrix}\cos{\theta} &amp; -r\sin{\theta}\\ \sin{\theta} &amp; r\cos{\theta}\end{vmatrix}=r\cos^2{\theta}+r\sin^2{\theta}=r\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex12')">Click for Solution</button>
+<br><br>
+<div id="ex12" style="display:none">
+<span><span><span class="math inline">\(\frac{\partial(x,y)}{\partial(r,\theta)}=\begin{vmatrix}\cos{\theta} &amp; -r\sin{\theta}\\ \sin{\theta} &amp; r\cos{\theta}\end{vmatrix}=r\cos^2{\theta}+r\sin^2{\theta}=r\)</span></span></span>
+</div></p></li>
 <li><p>Verify that the Jacobian <span class="math inline">\(\frac{\partial(x,y,z)}{\partial(\rho,\theta,\phi)}\)</span> for the transformation <span class="math inline">\(x=\rho\cos{\theta}\sin{\phi}\)</span>, <span class="math inline">\(y=\rho\sin{\theta}\sin{\phi}\)</span>, <span class="math inline">\(z=\rho\cos{\phi}\)</span> is <span class="math inline">\(\rho^2\sin{\phi}\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\frac{\partial(x,y,z)}{\partial(\rho,\theta,\phi)}=\begin{vmatrix} \cos{\theta}\sin{\phi} &amp; -\rho\sin{\theta}\cos{\phi} &amp; \rho\cos{\theta}\cos{\phi}\\ \sin{\theta}\sin{\phi} &amp; \rho\cos{\theta}\sin{\phi} &amp; \rho\sin{\theta}\cos{\phi}\\ \cos{\phi} &amp; 0 &amp; -\rho\sin{\phi} \end{vmatrix}=\dots = \rho^2\sin{\phi}\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex13')">Click for Solution</button>
+<br><br>
+<div id="ex13" style="display:none">
+<span><span><span class="math inline">\(\frac{\partial(x,y,z)}{\partial(\rho,\theta,\phi)}=\begin{vmatrix} \cos{\theta}\sin{\phi} &amp; -\rho\sin{\theta}\cos{\phi} &amp; \rho\cos{\theta}\cos{\phi}\\ \sin{\theta}\sin{\phi} &amp; \rho\cos{\theta}\sin{\phi} &amp; \rho\sin{\theta}\cos{\phi}\\ \cos{\phi} &amp; 0 &amp; -\rho\sin{\phi} \end{vmatrix}=\dots = \rho^2\sin{\phi}\)</span></span></span>
+</div></p></li>
 <li><p>Use the transformation <span class="math inline">\(u=3x+y\)</span>, <span class="math inline">\(v=6x-y\)</span> to evaluate <span class="math inline">\(\iint \limits_{R} \frac{3x+y}{6x-y} \,dA\)</span> where <span class="math inline">\(R\)</span> is the region enclosed by <span class="math inline">\(3x+y=2\)</span>, <span class="math inline">\(3x+y=-3\)</span>, <span class="math inline">\(6x-y=1\)</span>, <span class="math inline">\(6x-y=e\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(-\frac{5}{18}\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex14')">Click for Solution</button>
+<br><br>
+<div id="ex14" style="display:none">
+<span><span><span class="math inline">\(-\frac{5}{18}\)</span></span></span>
+</div></p></li>
 <li><p>Use the transformation <span class="math inline">\(u=x-y\)</span>, <span class="math inline">\(v=x+y\)</span> to evaluate <span class="math inline">\(\iint \limits_{R} e^{(x-y)^2} \,dA\)</span> where <span class="math inline">\(R\)</span> is the region in the <span class="math inline">\(xy\)</span> plane which is enclosed by <span class="math inline">\(y=0\)</span>, <span class="math inline">\(y=-x\)</span>, and <span class="math inline">\(y=x-1\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\frac{1}{4}(e-1)\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex15')">Click for Solution</button>
+<br><br>
+<div id="ex15" style="display:none">
+<span><span><span class="math inline">\(\frac{1}{4}(e-1)\)</span></span></span>
+</div></p></li>
 <li><p>Use the transformation <span class="math inline">\(x=au\)</span>, <span class="math inline">\(y=bv\)</span>, and <span class="math inline">\(z=cw\)</span> to evaluate <span class="math inline">\(\displaystyle \iiint_{G}  \,\mathrm{d}V\)</span>, where <span class="math inline">\(G = \displaystyle \big\{ (x,y,z) : \frac{x^2}{a^2}+\frac{y^2}{b^2}+\frac{z^2}{c^2}\leq 1 \big\}\)</span>. Note: <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span> and <span class="math inline">\(c\)</span> are real, positive constants.</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\frac{4\pi}{3}abc\)</span>; This is the volume of the ellipsoid <span class="math inline">\(\frac{x^2}{a^2}+\frac{y^2}{b^2}+\frac{z^2}{c^2} = 1\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex16')">Click for Solution</button>
+<br><br>
+<div id="ex16" style="display:none">
+<span><span><span class="math inline">\(\frac{4\pi}{3}abc\)</span>; This is the volume of the ellipsoid <span class="math inline">\(\frac{x^2}{a^2}+\frac{y^2}{b^2}+\frac{z^2}{c^2} = 1\)</span></span></span>
+</div></p></li>
 <li><p>Use the transformation <span class="math inline">\(u=2x+y\)</span>, <span class="math inline">\(v=-2x+y\)</span> to compute the area of the region <span class="math inline">\(R\)</span>, shown below.</p>
 <p><embed src="region4.pdf" /></p>
-<p><embed src="start.pdf" /> <span><span>1</span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex17')">Click for Solution</button>
+<br><br>
+<div id="ex17" style="display:none">
+<span><span>1</span></span>
+</div></p></li>
 <li><p>Compute the area of the region <span class="math inline">\(R\)</span> described in exercise 2.</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(6\ln{2}-3\ln{3}\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex18')">Click for Solution</button>
+<br><br>
+<div id="ex18" style="display:none">
+<span><span><span class="math inline">\(6\ln{2}-3\ln{3}\)</span></span></span>
+</div></p></li>
 </ol>
 </body>
+<script>
+function toggleAnswer(idName) {
+var x = document.getElementById(idName);
+if (x.style.display === "none") {
+x.style.display = "block";
+} else {
+x.style.display = "none";
+}
+}</script>
 </html>

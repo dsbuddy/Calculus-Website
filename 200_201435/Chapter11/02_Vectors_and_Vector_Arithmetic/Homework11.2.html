@@ -4,11 +4,24 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
-  <title></title>
-  <style type="text/css">code{white-space: pre;}</style>
+<title>Vectors & Vector Arithmetic</title>  <style type="text/css">code{white-space: pre;}</style>
   <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-</head>
-<body>
+    <!-- Bootstrap core CSS -->
+<link href="../../../vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+<!-- Custom fonts for this template -->
+<link href="../../../vendor/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+<!-- Custom styles for this template -->
+<link href="../../../vendor/bootstrap/css/clean-blog.css" rel="stylesheet">
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script><body>
+<center><h1 id='titleHeader'>Vectors & Vector Arithmetic</h1></center>
+
 <p>SUGGESTED REFERENCE MATERIAL:</p>
 <p>As you work through the problems listed below, you should reference Chapter 11.2 of the recommended textbook (or the equivalent chapter in your alternative textbook/online resource) and your lecture notes.</p>
 <p>EXPECTED SKILLS:</p>
@@ -21,62 +34,134 @@
 <ol>
 <li><p>Find the components of vector <span class="math inline">\(\overrightarrow{v}\)</span> and sketch an equivalent vector with its initial point at the origin.</p>
 <p><embed src="vector1.pdf" /></p>
-<p><embed src="start.pdf" /></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex1')">Click for Solution</button>
+<br><br>
+<div id="ex1" style="display:none">
+</p>
 <p><span>0.75</span></p>
 <p><span class="math inline">\(\overrightarrow{v}=\langle 5,3 \rangle\)</span><br />
 <embed src="vector1ans.pdf" /></p>
-<p><embed src="end.pdf" /></p></li>
+<p>
+</div></p></li>
 <li><p>Sketch the vector <span class="math inline">\(\overrightarrow{u}+\overrightarrow{v}+\overrightarrow{w}\)</span> and express it in component form.</p>
 <p><embed src="vector2.pdf" /></p>
-<p><embed src="start.pdf" /></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex2')">Click for Solution</button>
+<br><br>
+<div id="ex2" style="display:none">
+</p>
 <p><span>0.75</span></p>
 <p><span class="math inline">\(\overrightarrow{u}+\overrightarrow{v}+\overrightarrow{w}=\langle 6,1 \rangle\)</span><br />
 <embed src="vector2ans.pdf" /></p>
-<p><embed src="end.pdf" /></p></li>
+<p>
+</div></p></li>
 <li><p>The figure below is a parallelogram. Express <span class="math inline">\(\overrightarrow{w}\)</span> in terms of <span class="math inline">\(\overrightarrow{u}\)</span> and <span class="math inline">\(\overrightarrow{v}\)</span>.</p>
 <p><embed src="vector3.pdf" /></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\overrightarrow{w}=\frac{1}{2}\left(\overrightarrow{u}+\overrightarrow{v}\right)\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex3')">Click for Solution</button>
+<br><br>
+<div id="ex3" style="display:none">
+<span><span><span class="math inline">\(\overrightarrow{w}=\frac{1}{2}\left(\overrightarrow{u}+\overrightarrow{v}\right)\)</span></span></span>
+</div></p></li>
 <li><p>Consider the points <span class="math inline">\(P_1(2,3)\)</span> and <span class="math inline">\(P_2=(5,-1)\)</span>. Find the components of the vector <span class="math inline">\(\overrightarrow{P_1P_2}\)</span>. Sketch <span class="math inline">\(P_1\)</span>, <span class="math inline">\(P_2\)</span>, <span class="math inline">\(\overrightarrow{P_1P_2}\)</span>, and an equivalent vector with its initial point at the origin.</p>
-<p><embed src="start.pdf" /></p>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex4')">Click for Solution</button>
+<br><br>
+<div id="ex4" style="display:none">
+</p>
 <p><span>0.75</span></p>
 <p><span class="math inline">\(\overrightarrow{P_1P_2}=\langle 3,-4 \rangle\)</span><br />
 <embed src="vector4.pdf" /></p>
-<p><embed src="end.pdf" /></p></li>
+<p>
+</div></p></li>
 <li><p>Consider the points <span class="math inline">\(P_1(1,2,3)\)</span> and <span class="math inline">\(P_2(5,4,6)\)</span>. Find the components of the vector <span class="math inline">\(\overrightarrow{P_1P_2}\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\overrightarrow{P_1P_2}=\langle 4,2,3 \rangle\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex5')">Click for Solution</button>
+<br><br>
+<div id="ex5" style="display:none">
+<span><span><span class="math inline">\(\overrightarrow{P_1P_2}=\langle 4,2,3 \rangle\)</span></span></span>
+</div></p></li>
 <li><p>Let <span class="math inline">\({\bf u}= 3{\bf i}+2{\bf j}-{\bf k}\)</span>, <span class="math inline">\({\bf v}=-2{\bf i}+4{\bf j}+3{\bf k}\)</span>, and <span class="math inline">\({\bf w}=7{\bf i}+4{\bf j}+{\bf k}\)</span>. Compute each of the following:</p>
 <ol>
 <li><p><span class="math inline">\(2{\bf u}-3{\bf w}\)</span></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(-15{\bf i}-8{\bf j}-5{\bf k}\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex6')">Click for Solution</button>
+<br><br>
+<div id="ex6" style="display:none">
+<span><span><span class="math inline">\(-15{\bf i}-8{\bf j}-5{\bf k}\)</span></span></span>
+</div></p></li>
 <li><p><span class="math inline">\(\| {\bf u}+{\bf v}\|\)</span></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\sqrt{41}\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex7')">Click for Solution</button>
+<br><br>
+<div id="ex7" style="display:none">
+<span><span><span class="math inline">\(\sqrt{41}\)</span></span></span>
+</div></p></li>
 <li><p><span class="math inline">\(\| {\bf u}\|+\|{\bf v}\|\)</span></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\sqrt{14}+\sqrt{29}\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex8')">Click for Solution</button>
+<br><br>
+<div id="ex8" style="display:none">
+<span><span><span class="math inline">\(\sqrt{14}+\sqrt{29}\)</span></span></span>
+</div></p></li>
 <li><p><span class="math inline">\(\|2{\bf u}\|\)</span></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(2\sqrt{14}\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex9')">Click for Solution</button>
+<br><br>
+<div id="ex9" style="display:none">
+<span><span><span class="math inline">\(2\sqrt{14}\)</span></span></span>
+</div></p></li>
 <li><p><span class="math inline">\(\left\|\frac{1}{\|{\bf v}\|}{\bf v}\right\|\)</span></p>
-<p><embed src="start.pdf" /> <span><span>1</span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex10')">Click for Solution</button>
+<br><br>
+<div id="ex10" style="display:none">
+<span><span>1</span></span>
+</div></p></li>
 </ol></li>
 <li><p>For each of the following, find a vector which satisfies the given conditions.</p>
 <ol>
 <li><p>A unit vector which is in the opposite direction of <span class="math inline">\({\bf v}=3{\bf i}+4{\bf j}\)</span></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(-\frac{3}{5}{\bf i}-\frac{4}{5}{\bf j}\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex11')">Click for Solution</button>
+<br><br>
+<div id="ex11" style="display:none">
+<span><span><span class="math inline">\(-\frac{3}{5}{\bf i}-\frac{4}{5}{\bf j}\)</span></span></span>
+</div></p></li>
 <li><p>A unit vector which is in the same direction as the vector from <span class="math inline">\(P_1(1,0,5)\)</span> to <span class="math inline">\(P_2(3,-1,2)\)</span></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\left \langle \frac{2}{\sqrt{14}},-\frac{1}{\sqrt{14}},-\frac{3}{\sqrt{14}} \right \rangle\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex12')">Click for Solution</button>
+<br><br>
+<div id="ex12" style="display:none">
+<span><span><span class="math inline">\(\left \langle \frac{2}{\sqrt{14}},-\frac{1}{\sqrt{14}},-\frac{3}{\sqrt{14}} \right \rangle\)</span></span></span>
+</div></p></li>
 <li><p>A vector which is in the opposite direction of <span class="math inline">\(\overrightarrow{v}=\langle1,2,3\rangle\)</span> and whose maginitude is half that of <span class="math inline">\(\overrightarrow{v}\)</span>.</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\left \langle -\frac{1}{2},-1,-\frac{3}{2}\right\rangle\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex13')">Click for Solution</button>
+<br><br>
+<div id="ex13" style="display:none">
+<span><span><span class="math inline">\(\left \langle -\frac{1}{2},-1,-\frac{3}{2}\right\rangle\)</span></span></span>
+</div></p></li>
 <li><p>A vector which is in the same direction of <span class="math inline">\({\bf w}={\bf i}-2{\bf j}+3{\bf k}\)</span> and which has a length of <span class="math inline">\(\sqrt{5}\)</span></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\frac{\sqrt{5}}{\sqrt{14}}{\bf i}-\frac{2\sqrt{5}}{\sqrt{14}}{\bf j}+\frac{3\sqrt{5}}{\sqrt{14}}{\bf k}\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex14')">Click for Solution</button>
+<br><br>
+<div id="ex14" style="display:none">
+<span><span><span class="math inline">\(\frac{\sqrt{5}}{\sqrt{14}}{\bf i}-\frac{2\sqrt{5}}{\sqrt{14}}{\bf j}+\frac{3\sqrt{5}}{\sqrt{14}}{\bf k}\)</span></span></span>
+</div></p></li>
 <li><p>A vector in 2-space which makes an angle of <span class="math inline">\(\theta=\frac{\pi}{6}\)</span> with the positive <span class="math inline">\(x\)</span>-axis and which has a magnitude of 4.</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\left \langle 2\sqrt{3}, 2 \right \rangle\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex15')">Click for Solution</button>
+<br><br>
+<div id="ex15" style="display:none">
+<span><span><span class="math inline">\(\left \langle 2\sqrt{3}, 2 \right \rangle\)</span></span></span>
+</div></p></li>
 <li><p>A vector in 2-space which makes an angle of <span class="math inline">\(\theta=210^{\circ}\)</span> with the positive <span class="math inline">\(x\)</span>-axis and which has a length of 2.</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\left \langle -\sqrt{3},-1 \right \rangle\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex16')">Click for Solution</button>
+<br><br>
+<div id="ex16" style="display:none">
+<span><span><span class="math inline">\(\left \langle -\sqrt{3},-1 \right \rangle\)</span></span></span>
+</div></p></li>
 </ol></li>
 <li><p>Find the value(s) of <span class="math inline">\(a\)</span> so that the vectors <span class="math inline">\(\overrightarrow{v}=\langle a^2,6 \rangle\)</span> and <span class="math inline">\(\overrightarrow{w}=\langle 4a, 2 \rangle\)</span> are parallel.</p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(a=0\)</span> or <span class="math inline">\(a=12\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex17')">Click for Solution</button>
+<br><br>
+<div id="ex17" style="display:none">
+<span><span><span class="math inline">\(a=0\)</span> or <span class="math inline">\(a=12\)</span></span></span>
+</div></p></li>
 <li><p>Vectors <span class="math inline">\(\overrightarrow{v}\)</span> and <span class="math inline">\(\overrightarrow{w}\)</span>, shown below, are unit vectors. Find the components of <span class="math inline">\(\overrightarrow{v}+\overrightarrow{w}\)</span>.</p>
 <p><embed src="vector5.pdf" /></p>
-<p><embed src="start.pdf" /> <span><span><span class="math inline">\(\left \langle \frac{\sqrt{2}+\sqrt{3}}{2},\frac{\sqrt{2}-1}{2}\right \rangle\)</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex18')">Click for Solution</button>
+<br><br>
+<div id="ex18" style="display:none">
+<span><span><span class="math inline">\(\left \langle \frac{\sqrt{2}+\sqrt{3}}{2},\frac{\sqrt{2}-1}{2}\right \rangle\)</span></span></span>
+</div></p></li>
 <li><p>For each of the following, find the magnitude of the resultant force and the angle that it makes with the positive <span class="math inline">\(x\)</span>-axis.</p>
 <table>
 <tbody>
@@ -98,12 +183,29 @@
 </tr>
 </tbody>
 </table>
-<p><embed src="start.pdf" /> <span><span><span>1</span><span>(a) The magnitude is <span class="math inline">\(20\sqrt{5}\)</span> lb at an angle of <span class="math inline">\(\pi-\tan^{-1}\left(\frac{1}{2}\right)\)</span> radians counterclockwise with the positive <span class="math inline">\(x\)</span> axis.<br />
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex19')">Click for Solution</button>
+<br><br>
+<div id="ex19" style="display:none">
+<span><span><span>1</span><span>(a) The magnitude is <span class="math inline">\(20\sqrt{5}\)</span> lb at an angle of <span class="math inline">\(\pi-\tan^{-1}\left(\frac{1}{2}\right)\)</span> radians counterclockwise with the positive <span class="math inline">\(x\)</span> axis.<br />
 <br />
-(b) The magnitude is <span class="math inline">\(150\sqrt{10}\)</span> N at an angle of <span class="math inline">\(\tan^{-1}\left(\frac{1}{2}\right)\)</span> radians counterclockwise with the positive <span class="math inline">\(x\)</span> axis.</span></span></span> <embed src="end.pdf" /></p></li>
+(b) The magnitude is <span class="math inline">\(150\sqrt{10}\)</span> N at an angle of <span class="math inline">\(\tan^{-1}\left(\frac{1}{2}\right)\)</span> radians counterclockwise with the positive <span class="math inline">\(x\)</span> axis.</span></span></span>
+</div></p></li>
 <li><p>A weight of 200 Newtons (N) is being supported by two wires, as shown below. Find the tension in each wire.</p>
 <p><embed src="vector6.pdf" /></p>
-<p><embed src="start.pdf" /> <span><span><span>1</span><span>Let <span class="math inline">\(F_1\)</span> be the wire which makes an angle of <span class="math inline">\(45^{\circ}\)</span> clockwise with the ceiling and <span class="math inline">\(F_2\)</span> be the wire which makes an angle of <span class="math inline">\(30^{\circ}\)</span> counterclockwise with the ceiling. Then <span class="math inline">\(\|F_2\|=\frac{400}{1+\sqrt{3}}\)</span> N and <span class="math inline">\(\|F_1\|=\frac{\sqrt{3}}{\sqrt{2}}\cdot\frac{400}{1+\sqrt{3}}\)</span> N.</span></span></span> <embed src="end.pdf" /></p></li>
+<p><button type="button" class="btn btn-primary" onclick="toggleAnswer('ex20')">Click for Solution</button>
+<br><br>
+<div id="ex20" style="display:none">
+<span><span><span>1</span><span>Let <span class="math inline">\(F_1\)</span> be the wire which makes an angle of <span class="math inline">\(45^{\circ}\)</span> clockwise with the ceiling and <span class="math inline">\(F_2\)</span> be the wire which makes an angle of <span class="math inline">\(30^{\circ}\)</span> counterclockwise with the ceiling. Then <span class="math inline">\(\|F_2\|=\frac{400}{1+\sqrt{3}}\)</span> N and <span class="math inline">\(\|F_1\|=\frac{\sqrt{3}}{\sqrt{2}}\cdot\frac{400}{1+\sqrt{3}}\)</span> N.</span></span></span>
+</div></p></li>
 </ol>
 </body>
+<script>
+function toggleAnswer(idName) {
+var x = document.getElementById(idName);
+if (x.style.display === "none") {
+x.style.display = "block";
+} else {
+x.style.display = "none";
+}
+}</script>
 </html>
